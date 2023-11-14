@@ -45,7 +45,7 @@
    "weightedBuildMaterials": {
       "water": null,
       "volatiles": 0.2,
-      "metals": 0.8,
+      "metals": 0.7,
       "nobleMetals": 0.1,
       "fissiles": 0,
       "exotics": 0

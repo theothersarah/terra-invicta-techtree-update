@@ -1,3 +1,31 @@
+function findBlockingTechsPatch(techToSearch, tech)
+{
+	if (tech.prereqs !== undefined)
+	{
+		return tech.prereqs.find(prereq => prereq === techToSearch.dataName);
+	}
+}
+
+function getIcon(dataModule)
+{
+	if (dataModule.iconResource !== undefined)
+	{
+		return dataModule.iconResource;
+	}
+	else if (dataModule.baseIconResource !== undefined)
+	{
+		return dataModule.baseIconResource;
+	}
+	else if (dataModule.stationIconResource !== undefined)
+	{
+		return dataModule.stationIconResource;
+	}
+	else
+	{
+		return undefined;
+	}
+}
+
 class TechSidebar extends React.Component {
     constructor(props) {
         super(props)
@@ -13,13 +41,20 @@ class TechSidebar extends React.Component {
     }
 
     findBlockingTechs(techToSearch) {
-        return this.state.techTree.filter(tech => tech.prereqs.find(prereq => prereq === techToSearch.dataName));
+			return this.state.techTree.filter(tech => findBlockingTechsPatch(techToSearch, tech));
     }
 
     findPrereqTechs(techToSearch) {
-        return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {
-            return this.state.techTree.find(tech => tech.dataName === prereq);
-        });
+		if (techToSearch.prereqs === undefined)
+		{
+			return [];
+		}
+		else
+		{
+			return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {
+				return this.state.techTree.find(tech => tech.dataName === prereq);
+			});
+		}
     }
 
     getAncestorTechs(techToSearch) {
@@ -101,7 +136,7 @@ class TechSidebar extends React.Component {
 
             const dataModules = findModule(node.dataName);
             dataModules.forEach(dataModule => {
-                let icon = dataModule.iconResource ? dataModule.iconResource : dataModule.baseIconResource;
+                let icon = getIcon(dataModule);
                 summaryElements.push(React.createElement(
                     'div',
                     null,

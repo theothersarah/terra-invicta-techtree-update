@@ -20,6 +20,7 @@
    "warheadMass_kg": 3.5,
    "targetingRange_km": 200,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "volatiles": 0.05,
       "metals": 0.85,
@@ -63,6 +64,7 @@
    "warheadMass_kg": 22.5,
    "targetingRange_km": 250,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": true,
    "weightedBuildMaterials": {
       "volatiles": 0.05,
       "metals": 0.85,
@@ -106,6 +108,7 @@
    "warheadMass_kg": 50,
    "targetingRange_km": 250,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": true,
    "weightedBuildMaterials": {
       "volatiles": 0.05,
       "metals": 0.85,
@@ -149,6 +152,7 @@
    "warheadMass_kg": 90,
    "targetingRange_km": 250,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": true,
    "weightedBuildMaterials": {
       "volatiles": 0.05,
       "metals": 0.85,
@@ -192,6 +196,7 @@
    "warheadMass_kg": 160,
    "targetingRange_km": 250,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": true,
    "weightedBuildMaterials": {
       "volatiles": 0.05,
       "metals": 0.85,

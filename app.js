@@ -443,12 +443,16 @@ function parseNode(nodeType, dumpAllEdges) {
         });
 
         let prereqCopy = [];
-        tech.prereqs.forEach(prereq => {
-            if (prereq === "" || !isValidNode(nodeType, prereq)) {
-                return;
-            }
-            prereqCopy.push(findTechByName(prereq));
-        });
+		
+		if (tech.prereqs !== undefined)
+		{
+			tech.prereqs.forEach(prereq => {
+				if (prereq === "" || !isValidNode(nodeType, prereq)) {
+					return;
+				}
+				prereqCopy.push(findTechByName(prereq));
+			});
+		}
 
         prereqCopy.sort((a, b) => {
             const catA = a.techCategory === tech.techCategory;
@@ -499,12 +503,15 @@ function isValidNode(validNodes, checkNode) {
 function determineLevel(tech, validNodes) {
     let validPrereqs = [];
 
-    tech.prereqs.forEach(prereq => {
-        if (prereq === "" || !isValidNode(validNodes, prereq)) {
-            return;
-        }
-        validPrereqs.push(prereq);
-    })
+	if (tech.prereqs !== undefined)
+	{
+		tech.prereqs.forEach(prereq => {
+			if (prereq === "" || !isValidNode(validNodes, prereq)) {
+				return;
+			}
+			validPrereqs.push(prereq);
+		})
+	}
 
     if (validPrereqs.length === 0) {
         return 0;

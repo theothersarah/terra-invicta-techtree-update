@@ -15,6 +15,7 @@
    "targetingRange_km": 200,
    "doublingRange_km": 100,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -43,6 +44,7 @@
    "targetingRange_km": 250,
    "doublingRange_km": 150,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -71,6 +73,7 @@
    "targetingRange_km": 325,
    "doublingRange_km": 150,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -99,6 +102,7 @@
    "targetingRange_km": 400,
    "doublingRange_km": 150,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -127,6 +131,7 @@
    "targetingRange_km": 350,
    "doublingRange_km": 225,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -155,6 +160,7 @@
    "targetingRange_km": 425,
    "doublingRange_km": 225,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -183,6 +189,7 @@
    "targetingRange_km": 500,
    "doublingRange_km": 225,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -211,6 +218,7 @@
    "targetingRange_km": 450,
    "doublingRange_km": 300,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -239,6 +247,7 @@
    "targetingRange_km": 525,
    "doublingRange_km": 300,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -267,6 +276,7 @@
    "targetingRange_km": 600,
    "doublingRange_km": 300,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -292,9 +302,10 @@
    "efficiency": 0.2,
    "shotPower_MJ": 32,
    "bombardmentValue": 0,
-   "targetingRange_km": 225,
-   "doublingRange_km": 100,
+   "targetingRange_km": 300,
+   "doublingRange_km": 150,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -323,6 +334,7 @@
    "targetingRange_km": 400,
    "doublingRange_km": 300,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -351,6 +363,7 @@
    "targetingRange_km": 450,
    "doublingRange_km": 300,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -379,6 +392,7 @@
    "targetingRange_km": 525,
    "doublingRange_km": 300,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -407,6 +421,7 @@
    "targetingRange_km": 600,
    "doublingRange_km": 300,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,
@@ -424,7 +439,7 @@
    "displayName": "Alien Relativistic Particle Cannon",
    "mount": "FourNose",
    "crew": 2,
-   "requiredProjectName": "Project_AlienMasterProject",
+   "requiredProjectName": "Project_HeavyParticleCannonMk3",
    "attackMode": true,
    "defenseMode": false,
    "baseWeaponMass_tons": 1200,
@@ -435,6 +450,7 @@
    "targetingRange_km": 1200,
    "doublingRange_km": 1200,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "weightedBuildMaterials": {
       "water": 0.01,
       "volatiles": 0.05,

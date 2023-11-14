@@ -21,6 +21,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 800,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.3,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -58,6 +59,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1000,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.5,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -95,6 +97,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 800,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.3,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -132,6 +135,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1000,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.5,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -169,6 +173,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 800,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.3,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -206,6 +211,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1000,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.5,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -243,6 +249,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 800,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.75,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -280,6 +287,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1000,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 1,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -317,6 +325,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 800,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.75,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -354,6 +363,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1000,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 1,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -391,6 +401,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 800,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.75,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -428,6 +439,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1000,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 1,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -465,6 +477,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1000,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.3,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -502,6 +515,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1200,
    "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.5,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -539,6 +553,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1100,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 0.75,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -576,6 +591,7 @@
    "bombardmentValue": 0,
    "targetingRange_km": 1200,
    "pivotRange_deg": 30,
+   "isPointDefenseTargetable": false,
    "warheadMass_kg": 1,
    "weightedBuildMaterials": {
       "volatiles": 0.1,
