@@ -228,6 +228,13 @@ function init() {
     Promise.all([].concat(fetchLocalizationPromises, fetchModulePromises)).then(() => {
         hideSidebar();
 
+        [].concat(techs, projects).forEach((tech) => {
+            if (localizationData[tech.dataName] !== undefined)
+                tech.displayName = localizationData[tech.dataName].displayName;
+            else
+                tech.displayName = tech.friendlyName;
+        });
+
         parseDefaults(() => {
             const hash = window.location.hash.substring(1);
             if (hash) {
@@ -297,13 +304,6 @@ function parseDefaults(callback) {
     clearTree();
     setTimeout(() => {
         techTree = techs.concat(projects);
-
-    techTree.forEach((tech) => {
-        if (localizationData[tech.dataName] !== undefined)
-            tech.displayName = localizationData[tech.dataName].displayName;
-        else
-            tech.displayName = tech.friendlyName
-    });
 
         parseNode(techTree);
         data.nodes = new vis.DataSet(nodes);
