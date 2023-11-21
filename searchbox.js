@@ -31,13 +31,13 @@ class Searchbox extends React.Component {
                     },
                     freeSolo: true,
                     onInputChange: (event, value) => {
-                        const results = documentSearchIndex.search(value, { pluck: "friendlyName", enrich: true }).map(result => result.doc.friendlyName);
+                        const results = documentSearchIndex.search(value, { pluck: "displayName", enrich: true }).map(result => result.doc.displayName);
                         this.setState({ results: results });
                     },
                     onChange: (event, value) => {
                         showSidebar();
 
-                        let navigateToNode = techTree.find(tech => tech.friendlyName === value);
+                        let navigateToNode = techTree.find(tech => tech.displayName === value);
                         techSidebar.setState({ node: navigateToNode });
 
                         if (navigateToNode && network.body.nodes[navigateToNode.dataName]) {

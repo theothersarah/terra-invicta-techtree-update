@@ -5,6 +5,7 @@ let techSidebar, searchBox;
 let localizationData = {};
 let documentSearchIndex;
 let modules = {};
+let lang;
 
 function draw() {
     const container = document.getElementById("mynetwork");
@@ -174,91 +175,80 @@ window.onload = init();
 // }
 
 function init() {
-    const fetchLocPaths = [
-        'TITechTemplate.en',
-        'TIProjectTemplate.en',
-        'TIEffectTemplate.en',
-        'TIBatteryTemplate.en',
-        'TIDriveTemplate.en',
-        'TIGunTemplate.en',
-        'TIHabModuleTemplate.en',
-        'TIHeatSinkTemplate.en',
-        'TILaserWeaponTemplate.en',
-        'TIMagneticGunTemplate.en',
-        'TIMissileTemplate.en',
-        'TIParticleWeaponTemplate.en',
-        'TIPlasmaWeaponTemplate.en',
-        'TIPowerPlantTemplate.en',
-        'TIRadiatorTemplate.en',
-        'TIShipArmorTemplate.en',
-        'TIShipHullTemplate.en',
-        'TIUtilityModuleTemplate.en',
-    ];
-    let fetchedTexts = [];
+    const urlParams = new URLSearchParams(window.location.search);
 
-    const fetchLocPromises = fetchLocPaths.map(url => fetch("data/" + url).then(res => res.text()));
-    Promise.all(fetchLocPromises).then(results => {
-        results.forEach(result => {
-            parseText(result);
-        });
-    }).then(() => {
+    lang = urlParams.get("lang");
+    if (lang == null) { lang = "en" };
+
+    const localizationFiles = [
+        "TITechTemplate." + lang,
+        "TIProjectTemplate." + lang,
+        "TIEffectTemplate." + lang,
+        "TIBatteryTemplate." + lang,
+        "TIDriveTemplate." + lang,
+        "TIGunTemplate." + lang,
+        "TIHabModuleTemplate." + lang,
+        "TIHeatSinkTemplate." + lang,
+        "TILaserWeaponTemplate." + lang,
+        "TIMagneticGunTemplate." + lang,
+        "TIMissileTemplate." + lang,
+        "TIParticleWeaponTemplate." + lang,
+        "TIPlasmaWeaponTemplate." + lang,
+        "TIPowerPlantTemplate." + lang,
+        "TIRadiatorTemplate." + lang,
+        "TIShipArmorTemplate." + lang,
+        "TIShipHullTemplate." + lang,
+        "TIUtilityModuleTemplate." + lang,
+    ];
+
+    const fetchLocalizationPromises = localizationFiles.map(loc => fetch("data/" + loc).then(res => res.text()).then(text => parseText(text)));
+
+    const moduleFiles = [
+        {"path": "TIDriveTemplate.json", "type": "drive"},
+        {"path": "TIGunTemplate.json", "type": "gun"},
+        {"path": "TIHabModuleTemplate.json", "type": "hab"},
+        {"path": "TIHeatSinkTemplate.json", "type": "heatsink"},
+        {"path": "TILaserWeaponTemplate.json", "type": "laser"},
+        {"path": "TIMagneticGunTemplate.json", "type": "magnetic"},
+        {"path": "TIMissileTemplate.json", "type": "missile"},
+        {"path": "TIParticleWeaponTemplate.json", "type": "particle"},
+        {"path": "TIPlasmaWeaponTemplate.json", "type": "plasma"},
+        {"path": "TIPowerPlantTemplate.json", "type": "power"},
+        {"path": "TIRadiatorTemplate.json", "type": "radiator"},
+        {"path": "TIShipArmorTemplate.json", "type": "armor"},
+        {"path": "TIShipHullTemplate.json", "type": "hull"},
+        {"path": "TIUtilityModuleTemplate.json", "type": "utility"},
+        {"path": "TITechTemplate.json", "type": "tech", "callback": (() => {techs = modules.tech})},
+        {"path": "TIProjectTemplate.json", "type": "project", "callback": (() => {projects = modules.project; projects.forEach(project => {project.isProject = true})})},
+        {"path": "TIEffectTemplate.json", "type": "effect", "callback": (() => {effects = modules.effect})}
+    ]
+
+    const fetchModulePromises = moduleFiles.map(mod => fetch("data/" + mod.path).then(res => res.text()).then(text => parseModule(text, mod.type, mod.callback)));
+
+    Promise.all([].concat(fetchLocalizationPromises, fetchModulePromises)).then(() => {
         hideSidebar();
 
-        Promise.all([
-            fetchModule("TITechTemplate.json", "tech", () => {
-                techs = modules.tech;
-            }),
-            fetchModule("TIProjectTemplate.json", "project", () => {
-                projects = modules.project;
-                projects.forEach(project => {
-                    project.isProject = true;
+        parseDefaults(() => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                nodeSelected({ nodes: [hash] });
+                network.selectNodes([hash]);
+                network.focus(hash);
+                network.moveTo({
+                    scale: 1.0,
                 });
-            }),
-            fetchModule("TIEffectTemplate.json", "effect", () => {
-                effects = modules.effect;
-            })
-        ]).then(() => {
-            parseDefaults(() => {
-                const hash = window.location.hash.substring(1);
-                if (hash) {
-                    nodeSelected({ nodes: [hash] });
-                    network.selectNodes([hash]);
-                    network.focus(hash);
-                    network.moveTo({
-                        scale: 1.0,
-                    });
-                }
-            });
-
-            initSidebar();
+            }
         });
-    });
-    fetchModule("TIDriveTemplate.json", "drive");
-    fetchModule("TIGunTemplate.json", "gun");
-    fetchModule("TIHabModuleTemplate.json", "hab");
-    fetchModule("TIHeatSinkTemplate.json", "heatsink");
-    fetchModule("TILaserWeaponTemplate.json", "laser");
-    fetchModule("TIMagneticGunTemplate.json", "magnetic");
-    fetchModule("TIMissileTemplate.json", "missile");
-    fetchModule("TIParticleWeaponTemplate.json", "particle");
-    fetchModule("TIPlasmaWeaponTemplate.json", "plasma");
-    fetchModule("TIPowerPlantTemplate.json", "power");
-    fetchModule("TIRadiatorTemplate.json", "radiator");
-    fetchModule("TIShipArmorTemplate.json", "armor");
-    fetchModule("TIShipHullTemplate.json", "hull");
-    fetchModule("TIUtilityModuleTemplate.json", "utility");
-}
 
-function fetchModule(path, modType, callback) {
-    return fetch("data/" + path).then(res => res.text()).then(module => {
-        parseModule(module, modType);
-
-        if (callback) callback();
+        initSidebar();
     });
 }
 
-function parseModule(module, modType) {
+function parseModule(module, modType, callback) {
     modules[modType] = JSON.parse(module);
+
+    if (callback)
+        callback();
 }
 
 function findModule(moduleName) {
@@ -277,8 +267,8 @@ function initSearchBox() {
 
     documentSearchIndex = new FlexSearch.Document({
         document: {
-            index: ["friendlyName"],
-            store: ["friendlyName", "dataName"]
+            index: ["displayName"],
+            store: ["displayName", "dataName"]
         },
         tokenize: "full"
     });
@@ -307,6 +297,13 @@ function parseDefaults(callback) {
     clearTree();
     setTimeout(() => {
         techTree = techs.concat(projects);
+
+    techTree.forEach((tech) => {
+        if (localizationData[tech.dataName] !== undefined)
+            tech.displayName = localizationData[tech.dataName].displayName;
+        else
+            tech.displayName = tech.friendlyName
+    });
 
         parseNode(techTree);
         data.nodes = new vis.DataSet(nodes);
@@ -434,7 +431,7 @@ function parseNode(nodeType, dumpAllEdges) {
         }
 
         nodeBucket.push({
-            label: "<b>" + tech.friendlyName + "</b>",
+            label: "<b>" + tech.displayName + "</b>",
             id: tech.dataName,
             shape: "circularImage",
             image: getTechIconFile(tech.techCategory),
@@ -443,16 +440,15 @@ function parseNode(nodeType, dumpAllEdges) {
         });
 
         let prereqCopy = [];
-		
-		if (tech.prereqs !== undefined)
-		{
-			tech.prereqs.forEach(prereq => {
-				if (prereq === "" || !isValidNode(nodeType, prereq)) {
-					return;
-				}
-				prereqCopy.push(findTechByName(prereq));
-			});
-		}
+
+        if (tech.prereqs !== undefined) {
+            tech.prereqs.forEach(prereq => {
+                if (prereq === "" || !isValidNode(nodeType, prereq)) {
+                    return;
+                }
+                prereqCopy.push(findTechByName(prereq));
+            });
+        }
 
         prereqCopy.sort((a, b) => {
             const catA = a.techCategory === tech.techCategory;
@@ -503,15 +499,14 @@ function isValidNode(validNodes, checkNode) {
 function determineLevel(tech, validNodes) {
     let validPrereqs = [];
 
-	if (tech.prereqs !== undefined)
-	{
-		tech.prereqs.forEach(prereq => {
-			if (prereq === "" || !isValidNode(validNodes, prereq)) {
-				return;
-			}
-			validPrereqs.push(prereq);
-		})
-	}
+    if (tech.prereqs !== undefined) {
+        tech.prereqs.forEach(prereq => {
+            if (prereq === "" || !isValidNode(validNodes, prereq))
+                return;
+
+            validPrereqs.push(prereq);
+        })
+    }
 
     if (validPrereqs.length === 0) {
         return 0;

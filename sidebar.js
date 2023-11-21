@@ -231,8 +231,6 @@ class TechSidebar extends React.Component {
             doneButtonText
         );
 
-        const friendlyName = node.friendlyName;
-
         const summaryLabel = React.createElement(
             "h4",
             null,
@@ -314,10 +312,10 @@ class TechSidebar extends React.Component {
                             className: "prereqButton" + (tech.researchDone ? " researchDone" : ""),
                             size: "small",
                             title: tech.isProject ? "Faction Project" : "Global Research",
-                            'aria-label': tech ? (tech.friendlyName + " "  + (tech.isProject ? "Faction Project" : "Global Research")) : "",
+                            'aria-label': tech ? (tech.displayName + " "  + (tech.isProject ? "Faction Project" : "Global Research")) : "",
                             color: tech.isProject ? "success" : "primary"
                         },
-                        tech ? tech.friendlyName : ""
+                        tech ? tech.displayName : ""
                     )
                 );
             });
@@ -358,10 +356,10 @@ class TechSidebar extends React.Component {
                             className: "prereqButton",
                             size: "small",
                             title: blocked.isProject ? "Faction Project" : "Global Research",
-                            'aria-label': blocked ? (blocked.friendlyName + " "  + (blocked.isProject ? "Faction Project" : "Global Research")) : "",
+                            'aria-label': blocked ? (blocked.displayName + " "  + (blocked.isProject ? "Faction Project" : "Global Research")) : "",
                             color: blocked.isProject ? "success" : "primary"
                         },
-                        blocked.friendlyName
+                        blocked.displayName
                     )
 
                 );
@@ -488,7 +486,7 @@ class TechSidebar extends React.Component {
             React.createElement(
                 "h2",
                 null,
-                friendlyName
+                node.displayName
             ),
             costText,
 
