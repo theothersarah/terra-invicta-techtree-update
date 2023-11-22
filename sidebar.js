@@ -70,6 +70,15 @@ class TechSidebar extends React.Component {
         return countryCode;
     }
 
+    getReadableRegionName(region) {
+        const data = this.props.data;
+        
+        if (data[region] && data[region].displayName)
+            return data[region].displayName;
+            
+        return region;
+    }
+
     getReadableControlPointName(controlPointCode) {
 
     }
@@ -79,18 +88,48 @@ class TechSidebar extends React.Component {
         if (!data[effect] || !data[effect].description) {
             return effect;
         }
+        
         const effectObj = this.findEffectByName(effect);
-        const effectQuantityString = effectObj ?
-            effectObj.value + " (" + effectObj.operation.toLowerCase() + ")" : "";
+        const effectVal = effectObj ? effectObj.value : 0;
+        const effectStr = effectObj ? effectObj.strValue : "";
+        const operationStr = effectObj ? effectObj.operation : "";
+        
+        const regionStr = effectStr != "" ? this.getReadableRegionName(effectStr) : "";
+        
+        let effectValStr;
+        
+        if (operationStr == "") {
+            effectValStr = effectVal.toLocaleString(lang, {style: "percent"});
+        }
+        else if (operationStr == "Multiplicative") {
+            effectValStr = Math.abs((effectVal - 1.0)).toLocaleString(lang, {style: "percent"});
+        }
+        else if (operationStr == "Additive") {
+            if (Number.isInteger(effectVal)) {
+                effectValStr = effectVal;
+                
+                if (effectObj.contexts[0] == "ControlPointMaintenance") {
+                    effectValStr = Math.abs(effectValStr);
+                }
+            }
+            else {
+                effectValStr = effectVal.toLocaleString(lang, {style: "percent"});
+            }
+        }
+        else {
+            effectValStr = "";
+        }
+        
         const effectTemplateString = data[effect].description
             .replace(/^-/g, "")
-            .replace(/\{[0-9]*\}/g, effectQuantityString)
             .replace('<color=#FFFFFFFF><sprite name="mission_control"></color>', "Mission Control")
             .replace('<color=#FFFFFFFF><sprite name="water"></color>', "Water")
             .replace('<color=#FFFFFFFF><sprite name="volatiles"></color>', "Volatiles")
             .replace('<color=#FFFFFFFF><sprite name="metal"></color>', "Metals")
             .replace('<color=#FFFFFFFF><sprite name="metal_noble"></color>', "Noble Metals")
-            .replace('<color=#FFFFFFFF><sprite name="radioactive"></color>', "Fissiles");
+            .replace('<color=#FFFFFFFF><sprite name="radioactive"></color>', "Fissiles")
+            .replace("{13}", regionStr)
+            .replace(/\{[0-9]*\}/g, effectValStr);
 
         return effectTemplateString;
     }

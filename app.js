@@ -231,6 +231,7 @@ function init() {
         "TINationTemplate." + lang,
         "TIParticleWeaponTemplate." + lang,
         "TIPlasmaWeaponTemplate." + lang,
+        "TIRegionTemplate." + lang,
         "TIPowerPlantTemplate." + lang,
         "TIRadiatorTemplate." + lang,
         "TIShipArmorTemplate." + lang,
@@ -241,7 +242,9 @@ function init() {
     const fetchLocalizationPromises = localizationFiles.map(loc => fetch("data/" + loc).then(res => res.text()).then(text => parseText(text)));
 
     const moduleFiles = [
+        {"path": "TIBilateralTemplate.json", "type": "bilateral"},
         {"path": "TIDriveTemplate.json", "type": "drive"},
+        {"path": "TIEffectTemplate.json", "type": "effect"},
         {"path": "TIGunTemplate.json", "type": "gun"},
         {"path": "TIHabModuleTemplate.json", "type": "hab"},
         {"path": "TIHeatSinkTemplate.json", "type": "heatsink"},
@@ -251,19 +254,24 @@ function init() {
         {"path": "TIParticleWeaponTemplate.json", "type": "particle"},
         {"path": "TIPlasmaWeaponTemplate.json", "type": "plasma"},
         {"path": "TIPowerPlantTemplate.json", "type": "power"},
+        {"path": "TIProjectTemplate.json", "type": "project"},
         {"path": "TIRadiatorTemplate.json", "type": "radiator"},
         {"path": "TIShipArmorTemplate.json", "type": "armor"},
         {"path": "TIShipHullTemplate.json", "type": "hull"},
-        {"path": "TIUtilityModuleTemplate.json", "type": "utility"},
-        {"path": "TITechTemplate.json", "type": "tech", "callback": (() => {techs = modules.tech})},
-        {"path": "TIProjectTemplate.json", "type": "project", "callback": (() => {projects = modules.project; projects.forEach(project => {project.isProject = true})})},
-        {"path": "TIEffectTemplate.json", "type": "effect", "callback": (() => {effects = modules.effect})}
+        {"path": "TITechTemplate.json", "type": "tech"},
+        {"path": "TIUtilityModuleTemplate.json", "type": "utility"}
     ]
 
-    const fetchModulePromises = moduleFiles.map(mod => fetch("data/" + mod.path).then(res => res.text()).then(text => parseModule(text, mod.type, mod.callback)));
+    const fetchModulePromises = moduleFiles.map(mod => fetch("data/" + mod.path).then(res => res.text()).then(text => parseModule(text, mod.type)));
 
     Promise.all([].concat(fetchLocalizationPromises, fetchModulePromises)).then(() => {
         hideSidebar();
+
+        effects = modules.effect;
+        techs = modules.tech;
+        projects = modules.project;
+        
+        projects.forEach(project => {project.isProject = true});
 
         [].concat(techs, projects).forEach((tech) => {
             if (localizationData[tech.dataName] !== undefined)
@@ -288,14 +296,11 @@ function init() {
     });
 }
 
-function parseModule(module, modType, callback) {
+function parseModule(module, modType) {
     let modData = JSON.parse(module);
     modData._modType = modType;
     
     modules[modType] = modData;
-
-    if (callback)
-        callback();
 }
 
 function findModule(moduleName) {
