@@ -7,6 +7,41 @@ let documentSearchIndex;
 let modules = {};
 let lang;
 
+const techCategories = {
+    "Energy": {
+        "icon": "tech_energy_icon.png",
+        "color": "#ff7008"
+    },
+    "InformationScience": {
+        "icon": "tech_info_icon.png",
+        "color": "#e87474"
+    },
+    "LifeScience": {
+        "icon": "tech_life_icon.png",
+        "color": "#3cc478"
+    },
+    "Materials": {
+        "icon": "tech_material_icon.png",
+        "color": "#fbcb4b"
+    },
+    "MilitaryScience": {
+        "icon": "tech_military_icon.png",
+        "color": "#393c3c"
+    },
+    "SocialScience": {
+        "icon": "tech_society_icon.png",
+        "color": "#74bddc"
+    },
+    "SpaceScience": {
+        "icon": "tech_space_icon.png",
+        "color": "#6270d0"
+    },
+    "Xenology": {
+        "icon": "tech_xeno_icon.png",
+        "color": "#906cdc"
+    }
+}
+
 function draw() {
     const container = document.getElementById("mynetwork");
     const options = {
@@ -252,7 +287,10 @@ function init() {
 }
 
 function parseModule(module, modType, callback) {
-    modules[modType] = JSON.parse(module);
+    let modData = JSON.parse(module);
+    modData._modType = modType;
+    
+    modules[modType] = modData;
 
     if (callback)
         callback();
@@ -378,46 +416,14 @@ function parseText(text) {
 }
 
 function getTechIconFile(techCategory) {
-    let shortName;
-    if (techCategory === "Energy") {
-        shortName = "energy";
-    } else if (techCategory === "InformationScience") {
-        shortName = "info";
-    } else if (techCategory === "LifeScience") {
-        shortName = "life";
-    } else if (techCategory === "Materials") {
-        shortName = "material";
-    } else if (techCategory === "MilitaryScience") {
-        shortName = "military";
-    } else if (techCategory === "SocialScience") {
-        shortName = "society";
-    } else if (techCategory === "SpaceScience") {
-        shortName = "space";
-    } else if (techCategory === "Xenology") {
-        shortName = "xeno";
-    }
-    return "icons/tech_" + shortName + "_icon.png";
+    if (techCategories[techCategory] !== undefined)
+        return "icons/" + techCategories[techCategory].icon;
+    return "";
 }
 
 function getTechBorderColor(techCategory) {
-    if (techCategory === "Energy") {
-        return "#ff7008";
-    } else if (techCategory === "InformationScience") {
-        return "#e87474";
-    } else if (techCategory === "LifeScience") {
-        return "#3cc478";
-    } else if (techCategory === "Materials") {
-        return "#fbcb4b";
-    } else if (techCategory === "MilitaryScience") {
-        return "#393c3c";
-    } else if (techCategory === "SocialScience") {
-        return "#74bddc";
-    } else if (techCategory === "SpaceScience") {
-        return "#6270d0";
-    } else if (techCategory === "Xenology") {
-        return "#906cdc";
-    }
-
+    if (techCategories[techCategory] !== undefined)
+        return techCategories[techCategory].color;
     return "black";
 }
 

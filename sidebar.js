@@ -108,7 +108,7 @@ class TechSidebar extends React.Component {
         const effectTemplateString = data[effect].description
             .replace(/^-/g, "")
             .replace(/\{[0-9]*\}/g, effectQuantityString)
-            .replace('<color=#FFFFFFFF><sprite name="mission_control">', "Mission Control")
+            .replace('<color=#FFFFFFFF><sprite name="mission_control"></color>', "Mission Control")
             .replace('<color=#FFFFFFFF><sprite name="water"></color>', "Water")
             .replace('<color=#FFFFFFFF><sprite name="volatiles"></color>', "Volatiles")
             .replace('<color=#FFFFFFFF><sprite name="metal"></color>', "Metals")
@@ -117,6 +117,34 @@ class TechSidebar extends React.Component {
 
 
         return effectTemplateString;
+    }
+    
+    buildModuleDisplay(dataModule) {
+        const node = this.state.node;
+        const data = this.props.data;
+    
+        let moduleDisplayElements = [];
+        let icon = getIcon(dataModule);
+
+        if (icon !== undefined) {
+            moduleDisplayElements.push(React.createElement(
+                'img',
+                { src: "./icons/" + icon + ".png" }
+            ));
+        }
+        
+        moduleDisplayElements.push(React.createElement(
+            'p',
+            null,
+            data[dataModule.dataName].description
+        ));
+        moduleDisplayElements.push(React.createElement(
+            'pre',
+            null,
+            JSON.stringify(dataModule, null, 2)
+        ));
+        
+        return moduleDisplayElements;
     }
 
     getReadableSummary() {
@@ -133,22 +161,13 @@ class TechSidebar extends React.Component {
                 null,
                 data[node.dataName].summary.replace(/<.*module>/, "")
             )];
-
             const dataModules = findModule(node.dataName);
             dataModules.forEach(dataModule => {
-                let icon = getIcon(dataModule);
+
                 summaryElements.push(React.createElement(
                     'div',
                     null,
-                    React.createElement(
-                        'img',
-                        { src: "./icons/" + icon + ".png" }
-                    ),
-                    React.createElement(
-                        'pre',
-                        null,
-                        JSON.stringify(dataModule, null, 2)
-                    )
+                    this.buildModuleDisplay(dataModule)
                 ));
             });
             return summaryElements;
@@ -261,6 +280,35 @@ class TechSidebar extends React.Component {
             "Total Tree Cost: ",
             treeCostString
         )];
+        
+        let probabilities = [];
+        
+        if (node.isProject) {
+            probabilities.push(React.createElement(
+                'h4',
+                null,
+                "Base Availability Chance: ",
+                node.factionAvailableChance
+            ));
+            probabilities.push(React.createElement(
+                'h5',
+                null,
+                "Initial Unlock Chance: ",
+                node.initialUnlockChance
+            ));
+            probabilities.push(React.createElement(
+                'h5',
+                null,
+                "Delta Unlock Chance: ",
+                node.deltaUnlockChance
+            ));
+            probabilities.push(React.createElement(
+                'h5',
+                null,
+                "Maximum Unlock Chance: ",
+                node.maxUnlockChance
+            ));
+        }
 
         let resourceLabel, resourceText;
         if (node.resourcesGranted && node.resourcesGranted.filter(resource => resource.resource !== "").length > 0) {
@@ -489,6 +537,7 @@ class TechSidebar extends React.Component {
                 node.displayName
             ),
             costText,
+            probabilities,
 
             // Requirements
             prereqsText,
