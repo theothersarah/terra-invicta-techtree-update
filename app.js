@@ -221,12 +221,14 @@ function init() {
         "TIEffectTemplate." + lang,
         "TIBatteryTemplate." + lang,
         "TIDriveTemplate." + lang,
+        "TIFactionTemplate." + lang,
         "TIGunTemplate." + lang,
         "TIHabModuleTemplate." + lang,
         "TIHeatSinkTemplate." + lang,
         "TILaserWeaponTemplate." + lang,
         "TIMagneticGunTemplate." + lang,
         "TIMissileTemplate." + lang,
+        "TINationTemplate." + lang,
         "TIParticleWeaponTemplate." + lang,
         "TIPlasmaWeaponTemplate." + lang,
         "TIPowerPlantTemplate." + lang,
@@ -387,10 +389,6 @@ function parseSpecifiedNodes(group, callback) {
 function parseText(text) {
     const lines = text.split("\n");
 
-    const displayNameRegex = new RegExp("displayName");
-    const summaryRegex = new RegExp("summary");
-    const descriptionRegex = new RegExp("description");
-
     lines.forEach(line => {
         line = line.split("//")[0].trim();
 
@@ -405,11 +403,11 @@ function parseText(text) {
             localizationData[keyId] = {};
         }
 
-        if (displayNameRegex.test(keySplit[1])) {
+        if (keySplit[1] == "displayName") {
             localizationData[keyId].displayName = value;
-        } else if (summaryRegex.test(keySplit[1])) {
+        } else if (keySplit[1] == "summary") {
             localizationData[keyId].summary = value;
-        } else if (descriptionRegex.test(keySplit[1])) {
+        } else if (keySplit[1] == "description") {
             localizationData[keyId].description = value;
         }
     });

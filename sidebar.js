@@ -1,35 +1,22 @@
-function findBlockingTechsPatch(techToSearch, tech)
-{
-	if (tech.prereqs !== undefined)
-	{
-		return tech.prereqs.find(prereq => prereq === techToSearch.dataName);
-	}
-}
-
-function getIcon(dataModule)
-{
-	if (dataModule.iconResource !== undefined)
-	{
-		return dataModule.iconResource;
-	}
-	else if (dataModule.baseIconResource !== undefined)
-	{
-		return dataModule.baseIconResource;
-	}
-	else if (dataModule.stationIconResource !== undefined)
-	{
-		return dataModule.stationIconResource;
-	}
-	else
-	{
-		return undefined;
-	}
-}
-
 class TechSidebar extends React.Component {
     constructor(props) {
         super(props)
         this.state = { node: {}, isolated: false, techTree: props.techTree, effects: props.effects };
+    }
+
+    getIcon(dataModule) {
+        if (dataModule.iconResource) {
+            return dataModule.iconResource;
+        }
+        else if (dataModule.baseIconResource) {
+            return dataModule.baseIconResource;
+        }
+        else if (dataModule.stationIconResource) {
+            return dataModule.stationIconResource;
+        }
+        else {
+            return undefined;
+        }
     }
 
     findTechByName(techName) {
@@ -41,20 +28,16 @@ class TechSidebar extends React.Component {
     }
 
     findBlockingTechs(techToSearch) {
-			return this.state.techTree.filter(tech => findBlockingTechsPatch(techToSearch, tech));
+        return this.state.techTree.filter(tech => {if (tech.prereqs) {return tech.prereqs.find(prereq => prereq === techToSearch.dataName);}});
     }
 
     findPrereqTechs(techToSearch) {
-		if (techToSearch.prereqs === undefined)
-		{
-			return [];
-		}
-		else
-		{
-			return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {
-				return this.state.techTree.find(tech => tech.dataName === prereq);
-			});
-		}
+        if (!techToSearch.prereqs) {
+            return [];
+        }
+        else {
+            return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {return this.state.techTree.find(tech => tech.dataName === prereq);});
+        }
     }
 
     getAncestorTechs(techToSearch) {
@@ -70,27 +53,21 @@ class TechSidebar extends React.Component {
     }
 
     getReadableFactionName(faction) {
-        if (faction === "ResistCouncil") {
-            return "The Resistance";
-        } else if (faction === "DestroyCouncil") {
-            return "Humanity First";
-        } else if (faction === "ExploitCouncil") {
-            return "The Initiative";
-        } else if (faction === "EscapeCouncil") {
-            return "Project Exodus";
-        } else if (faction === "CooperateCouncil") {
-            return "The Academy";
-        } else if (faction === "AppeaseCouncil") {
-            return "The Protectorate";
-        } else if (faction === "SubmitCouncil") {
-            return "The Servants";
-        } else {
-            return "Aliens";
-        }
+        const data = this.props.data;
+        
+        if (data[faction] && data[faction].displayName)
+            return data[faction].displayName;
+            
+        return faction;
     }
 
     getReadableCountryName(countryCode) {
-
+        const data = this.props.data;
+        
+        if (data[countryCode] && data[countryCode].displayName)
+            return data[countryCode].displayName;
+            
+        return countryCode;
     }
 
     getReadableControlPointName(controlPointCode) {
@@ -115,7 +92,6 @@ class TechSidebar extends React.Component {
             .replace('<color=#FFFFFFFF><sprite name="metal_noble"></color>', "Noble Metals")
             .replace('<color=#FFFFFFFF><sprite name="radioactive"></color>', "Fissiles");
 
-
         return effectTemplateString;
     }
     
@@ -124,15 +100,15 @@ class TechSidebar extends React.Component {
         const data = this.props.data;
     
         let moduleDisplayElements = [];
-        let icon = getIcon(dataModule);
+        let icon = this.getIcon(dataModule);
 
-        if (icon !== undefined) {
+        if (icon) {
             moduleDisplayElements.push(React.createElement(
                 'img',
                 { src: "./icons/" + icon + ".png" }
             ));
         }
-        
+
         moduleDisplayElements.push(React.createElement(
             'p',
             null,
@@ -143,7 +119,7 @@ class TechSidebar extends React.Component {
             null,
             JSON.stringify(dataModule, null, 2)
         ));
-        
+
         return moduleDisplayElements;
     }
 
@@ -299,7 +275,7 @@ class TechSidebar extends React.Component {
             probabilities.push(React.createElement(
                 'h5',
                 null,
-                "Delta Unlock Chance: ",
+                "Unlock Chance Monthly Increase: ",
                 node.deltaUnlockChance
             ));
             probabilities.push(React.createElement(
@@ -452,7 +428,7 @@ class TechSidebar extends React.Component {
         let factionReq;
         if (node.factionPrereq && node.factionPrereq.filter(faction => faction !== "").length > 0) {
             let factionString = node.factionPrereq.filter(faction => faction !== "")
-                .map(this.getReadableFactionName).join(", ");
+                .map((faction) => this.getReadableFactionName(faction)).join(", ");
 
             factionReq = React.createElement(
                 "h4",
@@ -468,7 +444,7 @@ class TechSidebar extends React.Component {
                 "h4",
                 null,
                 "Required Nations: ",
-                node.requiresNation
+                this.getReadableCountryName(node.requiresNation)
             );
         }
 
