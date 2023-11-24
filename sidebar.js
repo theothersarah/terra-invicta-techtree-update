@@ -1,9 +1,119 @@
 class TechSidebar extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { node: {}, isolated: false, techTree: props.techTree, effects: props.effects };
+        this.state = { node: {}, isolated: false };
     }
 
+    getReadableEffect(dataName) {
+        const description = getLocalizationString("effect", dataName, "description");
+        
+        if (!description) {
+            return "effect." + dataName + ".description";
+        }
+        
+        const effectObj = this.findEffectByName(dataName);
+        const effectVal = effectObj ? effectObj.value : 0;
+        const effectStr = effectObj ? effectObj.strValue : "";
+
+        var replaceEffectTag = function(match) {
+            switch(match) {
+            case "{0}":
+                return effectVal.toString();
+                
+            case "{3}":
+                return effectVal.toLocaleString(locale, {style: "percent"});
+                
+            case "{4}":
+                return Math.abs((effectVal - 1.0)).toLocaleString(locale, {style: "percent"});
+                
+            case "{8}":
+                return Math.abs((effectVal - 1.0)).toLocaleString(locale, {style: "percent"});
+                
+            case "{13}":
+                return getReadable("region", effectStr, "displayName");
+                
+            case "{14}":
+                return "our faction";
+                
+            case "{18}":
+                return Math.abs((effectVal - 1.0)).toLocaleString(locale, {style: "percent"});
+                
+            case "{19}":
+                return (-effectVal).toString();
+                
+            default:
+                return match;
+            }
+        };
+        
+        const effectTemplateString = description
+            .replace(/^-/g, "")
+            .replace('<color=#FFFFFFFF><sprite name="mission_control"></color>', "Mission Control")
+            .replace('<color=#FFFFFFFF><sprite name="water"></color>', "Water")
+            .replace('<color=#FFFFFFFF><sprite name="volatiles"></color>', "Volatiles")
+            .replace('<color=#FFFFFFFF><sprite name="metal"></color>', "Metals")
+            .replace('<color=#FFFFFFFF><sprite name="metal_noble"></color>', "Noble Metals")
+            .replace('<color=#FFFFFFFF><sprite name="radioactive"></color>', "Fissiles")
+            .replace(/\{[0-9]*\}/g, replaceEffectTag.bind(this));
+
+        return effectTemplateString;
+    }
+    
+    getReadableSummary() {
+        const node = this.state.node;
+
+        let summary;
+        
+        if (node.isProject) {
+            summary = getLocalizationString("project", node.dataName, "summary");
+        } else {
+            summary = getLocalizationString("tech", node.dataName, "summary");
+        }
+
+        if (!summary) {
+            if (node.isProject) {
+                return "project." + node.dataName + ".summary";
+            } else {
+                 return "tech." + node.dataName + ".summary";
+            }
+            return "";
+        }
+
+        if (summary.match(/<.*module>/)) {
+            let summaryElements = [React.createElement(
+                'p',
+                null,
+                summary.replace(/<.*module>/, "")
+            )];
+            const dataModules = this.findModule(node.dataName);
+            dataModules.forEach(dataModule => {
+
+                summaryElements.push(React.createElement(
+                    'div',
+                    null,
+                    this.buildModuleDisplay(dataModule)
+                ));
+            });
+            return summaryElements;
+        } else {
+            return React.createElement(
+                'p',
+                null,
+                summary
+            );
+        }
+    }
+    
+    findModule(moduleName) {
+        let results = [];
+        for (let modType in templateData) {
+            templateData[modType].forEach(module => {
+                if (module.requiredProjectName === moduleName)
+                    results.push({"data": module, "type": modType});
+            });
+        }
+        return results;
+    }
     getIcon(dataModule) {
         if (dataModule.iconResource) {
             return dataModule.iconResource;
@@ -52,94 +162,11 @@ class TechSidebar extends React.Component {
             .concat(this.findBlockingTechs(techToSearch));
     }
 
-    getReadableFactionName(faction) {
-        const data = this.props.data;
-        
-        if (data[faction] && data[faction].displayName)
-            return data[faction].displayName;
-            
-        return faction;
-    }
-
-    getReadableCountryName(countryCode) {
-        const data = this.props.data;
-        
-        if (data[countryCode] && data[countryCode].displayName)
-            return data[countryCode].displayName;
-            
-        return countryCode;
-    }
-
-    getReadableRegionName(region) {
-        const data = this.props.data;
-        
-        if (data[region] && data[region].displayName)
-            return data[region].displayName;
-            
-        return region;
-    }
-
-    getReadableControlPointName(controlPointCode) {
-
-    }
-
-    getReadableEffect(effect) {
-        const data = this.props.data
-        if (!data[effect] || !data[effect].description) {
-            return effect;
-        }
-        
-        const effectObj = this.findEffectByName(effect);
-        const effectVal = effectObj ? effectObj.value : 0;
-        const effectStr = effectObj ? effectObj.strValue : "";
-        const operationStr = effectObj ? effectObj.operation : "";
-        
-        const regionStr = effectStr != "" ? this.getReadableRegionName(effectStr) : "";
-        
-        let effectValStr;
-        
-        if (operationStr == "") {
-            effectValStr = effectVal.toLocaleString(lang, {style: "percent"});
-        }
-        else if (operationStr == "Multiplicative") {
-            effectValStr = Math.abs((effectVal - 1.0)).toLocaleString(lang, {style: "percent"});
-        }
-        else if (operationStr == "Additive") {
-            if (Number.isInteger(effectVal)) {
-                effectValStr = effectVal;
-                
-                if (effectObj.contexts[0] == "ControlPointMaintenance") {
-                    effectValStr = Math.abs(effectValStr);
-                }
-            }
-            else {
-                effectValStr = effectVal.toLocaleString(lang, {style: "percent"});
-            }
-        }
-        else {
-            effectValStr = "";
-        }
-        
-        const effectTemplateString = data[effect].description
-            .replace(/^-/g, "")
-            .replace('<color=#FFFFFFFF><sprite name="mission_control"></color>', "Mission Control")
-            .replace('<color=#FFFFFFFF><sprite name="water"></color>', "Water")
-            .replace('<color=#FFFFFFFF><sprite name="volatiles"></color>', "Volatiles")
-            .replace('<color=#FFFFFFFF><sprite name="metal"></color>', "Metals")
-            .replace('<color=#FFFFFFFF><sprite name="metal_noble"></color>', "Noble Metals")
-            .replace('<color=#FFFFFFFF><sprite name="radioactive"></color>', "Fissiles")
-            .replace("{13}", regionStr)
-            .replace(/\{[0-9]*\}/g, effectValStr);
-
-        return effectTemplateString;
-    }
-    
     buildModuleDisplay(dataModule) {
         const node = this.state.node;
-        const data = this.props.data;
     
         let moduleDisplayElements = [];
-        let icon = this.getIcon(dataModule);
+        let icon = this.getIcon(dataModule.data);
 
         if (icon) {
             moduleDisplayElements.push(React.createElement(
@@ -151,53 +178,19 @@ class TechSidebar extends React.Component {
         moduleDisplayElements.push(React.createElement(
             'p',
             null,
-            data[dataModule.dataName].description
+            getReadable(dataModule.type, dataModule.data.dataName, "description")
         ));
         moduleDisplayElements.push(React.createElement(
             'pre',
             null,
-            JSON.stringify(dataModule, null, 2)
+            JSON.stringify(dataModule.data, null, 2)
         ));
 
         return moduleDisplayElements;
     }
 
-    getReadableSummary() {
-        const node = this.state.node;
-        const data = this.props.data;
-
-        if (!node || !data[node.dataName] || !data[node.dataName].summary) {
-            return "";
-        }
-
-        if (data[node.dataName].summary.match(/<.*module>/)) {
-            let summaryElements = [React.createElement(
-                'p',
-                null,
-                data[node.dataName].summary.replace(/<.*module>/, "")
-            )];
-            const dataModules = findModule(node.dataName);
-            dataModules.forEach(dataModule => {
-
-                summaryElements.push(React.createElement(
-                    'div',
-                    null,
-                    this.buildModuleDisplay(dataModule)
-                ));
-            });
-            return summaryElements;
-        } else {
-            return React.createElement(
-                'p',
-                null,
-                data[node.dataName].summary
-            );
-        }
-    }
-
     render() {
         const node = this.state.node;
-        const data = this.props.data;
 
         if (!node || !node.dataName) {
             return React.createElement(
@@ -303,25 +296,25 @@ class TechSidebar extends React.Component {
                 'h4',
                 null,
                 "Base Availability Chance: ",
-                node.factionAvailableChance
+                (node.factionAvailableChance / 100).toLocaleString(locale, {style: "percent"})
             ));
             probabilities.push(React.createElement(
                 'h5',
                 null,
                 "Initial Unlock Chance: ",
-                node.initialUnlockChance
+                (node.initialUnlockChance / 100).toLocaleString(locale, {style: "percent"})
             ));
             probabilities.push(React.createElement(
                 'h5',
                 null,
-                "Unlock Chance Monthly Increase: ",
-                node.deltaUnlockChance
+                "Monthly Unlock Chance Increase: ",
+                (node.deltaUnlockChance / 100).toLocaleString(locale, {style: "percent"})
             ));
             probabilities.push(React.createElement(
                 'h5',
                 null,
                 "Maximum Unlock Chance: ",
-                node.maxUnlockChance
+                (node.maxUnlockChance / 100).toLocaleString(locale, {style: "percent"})
             ));
         }
 
@@ -375,7 +368,7 @@ class TechSidebar extends React.Component {
                             className: "prereqButton" + (tech.researchDone ? " researchDone" : ""),
                             size: "small",
                             title: tech.isProject ? "Faction Project" : "Global Research",
-                            'aria-label': tech ? (tech.displayName + " "  + (tech.isProject ? "Faction Project" : "Global Research")) : "",
+                            'aria-label': tech ? tech.displayName + " "  + (tech.isProject ? "Faction Project" : "Global Research") : "",
                             color: tech.isProject ? "success" : "primary"
                         },
                         tech ? tech.displayName : ""
@@ -467,7 +460,7 @@ class TechSidebar extends React.Component {
         let factionReq;
         if (node.factionPrereq && node.factionPrereq.filter(faction => faction !== "").length > 0) {
             let factionString = node.factionPrereq.filter(faction => faction !== "")
-                .map((faction) => this.getReadableFactionName(faction)).join(", ");
+                .map((faction) => getReadable("faction", faction, "displayName")).join(", ");
 
             factionReq = React.createElement(
                 "h4",
@@ -483,7 +476,7 @@ class TechSidebar extends React.Component {
                 "h4",
                 null,
                 "Required Nations: ",
-                this.getReadableCountryName(node.requiresNation)
+                getReadable("nation", node.requiresNation, "displayName")
             );
         }
 
@@ -521,8 +514,15 @@ class TechSidebar extends React.Component {
             );
         }
 
-        let completionLabel, completionText;
-        if (data[node.dataName] && data[node.dataName].description) {
+        let completionLabel, completionText, completionString;
+        
+        if (node.isProject) {
+            completionString = getLocalizationString("project", node.dataName, "description");
+        } else {
+            completionString = getLocalizationString("tech", node.dataName, "description");
+        }
+        
+        if (completionString) {
             completionLabel = React.createElement(
                 'h4',
                 null,
@@ -532,7 +532,7 @@ class TechSidebar extends React.Component {
             completionText = React.createElement(
                 'p',
                 null,
-                data[node.dataName].description
+                completionString
             );
         }
 

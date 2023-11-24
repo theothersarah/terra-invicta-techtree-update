@@ -2,10 +2,10 @@ let network = null, data = [];
 let nodes = [], lateNodes = [], edges = [], lateEdges = [], techTree = [];
 let projects, techs, effects;
 let techSidebar, searchBox;
-let localizationData = {};
+let localizationStrings = {};
 let documentSearchIndex;
-let modules = {};
-let lang;
+let templateData = {};
+let lang, locale;
 
 const techCategories = {
     "Energy": {
@@ -40,6 +40,22 @@ const techCategories = {
         "icon": "tech_xeno_icon.png",
         "color": "#906cdc"
     }
+}
+
+function getLocalizationString(type, dataName, field) {
+    if (localizationStrings[type] && localizationStrings[type][dataName] && localizationStrings[type][dataName][field])
+        return localizationStrings[type][dataName][field];
+
+    return undefined;
+}
+
+function getReadable(type, dataName, field) {
+    const text = getLocalizationString(type, dataName, field);
+
+    if (text)
+        return text;
+
+    return type + "." + dataName + "." + field;
 }
 
 function draw() {
@@ -161,11 +177,7 @@ function draw() {
 
 function initSidebar() {
     if (!techSidebar) {
-        techSidebar = ReactDOM.render(React.createElement(TechSidebar, {
-            data: localizationData,
-            techTree: techTree,
-            effects: effects
-        }), document.getElementById("sidebar"));
+        techSidebar = ReactDOM.render(React.createElement(TechSidebar, {}), document.getElementById("sidebar"));
     }
 }
 
@@ -210,74 +222,95 @@ window.onload = init();
 // }
 
 function init() {
+    // Get language and locale from query string
     const urlParams = new URLSearchParams(window.location.search);
 
     lang = urlParams.get("lang");
-    if (lang == null) { lang = "en" };
 
+    if (lang == null)
+        lang = "en";
+
+    const locales = {
+        "chs": "zh",
+        "cht": "zh",
+        "deu": "de",
+        "en": "en",
+        "esp": "es",
+        "fr": "fr",
+        "jpn": "ja",
+        "pol": "pl",
+        "por": "pt"
+    };
+
+    locale = locales[lang];
+
+    // Fetch and parse localization files
     const localizationFiles = [
-        "TITechTemplate." + lang,
-        "TIProjectTemplate." + lang,
-        "TIEffectTemplate." + lang,
-        "TIBatteryTemplate." + lang,
-        "TIDriveTemplate." + lang,
-        "TIFactionTemplate." + lang,
-        "TIGunTemplate." + lang,
-        "TIHabModuleTemplate." + lang,
-        "TIHeatSinkTemplate." + lang,
-        "TILaserWeaponTemplate." + lang,
-        "TIMagneticGunTemplate." + lang,
-        "TIMissileTemplate." + lang,
-        "TINationTemplate." + lang,
-        "TIParticleWeaponTemplate." + lang,
-        "TIPlasmaWeaponTemplate." + lang,
-        "TIRegionTemplate." + lang,
-        "TIPowerPlantTemplate." + lang,
-        "TIRadiatorTemplate." + lang,
-        "TIShipArmorTemplate." + lang,
-        "TIShipHullTemplate." + lang,
-        "TIUtilityModuleTemplate." + lang,
+        {"filename": "TITechTemplate." + lang, "type": "tech"},
+        {"filename": "TIProjectTemplate." + lang, "type": "project"},
+        {"filename": "TIEffectTemplate." + lang, "type": "effect"},
+        {"filename": "TIBatteryTemplate." + lang, "type": "battery"},
+        {"filename": "TIDriveTemplate." + lang, "type": "drive"},
+        {"filename": "TIFactionTemplate." + lang, "type": "faction"},
+        {"filename": "TIGunTemplate." + lang, "type": "gun"},
+        {"filename": "TIHabModuleTemplate." + lang, "type": "habmodule"},
+        {"filename": "TIHeatSinkTemplate." + lang, "type": "heatsink"},
+        {"filename": "TILaserWeaponTemplate." + lang, "type": "laserweapon"},
+        {"filename": "TIMagneticGunTemplate." + lang, "type": "magneticgun"},
+        {"filename": "TIMissileTemplate." + lang, "type": "missile"},
+        {"filename": "TINationTemplate." + lang, "type": "nation"},
+        {"filename": "TIParticleWeaponTemplate." + lang, "type": "particleweapon"},
+        {"filename": "TIPlasmaWeaponTemplate." + lang, "type": "plasmaweapon"},
+        {"filename": "TIRegionTemplate." + lang, "type": "region"},
+        {"filename": "TIPowerPlantTemplate." + lang, "type": "powerplant"},
+        {"filename": "TIRadiatorTemplate." + lang, "type": "radiator"},
+        {"filename": "TIShipArmorTemplate." + lang, "type": "shiparmor"},
+        {"filename": "TIShipHullTemplate." + lang, "type": "shiphull"},
+        {"filename": "TIUtilityModuleTemplate." + lang, "type": "utilitymodule"}
     ];
 
-    const fetchLocalizationPromises = localizationFiles.map(loc => fetch("data/" + loc).then(res => res.text()).then(text => parseText(text)));
+    const fetchLocalizationPromises = localizationFiles.map(localization => fetch("data/" + localization.filename).then(res => res.text()).then(text => parselocalization(text, localization.type)));
 
-    const moduleFiles = [
-        {"path": "TIBilateralTemplate.json", "type": "bilateral"},
-        {"path": "TIDriveTemplate.json", "type": "drive"},
-        {"path": "TIEffectTemplate.json", "type": "effect"},
-        {"path": "TIGunTemplate.json", "type": "gun"},
-        {"path": "TIHabModuleTemplate.json", "type": "hab"},
-        {"path": "TIHeatSinkTemplate.json", "type": "heatsink"},
-        {"path": "TILaserWeaponTemplate.json", "type": "laser"},
-        {"path": "TIMagneticGunTemplate.json", "type": "magnetic"},
-        {"path": "TIMissileTemplate.json", "type": "missile"},
-        {"path": "TIParticleWeaponTemplate.json", "type": "particle"},
-        {"path": "TIPlasmaWeaponTemplate.json", "type": "plasma"},
-        {"path": "TIPowerPlantTemplate.json", "type": "power"},
-        {"path": "TIProjectTemplate.json", "type": "project"},
-        {"path": "TIRadiatorTemplate.json", "type": "radiator"},
-        {"path": "TIShipArmorTemplate.json", "type": "armor"},
-        {"path": "TIShipHullTemplate.json", "type": "hull"},
-        {"path": "TITechTemplate.json", "type": "tech"},
-        {"path": "TIUtilityModuleTemplate.json", "type": "utility"}
+    // Fetch and parse template files
+    const templateFiles = [
+        {"filename": "TIBilateralTemplate.json", "type": "bilateral"},
+        {"filename": "TIDriveTemplate.json", "type": "drive"},
+        {"filename": "TIEffectTemplate.json", "type": "effect"},
+        {"filename": "TIGunTemplate.json", "type": "gun"},
+        {"filename": "TIHabModuleTemplate.json", "type": "habmodule"},
+        {"filename": "TIHeatSinkTemplate.json", "type": "heatsink"},
+        {"filename": "TILaserWeaponTemplate.json", "type": "laserweapon"},
+        {"filename": "TIMagneticGunTemplate.json", "type": "magneticgun"},
+        {"filename": "TIMissileTemplate.json", "type": "missile"},
+        {"filename": "TIParticleWeaponTemplate.json", "type": "particleweapon"},
+        {"filename": "TIPlasmaWeaponTemplate.json", "type": "plasmaweapon"},
+        {"filename": "TIPowerPlantTemplate.json", "type": "powerplant"},
+        {"filename": "TIProjectTemplate.json", "type": "project"},
+        {"filename": "TIRadiatorTemplate.json", "type": "radiator"},
+        {"filename": "TIShipArmorTemplate.json", "type": "shiparmor"},
+        {"filename": "TIShipHullTemplate.json", "type": "shiphull"},
+        {"filename": "TITechTemplate.json", "type": "tech"},
+        {"filename": "TIUtilityModuleTemplate.json", "type": "utilitymodule"}
     ]
 
-    const fetchModulePromises = moduleFiles.map(mod => fetch("data/" + mod.path).then(res => res.text()).then(text => parseModule(text, mod.type)));
+    const fetchTemplatePromises = templateFiles.map(template => fetch("data/" + template.filename).then(res => res.text()).then(text => parseTemplate(text, template.type)));
 
-    Promise.all([].concat(fetchLocalizationPromises, fetchModulePromises)).then(() => {
+    // Wait for file fetching and parsing to complete
+    Promise.all([].concat(fetchLocalizationPromises, fetchTemplatePromises)).then(() => {
         hideSidebar();
 
-        effects = modules.effect;
-        techs = modules.tech;
-        projects = modules.project;
+        effects = templateData.effect;
+        techs = templateData.tech;
+        projects = templateData.project;
         
         projects.forEach(project => {project.isProject = true});
 
         [].concat(techs, projects).forEach((tech) => {
-            if (localizationData[tech.dataName] !== undefined)
-                tech.displayName = localizationData[tech.dataName].displayName;
-            else
-                tech.displayName = tech.friendlyName;
+            if (tech.isProject) {
+                tech.displayName = getReadable("project", tech.dataName, "displayName");
+            } else {
+                tech.displayName = getReadable("tech", tech.dataName, "displayName");
+            }
         });
 
         parseDefaults(() => {
@@ -296,22 +329,9 @@ function init() {
     });
 }
 
-function parseModule(module, modType) {
-    let modData = JSON.parse(module);
-    modData._modType = modType;
-    
-    modules[modType] = modData;
-}
-
-function findModule(moduleName) {
-    let results = [];
-    for (let modTypes in modules) {
-        modules[modTypes].forEach(module => {
-            if (module.requiredProjectName === moduleName)
-                results.push(module);
-        });
-    }
-    return results;
+function parseTemplate(text, templateType) {
+    let data = JSON.parse(text);
+    templateData[templateType] = data;
 }
 
 function initSearchBox() {
@@ -391,7 +411,7 @@ function parseSpecifiedNodes(group, callback) {
     }, 1);
 }
 
-function parseText(text) {
+function parselocalization(text, localizationType) {
     const lines = text.split("\n");
 
     lines.forEach(line => {
@@ -404,28 +424,32 @@ function parseText(text) {
         const keySplit = key.split(".");
         const keyId = keySplit[2];
 
-        if (!localizationData[keyId]) {
-            localizationData[keyId] = {};
+        if (!localizationStrings[localizationType]) {
+            localizationStrings[localizationType] = {};
+        }
+
+        if (!localizationStrings[localizationType][keyId]) {
+            localizationStrings[localizationType][keyId] = {};
         }
 
         if (keySplit[1] == "displayName") {
-            localizationData[keyId].displayName = value;
+            localizationStrings[localizationType][keyId].displayName = value;
         } else if (keySplit[1] == "summary") {
-            localizationData[keyId].summary = value;
+            localizationStrings[localizationType][keyId].summary = value;
         } else if (keySplit[1] == "description") {
-            localizationData[keyId].description = value;
+            localizationStrings[localizationType][keyId].description = value;
         }
     });
 }
 
 function getTechIconFile(techCategory) {
-    if (techCategories[techCategory] !== undefined)
+    if (techCategories[techCategory])
         return "icons/" + techCategories[techCategory].icon;
     return "";
 }
 
 function getTechBorderColor(techCategory) {
-    if (techCategories[techCategory] !== undefined)
+    if (techCategories[techCategory])
         return techCategories[techCategory].color;
     return "black";
 }
@@ -450,7 +474,7 @@ function parseNode(nodeType, dumpAllEdges) {
 
         let prereqCopy = [];
 
-        if (tech.prereqs !== undefined) {
+        if (tech.prereqs) {
             tech.prereqs.forEach(prereq => {
                 if (prereq === "" || !isValidNode(nodeType, prereq)) {
                     return;
@@ -508,7 +532,7 @@ function isValidNode(validNodes, checkNode) {
 function determineLevel(tech, validNodes) {
     let validPrereqs = [];
 
-    if (tech.prereqs !== undefined) {
+    if (tech.prereqs) {
         tech.prereqs.forEach(prereq => {
             if (prereq === "" || !isValidNode(validNodes, prereq))
                 return;
