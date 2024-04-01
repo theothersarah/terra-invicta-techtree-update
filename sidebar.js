@@ -357,11 +357,12 @@ class TechSidebar extends React.Component {
 
         let org;
         if (node.orgGranted && node.orgGranted !== "") {
+            let displayName = getLocalizationString("org", node.orgGranted, "displayName");
             org = React.createElement(
                 "h4",
                 null,
                 "Org granted: ",
-                node.orgGranted
+                displayName ? displayName : node.orgGranted
             );
         }
 
@@ -576,6 +577,30 @@ class TechSidebar extends React.Component {
                 effectElements
             );
         }
+        
+        let orgMarketDescription, orgMarketList;
+        let orgMarket = templateData["org"].filter(org => org.requiredTechName == node.dataName);
+        if (orgMarket.length > 0) {
+            let orgMarketElements = orgMarket.map(org => {
+                let displayName = getLocalizationString("org", org.dataName, "displayName");
+                return React.createElement(
+                    "li",
+                    { key: org },
+                    displayName ? displayName : org.dataName
+                );
+            });
+
+            orgMarketDescription = React.createElement(
+                "h4",
+                null,
+                "Orgs Added to Market"
+            );
+            orgMarketList = React.createElement(
+                "ul",
+                null,
+                orgMarketElements
+            );
+        }
 
         let completionLabel, completionText, completionString;
         
@@ -640,6 +665,8 @@ class TechSidebar extends React.Component {
             resourceLabel,
             resourceText,
             org,
+            orgMarketDescription,
+            orgMarketList,
 
             effectDescription,
             effectList,
