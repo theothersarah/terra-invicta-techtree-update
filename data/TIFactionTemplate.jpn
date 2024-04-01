@@ -29,7 +29,7 @@ TIFactionTemplate.leader.DestroyCouncil=ハンセ・カスティジョ
 TIFactionTemplate.leader.ExploitCouncil=ソレン・ファン・ヴェク
 TIFactionTemplate.leader.SubmitCouncil=ジュディス・ホウェル
 TIFactionTemplate.leader.AppeaseCouncil=キラン・バナジー
-TIFactionTemplate.leader.CooperateCouncil=李清照宰相
+TIFactionTemplate.leader.CooperateCouncil=李清照
 TIFactionTemplate.leader.EscapeCouncil=カリッド・アル-アシュガー
 TIFactionTemplate.leader.AlienCouncil=ウィンター・ソード
 TIFactionTemplate.fullLeader.ResistCouncil=フィオナ・アイオアディ司令官（レジスタンス）
@@ -51,9 +51,9 @@ TIFactionTemplate.leader.background.DestroyCouncil=将校
 TIFactionTemplate.leader.background.ExploitCouncil=大物実業家
 TIFactionTemplate.leader.background.EscapeCouncil=技術業界の実力者
 TIFactionTemplate.leader.background.SubmitCouncil=伝道師
-TIFactionTemplate.leader.background.AppeaseCouncil=政治家
+TIFactionTemplate.leader.background.AppeaseCouncil=要人
 TIFactionTemplate.leader.background.CooperateCouncil=科学者
-TIFactionTemplate.leader.description.ResistCouncil=大尉、王立軍情報軍団、2006年退任、工員（配属地不明、秘密情報部、2006-2007年）、米国テロ対策センター配属の秘密情報部連絡将校（2008-2009年）、所長（ラゴス、2009-2012年）、所長（イスラマバード、2012-2014年）、アフリカ情勢次官（2014-2015）、反政府グループ・シニアアドバイザー（配属地不明、2016年-現在）。
+TIFactionTemplate.leader.description.ResistCouncil=大尉、英国軍情報軍団、2006年退任、工員（配属地不明、秘密情報部、2006-2007年）、米国テロ対策センター配属の秘密情報部連絡将校（2008-2009年）、所長（ラゴス、2009-2012年）、所長（イスラマバード、2012-2014年）、アフリカ情勢次官（2014-2015）、反政府グループ・シニアアドバイザー（配属地不明、2016年-現在）。
 TIFactionTemplate.leader.description.DestroyCouncil=フォークランド紛争で空挺兵として徴募され、1982年にロングドン山の戦いで勇武勲章を授与される。米国軍事学校で講師として勤務（1985年）。1980年代から1990年代にかけて、エルサルバドル、ニカラグア、コロンビアで様々な反共産党特別部隊の兵科将校またはアドバイザーを務める。2000年代はペンタゴンのラテンアメリカ政策局に勤務。1980年代前半のコンドル作戦中の作戦に関する戦争犯罪の疑いで、2015年にブエノスアイレスで短期間刑務所に収監される。2016年に無罪判決が言い渡された。
 TIFactionTemplate.leader.description.ExploitCouncil=2004年から現在に至るまで、兵器製造企業のウエスタン兵器で各部門に勤務。2014年以降は取締役会会長。ダイアモンド採掘に関し、ボツワナ政府とナミビア政府とパートナー提携を結ぶDWKY産業の所有権の若干を握る。手がける事業の労働規則に関し、しばしば社会活動系のメディアから批評されるが、警察による調査が行われたことはない。
 TIFactionTemplate.leader.description.EscapeCouncil=オックスフォード大学物理哲学科修了（2008年）、アル・ザービ衛星通信投資主任、エミレーツ土星ミッション次長（2017-2019年）。宇宙開発に関する複数のアマチュア組織と出版組織に出資していることで良く知られる。
@@ -68,13 +68,13 @@ TIFactionTemplate.CampaignStartHeadline.AppeaseCouncil=人類の保存
 TIFactionTemplate.CampaignStartHeadline.CooperateCouncil=エイリアンと連絡を取る
 TIFactionTemplate.CampaignStartHeadline.EscapeCouncil=太陽系を脱出
 TIFactionTemplate.CampaignStartSummary=我々は{0}としてキャンペーンを開始した。
-TIFactionTemplate.CampaignStart.ResistCouncil=ごきげんよう、{0}。評議会があなたを{1}のリーダーに任命したことをここに喜んで報告する。私は{2}、あなたの参謀長だ。<br/><br/>世界の大多数の人間が今回のエイリアンの地球到来を興味深く傍観している中、少数で結成された我々のグループは、エイリアン船の{3}での墜落、そしてその後の人々の失踪は潜在的な脅威を拡大させるのではないかと睨んでいる。我々の目的は、これを調査する能力を誇り、かつ必要とあれば、エイリアンの危険に対抗する戦闘力を備える国際機関を創設することだ。<br/><br/><h>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。</h><br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目的を確認することができる。
-TIFactionTemplate.CampaignStart.DestroyCouncil=報告を行う、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの副官だ。<br/><br/>{3}におけるエイリアンの到来は、人類史上最大の危機を意味する。これに対応するため、我々は人類の保護を最優先する軍人、諜報員、科学関係の人員で構成される小さなグループを作った。我々のメンバーを増やし、影響力を高め、エイリアンとその活動を調査し、どんな手段を使っても地球外から押し寄せる脅威から人類を守らなければならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。
-TIFactionTemplate.CampaignStart.ExploitCouncil=ようこそ、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの最高執行責任者だ。<br/><br/>我々は大きな転換期を迎えている。{3}におけるエイリアンの到来は、今後の世界情勢を変えるだろう。おそらく、抜本的に。これに伴い出現する機会に対し、それがどのようなものであっても適切に対応できるように備えなくてはならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。
-TIFactionTemplate.CampaignStart.AppeaseCouncil=ようこそ、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの補佐官だ。<br/><br/>{3}におけるエイリアンの到来は、人類がこれまでに直面したことのない危機的な脅威を意味する。広大な宇宙を渡り、我々の惑星に到達することができる種族は、我々の能力を遥かに凌駕するだろう。我々は、全人類の生命を危険に曝すことの意味を理解する様々なバックグラウンドを持つボランティアの集まりだ。人類はエイリアンに寄り添い、最も適切な協調政策を確立しなくてはならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。
-TIFactionTemplate.CampaignStart.CooperateCouncil=こんにちは、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたのプロヴォストだ。<br/><br/>我々が生きる現在は混沌、そして危険と機会に満ちている。{3}に現れたエイリアンの到来は多大な善悪をもたらす可能性を秘めているが、今のところ我々にはこれがどちらに転ぶかを知ることができない。<br/><br/>あなたがどのように評議員に指示を出すか、私はアドバイスをするつもりなどない。あなたが今いるポジションに辿り着けたということは、私より遥かに優れた資質を備えていることを意味するのだから。
-TIFactionTemplate.CampaignStart.EscapeCouncil=ご挨拶申し上げる、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの副局長だ。<br/><br/>{3}に墜落したエイリアン船は非常に大きな機会と危機を象徴している。このため、我々は宇宙物理学、諜報分析、宇宙開発に秀でた少数精鋭からなる小さなグループを結成した。このエイリアンがどのような種族なのか、どこから来たのか、そして地球で何をしようと企むのかを解明しなければならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。
-TIFactionTemplate.CampaignStart.SubmitCouncil=あなたに神のご加護があらんことを、{0}。評議会があなたを我々の職務代行者、そして軍事司令官として任命した。私は{2}、あなたのアテンダントかつガイドだ。<br/><br/>あなたは、{3}で起きたことにショック、もしくは恐怖を感じているだろう。それは自然なことだ。全てが変わってしまった。昔の世界は消滅した。しかし、新たな世界が訪れようともしている。我々の一人一人がそれぞれの役割を果たさなければならない。そして、あなたの役割は最も重大だ。<br/><br/>私と{1}について色々な噂を聞いたことがあると思う。色々な質問があるだろうが、私も全てを説明することができない。少なくとも今のところは。私の指示の裏には、壮大な目的が隠されていることを認識しておいてほしい。機が熟したら全てを話すことを約束する。それまでは、私を信用してほしい。
+TIFactionTemplate.CampaignStart.ResistCouncil=ごきげんよう、{0}。評議会があなたを{1}のリーダーに任命したことをここに喜んで報告する。私は{2}、あなたの参謀長だ。<br/><br/>世界の大多数の人間が今回のエイリアンの地球到来を興味深く傍観している中、少数で結成された我々のグループは、エイリアン船の{3}での墜落、そしてその後の人々の失踪は潜在的な脅威を拡大させるのではないかと睨んでいる。我々の目的は、これを調査する能力を誇り、かつ必要とあれば、エイリアンの危険に対抗する戦闘力を備える国際機関を創設することだ。<br/><br/><h>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。</h><br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目的を確認することができる。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.DestroyCouncil=報告を行う、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの副官だ。<br/><br/>{3}におけるエイリアンの到来は、人類史上最大の危機を意味する。これに対応するため、我々は人類の保護を最優先する軍人、諜報員、科学関係の人員で構成される小さなグループを作った。我々のメンバーを増やし、影響力を高め、エイリアンとその活動を調査し、どんな手段を使っても地球外から押し寄せる脅威から人類を守らなければならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.ExploitCouncil=ようこそ、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの最高執行責任者だ。<br/><br/>我々は大きな転換期を迎えている。{3}におけるエイリアンの到来は、今後の世界情勢を変えるだろう。おそらく、抜本的に。これに伴い出現する機会に対し、それがどのようなものであっても適切に対応できるように備えなくてはならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.AppeaseCouncil=ようこそ、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの補佐官だ。<br/><br/>{3}におけるエイリアンの到来は、人類がこれまでに直面したことのない危機的な脅威を意味する。広大な宇宙を渡り、我々の惑星に到達することができる種族は、我々の能力を遥かに凌駕するだろう。我々は、全人類の生命を危険に曝すことの意味を理解する様々なバックグラウンドを持つボランティアの集まりだ。人類はエイリアンに寄り添い、最も適切な協調政策を確立しなくてはならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.CooperateCouncil=こんにちは、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたのプロヴォストだ。<br/><br/>我々が生きる現在は混沌、そして危険と機会に満ちている。{3}に現れたエイリアンの到来は多大な善悪をもたらす可能性を秘めているが、今のところ我々にはこれがどちらに転ぶかを知ることができない。<br/><br/>あなたがどのように評議員に指示を出すか、私はアドバイスをするつもりなどない。あなたが今いるポジションに辿り着けたということは、私より遥かに優れた資質を備えていることを意味するのだから。// rank, council name, leader name
+TIFactionTemplate.CampaignStart.EscapeCouncil=ご挨拶申し上げる、{0}。評議会があなたを{1}のリーダーに任命した。私は{2}、あなたの副局長だ。<br/><br/>{3}に墜落したエイリアン船は非常に大きな機会と危機を象徴している。このため、我々は宇宙物理学、諜報分析、宇宙開発に秀でた少数精鋭からなる小さなグループを結成した。このエイリアンがどのような種族なのか、どこから来たのか、そして地球で何をしようと企むのかを解明しなければならない。<br/><br/>{4}地域の墜落現場にいち早く評議員を派遣し、そこを調査させるべきだろう。他の評議員に関しては、各国家で影響力を獲得し、資源を我々の活動のために供給するよう仕向けるべきだ。<br/><br/>スクリーンの左上にある派閥のシンボルをクリックすると、いつでも目標を確認することができる。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.SubmitCouncil=あなたに神のご加護があらんことを、{0}。評議会があなたを我々の職務代行者、そして軍事司令官として任命した。私は{2}、あなたのアテンダントかつガイドだ。<br/><br/>あなたは、{3}で起きたことにショック、もしくは恐怖を感じているだろう。それは自然なことだ。全てが変わってしまった。昔の世界は消滅した。しかし、新たな世界が訪れようともしている。我々の一人一人がそれぞれの役割を果たさなければならない。そして、あなたの役割は最も重大だ。<br/><br/>私と{1}について色々な噂を聞いたことがあると思う。色々な質問があるだろうが、私も全てを説明することができない。少なくとも今のところは。私の指示の裏には、壮大な目的が隠されていることを認識しておいてほしい。機が熟したら全てを話すことを約束する。それまでは、私を信用してほしい。// rank, council name, leader name
 TIFactionTemplate.Introduction.Summary=我々は{0}に遭遇した。
 TIFactionTemplate.Introduction.ResistCouncil=我々は{0}に遭遇した。<br/><br/>このグループのリーダーたちは、エイリアンが、人類が自らの未来を形成する能力に対する脅威であると確信している。そして、隠密にエイリアンと戦う準備を始めている。<br/><br/>{4}<br/>   - {1} {2} {3}
 TIFactionTemplate.Introduction.DestroyCouncil=我々は{0}に遭遇した。<br/><br/>この派閥は、地球上の全他人恐怖症者をメンバーにした。この派閥をサポートする者たちは、エイリアン到来に対する嫌悪感を大っぴらに宣言している。さらに、エイリアンと交信を取ろうとする人間を威嚇するにまで状況がエスカレートした。<br/><br/>{4}<br/>   - {1} {2} {3}
@@ -230,7 +230,7 @@ TIFactionTemplate.Diplomacy.Appease.Cooperate.Conflict=違う時代に生きて�
 TIFactionTemplate.Diplomacy.Appease.Cooperate.Tolerance=究極的に言って、我々が求めているものは同じだ。我々のどちらかがそれを達成することを願おうじゃないか。
 TIFactionTemplate.Diplomacy.Appease.Submit.War=無条件降伏など犬になったも同然だ。そんなことは許されない。 
 TIFactionTemplate.Diplomacy.Appease.Submit.Conflict=侵略者は崇拝する対象ではなく、恐れるべきの対象という観点にたどり着けないのであれば、我々に交渉の余地はないだろう。 
-TIFactionTemplate.Diplomacy.Appease.Submit.Tolerance=崇拝が更なる暴力を抑制すると本当に信じているのであれば、我々はお前らを止めたりしない。
+TIFactionTemplate.Diplomacy.Appease.Submit.Tolerance=崇拝が更なる暴力を抑制できると本当に信じているのであれば、我々はお前らを止めたりしない。
 TIFactionTemplate.Diplomacy.Submit.Resist=我々の救世主を破壊しようとする者は破壊されなければならない。
 TIFactionTemplate.Diplomacy.Submit.Resist.War=彼らの到来の邪魔はさせない！
 TIFactionTemplate.Diplomacy.Submit.Destroy=我々はテロリストらと何ら関係を持たない。
@@ -249,7 +249,7 @@ TIFactionTemplate.Diplomacy.Submit.Appease.Conflict=彼らを恐れるのでは�
 TIFactionTemplate.Diplomacy.Submit.Appease.Tolerance=彼らの愛を拒むお前らも、彼らの優位性は認めるようだな。それで十分だ…今のところはな。
 TIFactionTemplate.Diplomacy.Alien.Submit.Tolerance=やあ、忠実な僕よ（<color=#9964FF>跪け、家畜よ</color>）。お前は愛されている（<color=#9964FF>お前は無に等しい</color>）。
 TIFactionTemplate.Diplomacy.Alien.Appease.War=降服せよ（<color=#9964FF>死ね</color>）。
-TIFactionTemplate.Diplomacy.Alien.Appease.Conflict=服従=サバイバル（<color=#9964FF>抵抗=破滅</color>）。
+TIFactionTemplate.Diplomacy.Alien.Appease.Conflict=服従=サバイバル（<color=#9964FF>抵抗=破滅</color>。
 TIFactionTemplate.Diplomacy.Alien.Appease.Tolerance=お前の存在は大目に見てやろう（<color=#9964FF>今のところ脅威ではない</color>）。
 TIFactionTemplate.Diplomacy.Alien.Cooperate.War=うざったい障害物（<color=#9964FF>脅威を排除</color>）。
 TIFactionTemplate.Diplomacy.Alien.Cooperate.Conflict=止めろ。止めろ。止めろ。（<color=#9964FF>脅威。脅威。脅威</color>）。

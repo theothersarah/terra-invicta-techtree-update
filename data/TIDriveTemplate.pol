@@ -626,3 +626,5 @@ TIDriveTemplate.EV=Prędkość wylotowa:<rcol>{0} km/s (klasyfikacja: {1})</rcol
 TIDriveTemplate.Efficiency=Wydajność energetyczna:<rcol>{0}</rcol>
 TIDriveTemplate.RequiredPowerPlant=Wymagana siłownia:<rcol>{0}</rcol>
 TIDriveTemplate.CombatThrust=Ciąg bojowy:<rcol>{0}x ({1} N)</rcol>
+TIDriveTemplate.OpenCycle=Ten napęd wykorzystuje <h>chłodzenie w obiegu otwartym</h>, co oznacza, że ciepło jest odprowadzane poprzez czynnik pędny. Statek z takim napędem do bezpiecznego działania potrzebuje minimalnej liczby radiatorów. Chłodzenie w obiegu otwartym jest typowe dla silników o wysokim ciągu i niskiej prędkości wylotowej.
+TIDriveTemplate.ClosedCycle=Ten napęd wykorzystuje <h>chłodzenie w obiegu zamkniętym</h>, co oznacza, że do odprowadzania ciepła wymaga ciężkich radiatorów. Takiego chłodzenia wymagają zazwyczaj napędy z wysoką prędkością wylotową.

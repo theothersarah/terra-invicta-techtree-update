@@ -626,3 +626,5 @@ TIDriveTemplate.EV=排氣速度：<rcol>{0} 公里/秒 (評分：{1})</rcol>
 TIDriveTemplate.Efficiency=電能使用效率：<rcol>{0}</rcol>
 TIDriveTemplate.RequiredPowerPlant=所需動力設備：<rcol>{0}</rcol>
 TIDriveTemplate.CombatThrust=戰鬥推進力：<rcol>{0}x ({1} 牛頓)</rcol>
+TIDriveTemplate.OpenCycle=此驅動器使用<h>開放式冷卻</h>，這意味著其熱氣會透過推進劑排出。具備此驅動器的船艦只需最小型的散熱器即可安全運行。高推進力且低排氣速度的驅動器通常會使用此冷卻方式。
+TIDriveTemplate.ClosedCycle=此驅動器使用<h>封閉式冷卻</h>，這意味著船艦需要重型散熱器來排出廢熱。高排氣速度的驅動器通常會使用此方式來冷卻。

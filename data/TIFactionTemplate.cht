@@ -14,7 +14,7 @@ TIFactionTemplate.adjective.SubmitCouncil=服從派
 TIFactionTemplate.adjective.AppeaseCouncil=求安派
 TIFactionTemplate.adjective.CooperateCouncil=學院派
 TIFactionTemplate.adjective.EscapeCouncil=出走派
-TIFactionTemplate.adjective.AlienCouncil=外星
+TIFactionTemplate.adjective.AlienCouncil=外星人
 TIFactionTemplate.adjective.AlienCouncil.Later=九頭蛇
 TIFactionTemplate.leaderAddress.ResistCouncil=指揮官
 TIFactionTemplate.leaderAddress.DestroyCouncil=上校
@@ -24,13 +24,13 @@ TIFactionTemplate.leaderAddress.AppeaseCouncil=特派員
 TIFactionTemplate.leaderAddress.CooperateCouncil=總理大臣
 TIFactionTemplate.leaderAddress.EscapeCouncil=董事
 TIFactionTemplate.leaderAddress.AlienCouncil=戰爭大師
-TIFactionTemplate.leader.ResistCouncil=Fiona Ayoade
-TIFactionTemplate.leader.DestroyCouncil=Hanse Castillo
-TIFactionTemplate.leader.ExploitCouncil=Soren Van Wyk
-TIFactionTemplate.leader.SubmitCouncil=Judith Howell
-TIFactionTemplate.leader.AppeaseCouncil=Kiran Banerjee
-TIFactionTemplate.leader.CooperateCouncil=Li Qingzhao
-TIFactionTemplate.leader.EscapeCouncil=Khalid Al-Ashgar
+TIFactionTemplate.leader.ResistCouncil=費歐娜·艾尤德
+TIFactionTemplate.leader.DestroyCouncil=漢澤·卡斯提歐
+TIFactionTemplate.leader.ExploitCouncil=索倫·范·威克
+TIFactionTemplate.leader.SubmitCouncil=茱帝絲·豪爾
+TIFactionTemplate.leader.AppeaseCouncil=基蘭·巴納吉
+TIFactionTemplate.leader.CooperateCouncil=李清照
+TIFactionTemplate.leader.EscapeCouncil=凱利德·阿許加爾
 TIFactionTemplate.leader.AlienCouncil=寒冬之劍
 TIFactionTemplate.fullLeader.ResistCouncil=抵抗派指揮官費歐娜·艾尤德
 TIFactionTemplate.fullLeader.DestroyCouncil=人類派上校漢澤·卡斯提歐
@@ -53,7 +53,7 @@ TIFactionTemplate.leader.background.EscapeCouncil=科技巨頭
 TIFactionTemplate.leader.background.SubmitCouncil=佈道者
 TIFactionTemplate.leader.background.AppeaseCouncil=政客
 TIFactionTemplate.leader.background.CooperateCouncil=科學家
-TIFactionTemplate.leader.description.ResistCouncil=2006 年，皇家陸軍情報團上尉退役；2006 到 2007 年，未公開地點，秘密情報單位案件承辦人；2008 到 2009 年，情報單位與美國反恐中心聯絡人；2009 到 2012 年，拉哥斯情報站長；2012 到 2014 年，伊斯蘭馬巴德情報站長；2014 到 2015 年，非洲事務副處長；2016 年至今，未公開地點，叛亂組織資深顧問。
+TIFactionTemplate.leader.description.ResistCouncil=2006 年，英國陸軍情報團上尉退役；2006 到 2007 年，未公開地點，秘密情報單位案件承辦人；2008 到 2009 年，情報單位與美國反恐中心聯絡人；2009 到 2012 年，拉哥斯情報站長；2012 到 2014 年，伊斯蘭馬巴德情報站長；2014 到 2015 年，非洲事務副處長；2016 年至今，未公開地點，叛亂組織資深顧問。
 TIFactionTemplate.leader.description.DestroyCouncil=曾在福克蘭群島戰爭擔任傘兵，1982 年於隆登山戰役獲頒英勇獎。1985 年於美國陸軍學校受訓。在 80 年代晚期及 90 年代間，在薩爾瓦多、尼加拉瓜及哥倫比亞諸多反共特種作戰單位及民兵部隊擔任兵科軍官或顧問。在 2000 年代任職於五角大廈的拉丁美洲政策部門。2015 年，因涉嫌在 80 年代早期的兀鷹行動中犯下戰爭罪，曾短暫在布宜諾斯艾利斯遭到監禁，並於 2016 年無罪釋放。
 TIFactionTemplate.leader.description.ExploitCouncil=2004 年至今在軍火製造商西部兵工廠中擔任諸多職位，包含自 2014 起擔任董事會主席。在 DWKY 工業公司擁有少數股權，該公司與波札那及納米比亞政府合作開採鑽石。他偶爾會因為鞏固自身利益的勞工措施受到社運媒體的批評，但目前並未聽說有任何正式調查。
 TIFactionTemplate.leader.description.EscapeCouncil=2008 年取得牛津大學物理暨哲學碩士學位；阿爾札比衛星通訊主要投資人；2017 到 2019 年，阿聯酋火星任務副行政主任。數個太空愛好者組織及刊物的知名贊助者。
@@ -68,13 +68,13 @@ TIFactionTemplate.CampaignStartHeadline.AppeaseCouncil=保有人性
 TIFactionTemplate.CampaignStartHeadline.CooperateCouncil=與外星人溝通
 TIFactionTemplate.CampaignStartHeadline.EscapeCouncil=逃離太陽系
 TIFactionTemplate.CampaignStartSummary=我們已經以{0}的身分展開活動。
-TIFactionTemplate.CampaignStart.ResistCouncil={0}，你好：我很榮幸向你報告，特使團已經指派你擔任{1}的領袖。我是你的參謀長{2}。<br/><br/>雖然全球大部分地區正因為外星種族抵達地球而神魂顛倒，但我們是少數認為外星人迫降{3}和失蹤可能代表潛在威脅的人。我們準備成立一個能夠調查外星的潛在威脅，並在必要時與之對抗的國際組織。<br/><br/><h>我建議儘快派遣一位特使前往{4}地區的墜毀地點進行調查。其他的特使或許最好努力在國際間取得影響力，與可能提供資源給我們的國家建立關係。</h><br/><br/>你隨時可以點按位於畫面左上角、我方陣營的符號，檢視我們的目標。
-TIFactionTemplate.CampaignStart.DestroyCouncil={0}，有事稟報。特使團已經將你任命為{1}的領袖。我是你的副將軍{2}。<br/><br/>外星人抵達{3}代表著我們人類歷史上最大的危機。因此，我們召集了一小群軍事、情報及科學人員，打算盡力保護我們的星球。我們必須壯大我們的勢力和影響力，調查外星人和他們的活動，並不惜動用一切手段來抵禦外星人的威脅。<br/><br/>我建議我們盡快派遣一位特使去調查{4}地區的墜毀地點。你可以運用我們諸位特使的知識，試著在能為我們的願景貢獻資源的國家建立影響力。<br/><br/>按一下畫面左上角的陣營標誌，即可隨時查看我們的目標。
-TIFactionTemplate.CampaignStart.ExploitCouncil={0}，歡迎。特使團已任命你為{1}的領袖。我是你的首席營運官{2}。<br/><br/>我們活在一個改變的時代。外星人抵達{3}會讓我們的世界變得不同，而且這個變化可能非常劇烈，我們必須做好準備，對任何可能出現的機會做出適當的回應。<br/><br/>我建議我們盡快派遣一位特使去調查{4}地區的墜毀地點。你可以運用我們諸位特使的知識，試著在能貢獻資源、促進我們利益的國家建立影響力。<br/><br/>按一下畫面左上角的陣營標誌，即可隨時查看我們的目標。
-TIFactionTemplate.CampaignStart.AppeaseCouncil={0}，歡迎。特使團已任命你為{1}的領袖。我是你的副手{2}。<br/><br/>外星人抵達{3}是人類歷來面臨的最大危機。任何能夠穿越廣大宇宙並抵達我們星球的物種，肯定比我們強大許多。我們是一群來自不同背景的志工，深知我們不能拿整個人類物種的生命當做賭注。我們必須和外星人合作，和他們達成最理想的共識。<br/><br/>我建議我們盡快派遣一位特使去調查{4}地區的墜毀地點。你可以運用我們諸位特使的知識，試著在能為我們的願景貢獻資源的國家建立影響力。<br/><br/>按一下畫面左上角的陣營標誌，即可隨時查看我們的目標。
-TIFactionTemplate.CampaignStart.CooperateCouncil=你好，{0}。特使團已任命你為{1}的領袖。我是你的憲兵長{2}。<br/><br/>我們生活在混亂的時代，同時面臨危險和機會。外星人抵達{3}可能是好事，也可能是壞事，但我們現在還沒辦法確認何者為真。<br/><br/>至於你要怎麼運用我們特使的專業知識，我不會冒昧地給你建議。從你所處的職位來看，你的專業知識一定比我更豐富。
-TIFactionTemplate.CampaignStart.EscapeCouncil={0}，你好。特使團已任命你為{1}的領袖。我是你的副行政官{2}。<br/><br/>外星人迫降在{3}，既是絕佳的機會，也是極大的危險。因此，我們集結了一小群精通天體物理、情報分析和太空探索的專家。我們必須了解這些生物、他們的來歷，以及他們在地球上的計畫。<br/><br/>我建議我們盡快派遣一位特使去調查位在{4}地區的墜毀地點。你可以利用我們其他特使的知識，試著在能為我們的願景貢獻資源的國家獲得影響力。<br/><br/>點擊畫面左上角的陣營標誌，即可隨時查看我們的目標。
-TIFactionTemplate.CampaignStart.SubmitCouncil=你好，{0}。特使團已任命你為臨時代表和軍事指揮官。我是你的助手暨嚮導{2}。<br/><br/>發生在{3}的事件想必讓你感到很不安，甚至是害怕。這很正常，畢竟一切都變了，過去的生活將一去不復返。不過新世界就要降臨，每個人都有自己需要完成的任務，而你將會承擔最重大的責任之一。<br/><br/>我想你已經聽說過很多關於我和{1}的事了，而且應該也包括壞事。你肯定有很多疑問，但我恐怕無法解釋一切。現在還不行。你只需要知道，在我給你的指示背後有更崇高的目的。我保證我總有一天會把一切解釋給你聽。直到那天來臨之前，希望你能相信我。
+TIFactionTemplate.CampaignStart.ResistCouncil={0}，你好：我很榮幸向你報告，特使團已任命你為{1}的領袖。我是你的參謀長{2}。<br/><br/>雖然世界上的大部分人都還在對外星物種的到來感到驚奇，但是以我們為代表的小部分人認為外星人迫降{3}和失蹤可能意味著潛在的威脅。我們準備成立一個國際組織調查外星人的潛在威脅，並在必要時與之對抗。<br/><br/><h>我建議我們盡快派遣一位特使去調查{4}地區的墜毀地點。與此同時，你也可以運用其他的特使，試著在能為我們的願景貢獻資源的國家建立影響力。</h><br/><br/>按一下畫面左上角的陣營標誌，即可隨時查看我們的目標。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.DestroyCouncil={0}，有事稟報。特使團已經將你任命為{1}的領袖。我是你的副將軍{2}。<br/><br/>外星人抵達{3}代表著我們人類歷史上最大的危機。因此，我們召集了一小群軍事、情報及科學人員，打算盡力保護我們的星球。我們必須壯大我們的勢力和影響力，調查外星人和他們的活動，並不惜動用一切手段來抵禦外星人的威脅。<br/><br/>我建議我們盡快派遣一位特使去調查{4}地區的墜毀地點。你可以運用我們諸位特使的知識，試著在能為我們的願景貢獻資源的國家建立影響力。<br/><br/>按一下畫面左上角的陣營標誌，即可隨時查看我們的目標。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.ExploitCouncil={0}，歡迎。特使團已任命你為{1}的領袖。我是你的首席營運官{2}。<br/><br/>我們活在一個改變的時代。外星人抵達{3}會讓我們的世界變得不同，而且這個變化可能非常劇烈，我們必須做好準備，對任何可能出現的機會做出適當的回應。<br/><br/>我建議我們盡快派遣一位特使去調查{4}地區的墜毀地點。你可以運用我們諸位特使的知識，試著在能貢獻資源、促進我們利益的國家建立影響力。<br/><br/>按一下畫面左上角的陣營標誌，即可隨時查看我們的目標。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.AppeaseCouncil={0}，歡迎。特使團已任命你為{1}的領袖。我是你的副手{2}。<br/><br/>外星人抵達{3}是人類歷來面臨的最大危機。任何能夠穿越廣大宇宙並抵達我們星球的物種，肯定比我們強大許多。我們是一群來自不同背景的志工，深知我們不能拿整個人類物種的生命當做賭注。我們必須和外星人合作，和他們達成最理想的共識。<br/><br/>我建議我們盡快派遣一位特使去調查{4}地區的墜毀地點。你可以運用我們諸位特使的知識，試著在能為我們的願景貢獻資源的國家建立影響力。<br/><br/>按一下畫面左上角的陣營標誌，即可隨時查看我們的目標。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.CooperateCouncil=你好，{0}。特使團已任命你為{1}的領袖。我是你的憲兵長{2}。<br/><br/>我們生活在混亂的時代，同時面臨危險和機會。外星人抵達{3}可能是好事，也可能是壞事，但我們現在還沒辦法確認何者為真。<br/><br/>至於你要怎麼運用我們特使的專業知識，我不會冒昧地給你建議。從你所處的職位來看，你的專業知識一定比我更豐富。// rank, council name, leader name
+TIFactionTemplate.CampaignStart.EscapeCouncil={0}，你好。特使團已任命你為{1}的領袖。我是你的副行政官{2}。<br/><br/>外星人迫降在{3}，既是絕佳的機會，也是極大的危險。因此，我們集結了一小群精通天體物理、情報分析和太空探索的專家。我們必須了解這些生物、他們的來歷，以及他們在地球上的計畫。<br/><br/>我建議我們盡快派遣一位特使去調查位在{4}地區的墜毀地點。你可以利用我們其他特使的知識，試著在能為我們的願景貢獻資源的國家獲得影響力。<br/><br/>點擊畫面左上角的陣營標誌，即可隨時查看我們的目標。 // rank, council name, leader name
+TIFactionTemplate.CampaignStart.SubmitCouncil=你好，{0}。特使團已任命你為臨時代表和軍事指揮官。我是你的助手暨嚮導{2}。<br/><br/>發生在{3}的事件想必讓你感到很不安，甚至是害怕。這很正常，畢竟一切都變了，過去的生活將一去不復返。不過新世界就要降臨，每個人都有自己需要完成的任務，而你將會承擔最重大的責任之一。<br/><br/>我想你已經聽說過很多關於我和{1}的事了，而且應該也包括壞事。你肯定有很多疑問，但我恐怕無法解釋一切。現在還不行。你只需要知道，在我給你的指示背後有更崇高的目的。我保證我總有一天會把一切解釋給你聽。直到那天來臨之前，希望你能相信我。// rank, council name, leader name
 TIFactionTemplate.Introduction.Summary=我們遇見了{0}。
 TIFactionTemplate.Introduction.ResistCouncil=我們遇見了{0}。<br/><br/>此團體的領袖深信外星人對人類是威脅，將會阻止人類掌握自己的未來，他們正在暗中準備和外星人作戰。<br/><br/>{4}<br/>   - {1} {2} {3}
 TIFactionTemplate.Introduction.DestroyCouncil=我們遇見了{0}。<br/><br/>此陣營集結了這個世界上所有的排外主義者。他們的追隨者一律反對外星人的到來，甚至還威脅那些和外星人溝通的支持者。<br/><br/>{4}<br/>   - {1} {2} {3}
@@ -251,6 +251,9 @@ TIFactionTemplate.Diplomacy.Alien.Submit.Tolerance=你好，忠實的僕從 (<co
 TIFactionTemplate.Diplomacy.Alien.Appease.War=屈服 (<color=#9964FF>去死</color>)。
 TIFactionTemplate.Diplomacy.Alien.Appease.Conflict=服從＝存活（<color=#9964FF>反抗＝滅亡</color>。
 TIFactionTemplate.Diplomacy.Alien.Appease.Tolerance=我們容忍你的存在 (<color=#9964FF>你不具威脅</color>)。
-TIFactionTemplate.Diplomacy.Alien.Cooperate.War=討厭的障礙 (<color=#9964FF>除掉威脅</color>。
-TIFactionTemplate.Diplomacy.Alien.Cooperate.Conflict=停止，停止，停止。 (<color=#9964FF>威脅，威脅，威脅。</color>
-TIFactionTemplate.Diplomacy.Alien.Cooperate.Tolerance=溝通＝可接受 (<color=#9964FF>人類＝可被說服？</color>)
+TIFactionTemplate.Diplomacy.Alien.Cooperate.War=討厭的障礙 (<color=#9964FF>除掉威脅</color>)。
+TIFactionTemplate.Diplomacy.Alien.Cooperate.Conflict=停止，停止，停止。 (<color=#9964FF>威脅，威脅，威脅。</color>)
+TIFactionTemplate.Diplomacy.Alien.Cooperate.Tolerance=溝通＝可接受 (<color=#9964FF>人類＝可被說服？</color>)。
+
+
+

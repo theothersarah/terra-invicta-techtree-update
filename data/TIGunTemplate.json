@@ -28,11 +28,7 @@
    },
    "ammoMaterials": {
       "volatiles": 0.5,
-      "metals": 0.5,
-      "nobleMetals": "",
-      "fissiles": "",
-      "antimatter": "",
-      "exotics": ""
+      "metals": 0.5
    },
    "iconResource": "shipbuildericons/ICO_30mmAutocannon",
    "modelResource": "shipweapons/30mm_Autocannon",
@@ -41,7 +37,48 @@
    "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_AutoCannon",
    "impactVisualFXResource": "spaceCombat/ImpactOrange",
    "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterMediumVeryLoudHighMid020MonoRR",
-   "damage_MJ": null
+   "damage_MJ": 3.189375
+},
+ {
+   "dataName": "40mmAutocannon",
+   "friendlyName": "40mm Autocannon",
+   "mount": "OneHull",
+   "requiredProjectName": "Project_40mmAutocannon",
+   "crew": 1,
+   "attackMode": true,
+   "defenseMode": true,
+   "baseWeaponMass_tons": 25,
+   "cooldown_s": 4,
+   "salvo_shots": 6,
+   "intraSalvoCooldown_s": 0.75,
+   "efficiency": 1,
+   "flatChipping": 0.025,
+   "magazine": 5000,
+   "ammoMass_kg": 10,
+   "muzzleVelocity_kps": 2.6,
+   "bombardmentValue": 0,
+   "warheadMass_kg": 6,
+   "targetingRange_km": 400,
+   "pivotRange_deg": 180,
+   "isPointDefenseTargetable": false,
+   "weightedBuildMaterials": {
+      "volatiles": 0.05,
+      "metals": 0.75,
+      "nobleMetals": 0.2
+   },
+   "ammoMaterials": {
+      "volatiles": 0.5,
+      "metals": 0.495,
+      "nobleMetals": 0.005
+   },
+   "iconResource": "shipbuildericons/ICO_40mmAutocannon",
+   "modelResource": "shipweapons/30mm_Autocannon",
+   "effectResource": "spaceCombat/MuzzleFlashFlame",
+   "shotModelResource": "spaceCombat/BulletAutocannon",
+   "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_AutoCannon",
+   "impactVisualFXResource": "spaceCombat/ImpactOrange",
+   "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterMediumVeryLoudHighMid020MonoRR",
+   "damage_MJ": 20.28
 },
  {
    "dataName": "6-inchCannon",
@@ -72,11 +109,7 @@
    },
    "ammoMaterials": {
       "volatiles": 0.5,
-      "metals": 0.5,
-      "nobleMetals": "",
-      "fissiles": "",
-      "antimatter": "",
-      "exotics": ""
+      "metals": 0.5
    },
    "iconResource": "shipbuildericons/ICO_6-InchCannon",
    "modelResource": "shipweapons/8-Inch_Cannon",
@@ -116,11 +149,7 @@
    },
    "ammoMaterials": {
       "volatiles": 0.5,
-      "metals": 0.5,
-      "nobleMetals": "",
-      "fissiles": "",
-      "antimatter": "",
-      "exotics": ""
+      "metals": 0.5
    },
    "iconResource": "shipbuildericons/ICO_8-InchCannon",
    "modelResource": "shipweapons/12-Inch_Cannon",
@@ -160,11 +189,7 @@
    },
    "ammoMaterials": {
       "volatiles": 0.5,
-      "metals": 0.5,
-      "nobleMetals": "",
-      "fissiles": "",
-      "antimatter": "",
-      "exotics": ""
+      "metals": 0.5
    },
    "iconResource": "shipbuildericons/ICO_10-InchCannon",
    "modelResource": "shipweapons/12-Inch_Cannon",
@@ -204,11 +229,7 @@
    },
    "ammoMaterials": {
       "volatiles": 0.5,
-      "metals": 0.5,
-      "nobleMetals": "",
-      "fissiles": "",
-      "antimatter": "",
-      "exotics": ""
+      "metals": 0.5
    },
    "iconResource": "shipbuildericons/ICO_12-InchCannon",
    "modelResource": "shipweapons/16-Inch_Cannon",

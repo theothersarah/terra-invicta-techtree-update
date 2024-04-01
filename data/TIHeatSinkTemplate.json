@@ -4,28 +4,12 @@
    "displayName": "Water Heat Sink",
    "heatCapacity_GJ": 100,
    "mass_tons": 250,
-   "requiredProjectName": "",
+   "requiredProjectName": "Project_Warships",
    "crew": 1,
    "weightedBuildMaterials": {
-      "water": 1,
-      "volatiles": null,
-      "metals": null,
-      "nobleMetals": "",
-      "exotics": null
+      "water": 1
    },
-   "iconResource": "shipbuildericons/ICO_WaterHeatSink",
-   "density_tonsm3": 1,
-   "specificHeatCapacity_J": {
-      "molK": 75.37
-   },
-   "molarWeight g": {
-      "mol": 18.01
-   },
-   "liquidRange_K": 100,
-   "1 gram - J": {
-      "K absorbtion": 4.18
-   },
-   "calc_capacity": 104.62
+   "iconResource": "shipbuildericons/ICO_WaterHeatSink"
 },
  {
    "dataName": "PotassiumHeatSink",
@@ -35,25 +19,9 @@
    "requiredProjectName": "Project_PotassiumHeatSink",
    "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 1,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 1
    },
-   "iconResource": "shipbuildericons/ICO_PotassiumHeatSink",
-   "density_tonsm3": 0.83,
-   "specificHeatCapacity_J": {
-      "molK": 29.6
-   },
-   "molarWeight g": {
-      "mol": 39.1
-   },
-   "liquidRange_K": 696,
-   "1 gram - J": {
-      "K absorbtion": 0.76
-   },
-   "calc_capacity": 108.01
+   "iconResource": "shipbuildericons/ICO_PotassiumHeatSink"
 },
  {
    "dataName": "SodiumHeatSink",
@@ -63,25 +31,9 @@
    "requiredProjectName": "Project_SodiumHeatSink",
    "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 1,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 1
    },
-   "iconResource": "shipbuildericons/ICO_SodiumHeatSink",
-   "density_tonsm3": 0.93,
-   "specificHeatCapacity_J": {
-      "molK": 28.2
-   },
-   "molarWeight g": {
-      "mol": 22.98
-   },
-   "liquidRange_K": 1300,
-   "1 gram - J": {
-      "K absorbtion": 1.23
-   },
-   "calc_capacity": 366.92
+   "iconResource": "shipbuildericons/ICO_SodiumHeatSink"
 },
  {
    "dataName": "LithiumHeatSink",
@@ -91,25 +43,9 @@
    "requiredProjectName": "Project_LithiumHeatSink",
    "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 1,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 1
    },
-   "iconResource": "shipbuildericons/ICO_LithiumHeatSink",
-   "density_tonsm3": 0.51,
-   "specificHeatCapacity_J": {
-      "molK": 24.8
-   },
-   "molarWeight g": {
-      "mol": 6.94
-   },
-   "liquidRange_K": 1150,
-   "1 gram - J": {
-      "K absorbtion": 3.57
-   },
-   "calc_capacity": 525.94
+   "iconResource": "shipbuildericons/ICO_LithiumHeatSink"
 },
  {
    "dataName": "MoltenSaltHeatSink",
@@ -119,25 +55,10 @@
    "requiredProjectName": "Project_MoltenSaltHeatSink",
    "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
       "volatiles": 0.25,
-      "metals": 0.75,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 0.75
    },
-   "iconResource": "shipbuildericons/ICO_MoltenSaltHeatSink",
-   "density_tonsm3": 1.94,
-   "specificHeatCapacity_J": {
-      "molK": 68.09
-   },
-   "molarWeight g": {
-      "mol": 34.95
-   },
-   "liquidRange_K": 960,
-   "1 gram - J": {
-      "K absorbtion": 1.95
-   },
-   "calc_capacity": 907.09
+   "iconResource": "shipbuildericons/ICO_MoltenSaltHeatSink"
 },
  {
    "dataName": "ExoticHeatSink",
@@ -147,53 +68,22 @@
    "requiredProjectName": "Project_ExoticHeatSink",
    "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 0.8,
-      "nobleMetals": "",
-      "exotics": 0.2
+      "metals": 0.95,
+      "exotics": 0.05
    },
-   "iconResource": "shipbuildericons/ICO_ExoticHeatSink",
-   "density_tonsm3": 1,
-   "specificHeatCapacity_J": {
-      "molK": 120
-   },
-   "molarWeight g": {
-      "mol": 32
-   },
-   "liquidRange_K": 1900,
-   "1 gram - J": {
-      "K absorbtion": 3.75
-   },
-   "calc_capacity": 1781.25
+   "iconResource": "shipbuildericons/ICO_ExoticHeatSink"
 },
  {
    "dataName": "HeavyWaterHeatSink",
    "displayName": "Heavy Water Heat Sink",
    "heatCapacity_GJ": 200,
    "mass_tons": 500,
-   "requiredProjectName": "",
-   "crew": 2,
+   "requiredProjectName": "Project_Warships",
+   "crew": 1,
    "weightedBuildMaterials": {
-      "water": 1,
-      "volatiles": null,
-      "metals": null,
-      "nobleMetals": "",
-      "exotics": null
+      "water": 1
    },
-   "iconResource": "shipbuildericons/ICO_HeavyWaterHeatSink",
-   "density_tonsm3": 1,
-   "specificHeatCapacity_J": {
-      "molK": 75.37
-   },
-   "molarWeight g": {
-      "mol": 18.01
-   },
-   "liquidRange_K": 85,
-   "1 gram - J": {
-      "K absorbtion": 4.18
-   },
-   "calc_capacity": 177.86
+   "iconResource": "shipbuildericons/ICO_HeavyWaterHeatSink"
 },
  {
    "dataName": "HeavyPotassiumHeatSink",
@@ -201,27 +91,11 @@
    "heatCapacity_GJ": 220,
    "mass_tons": 410,
    "requiredProjectName": "Project_PotassiumHeatSink",
-   "crew": 2,
+   "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 1,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 1
    },
-   "iconResource": "shipbuildericons/ICO_HeavyPotassiumHeatSink",
-   "density_tonsm3": 0.83,
-   "specificHeatCapacity_J": {
-      "molK": 29.6
-   },
-   "molarWeight g": {
-      "mol": 39.1
-   },
-   "liquidRange_K": 696,
-   "1 gram - J": {
-      "K absorbtion": 0.76
-   },
-   "calc_capacity": 216.03
+   "iconResource": "shipbuildericons/ICO_HeavyPotassiumHeatSink"
 },
  {
    "dataName": "HeavySodiumHeatSink",
@@ -229,27 +103,11 @@
    "heatCapacity_GJ": 740,
    "mass_tons": 460,
    "requiredProjectName": "Project_SodiumHeatSink",
-   "crew": 2,
+   "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 1,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 1
    },
-   "iconResource": "shipbuildericons/ICO_HeavySodiumHeatSink",
-   "density_tonsm3": 0.93,
-   "specificHeatCapacity_J": {
-      "molK": 28.2
-   },
-   "molarWeight g": {
-      "mol": 22.98
-   },
-   "liquidRange_K": 1300,
-   "1 gram - J": {
-      "K absorbtion": 1.23
-   },
-   "calc_capacity": 733.84
+   "iconResource": "shipbuildericons/ICO_HeavySodiumHeatSink"
 },
  {
    "dataName": "HeavyLithiumHeatSink",
@@ -257,27 +115,11 @@
    "heatCapacity_GJ": 1050,
    "mass_tons": 256,
    "requiredProjectName": "Project_LithiumHeatSink",
-   "crew": 2,
+   "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 1,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 1
    },
-   "iconResource": "shipbuildericons/ICO_HeavyLithiumHeatSink",
-   "density_tonsm3": 0.51,
-   "specificHeatCapacity_J": {
-      "molK": 24.8
-   },
-   "molarWeight g": {
-      "mol": 6.94
-   },
-   "liquidRange_K": 1150,
-   "1 gram - J": {
-      "K absorbtion": 3.57
-   },
-   "calc_capacity": 1051.88
+   "iconResource": "shipbuildericons/ICO_HeavyLithiumHeatSink"
 },
  {
    "dataName": "HeavyMoltenSaltHeatSink",
@@ -285,27 +127,12 @@
    "heatCapacity_GJ": 1800,
    "mass_tons": 970,
    "requiredProjectName": "Project_MoltenSaltHeatSink",
-   "crew": 2,
+   "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
       "volatiles": 0.25,
-      "metals": 0.75,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 0.75
    },
-   "iconResource": "shipbuildericons/ICO_HeavyMoltenSaltHeatSink",
-   "density_tonsm3": 1.94,
-   "specificHeatCapacity_J": {
-      "molK": 68.09
-   },
-   "molarWeight g": {
-      "mol": 34.95
-   },
-   "liquidRange_K": 960,
-   "1 gram - J": {
-      "K absorbtion": 1.95
-   },
-   "calc_capacity": 1814.17
+   "iconResource": "shipbuildericons/ICO_HeavyMoltenSaltHeatSink"
 },
  {
    "dataName": "HeavyExoticHeatSink",
@@ -313,27 +140,12 @@
    "heatCapacity_GJ": 3600,
    "mass_tons": 500,
    "requiredProjectName": "Project_ExoticHeatSink",
-   "crew": 2,
+   "crew": 1,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 0.8,
-      "nobleMetals": "",
-      "exotics": 0.2
+      "metals": 0.95,
+      "exotics": 0.05
    },
-   "iconResource": "shipbuildericons/ICO_HeavyExoticHeatSink",
-   "density_tonsm3": 1,
-   "specificHeatCapacity_J": {
-      "molK": 120
-   },
-   "molarWeight g": {
-      "mol": 32
-   },
-   "liquidRange_K": 1900,
-   "1 gram - J": {
-      "K absorbtion": 3.75
-   },
-   "calc_capacity": 3562.5
+   "iconResource": "shipbuildericons/ICO_HeavyExoticHeatSink"
 },
  {
    "dataName": "AlienLithiumHeatSink",
@@ -343,25 +155,9 @@
    "requiredProjectName": "Project_AlienMasterProject",
    "crew": 0,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 1,
-      "nobleMetals": "",
-      "exotics": null
+      "metals": 1
    },
-   "iconResource": "shipbuildericons/ICO_HeavyLithiumHeatSink",
-   "density_tonsm3": 0.51,
-   "specificHeatCapacity_J": {
-      "molK": 24.8
-   },
-   "molarWeight g": {
-      "mol": 6.94
-   },
-   "liquidRange_K": 1150,
-   "1 gram - J": {
-      "K absorbtion": 3.57
-   },
-   "calc_capacity": 1051.88
+   "iconResource": "shipbuildericons/ICO_HeavyLithiumHeatSink"
 },
  {
    "dataName": "AlienExoticHeatSink",
@@ -371,24 +167,9 @@
    "requiredProjectName": "Project_AlienMasterProject",
    "crew": 0,
    "weightedBuildMaterials": {
-      "water": null,
-      "volatiles": null,
-      "metals": 0.8,
-      "nobleMetals": "",
-      "exotics": 0.2
+      "metals": 0.95,
+      "exotics": 0.05
    },
-   "iconResource": "shipbuildericons/ICO_HeavyExoticHeatSink",
-   "density_tonsm3": 1,
-   "specificHeatCapacity_J": {
-      "molK": 120
-   },
-   "molarWeight g": {
-      "mol": 32
-   },
-   "liquidRange_K": 1900,
-   "1 gram - J": {
-      "K absorbtion": 3.75
-   },
-   "calc_capacity": 3562.5
+   "iconResource": "shipbuildericons/ICO_HeavyExoticHeatSink"
 }
 ]

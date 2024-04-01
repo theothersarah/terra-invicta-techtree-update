@@ -626,3 +626,5 @@ TIDriveTemplate.EV=Velocidade de escape:<rcol>{0} km/s (Classe: {1})</rcol>
 TIDriveTemplate.Efficiency=Eficiência energética:<rcol>{0}</rcol>
 TIDriveTemplate.RequiredPowerPlant=Gerador necessário:<rcol>{0}</rcol>
 TIDriveTemplate.CombatThrust=Empuxo de combate:<rcol>{0}x ({1} Newtons)</rcol>
+TIDriveTemplate.OpenCycle=Este propulsor usa <h>refrigeração de ciclo aberto</h>, o que significa que o calor é expelido através do propelente. Uma nave com este propulsor pode operar em segurança com apoio mínimo de radiadores. Os propulsores com alta potência e velocidade de escape baixa tendem a utilizar o ciclo aberto.
+TIDriveTemplate.ClosedCycle=Este propulsor usa <h>refrigeração de ciclo fechado</h>, o que significa que ele precisa de amplo apoio de radiadores para expelir o calor residual. Os propulsores com velocidade de escape alta tendem a exigir este tipo de combinação para funcionarem em segurança.

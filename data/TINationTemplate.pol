@@ -877,10 +877,10 @@ TINationTemplate.displayNameWithArticle.HUN=Węgry
 TINationTemplate.nationAdjective.HUN=Węgier
 TINationTemplate.displayNameWithArticlePrep.HUN=w Węgrzech
 
-TINationTemplate.displayName.ING=Ingria
-TINationTemplate.displayNameWithArticle.ING=Ingria
-TINationTemplate.nationAdjective.ING=Ingrii
-TINationTemplate.displayNameWithArticlePrep.ING=w Ingrii
+TINationTemplate.displayName.ING=Republika Petersburga
+TINationTemplate.displayNameWithArticle.ING=Republika Petersburga
+TINationTemplate.nationAdjective.ING=Republiki Petersburga
+TINationTemplate.displayNameWithArticlePrep.ING=w Republice Petersburga
 
 TINationTemplate.displayName.IVO=Wybrzeże Kości Słoniowej
 TINationTemplate.displayNameWithArticle.IVO=Wybrzeże Kości Słoniowej
@@ -912,10 +912,10 @@ TINationTemplate.displayNameWithArticle.ROM=Rumunia
 TINationTemplate.nationAdjective.ROM=Rumunii
 TINationTemplate.displayNameWithArticlePrep.ROM=w Rumunii
 
-TINationTemplate.displayName.ROS=Kraj Rostowski
-TINationTemplate.displayNameWithArticle.ROS=Kraj Rostowski
-TINationTemplate.nationAdjective.ROS=Kraju Rostowskiego
-TINationTemplate.displayNameWithArticlePrep.ROS=w Kraju Rostowskim
+TINationTemplate.displayName.ROS=Obwód Kozaków Dońskich
+TINationTemplate.displayNameWithArticle.ROS=Obwód Kozaków Dońskich
+TINationTemplate.nationAdjective.ROS=Obwodu Kozaków Dońskich
+TINationTemplate.displayNameWithArticlePrep.ROS=w Obwodzie Kozaków Dońskich
 
 TINationTemplate.displayName.SAH=Sahrawi
 TINationTemplate.displayNameWithArticle.SAH=Sahrawi

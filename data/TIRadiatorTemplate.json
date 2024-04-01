@@ -8,7 +8,7 @@
    "emissivity": 0.85,
    "vulnerability": 30,
    "collector": false,
-   "requiredProjectName": "",
+   "requiredProjectName": "Project_Warships",
    "crew": 1,
    "weightedBuildMaterials": {
       "volatiles": 0,
@@ -29,7 +29,7 @@
    "emissivity": 0.83,
    "vulnerability": 20,
    "collector": false,
-   "requiredProjectName": "",
+   "requiredProjectName": "Project_Warships",
    "crew": 1,
    "weightedBuildMaterials": {
       "volatiles": 0,
@@ -222,9 +222,9 @@
    "crew": 2,
    "weightedBuildMaterials": {
       "volatiles": 0.05,
-      "metals": 0.05,
+      "metals": 0.055,
       "nobleMetals": 0.89,
-      "exotics": 0.01
+      "exotics": 0.005
    },
    "iconResource": "shipbuildericons/ICO_ExoticSpikeRadiator",
    "combatUIpath": "spike",

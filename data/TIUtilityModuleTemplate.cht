@@ -1,5 +1,5 @@
 TIUtilityModuleTemplate.displayName.ISRUModule=就地資源利用艙體
-TIUtilityModuleTemplate.description.ISRUModule=此就地資源利用艙體允許船艦在生產該船艦所用推進劑之原料的未開發太空殖民地據點補充推進劑。將<h>任何事物</h>列為推進劑的船艦可在任何據點補充推進劑。
+TIUtilityModuleTemplate.description.ISRUModule=此就地資源利用艙體，允許船艦在生產該船艦所用推進劑之所有原料的未開發太空殖民地據點補充推進劑。將<h>任何事物</h>列為推進劑的船艦可在任何據點補充推進劑。
 TIUtilityModuleTemplate.displayName.RemassScoop=重物質勺
 TIUtilityModuleTemplate.description.RemassScoop=此種物質勺提供船艦空氣動力性質、防止大氣煞車造成的損壞，並允許船艦從類木行星的介面軌道補充<h>氫</h>推進劑儲量的唯一要素<color=#FFFFFFFF><sprite name="water"></color>。將<h>任何事物</h>列為推進劑的船艦也可以在類木行星的世界補充推進劑。
 TIUtilityModuleTemplate.displayName.MuonSpiker=緲子催化劑
@@ -7,17 +7,17 @@ TIUtilityModuleTemplate.description.MuonSpiker=緲子可催化核融合反應，
 TIUtilityModuleTemplate.displayName.NeutroniumSpiker=零號元素催化劑
 TIUtilityModuleTemplate.description.NeutroniumSpiker=產生少量的自由中子並用來催化核子反應，為核分裂及核融合驅動器提供 {1} 的推力加成。
 TIUtilityModuleTemplate.displayName.AntimatterSpiker=反物質催化劑
-TIUtilityModuleTemplate.description.AntimatterSpiker=儲存微量的的反物質並用來催化核子反應，為核分裂及核融合驅動器提供 50% 的推力加成。 
+TIUtilityModuleTemplate.description.AntimatterSpiker=儲存微量的的反物質並用來催化核子反應，為核分裂及核融合驅動器提供 {1} 的推力加成。 
 TIUtilityModuleTemplate.displayName.MobileSpaceScienceLab=行動太空科學實驗室
-TIUtilityModuleTemplate.description.MobileSpaceScienceLab=讓科學團隊加入成為船員，為太空科學研究提供 5% 的加成，讓船艦從介面軌道去天體上探勘合適的基地據點。
+TIUtilityModuleTemplate.description.MobileSpaceScienceLab=讓科學團隊加入成為船員，為太空科學研究提供 {5} 的加成，讓船艦從介面軌道去天體上探勘合適的基地據點。
 TIUtilityModuleTemplate.displayName.RepairBay=修復艙
 TIUtilityModuleTemplate.description.RepairBay=擴大的損害管制團隊暨工作室，在造船廠外執行較昂貴的維修作業。
 TIUtilityModuleTemplate.displayName.MarineAssaultUnit=陸戰隊攻擊單位
-TIUtilityModuleTemplate.description.MarineAssaultUnit=允許船艦對太空殖民地發動突擊。突擊值：1。
+TIUtilityModuleTemplate.description.MarineAssaultUnit=允許船艦對太空殖民地發動突擊。突擊值：<color=#FFFFFFFF><sprite name="army_level"></color>{3}。
 TIUtilityModuleTemplate.displayName.AdvancedMarineAssaultUnit=進階陸戰隊攻擊單位
-TIUtilityModuleTemplate.description.AdvancedMarineAssaultUnit=允許船艦對太空殖民地發動突擊。突擊值：1。
+TIUtilityModuleTemplate.description.AdvancedMarineAssaultUnit=允許船艦對太空殖民地發動突擊。突擊值：<color=#FFFFFFFF><sprite name="army_level"></color>{3}。
 TIUtilityModuleTemplate.displayName.EliteMarineAssaultUnit=菁英陸戰隊攻擊單位
-TIUtilityModuleTemplate.description.EliteMarineAssaultUnit=允許船艦對太空殖民地發動突擊。突擊值：1。
+TIUtilityModuleTemplate.description.EliteMarineAssaultUnit=允許船艦對太空殖民地發動突擊。突擊值：<color=#FFFFFFFF><sprite name="army_level"></color>{3}。
 TIUtilityModuleTemplate.displayName.Spartans=好戰者
 TIUtilityModuleTemplate.description.Spartans=我們船艦的狂熱菁英陸戰隊單位。突擊值：<color=#FFFFFFFF><sprite name="army_level"></color>{3}。
 TIUtilityModuleTemplate.displayName.Rangers=遊俠
@@ -25,13 +25,13 @@ TIUtilityModuleTemplate.description.Rangers=我們船艦的資深太空陸戰隊
 TIUtilityModuleTemplate.displayName.Immortals=不朽者
 TIUtilityModuleTemplate.description.Immortals=我們最願意赴湯蹈火的專業太空陸戰隊員。突擊值：<color=#FFFFFFFF><sprite name="army_level"></color>{3}。
 TIUtilityModuleTemplate.displayName.LaserEngine=雷射引擎
-TIUtilityModuleTemplate.description.LaserEngine=把所有雷射武器的功率提高 5 MJ，使船艦的雷射武器在較長的射程造成較大傷害。加成會隨額外的雷射引擎艙疊加。
+TIUtilityModuleTemplate.description.LaserEngine=把所有雷射武器的功率提高 {0} MJ，使船艦的雷射武器在較長的射程造成較大傷害。加成會隨額外的雷射引擎艙疊加。
 TIUtilityModuleTemplate.displayName.AdvancedLaserEngine=進階雷射引擎
-TIUtilityModuleTemplate.description.AdvancedLaserEngine=把所有雷射武器的功率提高 5 MJ，使船艦的雷射武器在較長的射程造成較大傷害。加成會隨額外的雷射引擎艙疊加。
+TIUtilityModuleTemplate.description.AdvancedLaserEngine=把所有雷射武器的功率提高 {0} MJ，使船艦的雷射武器在較長的射程造成較大傷害。加成會隨額外的雷射引擎艙疊加。
 TIUtilityModuleTemplate.displayName.LiquidHydrogenContainment=液態氫圍阻體
 TIUtilityModuleTemplate.description.LiquidHydrogenContainment=適用於穩定液態氫的長期儲存槽，為船艦的排氣速度提供 {2} 的有效加成。
 TIUtilityModuleTemplate.displayName.SlushHydrogenTankage=三相點氫槽
-TIUtilityModuleTemplate.description.SlushHydrogenTankage=用於圍阻混合了高密度固態和液態氫推進劑的儲存槽，為船艦的排氣速度提供 25% 的有效加成。
+TIUtilityModuleTemplate.description.SlushHydrogenTankage=用於圍阻混合了高密度固態和液態氫推進劑的儲存槽，為船艦的排氣速度提供 {2} 的有效加成。
 TIUtilityModuleTemplate.displayName.HydronTrap=氫正離子阱
 TIUtilityModuleTemplate.description.HydronTrap=適用於穩定單原子氫的儲存槽，為船艦的排氣速度提供 {2} 的有效加成。
 TIUtilityModuleTemplate.displayName.Magazine=彈匣
@@ -39,9 +39,9 @@ TIUtilityModuleTemplate.description.Magazine=裝填器硬體和增加額外完�
 TIUtilityModuleTemplate.displayName.ComponentArmor=組件裝甲
 TIUtilityModuleTemplate.description.ComponentArmor=用於船艦系統和艙體的保護裝甲，可在戰鬥中使所有船艦內部組件的傷害減半。
 TIUtilityModuleTemplate.displayName.SolarPlatformKit=太陽能載台組
-TIUtilityModuleTemplate.description.SolarPlatformKit=允許利用在船艦位置上的建設艙體來打造一個小型太陽能太空站。超過火星即不可使用。可透過修復造船廠的船艦來補充資源。
+TIUtilityModuleTemplate.description.SolarPlatformKit=允許利用在船艦位置上的建設艙體來打造一個小型太陽能太空站。超過地球公轉太陽軌道即不可使用。可透過再補給造船廠的船艦來補充資源。
 TIUtilityModuleTemplate.displayName.SolarOutpostKit=太陽能前哨組
-TIUtilityModuleTemplate.description.SolarOutpostKit=允許在火星向內的天體表面上打造含艙體建設的小型太陽能基地。可透過修復造船廠的船艦補充資源。
+TIUtilityModuleTemplate.description.SolarOutpostKit=允許利用在天體表面上的建設艙體來打造一個小型太陽能基地。軌道不可超過地球公轉太陽的軌道。可透過再補給造船廠的船艦來補充資源。
 TIUtilityModuleTemplate.displayName.FissionPlatformKit=核分裂載台組
 TIUtilityModuleTemplate.description.FissionPlatformKit=允許在船艦位置上打造含艙體建設的小型核能太空站。可透過修復造船廠的船艦補充資源。
 TIUtilityModuleTemplate.displayName.FissionOutpostKit=核分裂前哨組
@@ -51,9 +51,9 @@ TIUtilityModuleTemplate.description.FusionPlatformKit=允許在船艦位置上�
 TIUtilityModuleTemplate.displayName.FusionOutpostKit=核融合前哨組
 TIUtilityModuleTemplate.description.FusionOutpostKit=允許在天體表面上打造含艙體建設的小型核融合動力基地。可透過修復造船廠的船艦補充資源。
 TIUtilityModuleTemplate.displayName.AutomatedSolarPlatformKit=自動化太陽能載台組
-TIUtilityModuleTemplate.description.AutomatedSolarPlatformKit=允許在船艦位置上建造小型太陽能補給站和太空站。超過火星即不可使用。可透過修復造船廠的船艦補充資源。
+TIUtilityModuleTemplate.description.AutomatedSolarPlatformKit=允許在船艦位置上建造小型太陽能補給站和太空站。超過地球公轉太陽軌道即不可使用。可透過再補給造船廠的船艦來補充資源。
 TIUtilityModuleTemplate.displayName.AutomatedSolarOutpostKit=自動化太陽能前哨組
-TIUtilityModuleTemplate.description.AutomatedSolarOutpostKit=允許在天體表面上建造小型太陽能採礦基地。可透過修復造船廠的船艦補充資源。
+TIUtilityModuleTemplate.description.AutomatedSolarOutpostKit=允許在天體表面上建造一個小型採礦基地。軌道不可超過地球公轉太陽的軌道。可透過再補給造船廠的船艦來補充資源。
 TIUtilityModuleTemplate.displayName.AutomatedFissionPlatformKit=自動化核分裂載台組
 TIUtilityModuleTemplate.description.AutomatedFissionPlatformKit=允許在船艦位置上建造小型核能補給站和太空站。可透過修復造船廠的船艦補充資源。
 TIUtilityModuleTemplate.displayName.AutomatedFissionOutpostKit=自動化核分裂前哨組

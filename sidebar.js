@@ -104,6 +104,23 @@ class TechSidebar extends React.Component {
         }
     }
     
+    getReadableClaim(claim) {
+        const nationName = getReadable("nation", claim.nation1, "displayName");
+        const regionName = getReadable("region", claim.region1, "displayName");
+
+        return `${nationName} gains a claim on ${regionName}`;
+    }
+    
+    getReadableAdjacency(adjacency) {
+        const region1Name = getReadable("region", adjacency.region1, "displayName");
+        const region2Name = getReadable("region", adjacency.region2, "displayName");
+        if (adjacency.friendlyOnly) {
+            return `${region1Name} and ${region2Name} are now considered to be adjacent for friendly traffic`;
+        } else {
+            return `${region1Name} and ${region2Name} are now considered to be adjacent`;
+        }
+    }
+    
     findModule(moduleName) {
         let results = [];
         for (let modType in templateData) {
@@ -491,6 +508,52 @@ class TechSidebar extends React.Component {
                 regionString
             );
         }
+        
+        let claimsDescription, claimsList;
+        let claims = templateData["bilateral"].filter(claim => claim.projectUnlockName == node.dataName && claim.relationType == "Claim");
+        if (claims.length > 0) {
+            let claimsElements = claims.map(claim => {
+                return React.createElement(
+                    "li",
+                    { key: claim },
+                    this.getReadableClaim(claim)
+                );
+            });
+
+            claimsDescription = React.createElement(
+                "h4",
+                null,
+                "Claims"
+            );
+            claimsList = React.createElement(
+                "ul",
+                null,
+                claimsElements
+            );
+        }
+        
+        let adjacenciesDescription, adjacenciesList;
+        let adjacencies = templateData["bilateral"].filter(adjaceny => adjaceny.projectUnlockName == node.dataName && adjaceny.relationType == "PhysicalAdjacency");
+        if (adjacencies.length > 0) {
+            let adjacenciesElements = adjacencies.map(adjacency => {
+                return React.createElement(
+                    "li",
+                    { key: adjacency },
+                    this.getReadableAdjacency(adjacency)
+                );
+            });
+
+            adjacenciesDescription = React.createElement(
+                "h4",
+                null,
+                "Adjacencies"
+            );
+            adjacenciesList = React.createElement(
+                "ul",
+                null,
+                adjacenciesElements
+            );
+        }
 
         let effectDescription, effectList;
         if (node.effects && node.effects.filter(effect => effect !== "").length > 0) {
@@ -570,6 +633,10 @@ class TechSidebar extends React.Component {
             summaryText,
 
             // Rewards
+            claimsDescription,
+            claimsList,
+            adjacenciesDescription,
+            adjacenciesList,
             resourceLabel,
             resourceText,
             org,

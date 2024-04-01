@@ -6,14 +6,14 @@
    "hullHardpoints": 0,
    "internalModules": 1,
    "consTier": 1,
+   "maxOfficers": 1,
    "length_m": 50,
    "toylength_cm": 7.1,
    "width_m": 10,
    "volume": 1963,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 3,
-   "altSI": 3,
-   "mass_tons": 200,
+   "mass_tons": 178,
    "crew": 3,
    "alien": false,
    "monthlyIncome_Money": -1,
@@ -106,14 +106,14 @@
    "hullHardpoints": 2,
    "internalModules": 2,
    "consTier": 1,
+   "maxOfficers": 1,
    "length_m": 50,
    "toylength_cm": 7.1,
    "width_m": 10,
    "volume": 1963,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 5,
-   "altSI": 3,
-   "mass_tons": 200,
+   "mass_tons": 350,
    "crew": 4,
    "alien": false,
    "monthlyIncome_Money": -2,
@@ -216,14 +216,14 @@
    "hullHardpoints": 1,
    "internalModules": 2,
    "consTier": 1,
+   "maxOfficers": 2,
    "length_m": 65,
    "toylength_cm": 8.1,
    "width_m": 15,
    "volume": 7069,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 6,
-   "altSI": 5,
-   "mass_tons": 350,
+   "mass_tons": 400,
    "crew": 8,
    "alien": false,
    "monthlyIncome_Money": -3,
@@ -326,13 +326,13 @@
    "hullHardpoints": 2,
    "internalModules": 4,
    "consTier": 1,
+   "maxOfficers": 3,
    "length_m": 100,
    "toylength_cm": 10,
    "width_m": 20,
    "volume": 23562,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 9,
-   "altSI": 9,
    "mass_tons": 600,
    "crew": 20,
    "alien": false,
@@ -451,14 +451,14 @@
    "hullHardpoints": 4,
    "internalModules": 3,
    "consTier": 2,
+   "maxOfficers": 3,
    "length_m": 125,
    "toylength_cm": 11.2,
    "width_m": 20,
    "volume": 31416,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 12,
-   "altSI": 13,
-   "mass_tons": 900,
+   "mass_tons": 800,
    "crew": 35,
    "alien": false,
    "monthlyIncome_Money": -4,
@@ -576,14 +576,14 @@
    "hullHardpoints": 2,
    "internalModules": 3,
    "consTier": 2,
+   "maxOfficers": 3,
    "length_m": 125,
    "toylength_cm": 11.2,
    "width_m": 20,
    "volume": 31416,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 12,
-   "altSI": 13,
-   "mass_tons": 900,
+   "mass_tons": 825,
    "crew": 40,
    "alien": false,
    "monthlyIncome_Money": -5,
@@ -701,14 +701,14 @@
    "hullHardpoints": 3,
    "internalModules": 6,
    "consTier": 2,
+   "maxOfficers": 4,
    "length_m": 175,
    "toylength_cm": 13.2,
    "width_m": 20,
    "volume": 47124,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 15,
-   "altSI": 18,
-   "mass_tons": 1200,
+   "mass_tons": 1000,
    "crew": 60,
    "alien": false,
    "monthlyIncome_Money": -10,
@@ -846,13 +846,13 @@
    "hullHardpoints": 2,
    "internalModules": 4,
    "consTier": 2,
+   "maxOfficers": 4,
    "length_m": 175,
    "toylength_cm": 13.2,
    "width_m": 20,
    "volume": 47124,
    "thrusterMultiplier": 1,
-   "structuralIntegrity": 15,
-   "altSI": 18,
+   "structuralIntegrity": 18,
    "mass_tons": 1200,
    "crew": 70,
    "alien": false,
@@ -981,14 +981,14 @@
    "hullHardpoints": 6,
    "internalModules": 5,
    "consTier": 3,
+   "maxOfficers": 5,
    "length_m": 200,
    "toylength_cm": 14.1,
    "width_m": 25,
    "volume": 85903,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 24,
-   "altSI": 22,
-   "mass_tons": 1500,
+   "mass_tons": 1600,
    "crew": 80,
    "alien": false,
    "monthlyIncome_Money": -15,
@@ -1136,13 +1136,13 @@
    "hullHardpoints": 3,
    "internalModules": 6,
    "consTier": 3,
+   "maxOfficers": 5,
    "length_m": 250,
    "toylength_cm": 15.8,
    "width_m": 32,
    "volume": 180956,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 30,
-   "altSI": 30,
    "mass_tons": 2000,
    "crew": 100,
    "alien": false,
@@ -1291,14 +1291,14 @@
    "hullHardpoints": 8,
    "internalModules": 6,
    "consTier": 3,
+   "maxOfficers": 5,
    "length_m": 275,
    "toylength_cm": 16.6,
    "width_m": 35,
    "volume": 240528,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 36,
-   "altSI": 37,
-   "mass_tons": 2500,
+   "mass_tons": 2400,
    "crew": 120,
    "alien": false,
    "monthlyIncome_Money": -25,
@@ -1466,14 +1466,14 @@
    "hullHardpoints": 6,
    "internalModules": 8,
    "consTier": 3,
+   "maxOfficers": 6,
    "length_m": 300,
    "toylength_cm": 17.3,
    "width_m": 35,
    "volume": 264581,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 48,
-   "altSI": 45,
-   "mass_tons": 3000,
+   "mass_tons": 3200,
    "crew": 120,
    "alien": false,
    "monthlyIncome_Money": -30,
@@ -1640,19 +1640,32 @@
    ]
 },
  {
+   "dataName": "STOFighter",
+   "friendlyName": "STO Fighter",
+   "disable": true,
+   "internalModules": 0,
+   "thrusterMultiplier": 1,
+   "structuralIntegrity": 2,
+   "crew": 2,
+   "alien": false,
+   "monthlyIncome_Money": 0,
+   "missionControl": 0,
+   "shipModuleSlots": []
+},
+ {
    "dataName": "AlienGunship",
    "friendlyName": "Alien Gunship",
    "noseHardpoints": 1,
    "hullHardpoints": 0,
    "internalModules": 2,
    "consTier": 1,
+   "maxOfficers": 0,
    "length_m": 50,
    "toylength_cm": 7.1,
    "width_m": 10,
    "volume": 1963,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 6,
-   "altSI": 6,
    "mass_tons": 192,
    "crew": 1,
    "alien": true,
@@ -1679,8 +1692,8 @@
    "requiredProjectName": "Project_AlienMasterProject",
    "weightedBuildMaterials": {
       "volatiles": 0.1,
-      "metals": 0.6,
-      "nobleMetals": 0.3
+      "metals": 0.7,
+      "nobleMetals": 0.2
    },
    "shipModuleSlots": [
       {
@@ -1741,19 +1754,130 @@
    ]
 },
  {
-   "dataName": "AlienCorvette",
-   "friendlyName": "Alien Corvette",
-   "noseHardpoints": 1,
-   "hullHardpoints": 1,
+   "dataName": "AlienEscort",
+   "friendlyName": "Alien Escort",
+   "noseHardpoints": 0,
+   "hullHardpoints": 2,
    "internalModules": 3,
    "consTier": 1,
+   "maxOfficers": 0,
    "length_m": 75,
    "toylength_cm": 8.7,
    "width_m": 10,
    "volume": 3927,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 9,
-   "altSI": 9,
+   "mass_tons": 288,
+   "crew": 2,
+   "alien": true,
+   "monthlyIncome_Money": 0,
+   "missionControl": 1,
+   "baseConstructionTime_days": 96,
+   "shipyardyOffset": [
+      0,
+      0,
+      0
+   ],
+   "modelResource": [
+      "ships/AlienEscort"
+   ],
+   "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_hydra_ES"
+   ],
+   "path1": [
+      "hydra_ES/"
+   ],
+   "path2": [
+      "OBJ_battle_hydra_ES"
+   ],
+   "requiredProjectName": "Project_AlienMasterProject",
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.7,
+      "nobleMetals": 0.2
+   },
+   "shipModuleSlots": [
+      {
+         "moduleSlotType": "Drive",
+         "x": 1,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "PowerPlant",
+         "x": 2,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Battery",
+         "x": 3,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Radiator",
+         "x": 4,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "TailArmor",
+         "x": 1,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "LateralArmor",
+         "x": 4,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "NoseArmor",
+         "x": 8,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 8,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 7,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 5,
+         "y": 4
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 5,
+         "y": 2
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 6,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Propellant",
+         "x": 1,
+         "y": 0
+      }
+   ]
+},
+ {
+   "dataName": "AlienCorvette",
+   "friendlyName": "Alien Corvette",
+   "noseHardpoints": 1,
+   "hullHardpoints": 1,
+   "internalModules": 3,
+   "consTier": 1,
+   "maxOfficers": 0,
+   "length_m": 75,
+   "toylength_cm": 8.7,
+   "width_m": 10,
+   "volume": 3927,
+   "thrusterMultiplier": 1,
+   "structuralIntegrity": 9,
    "mass_tons": 288,
    "crew": 3,
    "alien": true,
@@ -1780,8 +1904,8 @@
    "requiredProjectName": "Project_AlienMasterProject",
    "weightedBuildMaterials": {
       "volatiles": 0.1,
-      "metals": 0.6,
-      "nobleMetals": 0.3
+      "metals": 0.7,
+      "nobleMetals": 0.2
    },
    "shipModuleSlots": [
       {
@@ -1858,13 +1982,13 @@
    "hullHardpoints": 3,
    "internalModules": 4,
    "consTier": 1,
+   "maxOfficers": 0,
    "length_m": 125,
    "toylength_cm": 11.2,
    "width_m": 15,
    "volume": 17671,
    "thrusterMultiplier": 1,
-   "structuralIntegrity": 12,
-   "altSI": 17,
+   "structuralIntegrity": 18,
    "mass_tons": 576,
    "crew": 10,
    "alien": true,
@@ -1891,8 +2015,8 @@
    "requiredProjectName": "Project_AlienMasterProject",
    "weightedBuildMaterials": {
       "volatiles": 0.1,
-      "metals": 0.6,
-      "nobleMetals": 0.3
+      "metals": 0.7,
+      "nobleMetals": 0.2
    },
    "shipModuleSlots": [
       {
@@ -1978,19 +2102,150 @@
    ]
 },
  {
+   "dataName": "AlienMonitor",
+   "friendlyName": "Alien Monitor",
+   "noseHardpoints": 1,
+   "hullHardpoints": 4,
+   "internalModules": 4,
+   "consTier": 2,
+   "maxOfficers": 0,
+   "length_m": 150,
+   "toylength_cm": 12.2,
+   "width_m": 15,
+   "volume": 22089,
+   "thrusterMultiplier": 1,
+   "structuralIntegrity": 21,
+   "mass_tons": 672,
+   "crew": 16,
+   "alien": true,
+   "monthlyIncome_Money": 0,
+   "missionControl": 1,
+   "baseConstructionTime_days": 256,
+   "shipyardyOffset": [
+      0,
+      0,
+      0
+   ],
+   "modelResource": [
+      "ships/AlienMonitor"
+   ],
+   "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_hydra_MO"
+   ],
+   "path1": [
+      "hydra_MO/"
+   ],
+   "path2": [
+      "OBJ_battle_hydra_MO"
+   ],
+   "requiredProjectName": "Project_AlienMasterProject",
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.7,
+      "nobleMetals": 0.2
+   },
+   "shipModuleSlots": [
+      {
+         "moduleSlotType": "Drive",
+         "x": 1,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "PowerPlant",
+         "x": 2,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Battery",
+         "x": 3,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Radiator",
+         "x": 4,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "TailArmor",
+         "x": 1,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "LateralArmor",
+         "x": 4,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "NoseArmor",
+         "x": 7,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "NoseHardPoint",
+         "x": 7,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 5,
+         "y": 2
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 5,
+         "y": 4
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 6,
+         "y": 2
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 6,
+         "y": 4
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 5,
+         "y": 0
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 5,
+         "y": 6
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 6,
+         "y": 0
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 6,
+         "y": 6
+      },
+      {
+         "moduleSlotType": "Propellant",
+         "x": 1,
+         "y": 0
+      }
+   ]
+},
+ {
    "dataName": "AlienDestroyer",
    "friendlyName": "Alien Destroyer",
    "noseHardpoints": 2,
    "hullHardpoints": 2,
    "internalModules": 4,
    "consTier": 2,
+   "maxOfficers": 0,
    "length_m": 150,
    "toylength_cm": 12.2,
    "width_m": 15,
    "volume": 22089,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 24,
-   "altSI": 20,
    "mass_tons": 672,
    "crew": 20,
    "alien": true,
@@ -2017,8 +2272,8 @@
    "requiredProjectName": "Project_AlienMasterProject",
    "weightedBuildMaterials": {
       "volatiles": 0.1,
-      "metals": 0.6,
-      "nobleMetals": 0.3
+      "metals": 0.7,
+      "nobleMetals": 0.2
    },
    "shipModuleSlots": [
       {
@@ -2104,20 +2359,175 @@
    ]
 },
  {
+   "dataName": "AlienCruiser",
+   "friendlyName": "Alien Cruiser",
+   "noseHardpoints": 2,
+   "hullHardpoints": 4,
+   "internalModules": 6,
+   "consTier": 2,
+   "maxOfficers": 0,
+   "length_m": 200,
+   "toylength_cm": 14.1,
+   "width_m": 20,
+   "volume": 54978,
+   "thrusterMultiplier": 1,
+   "structuralIntegrity": 32,
+   "mass_tons": 1056,
+   "crew": 25,
+   "alien": true,
+   "monthlyIncome_Money": 0,
+   "missionControl": 1,
+   "baseConstructionTime_days": 320,
+   "shipyardyOffset": [
+      0,
+      0,
+      0
+   ],
+   "modelResource": [
+      "ships/AlienCruiser"
+   ],
+   "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_hydra_CR"
+   ],
+   "path1": [
+      "hydra_CR/"
+   ],
+   "path2": [
+      "OBJ_battle_hydra_CR"
+   ],
+   "requiredProjectName": "Project_AlienMasterProject",
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.6,
+      "nobleMetals": 0.3
+   },
+   "shipModuleSlots": [
+      {
+         "moduleSlotType": "Drive",
+         "x": 1,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "PowerPlant",
+         "x": 2,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Battery",
+         "x": 3,
+         "y": 3
+      },
+      {
+         "moduleSlotType": "Radiator",
+         "x": 4,
+         "y": 3
+      },
+      {
+         "x": 1,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "LateralArmor",
+         "x": 4,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "NoseArmor",
+         "x": 8,
+         "y": 7
+      },
+      {
+         "moduleSlotType": "NoseHardPoint",
+         "x": 7,
+         "y": 2
+      },
+      {
+         "moduleSlotType": "NoseHardPoint",
+         "x": 7,
+         "y": 4
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 5,
+         "y": 2
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 5,
+         "y": 4
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 6,
+         "y": 2
+      },
+      {
+         "moduleSlotType": "HullHardPoint",
+         "x": 6,
+         "y": 4
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 5,
+         "y": 0
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 5,
+         "y": 6
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 6,
+         "y": 0
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 6,
+         "y": 6
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 6,
+         "y": 0
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 6,
+         "y": 6
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 4,
+         "y": 2
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 4,
+         "y": 4
+      },
+      {
+         "moduleSlotType": "Propellant",
+         "x": 0,
+         "y": 0
+      }
+   ]
+},
+ {
    "dataName": "AlienBattlecruiser",
    "friendlyName": "Alien Battlecruiser",
    "noseHardpoints": 3,
    "hullHardpoints": 3,
    "internalModules": 5,
    "consTier": 2,
-   "length_m": 250,
-   "toylength_cm": 15.8,
+   "maxOfficers": 0,
+   "length_m": 245,
+   "toylength_cm": 15.7,
    "width_m": 25,
-   "volume": 110447,
+   "volume": 107992,
    "thrusterMultiplier": 1,
-   "structuralIntegrity": 32,
-   "altSI": 47,
-   "mass_tons": 1536,
+   "structuralIntegrity": 48,
+   "mass_tons": 1440,
    "crew": 35,
    "alien": true,
    "monthlyIncome_Money": 0,
@@ -2251,13 +2661,13 @@
    "hullHardpoints": 6,
    "internalModules": 6,
    "consTier": 2,
+   "maxOfficers": 0,
    "length_m": 250,
    "toylength_cm": 15.8,
    "width_m": 25,
    "volume": 110447,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 48,
-   "altSI": 47,
    "mass_tons": 1536,
    "crew": 40,
    "alien": true,
@@ -2401,19 +2811,44 @@
    ]
 },
  {
+   "dataName": "AlienLancer",
+   "friendlyName": "Alien Lancer",
+   "disable": true,
+   "noseHardpoints": 6,
+   "hullHardpoints": 4,
+   "maxOfficers": 0,
+   "length_m": 275,
+   "toylength_cm": 16.6,
+   "width_m": 25,
+   "volume": 122718,
+   "thrusterMultiplier": 1,
+   "structuralIntegrity": 48,
+   "mass_tons": 1536,
+   "alien": true,
+   "monthlyIncome_Money": 0,
+   "missionControl": 1,
+   "requiredProjectName": "Project_AlienMasterProject",
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.6,
+      "nobleMetals": 0.3
+   },
+   "shipModuleSlots": []
+},
+ {
    "dataName": "AlienDreadnought",
    "friendlyName": "Alien Dreadnought",
    "noseHardpoints": 4,
    "hullHardpoints": 8,
    "internalModules": 8,
    "consTier": 2,
+   "maxOfficers": 0,
    "length_m": 300,
    "toylength_cm": 17.3,
    "width_m": 30,
    "volume": 194386,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 64,
-   "altSI": 61,
    "mass_tons": 2016,
    "crew": 50,
    "alien": true,
@@ -2587,19 +3022,44 @@
    ]
 },
  {
+   "dataName": "AlienTitan",
+   "friendlyName": "Alien Titan",
+   "disable": true,
+   "noseHardpoints": 6,
+   "hullHardpoints": 8,
+   "maxOfficers": 0,
+   "length_m": 400,
+   "toylength_cm": 20,
+   "width_m": 30,
+   "volume": 265072,
+   "thrusterMultiplier": 1,
+   "structuralIntegrity": 72,
+   "mass_tons": 2304,
+   "alien": true,
+   "monthlyIncome_Money": 0,
+   "missionControl": 1,
+   "requiredProjectName": "Project_AlienMasterProject",
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.6,
+      "nobleMetals": 0.3
+   },
+   "shipModuleSlots": []
+},
+ {
    "dataName": "AlienAssaultCarrier",
    "friendlyName": "Alien Assault Carrier",
    "noseHardpoints": 0,
    "hullHardpoints": 6,
    "internalModules": 5,
    "consTier": 3,
+   "maxOfficers": 0,
    "length_m": 300,
    "toylength_cm": 17.3,
    "width_m": 30,
    "volume": 194386,
    "thrusterMultiplier": 1,
    "structuralIntegrity": 96,
-   "altSI": 81,
    "mass_tons": 2688,
    "crew": 80,
    "alien": true,
@@ -2734,13 +3194,13 @@
    "hullHardpoints": 16,
    "internalModules": 6,
    "consTier": 3,
+   "maxOfficers": 0,
    "length_m": 600,
    "toylength_cm": 24.5,
    "width_m": 60,
    "volume": 1625774,
    "thrusterMultiplier": 3,
-   "structuralIntegrity": 128,
-   "altSI": 233,
+   "structuralIntegrity": 240,
    "mass_tons": 7680,
    "crew": 100,
    "alien": true,
@@ -2928,20 +3388,37 @@
          "y": 5
       },
       {
+         "moduleSlotType": "Utility",
+         "x": 0,
+         "y": 5
+      },
+      {
+         "moduleSlotType": "Utility",
+         "x": 0,
+         "y": 1
+      },
+      {
          "moduleSlotType": "Propellant",
          "x": 0,
          "y": 0
-      },
-      {
-         "moduleSlotType": "Utility",
-         "x": 0,
-         "y": 4
-      },
-      {
-         "moduleSlotType": "Utility",
-         "x": 0,
-         "y": 6
       }
    ]
+},
+ {
+   "dataName": "SalamanderGunship",
+   "friendlyName": "Salamander Gunship",
+   "disable": true,
+   "structuralIntegrity": 3,
+   "crew": 1,
+   "alien": true,
+   "monthlyIncome_Money": 0,
+   "missionControl": 1,
+   "requiredProjectName": "Project_AlienMasterProject",
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.7,
+      "nobleMetals": 0.2
+   },
+   "shipModuleSlots": []
 }
 ]

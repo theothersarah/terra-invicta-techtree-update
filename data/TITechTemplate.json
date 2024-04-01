@@ -87,7 +87,8 @@
    "researchCost": 25000,
    "prereqs": [
       "GasCoreFissionSystems",
-      "Diamondoids"
+      "Superalloys",
+      "Neutronics"
    ],
    "effects": [
       "Effect_GlobalFissionTechIncrease"
@@ -114,7 +115,8 @@
    "endGameTech": false,
    "researchCost": 20000,
    "prereqs": [
-      "SuperconductingMagnets"
+      "SuperconductingMagnets",
+      "Superalloys"
    ]
 },
  {
@@ -171,9 +173,9 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 50000,
+   "researchCost": 25000,
    "prereqs": [
-      "SuperconductingMagnets",
+      "AdvancedHydrogenContainment",
       "AdvancedAtomicManipulation"
    ],
    "effects": [
@@ -190,7 +192,8 @@
    "researchCost": 100000,
    "prereqs": [
       "AntimatterContainment",
-      "OurSpaceFuture"
+      "OurSpaceFuture",
+      "ParticleCannon"
    ]
 },
  {
@@ -203,7 +206,7 @@
    "researchCost": 100000,
    "prereqs": [
       "AntimatterMassProduction",
-      "DeepSpacePropulsionConcepts"
+      "MagneticPlasmaConfinementTechniques"
    ]
 },
  {
@@ -215,7 +218,6 @@
    "endGameTech": false,
    "researchCost": 70000,
    "prereqs": [
-      "AdvancedMissileWarfareDoctrine",
       "AntimatterContainment",
       "MilitarizationofSpace"
    ]
@@ -314,6 +316,9 @@
    "prereqs": [
       "ArrivalEconomics",
       "ArrivalInternationalRelations"
+   ],
+   "effects": [
+      "Effect_EnvironmentBestSustainabilityValue05"
    ]
 },
  {
@@ -364,7 +369,7 @@
    "researchCost": 5000,
    "prereqs": [
       "WeAreNotAlone",
-      "Biotechnology"
+      "SpaceMedicine"
    ]
 },
  {
@@ -435,8 +440,8 @@
       "ArrivalEconomics"
    ],
    "effects": [
+      "Effect_EnvironmentBestSustainabilityValue10",
       "Effect_WelfareReduction_CO2_ppm",
-      "Effect_Economy_CO2_ppm50",
       "Effect_WelfareReduction_CH4_ppm"
    ]
 },
@@ -454,6 +459,7 @@
       "ArrivalInternationalDevelopment"
    ],
    "effects": [
+      "Effect_EnvironmentBestSustainabilityValue10",
       "Effect_WelfareReduction_CO2_ppm",
       "Effect_WelfareReduction_CH4_ppm",
       "Effect_WelfareReduction_N2O_ppm",
@@ -551,7 +557,8 @@
    "effects": [
       "Effect_WelfareReduction_CO2_ppm",
       "Effect_WelfareReduction_CH4_ppm",
-      "Effect_WelfareReduction_N2O_ppm"
+      "Effect_WelfareReduction_N2O_ppm",
+      "Effect_EnvironmentBestSustainabilityValue05"
    ]
 },
  {
@@ -563,7 +570,8 @@
    "endGameTech": false,
    "researchCost": 75000,
    "prereqs": [
-      "DeuteriumTritiumFusion"
+      "DeuteriumTritiumFusion",
+      "Superalloys"
    ],
    "effects": [
       "Effect_GlobalFusionTechIncrease"
@@ -578,11 +586,12 @@
    "endGameTech": false,
    "researchCost": 75000,
    "prereqs": [
-      "DeuteriumTritiumFusion"
+      "DeuteriumDeuteriumFusion",
+      "HighTemperatureSuperconductors",
+      "CarbonNanotubes"
    ],
    "effects": [
       "Effect_GlobalFusionTechIncrease",
-      "Effect_Economy_CO2_ppm90",
       "Effect_Economy_BasePCGDPIncrease02"
    ]
 },
@@ -595,11 +604,11 @@
    "endGameTech": false,
    "researchCost": 50000,
    "prereqs": [
-      "NuclearFusioninSpace"
+      "NuclearFusioninSpace",
+      "Neutronics"
    ],
    "effects": [
       "Effect_GlobalFusionTechIncrease",
-      "Effect_Economy_CO2_ppm90",
       "Effect_Economy_BasePCGDPIncrease02"
    ]
 },
@@ -613,7 +622,7 @@
    "researchCost": 15000,
    "prereqs": [
       "CarbonNanotubes",
-      "AdvancedAtomicManipulation"
+      "MolecularAssemblers"
    ],
    "effects": [
       "Effect_IncreaseMaxArmyTechLevel"
@@ -652,7 +661,7 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 2500,
+   "researchCost": 1500,
    "prereqs": [
       "DeepSpacePropulsionConcepts"
    ]
@@ -666,8 +675,8 @@
    "endGameTech": false,
    "researchCost": 15000,
    "prereqs": [
-      "VacuumElectrostaticPrinciples",
-      "AdvancedSuperconductors"
+      "NuclearFusioninSpace",
+      "VacuumElectrostaticPrinciples"
    ]
 },
  {
@@ -677,7 +686,7 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "endGameTech": false,
-   "researchCost": 2500,
+   "researchCost": 3000,
    "prereqs": [
       "DeepSpacePropulsionConcepts",
       "VacuumElectrostaticPrinciples"
@@ -690,10 +699,9 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 2500,
+   "researchCost": 500,
    "prereqs": [
-      "DeepSpacePropulsionConcepts",
-      "AdvancedMagnetics"
+      "DeepSpacePropulsionConcepts"
    ]
 },
  {
@@ -705,7 +713,7 @@
    "endGameTech": false,
    "researchCost": 5000,
    "prereqs": [
-      "SpaceMedicine",
+      "InSituResourceUtilization",
       "SpaceAgriculture",
       "ArrivalPsychology"
    ]
@@ -733,7 +741,7 @@
    "researchCost": 25000,
    "prereqs": [
       "SolidCoreFissionSystems",
-      "Diamondoids",
+      "CarbonNanotubes",
       "ElectromagneticPropulsion"
    ]
 },
@@ -746,7 +754,7 @@
    "endGameTech": false,
    "researchCost": 45000,
    "prereqs": [
-      "MilitarizationofSpace",
+      "SpaceNavies",
       "IntegratedEarthSpaceEconomy",
       "ImprovedShipbuildingTechniques"
    ]
@@ -818,7 +826,10 @@
    "AI_techRole": "Efficiency",
    "AI_criticalTech": false,
    "endGameTech": true,
-   "researchCost": 100000
+   "researchCost": 100000,
+   "effects": [
+      "Effect_SpaceMineFreebies1"
+   ]
 },
  {
    "friendlyName": "Gas Core Fission Systems",
@@ -829,7 +840,8 @@
    "endGameTech": false,
    "researchCost": 20000,
    "prereqs": [
-      "MoltenCoreFissionSystems"
+      "MoltenCoreFissionSystems",
+      "AdvancedHeatManagementConcepts"
    ],
    "effects": [
       "Effect_GlobalFissionTechIncrease"
@@ -899,31 +911,7 @@
    "researchCost": 5000,
    "prereqs": [
       "ElectromagneticPropulsion",
-      "MagneticPlasmaConfinementTechniques"
-   ]
-},
- {
-   "friendlyName": "High-Energy Electrostatic Propulsion",
-   "dataName": "HighEnergyElectrostaticPropulsion",
-   "techCategory": "SpaceScience",
-   "AI_techRole": "SpaceDevelopment",
-   "AI_criticalTech": false,
-   "endGameTech": false,
-   "researchCost": 5000,
-   "prereqs": [
-      "ElectrostaticPropulsion"
-   ]
-},
- {
-   "friendlyName": "High-Energy Electrothermal Propulsion",
-   "dataName": "HighEnergyElectrothermalPropulsion",
-   "techCategory": "SpaceScience",
-   "AI_techRole": "SpaceDevelopment",
-   "AI_criticalTech": false,
-   "endGameTech": false,
-   "researchCost": 5000,
-   "prereqs": [
-      "ElectrothermalPropulsion"
+      "SuperconductingMagnets"
    ]
 },
  {
@@ -936,21 +924,6 @@
    "researchCost": 1000
 },
  {
-   "friendlyName": "Hydrogen-Lithium-6 Fusion",
-   "dataName": "HydrogenLithium6Fusion",
-   "techCategory": "Energy",
-   "AI_techRole": "SpaceDevelopment",
-   "AI_criticalTech": false,
-   "endGameTech": false,
-   "researchCost": 75000,
-   "prereqs": [
-      "DeuteriumTritiumFusion"
-   ],
-   "effects": [
-      "Effect_GlobalFusionTechIncrease"
-   ]
-},
- {
    "friendlyName": "Improved Shipbuilding Techniques",
    "dataName": "ImprovedShipbuildingTechniques",
    "techCategory": "Materials",
@@ -960,7 +933,8 @@
    "researchCost": 20000,
    "prereqs": [
       "IndustrializationofSpace",
-      "NextGenerationAerospace"
+      "NextGenerationAerospace",
+      "Superalloys"
    ]
 },
  {
@@ -1012,10 +986,10 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 35000,
+   "researchCost": 65000,
    "prereqs": [
-      "HighEnergyLasers",
-      "AdvancedNeuralNetworks",
+      "ArcLasers",
+      "NuclearFusioninSpace",
       "AdvancedAtomicManipulation"
    ]
 },
@@ -1051,7 +1025,8 @@
    ],
    "effects": [
       "Effect_Economy_BasePCGDPIncrease02",
-      "Effect_WelfareReduction_CO2_ppm"
+      "Effect_WelfareReduction_CO2_ppm",
+      "Effect_EnvironmentBestSustainabilityValue05"
    ]
 },
  {
@@ -1101,9 +1076,8 @@
    "endGameTech": false,
    "researchCost": 50000,
    "prereqs": [
-      "DeepSpacePropulsionConcepts",
       "MagneticPlasmaConfinementTechniques",
-      "SuperconductingMagnets"
+      "DeepSpacePropulsionConcepts"
    ]
 },
  {
@@ -1116,7 +1090,7 @@
    "researchCost": 35000,
    "prereqs": [
       "HighTemperatureSuperconductors",
-      "MagneticForceManipulation"
+      "SuperconductingMagnets"
    ]
 },
  {
@@ -1181,7 +1155,8 @@
       "MissiontotheAsteroids"
    ],
    "effects": [
-      "Effect_ExploreJupiter"
+      "Effect_ExploreJupiter",
+      "Effect_SpaceMineFreebies6"
    ]
 },
  {
@@ -1197,7 +1172,8 @@
    ],
    "effects": [
       "Effect_ExploreMars",
-      "Effect_ExploreEarthLagrangePoints"
+      "Effect_ExploreEarthLagrangePoints",
+      "Effect_SpaceMineFreebies6"
    ]
 },
  {
@@ -1213,7 +1189,8 @@
       "NuclearFissioninSpace"
    ],
    "effects": [
-      "Effect_ExploreSaturn"
+      "Effect_ExploreSaturn",
+      "Effect_SpaceMineFreebies6"
    ]
 },
  {
@@ -1239,7 +1216,8 @@
       "DeepSpacePropulsionConcepts"
    ],
    "effects": [
-      "Effect_ExploreAsteroids"
+      "Effect_ExploreAsteroids",
+      "Effect_SpaceMineFreebies6"
    ]
 },
  {
@@ -1255,7 +1233,8 @@
       "AdvancedHeatManagementConcepts"
    ],
    "effects": [
-      "Effect_ExploreInnerPlanets"
+      "Effect_ExploreInnerPlanets",
+      "Effect_SpaceMineFreebies3"
    ]
 },
  {
@@ -1270,7 +1249,8 @@
       "OutpostHabs"
    ],
    "effects": [
-      "Effect_ExploreLuna"
+      "Effect_ExploreLuna",
+      "Effect_SpaceMineFreebies3"
    ]
 },
  {
@@ -1288,7 +1268,8 @@
    ],
    "effects": [
       "Effect_ExploreOuterPlanets",
-      "Effect_ExploreKuiperBelt"
+      "Effect_ExploreKuiperBelt",
+      "Effect_SpaceMineFreebies6"
    ]
 },
  {
@@ -1312,7 +1293,8 @@
    "endGameTech": false,
    "researchCost": 10000,
    "prereqs": [
-      "SolidCoreFissionSystems"
+      "SolidCoreFissionSystems",
+      "AdvancedCarbonManipulation"
    ],
    "effects": [
       "Effect_GlobalFissionTechIncrease"
@@ -1348,15 +1330,17 @@
    ]
 },
  {
-   "friendlyName": "Neutronium Containment",
-   "dataName": "NeutroniumContainment",
-   "techCategory": "Energy",
+   "friendlyName": "Neutronics",
+   "dataName": "Neutronics",
+   "techCategory": "Materials",
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 50000,
+   "researchCost": 15000,
    "prereqs": [
-      "Diamondoids"
+      "AdvancedAtomicManipulation",
+      "AdvancedNeuralNetworks",
+      "ParticleCannon"
    ]
 },
  {
@@ -1400,8 +1384,9 @@
    "endGameTech": false,
    "researchCost": 50000,
    "prereqs": [
-      "HighTemperatureSuperconductors",
-      "NuclearFissioninSpace"
+      "AdvancedSuperconductors",
+      "NuclearFissioninSpace",
+      "AdvancedHeatManagementConcepts"
    ],
    "effects": [
       "Effect_GlobalFusionTechIncrease"
@@ -1454,7 +1439,7 @@
    "endGameTech": false,
    "researchCost": 30000,
    "prereqs": [
-      "MilitarizationofSpace",
+      "SpaceNavies",
       "DirectedSpaceResearch",
       "SpaceCommerce"
    ]
@@ -1472,16 +1457,16 @@
    ]
 },
  {
-   "friendlyName": "Particle Cannon",
+   "friendlyName": "Particle Beams",
    "dataName": "ParticleCannon",
-   "techCategory": "MilitaryScience",
+   "techCategory": "Energy",
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": false,
    "endGameTech": false,
    "researchCost": 5000,
    "prereqs": [
       "VacuumElectrostaticPrinciples",
-      "DirectedEnergyWarfareDoctrine"
+      "HighEnergyLasers"
    ]
 },
  {
@@ -1548,8 +1533,8 @@
    ]
 },
  {
-   "friendlyName": "Proton-Boron Fusion",
-   "dataName": "ProtonBoronFusion",
+   "friendlyName": "Aneutronic Fusion",
+   "dataName": "AneutronicFusion",
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
@@ -1560,7 +1545,8 @@
       "AdvancedHydrogenContainment"
    ],
    "effects": [
-      "Effect_GlobalFusionTechIncrease"
+      "Effect_GlobalFusionTechIncrease",
+      "Effect_Economy_BasePCGDPIncrease02"
    ]
 },
  {
@@ -1572,10 +1558,12 @@
    "endGameTech": false,
    "researchCost": 100000,
    "prereqs": [
-      "ProtonBoronFusion"
+      "AneutronicFusion",
+      "Ultracapacitors"
    ],
    "effects": [
-      "Effect_GlobalFusionTechIncrease"
+      "Effect_GlobalFusionTechIncrease",
+      "Effect_Economy_BasePCGDPIncrease02"
    ]
 },
  {
@@ -1587,7 +1575,8 @@
    "endGameTech": false,
    "researchCost": 10000,
    "prereqs": [
-      "AdvancedAtomicManipulation"
+      "AdvancedAtomicManipulation",
+      "PhotonicComputing"
    ]
 },
  {
@@ -1734,6 +1723,20 @@
    ]
 },
  {
+   "friendlyName": "Space Navies",
+   "dataName": "SpaceNavies",
+   "techCategory": "MilitaryScience",
+   "AI_techRole": "SpaceWar",
+   "AI_criticalTech": false,
+   "endGameTech": false,
+   "researchCost": 10000,
+   "prereqs": [
+      "MilitarizationofSpace",
+      "AdAstra",
+      "NuclearFissioninSpace"
+   ]
+},
+ {
    "friendlyName": "Space Research",
    "dataName": "SpaceResearch",
    "techCategory": "SocialScience",
@@ -1756,6 +1759,18 @@
    "researchCost": 1000,
    "prereqs": [
       "MissionToSpace"
+   ]
+},
+ {
+   "friendlyName": "Superalloys",
+   "dataName": "Superalloys",
+   "techCategory": "Materials",
+   "AI_techRole": "SpaceWar",
+   "AI_criticalTech": false,
+   "endGameTech": false,
+   "researchCost": 5000,
+   "prereqs": [
+      "AdvancedAtomicManipulation"
    ]
 },
  {
@@ -1798,6 +1813,20 @@
    ]
 },
  {
+   "friendlyName": "Tokamaks",
+   "dataName": "Tokamaks",
+   "techCategory": "Energy",
+   "AI_techRole": "SpaceDevelopment",
+   "AI_criticalTech": false,
+   "endGameTech": false,
+   "researchCost": 25000,
+   "prereqs": [
+      "MagneticPlasmaConfinementTechniques",
+      "NuclearFusioninSpace",
+      "AppliedArtificialIntelligence"
+   ]
+},
+ {
    "friendlyName": "Terawatt Fusion Reactors",
    "dataName": "TerawattFusionReactors",
    "techCategory": "Energy",
@@ -1806,7 +1835,7 @@
    "endGameTech": false,
    "researchCost": 100000,
    "prereqs": [
-      "DeuteriumTritiumFusion",
+      "DeuteriumHelium3Fusion",
       "Ultracapacitors",
       "Diamondoids"
    ],
@@ -1972,9 +2001,11 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 25000,
+   "researchCost": 50000,
    "prereqs": [
-      "MagneticPlasmaConfinementTechniques"
+      "MagneticPlasmaConfinementTechniques",
+      "NuclearFusioninSpace",
+      "Supercapacitors"
    ]
 }
 ]

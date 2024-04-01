@@ -144,7 +144,7 @@ TINationTemplate.nationAdjective.DEN=デンマーク
 TINationTemplate.displayNameWithArticlePrep.DEN=デンマーク
 TINationTemplate.displayName.DEU=ドイツ民主共和国
 TINationTemplate.displayNameWithArticle.DEU=ドイツ民主共和国
-TINationTemplate.nationAdjective.DEU=ドイツ
+TINationTemplate.nationAdjective.DEU=ドイツ語
 TINationTemplate.displayNameWithArticlePrep.DEU=ドイツ民主共和国
 TINationTemplate.displayName.DOM=大自治領
 TINationTemplate.displayNameWithArticle.DOM=大自治領
@@ -680,7 +680,7 @@ TINationTemplate.unionDisplayNameWithArticlePrep.COL=大コロンビア
 
 TINationTemplate.unionDisplayName.DEU=ドイツ
 TINationTemplate.unionDisplayNameWithArticle.DEU=ドイツ
-TINationTemplate.unionAdjective.DEU=ドイツ
+TINationTemplate.unionAdjective.DEU=ドイツ語
 TINationTemplate.unionDisplayNameWithArticlePrep.DEU=ドイツ
 
 TINationTemplate.unionDisplayName.EGY=アラブ連盟
@@ -783,7 +783,7 @@ TINationTemplate.unionDisplayNameWithArticle.USA=北アメリカ合衆国
 TINationTemplate.unionAdjective.USA=北アメリカ
 TINationTemplate.unionDisplayNameWithArticlePrep.USA=北アメリカ合衆国
 
-TINationTemplate.GenericFederationDisplayName={0}連邦
+TINationTemplate.GenericFederationDisplayName={0}連邦												// national adjective
 TINationTemplate.GenericFederationDisplayNameWithArticle={0}連邦
 TINationTemplate.GenericFederationAdjective={0}連邦
 
@@ -877,10 +877,10 @@ TINationTemplate.displayNameWithArticle.HUN=ハンガリー
 TINationTemplate.nationAdjective.HUN=ハンガリー
 TINationTemplate.displayNameWithArticlePrep.HUN=ハンガリー
 
-TINationTemplate.displayName.ING=イングリア
-TINationTemplate.displayNameWithArticle.ING=イングリア
-TINationTemplate.nationAdjective.ING=イングリア
-TINationTemplate.displayNameWithArticlePrep.ING=イングリア
+TINationTemplate.displayName.ING=ペテルブルク共和国
+TINationTemplate.displayNameWithArticle.ING=ペテルブルク共和国
+TINationTemplate.nationAdjective.ING=ペテルブルク
+TINationTemplate.displayNameWithArticlePrep.ING=ペテルブルク共和国
 
 TINationTemplate.displayName.IVO=コートジボワール
 TINationTemplate.displayNameWithArticle.IVO=コートジボワール
@@ -912,10 +912,10 @@ TINationTemplate.displayNameWithArticle.ROM=ルーマニア
 TINationTemplate.nationAdjective.ROM=ルーマニア
 TINationTemplate.displayNameWithArticlePrep.ROM=ルーマニア
 
-TINationTemplate.displayName.ROS=ロストフ州
-TINationTemplate.displayNameWithArticle.ROS=ロストフ州
-TINationTemplate.nationAdjective.ROS=ロストフ州
-TINationTemplate.displayNameWithArticlePrep.ROS=ロストフ州
+TINationTemplate.displayName.ROS=ドンスコ・カザチェ・ヴォイスコ
+TINationTemplate.displayNameWithArticle.ROS=ドンスコ・カザチェ・ヴォイスコ
+TINationTemplate.nationAdjective.ROS=カザチェ
+TINationTemplate.displayNameWithArticlePrep.ROS=ドンスコ・カザチェ・ヴォイスコ
 
 TINationTemplate.displayName.SAH=サハラウィ
 TINationTemplate.displayNameWithArticle.SAH=サハラウィ

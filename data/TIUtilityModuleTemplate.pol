@@ -1,7 +1,7 @@
 TIUtilityModuleTemplate.displayName.ISRUModule=Moduł PUZ
 TIUtilityModuleTemplate.description.ISRUModule=Moduł Polowej Utylizacji Zasobów umożliwi statkom uzupełnianie paliwa w niezabudowanych miejscach na habitaty, w których znajdują się surowce wchodzące w skład tego paliwa. Statki wykorzystujące <h>dowolny</h> czynnik napędowy mogą go uzupełniać w dowolnym miejscu.
 TIUtilityModuleTemplate.displayName.RemassScoop=Pobierak aerodynamiczny
-TIUtilityModuleTemplate.description.RemassScoop=Pobierak aerodynamiczny nadaje statkom właściwości aerodynamiczne, zapobiegając uszkodzeniom podczas hamowania aerodynamicznego, a ponadto umożliwia uzupełnianie zapasu paliwa <h>wodorowego</h> za pomocą <color=#FFFFFFFF><sprite name="water"></color> z orbity przejściowej wokół planety jowiszowej. Także statki wykorzystujące <h>dowolny</h> czynnik napędowy mogą go uzupełniać na planetach jowiszowych.
+TIUtilityModuleTemplate.description.RemassScoop=Pobierak aerodynamiczny nadaje statkom właściwości aerodynamiczne, co zapobiega uszkodzeniom podczas hamowania aerodynamicznego, a ponadto umożliwia uzupełnianie zapasu paliwa <h>wodorowego</h> za pomocą <color=#FFFFFFFF><sprite name="water"></color> z orbity przejściowej wokół planety jowiszowej. Także statki wykorzystujące <h>dowolny</h> czynnik napędowy mogą go uzupełniać na planetach jowiszowych.
 TIUtilityModuleTemplate.displayName.MuonSpiker=Katalizator mionowy
 TIUtilityModuleTemplate.description.MuonSpiker=Miony katalizują reakcje fuzji jądrowej, co daje {1} premii do ciągu napędów termojądrowych.
 TIUtilityModuleTemplate.displayName.NeutroniumSpiker=Katalizator neutronowy
@@ -39,9 +39,9 @@ TIUtilityModuleTemplate.description.Magazine=Urządzenie magazynujące amunicję
 TIUtilityModuleTemplate.displayName.ComponentArmor=Opancerzenie komponentów
 TIUtilityModuleTemplate.description.ComponentArmor=Płyty chroniące systemy i moduły statku. Zmniejszają o połowę wszystkie uszkodzenia komponentów wewnętrznych statku podczas walki.
 TIUtilityModuleTemplate.displayName.SolarPlatformKit=Prefabrykat platformy solarnej
-TIUtilityModuleTemplate.description.SolarPlatformKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy małej zasilanej energią słoneczną stacji kosmicznej w miejscu przebywania statku nie dalej niż orbita Marsa. Zapas prefabrykatu można uzupełnić, naprawiając statek w stoczni.
+TIUtilityModuleTemplate.description.SolarPlatformKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy małej zasilanej energią słoneczną stacji kosmicznej w miejscu przebywania statku nie dalej niż orbita Ziemi wokół słońca. Zapas prefabrykatu można uzupełnić, tankując statek w stoczni.
 TIUtilityModuleTemplate.displayName.SolarOutpostKit=Prefabrykat placówki solarnej
-TIUtilityModuleTemplate.description.SolarOutpostKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy małej zasilanej energią słoneczną bazy na powierzchni ciała niebieskiego wewnątrz orbity Marsa. Zapas prefabrykatu można uzupełnić, naprawiając statek w stoczni.
+TIUtilityModuleTemplate.description.SolarOutpostKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy małej zasilanej energią słoneczną bazy na powierzchni ciała niebieskiego nie dalej niż orbita Ziemi wokół Słońca. Zapas prefabrykatu można uzupełnić, tankując statek w stoczni.
 TIUtilityModuleTemplate.displayName.FissionPlatformKit=Prefabrykat platformy jądrowej
 TIUtilityModuleTemplate.description.FissionPlatformKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy małej stacji kosmicznej zasilanej energią jądrową w miejscu przebywania statku. Zapas prefabrykatu można uzupełnić, naprawiając statek w stoczni.
 TIUtilityModuleTemplate.displayName.FissionOutpostKit=Prefabrykat placówki jądrowej
@@ -51,9 +51,9 @@ TIUtilityModuleTemplate.description.FusionPlatformKit=Umożliwia wykorzystanie m
 TIUtilityModuleTemplate.displayName.FusionOutpostKit=Prefabrykat placówki termojądrowej
 TIUtilityModuleTemplate.description.FusionOutpostKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy małej zasilanej energią termojądrową bazy na powierzchni ciała niebieskiego. Zapas prefabrykatu można uzupełnić, naprawiając statek w stoczni.
 TIUtilityModuleTemplate.displayName.AutomatedSolarPlatformKit=Prefabrykat automatycznej platformy solarnej
-TIUtilityModuleTemplate.description.AutomatedSolarPlatformKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy jednego magazynu i małej zasilanej energią słoneczną stacji kosmicznej w miejscu przebywania statku nie dalej niż orbita Marsa. Zapas prefabrykatu można uzupełnić, naprawiając statek w stoczni.
+TIUtilityModuleTemplate.description.AutomatedSolarPlatformKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy jednego magazynu i małej, zasilanej energią słoneczną stacji kosmicznej w miejscu przebywania statku nie dalej niż orbita Ziemi wokół Słońca. Zapas prefabrykatu można uzupełnić, tankując statek w stoczni.
 TIUtilityModuleTemplate.displayName.AutomatedSolarOutpostKit=Prefabrykat automatycznej placówki solarnej
-TIUtilityModuleTemplate.description.AutomatedSolarOutpostKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy małej zasilanej energią słoneczną bazy wydobywczej na powierzchni ciała niebieskiego wewnątrz orbity Marsa. Zapas prefabrykatu można uzupełnić, naprawiając statek w stoczni.
+TIUtilityModuleTemplate.description.AutomatedSolarOutpostKit=Umożliwia budowę małej, zasilanej energią słoneczną bazy górniczej na powierzchni ciała niebieskiego nie dalej niż orbita Ziemi wokół Słońca. Zapas prefabrykatu można uzupełnić, tankując statek w stoczni.
 TIUtilityModuleTemplate.displayName.AutomatedFissionPlatformKit=Prefabrykat automatycznej platformy jądrowej
 TIUtilityModuleTemplate.description.AutomatedFissionPlatformKit=Umożliwia wykorzystanie modułu konstrukcyjnego do budowy magazynu i małej zasilanej energią jądrową stacji kosmicznej w miejscu przebywania statku. Zapas prefabrykatu można uzupełnić, naprawiając statek w stoczni.
 TIUtilityModuleTemplate.displayName.AutomatedFissionOutpostKit=Prefabrykat automatycznej placówki jądrowej

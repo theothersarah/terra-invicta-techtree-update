@@ -1,23 +1,23 @@
 TIUtilityModuleTemplate.displayName.ISRUModule=RNIS-Modul
-TIUtilityModuleTemplate.description.ISRUModule=Das In-Situ-Ressourcennutzungsmodul ermöglicht es Schiffen, an unverbesserten Hafenstandorten, die Rohstoffe für den Schiffstreibstoff produzieren, neuen Treibstoff zu tanken. Schiffe, die <h>irgendetwas</h> als Treibstoff angegeben haben, können an jedem beliebigen Ort neu tanken.
+TIUtilityModuleTemplate.description.ISRUModule=Das In-Situ-Ressourcennutzungsmodul ermöglicht es Schiffen, an unverbesserten Hafenstandorten, die alle Rohstoffe für den Schiffstreibstoff produzieren, neuen Treibstoff zu tanken. Schiffe, die <h>irgendetwas</h> als Treibstoff angegeben haben, können an jedem beliebigen Ort neu tanken.
 TIUtilityModuleTemplate.displayName.RemassScoop=Massenrückgewinner
-TIUtilityModuleTemplate.description.RemassScoop=Der Stützmassengewinner , die Schäden durch Atmosphärenbremsung verhindern, und ermöglicht es ihm, die <h>Wasserstoff</h>-Treibstoffvorräte mit <color=#FFFFFFFF><sprite name="water"></color> als einziger Komponente aus den Schnittstellenumlaufbahnen jovianischer Planeten aufzufüllen. Schiffe, die <h>irgendetwas</h> als Treibstoff haben, können auch auf jovianischen Welten wieder Treibstoff tanken.
+TIUtilityModuleTemplate.description.RemassScoop=Der Stützmassengewinner, die Schäden durch Atmosphärenbremsung verhindern, und ermöglicht es ihm, die <h>Wasserstoff</h>-Treibstoffvorräte mit <color=#FFFFFFFF><sprite name="water"></color> als einziger Komponente aus den Schnittstellenumlaufbahnen jovianischer Planeten aufzufüllen. Schiffe, die <h>irgendetwas</h> als Treibstoff haben, können auch auf jovianischen Welten wieder Treibstoff tanken.
 TIUtilityModuleTemplate.displayName.MuonSpiker=Myonen-Einspeisung
 TIUtilityModuleTemplate.description.MuonSpiker=Muonen katalysieren Kernfusionsreaktionen und verleihen Fusionsantrieben einen {1}-Bonus auf die Schubkraft.
 TIUtilityModuleTemplate.displayName.NeutroniumSpiker=Neutronium-Einspeisung
 TIUtilityModuleTemplate.description.NeutroniumSpiker=Eine geringe Menge an freien Neutronen dient als Katalysator für die Kernreaktionen, wodurch Fusions- und Kernspaltungsantriebe einen Schubbonus von {1} erhalten.
 TIUtilityModuleTemplate.displayName.AntimatterSpiker=Antimaterie-Einspeisung
-TIUtilityModuleTemplate.description.AntimatterSpiker=Eine winzige Menge Antimaterie wird als Katalysator für die Kernreaktionen verwendet, wodurch Fusions- und Kernspaltungsantriebe einen Schubbonus von 50 % erhalten. 
+TIUtilityModuleTemplate.description.AntimatterSpiker=Eine winzige Menge Antimaterie wird als Katalysator für die Kernreaktionen verwendet, wodurch Fusions- und Kernspaltungsantriebe einen Schubbonus von {1} erhalten. 
 TIUtilityModuleTemplate.displayName.MobileSpaceScienceLab=Mobiles Labor für Weltraumwissenschaften
-TIUtilityModuleTemplate.description.MobileSpaceScienceLab=Ein zusätzliches wissenschaftliches Team verleiht weltraumwissenschaftlicher Forschung einen Bonus von 5 % und ermöglicht es dem Schiff, mögliche Standorte für Stützpunkte auf Himmelskörpern von einer angrenzenden Umlaufbahn aus zu identifizieren.
+TIUtilityModuleTemplate.description.MobileSpaceScienceLab=Ein zusätzliches wissenschaftliches Team verleiht weltraumwissenschaftlicher Forschung einen Bonus von {5} und ermöglicht es dem Schiff, mögliche Standorte für Stützpunkte auf Himmelskörpern von einer angrenzenden Umlaufbahn aus zu identifizieren.
 TIUtilityModuleTemplate.displayName.RepairBay=Wartungshangar
 TIUtilityModuleTemplate.description.RepairBay=Dieses Modul erweitert das Schadensbegrenzungsteam und umfasst eine Werkstatt, was umfangreichere Reparaturen außerhalb von Werften ermöglicht.
 TIUtilityModuleTemplate.displayName.MarineAssaultUnit=Sturmtrupp
-TIUtilityModuleTemplate.description.MarineAssaultUnit=Ermöglicht Schiffen, Angriffe auf Habitate durchzuführen. Angriffswert: 1.
+TIUtilityModuleTemplate.description.MarineAssaultUnit=Ermöglicht Schiffen, Angriffe auf Habitate durchzuführen. Angriffswert: <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.AdvancedMarineAssaultUnit=Erfahrener Sturmtrupp
-TIUtilityModuleTemplate.description.AdvancedMarineAssaultUnit=Ermöglicht Schiffen, Angriffe auf Habitate durchzuführen. Angriffswert: 1.
+TIUtilityModuleTemplate.description.AdvancedMarineAssaultUnit=Ermöglicht Schiffen, Angriffe auf Habitate durchzuführen. Angriffswert: <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.EliteMarineAssaultUnit=Elite-Sturmtrupp
-TIUtilityModuleTemplate.description.EliteMarineAssaultUnit=Ermöglicht Schiffen, Angriffe auf Habitate durchzuführen. Angriffswert: 1.
+TIUtilityModuleTemplate.description.EliteMarineAssaultUnit=Ermöglicht Schiffen, Angriffe auf Habitate durchzuführen. Angriffswert: <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.Spartans=Spartaner
 TIUtilityModuleTemplate.description.Spartans=Fanatische und elitäre Marineeinheit für unsere Schiffe. Angriffswert: <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.Rangers=Waldläufer
@@ -25,13 +25,13 @@ TIUtilityModuleTemplate.description.Rangers=Veteraneneinheit der Space Marines f
 TIUtilityModuleTemplate.displayName.Immortals=Unsterbliche
 TIUtilityModuleTemplate.description.Immortals=Unsere treuesten und erfahrensten Space Marines. Angriffswert: <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.LaserEngine=Lasertriebwerk
-TIUtilityModuleTemplate.description.LaserEngine=Erhöht die Stärke aller Laserwaffen eines Schiffs um 5 MJ, wodurch diese mehr Schaden auf große Entfernung verursachen. Dieser Effekt kann durch weitere Lasertriebwerkmodule erhöht werden.
+TIUtilityModuleTemplate.description.LaserEngine=Erhöht die Stärke aller Laserwaffen eines Schiffs um {0} MJ, wodurch diese mehr Schaden auf große Entfernung verursachen. Dieser Effekt kann durch weitere Lasertriebwerkmodule erhöht werden.
 TIUtilityModuleTemplate.displayName.AdvancedLaserEngine=Erweitertes Lasertriebwerk
-TIUtilityModuleTemplate.description.AdvancedLaserEngine=Erhöht die Stärke aller Laserwaffen eines Schiffs um 5 MJ, wodurch diese mehr Schaden auf große Entfernung verursachen. Dieser Effekt kann durch weitere Lasertriebwerkmodule erhöht werden.
+TIUtilityModuleTemplate.description.AdvancedLaserEngine=Erhöht die Stärke aller Laserwaffen eines Schiffs um {0} MJ, wodurch diese mehr Schaden auf große Entfernung verursachen. Dieser Effekt kann durch weitere Lasertriebwerkmodule erhöht werden.
 TIUtilityModuleTemplate.displayName.LiquidHydrogenContainment=Sicherheitstanks für Flüssigwasserstoff
 TIUtilityModuleTemplate.description.LiquidHydrogenContainment=Langzeittanks für stabilen Flüssigwasserstoff, die einen effektiven {2}-Bonus auf die Ausstoßgeschwindigkeit des Schiffs gewähren.
 TIUtilityModuleTemplate.displayName.SlushHydrogenTankage=Tanks für Wasserstoffpaste
-TIUtilityModuleTemplate.description.SlushHydrogenTankage=Diese Tanks enthalten eine dichte Mischung aus festem und flüssigem Wasserstoff als Treibstoff, was die Austrittsgeschwindigkeit des Schiffsantriebs effektiv um 25 % erhöht.
+TIUtilityModuleTemplate.description.SlushHydrogenTankage=Diese Tanks enthalten eine dichte Mischung aus festem und flüssigem Wasserstoff als Treibstoff, was die Austrittsgeschwindigkeit des Schiffsantriebs effektiv um {2} erhöht.
 TIUtilityModuleTemplate.displayName.HydronTrap=Hydronenfalle
 TIUtilityModuleTemplate.description.HydronTrap=Lagertanks für stabilisierten monatomaren Wasserstoff, die einen effektiven Bonus von {2} auf die Ausstoßgeschwindigkeit des Schiffes gewähren.
 TIUtilityModuleTemplate.displayName.Magazine=Magazin
@@ -39,9 +39,9 @@ TIUtilityModuleTemplate.description.Magazine=Wehrmaterial zur Lagerung und Zufü
 TIUtilityModuleTemplate.displayName.ComponentArmor=Komponentenpanzerung
 TIUtilityModuleTemplate.description.ComponentArmor=Schutzpanzerung für die Systeme und Module des Schiffs. Halbiert den Schaden, den interne Schiffskomponenten im Kampf nehmen.
 TIUtilityModuleTemplate.displayName.SolarPlatformKit=Kit für solarbetriebene Plattform
-TIUtilityModuleTemplate.description.SolarPlatformKit=Ermöglicht die Errichtung einer kleinen solarbetriebenen Raumstation mit einem Konstruktionsmodul am Standort des Schiffes. Kann nur auf dem Mars verwendet werden. Kann nach Reparatur des Schiffes in einer Werft erneut verwendet werden.
+TIUtilityModuleTemplate.description.SolarPlatformKit=Ermöglicht die Errichtung einer kleinen solarbetriebenen Raumstation mit einem Konstruktionsmodul am Standort des Schiffes. Kann nur innerhalb der Erdumlaufbahn verwendet werden. Kann nach Nachschublieferungen an das Schiff in einer Werft erneut verwendet werden.
 TIUtilityModuleTemplate.displayName.SolarOutpostKit=Kit für solarbetriebenen Außenposten
-TIUtilityModuleTemplate.description.SolarOutpostKit=Ermöglicht die Errichtung eines kleinen solarbetriebenen Außenpostens mit einem Konstruktionsmodul auf der Oberfläche eines Himmelskörpers. Kann nach Reparatur des Schiffes in einer Werft erneut verwendet werden.
+TIUtilityModuleTemplate.description.SolarOutpostKit=Ermöglicht die Errichtung eines kleinen solarbetriebenen Außenpostens mit einem Konstruktionsmodul auf der Oberfläche eines Himmelskörpers, der sich innerhalb der Erdumlaufbahn befindet. Kann nach Nachschublieferungen an das Schiff in einer Werft erneut verwendet werden.
 TIUtilityModuleTemplate.displayName.FissionPlatformKit=Kit für Plattform mit Kernreaktor
 TIUtilityModuleTemplate.description.FissionPlatformKit=Ermöglicht die Errichtung einer kleinen Raumstation mit einem Kernreaktor und einem Konstruktionsmodul am Standort des Schiffes. Kann nach Reparatur des Schiffes in einer Werft erneut verwendet werden.
 TIUtilityModuleTemplate.displayName.FissionOutpostKit=Kit für Außenposten mit Kernreaktor
@@ -51,9 +51,9 @@ TIUtilityModuleTemplate.description.FusionPlatformKit=Ermöglicht die Errichtung
 TIUtilityModuleTemplate.displayName.FusionOutpostKit=Kit für Außenposten mit Fusionsreaktor
 TIUtilityModuleTemplate.description.FusionOutpostKit=Ermöglicht die Errichtung eines Außenpostens mit einem Fusionsreaktor und einem Konstruktionsmodul auf der Oberfläche eines Himmelskörpers. Kann nach Reparatur des Schiffes in einer Werft erneut verwendet werden.
 TIUtilityModuleTemplate.displayName.AutomatedSolarPlatformKit=Automatisiertes Kit für solarbetriebene Plattformen
-TIUtilityModuleTemplate.description.AutomatedSolarPlatformKit=Ermöglicht die Errichtung einer kleinen solarbetriebenen Versorgungsstation am Standort des Schiffes. Kann nur auf dem Mars verwendet werden. Kann nach Reparatur des Schiffes in einer Werft erneut verwendet werden.
+TIUtilityModuleTemplate.description.AutomatedSolarPlatformKit=Ermöglicht die Errichtung einer kleinen solarbetriebenen Versorgungsstation am Standort des Schiffes. Kann nur innerhalb der Erdumlaufbahn verwendet werden. Kann nach Nachschublieferungen an das Schiff in einer Werft erneut verwendet werden.
 TIUtilityModuleTemplate.displayName.AutomatedSolarOutpostKit=Automatisiertes Kit für solarbetriebenen Außenposten
-TIUtilityModuleTemplate.description.AutomatedSolarOutpostKit=Ermöglicht die Errichtung eines kleinen solarbetriebenen Bergbaustützpunkts auf der Oberfläche eines Himmelskörpers. Kann nach Reparatur des Schiffes in einer Werft erneut verwendet werden.
+TIUtilityModuleTemplate.description.AutomatedSolarOutpostKit=Ermöglicht die Errichtung eines kleinen solarbetriebenen Bergbaustützpunkts mit einem Konstruktionsmodul auf der Oberfläche eines Himmelskörpers, der sich innerhalb der Erdumlaufbahn befindet. Kann nach Nachschublieferungen an das Schiff in einer Werft erneut verwendet werden.
 TIUtilityModuleTemplate.displayName.AutomatedFissionPlatformKit=Automatisiertes Kit für Plattform mit Kernreaktor
 TIUtilityModuleTemplate.description.AutomatedFissionPlatformKit=Ermöglicht die Errichtung einer kleinen Versorgungsstation mit einem Kernreaktor am Standort des Schiffes. Kann nach Reparatur des Schiffes in einer Werft erneut verwendet werden.
 TIUtilityModuleTemplate.displayName.AutomatedFissionOutpostKit=Automatisiertes Kit für Außenposten mit Kernreaktor

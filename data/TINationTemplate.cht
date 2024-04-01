@@ -144,7 +144,7 @@ TINationTemplate.nationAdjective.DEN=丹麥
 TINationTemplate.displayNameWithArticlePrep.DEN=丹麥境內
 TINationTemplate.displayName.DEU=東德民主共和國
 TINationTemplate.displayNameWithArticle.DEU=東德民主共和國境內
-TINationTemplate.nationAdjective.DEU=德國
+TINationTemplate.nationAdjective.DEU=德文
 TINationTemplate.displayNameWithArticlePrep.DEU=東德民主共和國境內
 TINationTemplate.displayName.DOM=大自治領地
 TINationTemplate.displayNameWithArticle.DOM=大自治領地
@@ -416,7 +416,7 @@ TINationTemplate.nationAdjective.POL=波蘭文
 TINationTemplate.displayNameWithArticlePrep.POL=波蘭境內
 TINationTemplate.displayName.PRK=北韓
 TINationTemplate.displayNameWithArticle.PRK=北韓
-TINationTemplate.nationAdjective.PRK=北韓
+TINationTemplate.nationAdjective.PRK=韓文
 TINationTemplate.displayNameWithArticlePrep.PRK=北韓境內
 TINationTemplate.displayName.PRT=葡萄牙
 TINationTemplate.displayNameWithArticle.PRT=葡萄牙
@@ -634,10 +634,10 @@ TINationTemplate.displayName.ZAF=南非
 TINationTemplate.displayNameWithArticle.ZAF=南非
 TINationTemplate.nationAdjective.ZAF=南非
 TINationTemplate.displayNameWithArticlePrep.ZAF=南非境內
-TINationTemplate.displayName.ZMB=尚比亞-馬拉威
-TINationTemplate.displayNameWithArticle.ZMB=尚比亞-馬拉威
+TINationTemplate.displayName.ZMB=尚比亞—馬拉威
+TINationTemplate.displayNameWithArticle.ZMB=尚比亞—馬拉威
 TINationTemplate.nationAdjective.ZMB=尚比亞
-TINationTemplate.displayNameWithArticlePrep.ZMB=尚比亞-馬拉威境內
+TINationTemplate.displayNameWithArticlePrep.ZMB=尚比亞—馬拉威境內
 TINationTemplate.displayName.ZWE=辛巴威
 TINationTemplate.displayNameWithArticle.ZWE=辛巴威
 TINationTemplate.nationAdjective.ZWE=辛巴威
@@ -730,7 +730,7 @@ TINationTemplate.unionDisplayNameWithArticlePrep.KAZ=中亞聯盟
 
 TINationTemplate.unionDisplayName.KOR=大韓民國
 TINationTemplate.unionDisplayNameWithArticle.KOR=大韓民國
-TINationTemplate.unionAdjective.KOR=北韓
+TINationTemplate.unionAdjective.KOR=大韓民國
 TINationTemplate.unionDisplayNameWithArticlePrep.KOR=大韓民國境內
 
 TINationTemplate.unionDisplayName.TWN=中華民國
@@ -783,7 +783,7 @@ TINationTemplate.unionDisplayNameWithArticle.USA=北美合眾國
 TINationTemplate.unionAdjective.USA=北美
 TINationTemplate.unionDisplayNameWithArticlePrep.USA=北美合眾國境內
 
-TINationTemplate.GenericFederationDisplayName={0} 聯盟
+TINationTemplate.GenericFederationDisplayName={0}聯盟												// national adjective
 TINationTemplate.GenericFederationDisplayNameWithArticle={0}聯盟
 TINationTemplate.GenericFederationAdjective={0}聯盟
 
@@ -877,10 +877,10 @@ TINationTemplate.displayNameWithArticle.HUN=匈牙利
 TINationTemplate.nationAdjective.HUN=匈牙利
 TINationTemplate.displayNameWithArticlePrep.HUN=匈牙利境內
 
-TINationTemplate.displayName.ING=因格里亞
-TINationTemplate.displayNameWithArticle.ING=因格里亞
-TINationTemplate.nationAdjective.ING=因格里亞
-TINationTemplate.displayNameWithArticlePrep.ING=因格里亞境內
+TINationTemplate.displayName.ING=彼得堡共和國
+TINationTemplate.displayNameWithArticle.ING=彼得堡共和國
+TINationTemplate.nationAdjective.ING=彼得堡
+TINationTemplate.displayNameWithArticlePrep.ING=彼得堡共和國境內
 
 TINationTemplate.displayName.IVO=象牙海岸
 TINationTemplate.displayNameWithArticle.IVO=象牙海岸
@@ -912,10 +912,10 @@ TINationTemplate.displayNameWithArticle.ROM=羅馬尼亞
 TINationTemplate.nationAdjective.ROM=羅馬尼亞
 TINationTemplate.displayNameWithArticlePrep.ROM=羅馬尼亞境內
 
-TINationTemplate.displayName.ROS=羅斯托夫州
-TINationTemplate.displayNameWithArticle.ROS=羅斯托夫州
-TINationTemplate.nationAdjective.ROS=羅斯托夫州
-TINationTemplate.displayNameWithArticlePrep.ROS=羅斯托夫州境內
+TINationTemplate.displayName.ROS=頓河哥薩克
+TINationTemplate.displayNameWithArticle.ROS=頓河哥薩克
+TINationTemplate.nationAdjective.ROS=頓河哥薩克人
+TINationTemplate.displayNameWithArticlePrep.ROS=頓河哥薩克境內
 
 TINationTemplate.displayName.SAH=撒拉威
 TINationTemplate.displayNameWithArticle.SAH=撒拉威

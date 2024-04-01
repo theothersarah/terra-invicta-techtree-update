@@ -36,7 +36,7 @@ TITechTemplate.description.AdvancedFissionSystems=雖然核分裂技術擁有先
 TITechTemplate.displayName.AdvancedHeatManagementConcepts=進階熱能管理概念
 TITechTemplate.summary.AdvancedHeatManagementConcepts=科學家考慮以新方法容納和去除太空船排放的廢熱。
 TITechTemplate.quote.AdvancedHeatManagementConcepts=「你是閃亮的星星，你是燃燒的太陽，在你體內有永不熄滅的火焰。當這類火焰碰到彼此，世間萬物都無法抵擋。」<br/><align=right>{submitLeader}<align=left><br/><align=right>提升課程<I>《越燒越亮》</I>第四章第三單元<align=left>
-TITechTemplate.description.AdvancedHeatManagementConcepts=在太空船上不能直接打開窗戶，因此無法輕鬆排出數十個人體和無數個電腦系統、反應爐、武器所累積的熱氣。但如果不將熱氣去除，船上所有人都可能迅速死於嚴重中暑虛脫，船身最終也會融化。傳輸熱能的方法只可能是傳導、對流、輻射，而在太空真空中，輻射是目前唯一可行的辦法。這意味著要使用多個散熱器，可惜散熱器體積龐大，不甚理想。不過，液滴散熱器似乎是我們要的解答。透過取代固體表面散熱器，替換成會在細長的大型散熱器之間噴灑冷卻液滴的散熱器 (冷卻液滴會回收並重複使用)，大約就能將質量從 1300 公斤降至 100 公斤以下。這必須使用蒸氣壓極低的特殊液體，才能防止在回收前蒸發，不過有了相關領域的最新突破，可讓這種液滴存續數十年才需要替換。而且，理論上未來的奈米材質終將使散熱器的尺寸和質量減小。
+TITechTemplate.description.AdvancedHeatManagementConcepts=在太空船上不能直接打開窗戶，因此無法輕鬆排出數十個人體和無數個電腦系統、反應爐、武器所累積的熱氣。但如果不將熱氣去除，船上所有人都可能迅速死於嚴重中暑虛脫，船身最終也會融化。傳輸熱能的方法只可能是傳導、對流、輻射，而在太空真空中，輻射是目前唯一可行的辦法。這意味著要使用多個散熱器，可惜散熱器體積龐大，不甚理想。不過，液滴散熱器似乎是我們要的解答。透過取代固體表面散熱器，替換成會在細長的大型散熱器之間噴灑冷卻液滴的散熱器（冷卻液滴會回收並重複使用），大約就能將質量從 1300 公斤降至 100 公斤以下。這必須使用蒸氣壓極低的特殊液體，才能防止在回收前蒸發，不過有了相關領域的最新突破，可讓這種液滴存續數十年才需要替換。而且，理論上未來的奈米材質終將使散熱器的尺寸和質量減小。
 
 TITechTemplate.displayName.AdvancedHydrogenContainment=進階氫氣容納技術
 TITechTemplate.summary.AdvancedHydrogenContainment=研究人員尋找新方法，以容納笨重的太空船推進劑。
@@ -96,7 +96,7 @@ TITechTemplate.description.ArcLasers=作為遨遊星際的種族，我們已達�
 TITechTemplate.displayName.PrinciplesofSpaceWarfare=太空戰原則
 TITechTemplate.summary.PrinciplesofSpaceWarfare=軍事科學家開發出守則，來規範太空船地面武器系統的裝配。
 TITechTemplate.quote.PrinciplesofSpaceWarfare=「外交活動有其作用，但如果你進入任何狀況前沒有做好最壞的打算，你可能也會措手不及，只能微笑以對。」<br/><align=right>{resistLeader}<align=left><br/><align=right>外流的訓練影片<align=left>
-TITechTemplate.description.PrinciplesofSpaceWarfare=浩瀚無垠的太空等著人類去征服，但誰也說不準我們未來數十年要面對什麼阻力——會是來自未知的威脅，還是彼此的壓迫？太空將會是偶爾需要防禦的領土，我們送上去的拓荒者們也會需要保護。到時候，我們必須開發出新型武器，尤其要針對太空戰鬥來設計，且不必仰賴笨重、有限、又不穩定的彈藥庫。但是短期而言，既然現在我們有了經過驗證的詳細原理圖，最實際的作法就是改造現有武器，以在太空中 (而非陸地或海上) 有效使用。需要考量的因素非常多，包括實務面上低重力和微重力對速度和瞄準的影響、使用安全性、裝甲等，以及官僚政治層面的事務。我們不僅要建立最強大的太空作戰方式，也必須制訂太空戰的<i>規則</i>，包括關於分配國界、在衛星等無人物體周圍的權利、使用非動力攻擊、損害太空「環境」，以及可能奪走數十條、甚至是數百條人命的船艦或太空站破壞行動。因此現在攤在我們面前的守則不只涵蓋如何在太空有效作戰，也將打仗的複雜情況納入考量。
+TITechTemplate.description.PrinciplesofSpaceWarfare=浩瀚無垠的太空等著人類去征服，但誰也說不準我們未來數十年要面對什麼阻力——會是來自未知的威脅，還是彼此的壓迫？太空將會是偶爾需要防禦的領土，我們送上去的拓荒者們也會需要保護。到時候，我們必須開發出新型武器，尤其要針對太空戰鬥來設計，且不必仰賴笨重、有限、又不穩定的彈藥庫。但是短期而言，既然現在我們有了經過驗證的詳細原理圖，最實際的作法就是改造現有武器，以在太空中（而非陸地或海上）有效使用。需要考量的因素非常多，包括實務面上低重力和微重力對速度和瞄準的影響、使用安全性、裝甲等，以及官僚政治層面的事務。我們不僅要建立最強大的太空作戰方式，也必須制訂太空戰的<i>規則</i>，包括關於分配國界、在衛星等無人物體周圍的權利、使用非動力攻擊、損害太空「環境」，以及可能奪走數十條、甚至是數百條人命的船艦或太空站破壞行動。因此現在攤在我們面前的守則不只涵蓋如何在太空有效作戰，也將打仗的複雜情況納入考量。
 
 TITechTemplate.displayName.ArrivalCulture=異星降臨後的文化
 TITechTemplate.summary.ArrivalCulture=社會學家研究外星人的知識如何滲入人類藝術和日常生活。
@@ -221,7 +221,7 @@ TITechTemplate.description.DeuteriumHelium3Fusion=若要和其他遨遊星際的
 TITechTemplate.displayName.DeuteriumTritiumFusion=氘氚核融合
 TITechTemplate.summary.DeuteriumTritiumFusion=物理學家終於從兩個氫同位素的核融合取得有效淨能。
 TITechTemplate.quote.DeuteriumTritiumFusion=「我不在乎從海水過濾氘的方式有兩種還是兩百種，就告訴我哪一種最便宜，哪一種不會再害我們被告。」<br/><align=right>{exploitLeader}<align=left><br/><align=right>開普化學公司，委員會會議<align=left>
-TITechTemplate.description.DeuteriumTritiumFusion=奠基於對核融合科技和核分裂過程的知識，我們已能將融合兩種氫同位素 (即氘和氚) 的最大缺點轉化為最大優點。理論上，我們極不樂見此核融合反應所產生的中子輻射，但研究人員透過一項稱為<i>氚滋生圍包</i>的工程奇蹟，設計出可自行產生一些燃料的反應爐室。<br/><br/>氘非常稀有，但仍可以從海水或其他太空中的氫來源蒐集，其放射性同位素氚則必須用中子轟擊鋰來製造。透過在反應爐室的內部設計鋰塗層 (即滋生圍包)，就能在反應爐運轉的同時，使用核融合反應釋放的中子來製造新的氚燃料。<br/>比起目前任何其他反應爐設計，這種新穎有效的設計可讓反應爐壽命更長、燃料消耗減少，同時保護太空船和殖民地等免於中子輻射的危害。然而，在利用核融合能源方面，我們還有很長的路要走。這次的成功開啟了其他核融合概念的可能性，例如氘氘核融合，或更進一步的氦氘核融合。 
+TITechTemplate.description.DeuteriumTritiumFusion=奠基於對核融合科技和核分裂過程的知識，我們已能將融合兩種氫同位素（即氘和氚）的最大缺點轉化為最大優點。理論上，我們極不樂見此核融合反應所產生的中子輻射，但研究人員透過一項稱為<i>氚滋生圍包</i>的工程奇蹟，設計出可自行產生一些燃料的反應爐室。<br/><br/>氘非常稀有，但仍可以從海水或其他太空中的氫來源蒐集，其放射性同位素氚則必須用中子轟擊鋰來製造。透過在反應爐室的內部設計鋰塗層（即滋生圍包），就能在反應爐運轉的同時，使用核融合反應釋放的中子來製造新的氚燃料。<br/>比起目前任何其他反應爐設計，這種新穎有效的設計可讓反應爐壽命更長、燃料消耗減少，同時保護太空船和殖民地等免於中子輻射的危害。然而，在利用核融合能源方面，我們還有很長的路要走。這次的成功開啟了其他核融合概念的可能性，例如氘氘核融合，或更進一步的氦氘核融合。
 
 TITechTemplate.displayName.Diamondoids=鑽石烷
 TITechTemplate.summary.Diamondoids=材料科學家打造出類似鑽石的碳化合物，以用於裝甲和建設。
@@ -272,7 +272,7 @@ TITechTemplate.displayName.FissionPulseDrives=核分裂脈衝驅動器
 TITechTemplate.summary.FissionPulseDrives=我們運用可控制的核子爆炸來驅動太空船。
 TITechTemplate.quote.FissionPulseDrives=「有人說鑄劍為犁只是一種情懷，但是現在，我們就是用核彈來探索遙遠的太空，而不是轟炸家園。」<br/><align=right>{appeaseLeader}<align=left><br/><align=right>在 CNN 提倡全球核裁軍<align=left>
 TITechTemplate.description.FissionPulseDrives=早在 1947 年，就有人提議利用核子爆炸上太空，比我們得知宇宙間不只有我們更早。然而，我們缺乏成功發射所需的進階材質，以容納及有效導引劇烈的爆炸力。<br/><br/>如今，透過使用固芯核燃料和超強奈米材質，我們終於設計出一種太空船驅動器，能利用小規模的導能核子爆炸作為推進劑。重要的是，在地球大氣層附近使用時，只會出現極少的放射性落塵。每次爆炸都會經由太空船推進艙中的加農炮型排氣管來導引，讓所有爆炸力都擊中吸收板。吸收板裝有吸震奈米材質，可調動爆炸力，讓整艘船艦持續順暢地加速，因此大幅提高了抵達太陽系中遙遠衛星和行星的可能性。<br/><br/>結合這次的最新突破和先前的熔融芯及氣芯核分裂研究，或許很快就能打造出更先進的脈衝系統。
-
+ 
 TITechTemplate.displayName.FleetLogistics=艦隊後勤
 TITechTemplate.summary.FleetLogistics=隨著我們在太陽系進一步擴散，我們建立起更有效管理及維護大量太空船的方法。
 TITechTemplate.quote.FleetLogistics=「當然，我也看過那種節目。所有太空船都乖乖聽從遠方將軍的指示，所有世界都靜靜忙自己的事。小伙子啊，那都是夢，只是愚蠢的夢。」<br/><align=right>{destroyLeader}<align=left><br/><align=right>寫給 14 歲侄子的電子郵件<align=left>
@@ -346,7 +346,7 @@ TITechTemplate.description.IndependenceMovements=有些人相信，外星人到�
 TITechTemplate.displayName.IndustrializationofSpace=太空工業化
 TITechTemplate.summary.IndustrializationofSpace=制定有利可圖、穩定發展的太空生產和營利機制。
 TITechTemplate.quote.IndustrializationofSpace=「與其游手好閒、等待家中補給，還不如舉手投降。如果你不懂得如何利用找到的資源，你在開始前就輸了。」<br/><align=right>{destroyLeader}<align=left><br/><align=right>引自他的官方傳記《五步之遙》 (於出版前取消)<align=left>
-TITechTemplate.description.IndustrializationofSpace=在擺脫對地球補給線的依賴之前，我們幾乎沒有探索太陽系深處的希望，遑論定居。我們必須能夠在當地生產船艦、太空殖民地和採礦設施所需的一切，也就是說，要在太空中生產，而不僅僅在行星表面生產。在地球軌道之外有豐富的礦產，有一些目前可開採，有一些無法開採。我們現在計畫打造高效能的微重力和零重力工廠，這些工廠能以相對最少的人力來運作，將小行星和衛星的原料轉換成幾乎所有我們能在地球上製造的東西 (包括更多這樣的工廠)，且通常成本低廉，規模還大上許多倍。但這不僅僅是生產問題，還涉及貿易和運輸——法律和條約規定了可共享的資源和對象、花費的成本，以及必須通過哪些批准的運輸路線。太空不再是某個宇宙邊境小鎮，是時候成為我們經濟蓬勃發展不可或缺的一環了。 
+TITechTemplate.description.IndustrializationofSpace=在擺脫對地球補給線的依賴之前，我們幾乎沒有探索太陽系深處的希望，遑論定居。我們必須能夠在當地生產船艦、太空殖民地和採礦設施所需的一切，也就是說，要在太空中生產，而不僅僅在行星表面生產。在地球軌道之外有豐富的礦產，有一些目前可開採，有一些無法開採。我們現在計畫打造高效能的微重力和零重力工廠，這些工廠能以相對最少的人力來運作，將小行星和衛星的原料轉換成幾乎所有我們能在地球上製造的東西（包括更多這樣的工廠），且通常成本低廉，規模還大上許多倍。但這不僅僅是生產問題，還涉及貿易和運輸——法律和條約規定了可共享的資源和對象、花費的成本，以及必須通過哪些批准的運輸路線。太空不再是某個宇宙邊境小鎮，是時候成為我們經濟蓬勃發展不可或缺的一環了。 
 
 TITechTemplate.displayName.InertialPlasmaConfinementTechniques=慣性約束核融合
 TITechTemplate.summary.InertialPlasmaConfinementTechniques=物理學家透過使用定向能量為核燃料加壓，以點燃自給自足核融合反應。
@@ -366,7 +366,7 @@ TITechTemplate.description.IntegratedEarthSpaceEconomy=也許不可避免地，�
 TITechTemplate.displayName.InterplanetaryPolities=星際政治
 TITechTemplate.summary.InterplanetaryPolities=光速對交流造成的限制讓我們必須向地球外的太空殖民地提供一定程度的獨立性。
 TITechTemplate.quote.InterplanetaryPolities=「人們以為，最受鄙視的主人，是站在我們面前手握鞭子的主人。但不是這樣，我們最渴望推翻的，是那看不見，從遠處發佈無情法令的主人。」<br/><align=right>{appeaseLeader}<align=left><br/><align=right>在 CNN 為香港獨立辯論<align=left>
-TITechTemplate.description.InterplanetaryPolities=若要從人類社會殖民遙遠土地的歷史中汲取一則教訓，那就是唯有在絕對專制下，搭配所有必要的流血殺戮，才可能延續對遠方的統治。無可避免地，從遙遠的祖國獨立出來的渴望會逐漸增長，追求獨立的過程中必定會發生衝突。這對我們的太空殖民地來說再正確不過，就和幾世紀前的美洲和非洲一樣。如果現在不建立可行的解決方案，地球人類和太空人類很可能會陷入橫跨數光年的冷戰困局。因此，我們必須制定政策、法律和相關系統，使太空殖民地對祖國負責 (尤其在分享外星資源方面)，但能自由地做出一般決策、選出自己的領袖，並保衛邊界。<br/><br/>無論我們在資料傳輸速度上取得什麼突破，短期內似乎都不太可能跨越光的障礙。當治理工作必須等待數小時、數天或數週才能得到答覆，這對雙方來說都是慢性自殺。如果要維持人類的一體性，即便是在緩緩擴散至宇宙間的同時，我們也必須確保太空殖民地能自給自足、感到滿意，因而會在此刻 (而不是以後)效忠。 
+TITechTemplate.description.InterplanetaryPolities=若要從人類社會殖民遙遠土地的歷史中汲取一則教訓，那就是唯有在絕對專制下，搭配所有必要的流血殺戮，才可能延續對遠方的統治。無可避免地，從遙遠的祖國獨立出來的渴望會逐漸增長，追求獨立的過程中必定會發生衝突。這對我們的太空殖民地來說再正確不過，就和幾世紀前的美洲和非洲一樣。如果現在不建立可行的解決方案，地球人類和太空人類很可能會陷入橫跨數光年的冷戰困局。因此，我們必須制定政策、法律和相關系統，使太空殖民地對祖國負責（尤其在分享外星資源方面），但能自由地做出一般決策、選出自己的領袖，並保衛邊界。<br/><br/>無論我們在資料傳輸速度上取得什麼突破，短期內似乎都不太可能跨越光的障礙。當治理工作必須等待數小時、數天或數週才能得到答覆，這對雙方來說都是慢性自殺。如果要維持人類的一體性，即便是在緩緩擴散至宇宙間的同時，我們也必須確保太空殖民地能自給自足、感到滿意，因而會在此刻（而不是以後）效忠。 
 
 TITechTemplate.displayName.KineticsWarfareDoctrine=動力戰爭守則
 TITechTemplate.summary.KineticsWarfareDoctrine=軍事規劃師針對磁武器開發戰術。
@@ -411,7 +411,7 @@ TITechTemplate.description.MissileWarfareDoctrine=即使在探索新型武器以
 TITechTemplate.displayName.MissiontoJupiter=木星任務
 TITechTemplate.summary.MissiontoJupiter=我們準備要探索太陽系最大行星的衛星系統。
 TITechTemplate.quote.MissiontoJupiter=「千萬別忘了，任何王國真正的權力都不屬於寶座上的君王，而是屬於那些靜靜站在君王肩膀上的人。」<br/><align=right>{resistLeader}<align=left><br/><align=right>《戰爭的黑影相關資料》<align=left>	
-TITechTemplate.description.MissiontoJupiter=木星本身不可能是殖民目標，因為木星是一團巨大的氣體，沒有實質的表面可讓船艦登陸或建造基礎設施，其輻射和重力甚至不適合建造漂浮太空站。但其數十顆衛星的情況完全相反。其中四顆著名的「伽利略衛星」擁有最佳前景，我們認為能發展成較大規模的大型太空殖民地，以及進一步擴張的基地。木衛一、歐羅巴、木衛三、木衛四都夠大、夠堅固，可以支撐基礎設施，雖然大多是極為嚴酷的生存環境。木星的重力非常強，其輻射帶卻會轟炸木衛一和歐羅巴，且致命程度大約是地球輻射帶的一百萬倍，若防護措施不足，很可悲地，人類會在抵達後幾天內死亡。不過如果超高密度的屏蔽有所突破，就能實現一定程度的長期居住。<br/><br/>木衛四在輻射帶之外，因此需要的抗輻射措施相對極少。歐羅巴和木衛三差不多冰冷，擁有地下海洋，而且或許能在其結冰表面下方深處打造出人造氣穴，因此仍然是值得考慮的目標。木衛一乾燥混亂，遠遠沒那麼吸引人，但在我們努力前往外太空時，其火山環境或許會成為能源和稀有礦物的有力來源。
+TITechTemplate.description.MissiontoJupiter=木星本身不可能是殖民目標，因為木星是一團巨大的氣體，沒有實質的表面可讓船艦登陸或建造基礎設施，其輻射和重力甚至不適合建造漂浮太空站。但其數十顆衛星的情況完全相反。其中四顆著名的「伽利略衛星」擁有最佳前景，我們認為能發展成較大規模的大型太空殖民地，以及進一步擴張的基地。木衛一、歐羅巴、甘尼米德、卡利斯多都夠大、夠堅固，可以支撐基礎設施，雖然大多是極為嚴酷的生存環境。木星的重力非常強，其輻射帶卻會轟炸木衛一和歐羅巴，且致命程度大約是地球輻射帶的一百萬倍，若防護措施不足，很可悲地，人類會在抵達後幾天內死亡。不過如果超高密度的屏蔽有所突破，就能實現一定程度的長期居住。<br/><br/>卡利斯多在輻射帶之外，因此需要的抗輻射措施相對極少。歐羅巴和甘尼米德差不多冰冷，擁有地下海洋，而且或許能在其結冰表面下方深處打造出人造氣穴，因此仍然是值得考慮的目標。木衛一乾燥混亂，遠遠沒那麼吸引人，但在我們努力前往外太空時，其火山環境或許會成為能源和稀有礦物的有力來源。
 
 TITechTemplate.displayName.MissiontoMars=火星任務
 TITechTemplate.summary.MissiontoMars=科學家研究如何探索和殖民這顆紅色星球。
@@ -426,7 +426,7 @@ TITechTemplate.description.MissiontotheInnerPlanets=完全殖民太陽系內側�
 TITechTemplate.displayName.MissiontoSaturn=土星任務
 TITechTemplate.quote.MissiontoSaturn=「網購男和電動車男要怎麼為火星爭吵都無所謂，但那小看了人類。相信我，我們能做得更好。」<br/><align=right>{escapeLeader}<align=left><br/><align=right>上《深夜秀》節目時的發言<align=left>
 TITechTemplate.summary.MissiontoSaturn=我們期待探索這顆帶環行星的冰冷衛星。
-TITechTemplate.description.MissiontoSaturn=和它塊頭更大的鄰居木星一樣，氣態的土星無法支撐任何基礎設施，遑論生命體，不過土星擁有大量的氘和氦 -3，是人們極有興趣用於核融合的能量來源。在土星巨大冰冷的環中，有一些衛星極有可能成為人類的生活家園。尤其是其中最大的土衛六 (或稱「泰坦」，實在恰如其名)，擁有維持人類生命所需的所有元素，雖然極為寒冷，大氣也以氮為基礎，但放眼整個太陽系，大概沒有更好的殖民目標。較小的土衛二也是長期定居的主要選擇之一。除此之外，更別提土星系統的輻射比木星周圍少很多，因此若選擇在此居住，生活會輕鬆得多。土星的航行距離確實又長又艱鉅，但除了豐富的資源和潛在的居住地，我們還能從土星的衛星把自己發射到外側世界，更接近外星人真正的起源地。 
+TITechTemplate.description.MissiontoSaturn=和它塊頭更大的鄰居木星一樣，氣態的土星無法支撐任何基礎設施，遑論生命體，不過土星確實擁有大量的氘和氦 -3，兩者皆為人們極有興趣用於核融合的能量來源。在土星巨大冰冷的環中，有一些衛星極有可能成為人類的棲身之處。尤其是其中最大的土衛六（或稱「泰坦」，實在恰如其名），擁有維持生命所需的所有元素，雖然極為寒冷，大氣也以氮為基礎，但放眼整個太陽系，大概沒有更好的殖民目標。較小的土衛二也是長期定居的主要選擇之一。除此之外，更別提土星系統的輻射比木星周圍少很多，因此若選擇在此居住，生活會輕鬆得多。土星的航行距離確實又長又艱鉅，但除了豐富的資源和潛在的居住地，我們還能從土星的衛星把自己發射到外側世界，更接近外星人真正的起源地。
 
 TITechTemplate.displayName.MissionToSpace=太空任務
 TITechTemplate.summary.MissionToSpace=我們研究如何在真空中生活發展。
@@ -446,7 +446,7 @@ TITechTemplate.description.MissiontotheMoon=我們可能以為自己很瞭解離
 TITechTemplate.displayName.MissiontotheOuterPlanets=外行星任務
 TITechTemplate.summary.MissiontotheOuterPlanets=探索和利用土星外的寒冰世界，將使我們更可能抵達外星人基地。
 TITechTemplate.quote.MissiontotheOuterPlanets=「只有直視敵人的眼睛時，我們才能明白為何他和我們沒有多少差別。然後，伊飛奇，只有在那個時候，我們才能期待和平。」<br/><align=right>{appeaseLeader}<align=left><br/><align=right>出自他駐守於盧安達時寫給伴侶的信<align=left>
-TITechTemplate.description.MissiontotheOuterPlanets=我們還須多多瞭解太陽系最遙遠、最寒冷的所在，但如果真能去到，就有殖民天王星、海王星，或至少殖民其衛星的希望。天王星周圍的天衛一到天衛五等衛星都有潛力發展成殖民地，而在海王星最大的衛星海衛一結冰的氮地表下方，可能藏著地下海洋。海王星軌道之外有古柏帶和外歐特雲，其中含有幾百萬顆、甚至幾兆顆充滿冰塊的天體。就我們推測，我們將能在這一大群天體之中，找到維持生命所需的一切元素。此外，外行星和其以外的太空也是氘和氦-3 的豐沛來源，可滿足我們的燃料需求——最好能再往外推進，最終找出我們外星訪客的起源地。
+TITechTemplate.description.MissiontotheOuterPlanets=我們還須多多瞭解太陽系最遙遠、最寒冷的所在，但如果真能去到，就有殖民天王星、海王星，或至少殖民其衛星的希望。天王星周圍的米蘭達、艾瑞爾、烏姆柏里厄爾、泰坦尼亞和奧伯龍等衛星都有潛力發展成殖民地，而在海王星最大的衛星特里同結冰的氮地表下方，可能藏著地下海洋。海王星軌道之外有古柏帶和外歐特雲，其中含有幾百萬顆、甚至幾兆顆充滿冰塊的天體。就我們推測，我們將能在這一大群天體之中，找到維持生命所需的一切元素。此外，外行星和其以外的太空也是氘和氦 -3 的豐沛來源，可滿足我們的燃料需求——最好能再往外推進，最終找出我們外星訪客的起源地。
 
 TITechTemplate.displayName.MolecularAssemblers=分子組裝器
 TITechTemplate.summary.MolecularAssemblers=自我複製的奈米機器，能在分子層級打造出多種厲害的物質。 
@@ -532,7 +532,7 @@ TITechTemplate.description.PhotonicComputing=目前的計算裝置仰賴透過�
 TITechTemplate.displayName.PlasmaWeapons=電漿武器
 TITechTemplate.summary.PlasmaWeapons=自持磁場可讓電漿 (和恆星核心一樣高溫的氣體) 武器化，並用作毀滅性炮彈。
 TITechTemplate.quote.PlasmaWeapons=「只要可以，我們人類就會把所有東西做成武器。每一次嶄新的發現，都只讓我們加速靠近毀滅。」<br/><align=right>{appeaseLeader}<align=left><br/><align=right>《血錢》<align=left>
-TITechTemplate.description.PlasmaWeapons=既然我們能利用磁場，安全地容納過熱氣體，並從威力驚人的動能武器發射子彈，那麼下一步當然就是把電漿武器化。電漿子彈能燒穿最重的裝甲，更不用說如此加熱裝甲後，裡面任何東西都會烤焦，不過工程師設計出改良版的電磁武器，絕不會與這些比太陽還高溫的炮彈有物理接觸，因此用戶端不會有損害的風險。問題在於，一旦電漿子彈射出武器，幾乎會立刻擴散至直徑約五千公里的範圍——消散速度之快，除非在零距離射程內發射，否則實際上毫無用處。顯然不可能做出足以承受炮彈威力的強大物理套管，但是，奠基於先前的電磁突破，如今可利用暫時性的強大自持磁場，在動能衝擊發生前承受電漿的內部壓力。換句話說，我們現在能打造一款幾乎無敵的武器。
+TITechTemplate.description.PlasmaWeapons=既然我們能利用磁場，安全地容納過熱氣體，並從威力驚人的動能武器發射子彈，那麼下一步當然就是把電漿武器化。電漿子彈能燒穿最重的裝甲，更不用說如此加熱裝甲後，裡面任何東西都會烤焦，不過工程師設計出改良版的電磁武器，絕不會與這些比太陽還高溫的炮彈有物理接觸，因此用戶端不會有損害的風險。問題在於，一旦電漿子彈射出武器，幾乎會立刻擴散至直徑約五千公里的範圍——消散速度之快，除非在零距離射程內發射，否則實際上毫無用處。顯然不可能做出足以承受炮彈威力的強大物理套管，但是，奠基於先前的電磁突破，如今可利用暫時性的強大自持磁場，在動能衝擊發生前承受電漿的內部壓力。我們現在能打造一款幾乎無敵的武器。
 
 TITechTemplate.displayName.PredictiveGenetics=預測遺傳學
 TITechTemplate.summary.PredictiveGenetics=透過個人基因組學和轉譯生物資訊學的進步，提升現代醫學。
@@ -556,7 +556,7 @@ TITechTemplate.description.QuantumComputing=一般電腦會將資訊儲存為一
 
 TITechTemplate.displayName.QuantumEncryption=量子加密
 TITechTemplate.summary.QuantumEncryption=無法破解的加密方法，可實現隔著驚人距離也無法駭入的快速通訊。
-TITechTemplate.quote.QuantumEncryption=「相信我，那些混蛋早已讀過人類所寫的一切。如果我們不想出讓他們無法偷聽的溝通方式，我們的生存機會比颶風中的蜂鳥還小。」<br/><align=right>{resistLeader}<align=left><br/><align=right>於 4.9.18 的 17.42 從 4.824167,7.033611 發送給抵抗派科學家菲利浦‧羅德斯 (D.O.B. 2.27.77, SSN 078-05-1120) 的「加密訊號」訊息<align=left>
+TITechTemplate.quote.QuantumEncryption=「相信我，那些混蛋早已讀過人類所寫的一切。如果我們不想出讓他們無法偷聽的溝通方式，我們的生存機會比颶風中的蜂鳥還小。」<br/><align=right>{resistLeader}<align=left><br/><align=right>於 11.14.22 的 17.42 從 4.824167,7.033611 發送給抵抗派科學家菲利浦‧羅德斯 (D.O.B. 2.27.77, SSN 078-05-1120) 的「加密訊號」訊息<align=left>
 TITechTemplate.description.QuantumEncryption=有鑑於我們需要在太空傳輸高敏感和極複雜的資訊，可能會遭任何數量的未知力量所監控，因此絕對必須確保資料很安全。我們需要真正無法破解的加密方法，以確保除了預期接收者以外，任何人都無法讀取任何通訊內容。最近量子計算有所突破，將使這化為可能，但也正是因為這項突破，讓加密的需求比過去更大。憑藉著同時執行約數十億筆計算的能力，量子電腦甚至能在一拍心跳之際，破解我們最複雜的加密系統。因此，我們需要以量子生成的新加密方法，才能確保祕密行動不被發現，太空殖民地和太空船也不會受到災難性的干擾。目前認為，最理想的發展方向是量子金鑰發佈，利用次原子粒子高度不可預測的行為來生成加密金鑰，且不會進一步降低長距離傳輸的速度。誰能最成功實作出來，就能迎向真正不會被駭入的未來。
 
 TITechTemplate.displayName.Railguns=磁軌炮
@@ -587,7 +587,7 @@ TITechTemplate.description.SolidCoreFissionSystems=1938 年發現核分裂時，
 TITechTemplate.displayName.SpaceAgriculture=太空農業
 TITechTemplate.summary.SpaceAgriculture=在微重力和無重力環境施行農業技術。
 TITechTemplate.quote.SpaceAgriculture=「我們家在密西西比有個農場，你想得到的都有種，玉米、大豆、棉花……從早到晚，都有各種事情要忙。這不是我想要的生活，但這確實教會了我，如果想把活的東西培育成它最好的模樣，你必須非常努力。」<br/><align=right>{submitLeader}<align=left><br/><align=right>出自播客節目<i>《第八脈輪》</i>的訪談<align=left>
-TITechTemplate.description.SpaceAgriculture=在每趟載人飛行時運送大量食物既不方便、笨重，又有風險，讓太空站持續依賴地球的空投補給品，也非常短視近利。在太空的人員務必要會自己種出食物，即使在幾乎沒有重力、大氣不利生存的環境下亦然。我們把最大的希望寄託在封閉式生態生命支持系統 (CLESS)，換句話說，就是一個密封的迴路，只需利用光、動力和人力，就能產生食物和氧氣。人類呼出的二氧化碳由植物轉化成氧氣，尿液和廢水回收成飲用水，糞便和廚餘則用來種出營養豐富的植物。數十年來，我們一直沒有成功研發出這樣的系統，但在創造出一種生長快速、富含蛋白質的新藻類後，終於取得必要的突破。最終，我們將能夠引入多葉植物，甚至是養魚場，讓太空人的飲食更豐富，讓長期的太空生活更舒適。 
+TITechTemplate.description.SpaceAgriculture=在每趟載人飛行時運送大量食物既不方便、笨重，又有風險，讓太空站持續依賴地球的空投補給品，也非常短視近利。在太空的人員務必要會自己種出食物，即使在幾乎沒有重力、大氣不利生存的環境下亦然。我們把最大的希望寄託在封閉式生態生命支持系統 (CELSS)，換句話說，就是一個密封的迴路，只需利用光、動力和人力，就能產生食物和氧氣。人類呼出的二氧化碳由植物轉化成氧氣，尿液和廢水回收成飲用水，糞便和廚餘則用來種出營養豐富的植物。數十年來，我們一直沒有成功研發出這樣的系統，但在創造出一種生長快速、富含蛋白質的新藻類後，終於取得必要的突破。最終，我們將能夠引入多葉植物，甚至是養魚場，讓太空人的飲食更豐富，讓長期的太空生活更舒適。 
 
 TITechTemplate.displayName.SpaceAssaultDoctrine=太空襲擊守則
 TITechTemplate.summary.SpaceAssaultDoctrine=軍事規劃師研究完整奪取太空資產的策略。

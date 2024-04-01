@@ -5,7 +5,6 @@
    "maxOutput_GW": 0.2,
    "specificPower_tGW": 2800,
    "powerPlantClass": "Fuel_Cell",
-   "requiredProjectName": "",
    "generalUse": true,
    "efficiency": 0.7,
    "crew": 1,
@@ -13,10 +12,7 @@
       "water": 0.35,
       "volatiles": 0.3,
       "metals": 0.3,
-      "nobleMetals": 0.05,
-      "fissiles": null,
-      "antimatter": null,
-      "exotics": null
+      "nobleMetals": 0.05
    },
    "iconResource": "shipbuildericons/ICO_FuelCellI"
 },
@@ -34,10 +30,7 @@
       "water": 0.35,
       "volatiles": 0.3,
       "metals": 0.3,
-      "nobleMetals": 0.05,
-      "fissiles": null,
-      "antimatter": null,
-      "exotics": null
+      "nobleMetals": 0.05
    },
    "iconResource": "shipbuildericons/ICO_FuelCellII"
 },
@@ -55,10 +48,7 @@
       "water": 0.35,
       "volatiles": 0.3,
       "metals": 0.3,
-      "nobleMetals": 0.05,
-      "fissiles": null,
-      "antimatter": null,
-      "exotics": null
+      "nobleMetals": 0.05
    },
    "iconResource": "shipbuildericons/ICO_FuelCellIII"
 },
@@ -77,9 +67,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorI"
 },
@@ -98,9 +86,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorII"
 },
@@ -119,9 +105,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorIII"
 },
@@ -140,9 +124,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorIV"
 },
@@ -161,9 +143,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorV"
 },
@@ -182,9 +162,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorVI"
 },
@@ -203,9 +181,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorVII"
 },
@@ -224,9 +200,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorVIII"
 },
@@ -245,9 +219,7 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorIX"
 },
@@ -266,17 +238,53 @@
       "volatiles": 0.1,
       "metals": 0.65,
       "nobleMetals": 0.1,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_SolidCoreFissionReactorX"
 },
  {
+   "dataName": "MoltenSaltFissionReactorI",
+   "friendlyName": "Molten Salt Fission Reactor I",
+   "maxOutput_GW": 40,
+   "specificPower_tGW": 2,
+   "powerPlantClass": "Molten_Salt_Core_Fission",
+   "requiredProjectName": "Project_MoltenSaltFissionReactorI",
+   "generalUse": true,
+   "efficiency": 0.92,
+   "crew": 9,
+   "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+   },
+   "iconResource": "shipbuildericons/ICO_MoltenSaltFissionReactorI"
+},
+ {
+   "dataName": "MoltenSaltFissionReactorII",
+   "friendlyName": "Molten Salt Fission Reactor II",
+   "maxOutput_GW": 420,
+   "specificPower_tGW": 2,
+   "powerPlantClass": "Molten_Salt_Core_Fission",
+   "requiredProjectName": "Project_MoltenSaltFissionReactorII",
+   "generalUse": true,
+   "efficiency": 0.92,
+   "crew": 9,
+   "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+   },
+   "iconResource": "shipbuildericons/ICO_MoltenSaltFissionReactorII"
+},
+ {
    "dataName": "MoltenCoreFissionReactorI",
    "friendlyName": "Molten Core Fission Reactor I",
-   "maxOutput_GW": 6,
-   "specificPower_tGW": 3,
+   "maxOutput_GW": 8,
+   "specificPower_tGW": 4,
    "powerPlantClass": "Liquid_Core_Fission",
    "requiredProjectName": "Project_MoltenCoreFissionReactorI",
    "generalUse": true,
@@ -287,17 +295,15 @@
       "volatiles": 0.1,
       "metals": 0.55,
       "nobleMetals": 0.2,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_MoltenCoreFissionReactorI"
 },
  {
    "dataName": "MoltenCoreFissionReactorII",
    "friendlyName": "Molten Core Fission Reactor II",
-   "maxOutput_GW": 750,
-   "specificPower_tGW": 3,
+   "maxOutput_GW": 35,
+   "specificPower_tGW": 3.5,
    "powerPlantClass": "Liquid_Core_Fission",
    "requiredProjectName": "Project_MoltenCoreFissionReactorII",
    "generalUse": true,
@@ -308,17 +314,15 @@
       "volatiles": 0.1,
       "metals": 0.55,
       "nobleMetals": 0.2,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_MoltenCoreFissionReactorII"
 },
  {
    "dataName": "MoltenCoreFissionReactorIII",
    "friendlyName": "Molten Core Fission Reactor III",
-   "maxOutput_GW": 1250,
-   "specificPower_tGW": 2.5,
+   "maxOutput_GW": 420,
+   "specificPower_tGW": 3,
    "powerPlantClass": "Liquid_Core_Fission",
    "requiredProjectName": "Project_MoltenCoreFissionReactorIII",
    "generalUse": true,
@@ -329,9 +333,7 @@
       "volatiles": 0.1,
       "metals": 0.55,
       "nobleMetals": 0.2,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_MoltenCoreFissionReactorIII"
 },
@@ -339,7 +341,7 @@
    "dataName": "VaporCoreFissionReactorI",
    "friendlyName": "Vapor Core Fission Reactor I",
    "maxOutput_GW": 6.5,
-   "specificPower_tGW": 13,
+   "specificPower_tGW": 4,
    "powerPlantClass": "Gas_Core_Fission",
    "requiredProjectName": "Project_VaporCoreFissionReactorI",
    "generalUse": true,
@@ -350,9 +352,7 @@
       "volatiles": 0.1,
       "metals": 0.5,
       "nobleMetals": 0.25,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_VaporCoreFissionReactorI"
 },
@@ -360,7 +360,7 @@
    "dataName": "VaporCoreFissionReactorII",
    "friendlyName": "Vapor Core Fission Reactor II",
    "maxOutput_GW": 20,
-   "specificPower_tGW": 8,
+   "specificPower_tGW": 3,
    "powerPlantClass": "Gas_Core_Fission",
    "requiredProjectName": "Project_VaporCoreFissionReactorII",
    "generalUse": true,
@@ -371,9 +371,7 @@
       "volatiles": 0.1,
       "metals": 0.5,
       "nobleMetals": 0.25,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_VaporCoreFissionReactorII"
 },
@@ -381,7 +379,7 @@
    "dataName": "VaporCoreFissionReactorIII",
    "friendlyName": "Vapor Core Fission Reactor III",
    "maxOutput_GW": 60,
-   "specificPower_tGW": 4,
+   "specificPower_tGW": 3,
    "powerPlantClass": "Gas_Core_Fission",
    "requiredProjectName": "Project_VaporCoreFissionReactorIII",
    "generalUse": true,
@@ -392,9 +390,7 @@
       "volatiles": 0.1,
       "metals": 0.5,
       "nobleMetals": 0.25,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_VaporCoreFissionReactorIII"
 },
@@ -413,9 +409,7 @@
       "volatiles": 0.1,
       "metals": 0.45,
       "nobleMetals": 0.3,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_GasCoreFissionReactorI"
 },
@@ -434,9 +428,7 @@
       "volatiles": 0.1,
       "metals": 0.45,
       "nobleMetals": 0.3,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_GasCoreFissionReactorII"
 },
@@ -455,9 +447,7 @@
       "volatiles": 0.1,
       "metals": 0.45,
       "nobleMetals": 0.3,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_GasCoreFissionReactorIII"
 },
@@ -476,9 +466,7 @@
       "volatiles": 0.1,
       "metals": 0.45,
       "nobleMetals": 0.3,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_GasCoreFissionReactorIV"
 },
@@ -497,9 +485,7 @@
       "volatiles": 0.1,
       "metals": 0.45,
       "nobleMetals": 0.3,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_GasCoreFissionReactorV"
 },
@@ -518,59 +504,15 @@
       "volatiles": 0.1,
       "metals": 0.45,
       "nobleMetals": 0.3,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.05
    },
    "iconResource": "shipbuildericons/ICO_GasCoreFissionReactorVI"
 },
  {
-   "dataName": "SaltWaterCoreReactorI",
-   "friendlyName": "Salt Water Core Reactor I",
-   "maxOutput_GW": 32000,
-   "specificPower_tGW": 0.45,
-   "powerPlantClass": "Salt_Water_Core",
-   "requiredProjectName": "Project_SaltWaterCoreReactorI",
-   "generalUse": false,
-   "efficiency": 0.995,
-   "crew": 24,
-   "weightedBuildMaterials": {
-      "water": 0.1,
-      "volatiles": 0.1,
-      "metals": 0.35,
-      "nobleMetals": 0.4,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_SaltWaterCoreReactorI"
-},
- {
-   "dataName": "SaltWaterCoreReactorII",
-   "friendlyName": "Salt Water Core Reactor II",
-   "maxOutput_GW": 230000,
-   "specificPower_tGW": 0.08,
-   "powerPlantClass": "Salt_Water_Core",
-   "requiredProjectName": "Project_SaltWaterCoreReactorII",
-   "generalUse": false,
-   "efficiency": 0.995,
-   "crew": 24,
-   "weightedBuildMaterials": {
-      "water": 0.1,
-      "volatiles": 0.1,
-      "metals": 0.3,
-      "nobleMetals": 0.45,
-      "fissiles": 0.05,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_SaltWaterCoreReactorII"
-},
- {
    "dataName": "ElectrostaticConfinementFusionReactorI",
    "friendlyName": "Electrostatic Confinement Fusion Reactor I",
-   "maxOutput_GW": 5,
-   "specificPower_tGW": 2,
+   "maxOutput_GW": 52,
+   "specificPower_tGW": 1,
    "powerPlantClass": "Electrostatic_Confinement_Fusion",
    "requiredProjectName": "Project_ElectrostaticConfinementFusionReactorI",
    "generalUse": true,
@@ -581,17 +523,15 @@
       "volatiles": 0.3,
       "metals": 0.5,
       "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.02
    },
    "iconResource": "shipbuildericons/ICO_ElectrostaticConfinementFusionReactorI"
 },
  {
    "dataName": "ElectrostaticConfinementFusionReactorII",
    "friendlyName": "Electrostatic Confinement Fusion Reactor II",
-   "maxOutput_GW": 25,
-   "specificPower_tGW": 1,
+   "maxOutput_GW": 74,
+   "specificPower_tGW": 0.5,
    "powerPlantClass": "Electrostatic_Confinement_Fusion",
    "requiredProjectName": "Project_ElectrostaticConfinementFusionReactorII",
    "generalUse": true,
@@ -602,17 +542,15 @@
       "volatiles": 0.3,
       "metals": 0.5,
       "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "fissiles": 0.02
    },
    "iconResource": "shipbuildericons/ICO_ElectrostaticConfinementFusionReactorII"
 },
  {
    "dataName": "ElectrostaticConfinementFusionReactorIII",
    "friendlyName": "Electrostatic Confinement Fusion Reactor III",
-   "maxOutput_GW": 80,
-   "specificPower_tGW": 0.25,
+   "maxOutput_GW": 310,
+   "specificPower_tGW": 0.005,
    "powerPlantClass": "Electrostatic_Confinement_Fusion",
    "requiredProjectName": "Project_ElectrostaticConfinementFusionReactorIII",
    "generalUse": true,
@@ -623,163 +561,68 @@
       "volatiles": 0.3,
       "metals": 0.5,
       "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "exotics": 0.02
    },
    "iconResource": "shipbuildericons/ICO_ElectrostaticConfinementFusionReactorIII"
 },
  {
-   "dataName": "ZPinchFusionReactorI",
-   "friendlyName": "Z-Pinch Fusion Reactor I",
-   "maxOutput_GW": 260,
-   "specificPower_tGW": 13,
-   "powerPlantClass": "Z_Pinch_Fusion",
-   "requiredProjectName": "Project_ZPinchFusionReactorI",
-   "generalUse": false,
-   "efficiency": 0.96,
-   "crew": 12,
-   "weightedBuildMaterials": {
-      "water": 0.02,
-      "volatiles": 0.2,
-      "metals": 0.46,
-      "nobleMetals": 0.3,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_ZPinchFusionReactorI"
-},
- {
-   "dataName": "ZPinchFusionReactorII",
-   "friendlyName": "Z-Pinch Fusion Reactor II",
-   "maxOutput_GW": 720,
-   "specificPower_tGW": 5,
-   "powerPlantClass": "Z_Pinch_Fusion",
-   "requiredProjectName": "Project_ZPinchFusionReactorII",
-   "generalUse": false,
-   "efficiency": 0.985,
-   "crew": 12,
-   "weightedBuildMaterials": {
-      "water": 0.02,
-      "volatiles": 0.2,
-      "metals": 0.46,
-      "nobleMetals": 0.3,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_ZPinchFusionReactorII"
-},
- {
-   "dataName": "ZPinchFusionReactorIII",
-   "friendlyName": "Z-Pinch Fusion Reactor III",
-   "maxOutput_GW": 4000,
-   "specificPower_tGW": 2,
-   "powerPlantClass": "Z_Pinch_Fusion",
-   "requiredProjectName": "Project_ZPinchFusionReactorIII",
-   "generalUse": false,
-   "efficiency": 0.99,
-   "crew": 12,
-   "weightedBuildMaterials": {
-      "water": 0.025,
-      "volatiles": 0.2,
-      "metals": 0.45,
-      "nobleMetals": 0.3,
-      "fissiles": 0.025,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_ZPinchFusionReactorIII"
-},
- {
-   "dataName": "HybridConfinementFusionReactorI",
-   "friendlyName": "Hybrid Confinement Fusion Reactor I",
-   "maxOutput_GW": 3,
-   "specificPower_tGW": 4,
-   "powerPlantClass": "Hybrid_Confinement_Fusion",
-   "requiredProjectName": "Project_HybridConfinementFusionReactorI",
+   "dataName": "MirrorCellFusionReactorI",
+   "friendlyName": "Mirror Cell Fusion Reactor I",
+   "maxOutput_GW": 120,
+   "specificPower_tGW": 13.4,
+   "powerPlantClass": "Mirrored_Magnetic_Confinement_Fusion",
+   "requiredProjectName": "Project_MirrorCellFusionReactorI",
    "generalUse": true,
-   "efficiency": 0.97,
+   "efficiency": 0.93,
    "crew": 12,
    "weightedBuildMaterials": {
       "water": 0.02,
-      "volatiles": 0.16,
-      "metals": 0.4,
-      "nobleMetals": 0.4,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "volatiles": 0.2,
+      "metals": 0.54,
+      "nobleMetals": 0.24
    },
-   "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorI"
+   "iconResource": "shipbuildericons/ICO_MirrorCellFusionReactorI"
 },
  {
-   "dataName": "HybridConfinementFusionReactorII",
-   "friendlyName": "Hybrid Confinement Fusion Reactor II",
-   "maxOutput_GW": 2000,
-   "specificPower_tGW": 2,
-   "powerPlantClass": "Hybrid_Confinement_Fusion",
-   "requiredProjectName": "Project_HybridConfinementFusionReactorII",
+   "dataName": "MirrorCellFusionReactorII",
+   "friendlyName": "Mirror Cell Fusion Reactor II",
+   "maxOutput_GW": 215,
+   "specificPower_tGW": 6.5,
+   "powerPlantClass": "Mirrored_Magnetic_Confinement_Fusion",
+   "requiredProjectName": "Project_MirrorCellFusionReactorII",
+   "generalUse": true,
+   "efficiency": 0.95,
+   "crew": 10,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.2,
+      "metals": 0.54,
+      "nobleMetals": 0.24
+   },
+   "iconResource": "shipbuildericons/ICO_MirrorCellFusionReactorII"
+},
+ {
+   "dataName": "MirrorCellFusionReactorIII",
+   "friendlyName": "Mirror Cell Fusion Reactor III",
+   "maxOutput_GW": 256,
+   "specificPower_tGW": 1.2,
+   "powerPlantClass": "Mirrored_Magnetic_Confinement_Fusion",
+   "requiredProjectName": "Project_MirrorCellFusionReactorIII",
    "generalUse": true,
    "efficiency": 0.98,
-   "crew": 12,
+   "crew": 8,
    "weightedBuildMaterials": {
       "water": 0.02,
-      "volatiles": 0.16,
-      "metals": 0.4,
-      "nobleMetals": 0.4,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "volatiles": 0.2,
+      "metals": 0.54,
+      "nobleMetals": 0.24
    },
-   "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorII"
-},
- {
-   "dataName": "HybridConfinementFusionReactorIII",
-   "friendlyName": "Hybrid Confinement Fusion Reactor III",
-   "maxOutput_GW": 20000,
-   "specificPower_tGW": 1,
-   "powerPlantClass": "Hybrid_Confinement_Fusion",
-   "requiredProjectName": "Project_HybridConfinementFusionReactorIII",
-   "generalUse": true,
-   "efficiency": 0.99,
-   "crew": 12,
-   "weightedBuildMaterials": {
-      "water": 0.02,
-      "volatiles": 0.16,
-      "metals": 0.4,
-      "nobleMetals": 0.4,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorIII"
-},
- {
-   "dataName": "AlienHybridConfinementFusionReactor",
-   "friendlyName": "Alien Hybrid Confinement Fusion Reactor",
-   "maxOutput_GW": 20000,
-   "specificPower_tGW": 1,
-   "powerPlantClass": "Hybrid_Confinement_Fusion",
-   "requiredProjectName": "Project_AlienMasterProject",
-   "generalUse": true,
-   "efficiency": 0.99,
-   "crew": 4,
-   "weightedBuildMaterials": {
-      "water": 0.02,
-      "volatiles": 0.16,
-      "metals": 0.4,
-      "nobleMetals": 0.4,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_AlienHybridConfinementFusionReactor"
+   "iconResource": "shipbuildericons/ICO_MirrorCellFusionReactorIII"
 },
  {
    "dataName": "FusionTokamakI",
    "friendlyName": "Fusion Tokamak I",
-   "maxOutput_GW": 30,
+   "maxOutput_GW": 143,
    "specificPower_tGW": 28,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakI",
@@ -789,18 +632,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.3,
-      "metals": 0.5,
-      "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.52,
+      "nobleMetals": 0.16
    },
    "iconResource": "shipbuildericons/ICO_FusionTokamakI"
 },
  {
    "dataName": "FusionTokamakII",
    "friendlyName": "Fusion Tokamak II",
-   "maxOutput_GW": 30,
+   "maxOutput_GW": 451,
    "specificPower_tGW": 14,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakII",
@@ -810,18 +650,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.3,
-      "metals": 0.5,
-      "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.52,
+      "nobleMetals": 0.16
    },
    "iconResource": "shipbuildericons/ICO_FusionTokamakII"
 },
  {
    "dataName": "FusionTokamakIII",
    "friendlyName": "Fusion Tokamak III",
-   "maxOutput_GW": 220,
+   "maxOutput_GW": 641,
    "specificPower_tGW": 10,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakIII",
@@ -831,19 +668,16 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.3,
-      "metals": 0.5,
-      "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.52,
+      "nobleMetals": 0.16
    },
    "iconResource": "shipbuildericons/ICO_FusionTokamakIII"
 },
  {
    "dataName": "FusionTokamakIV",
    "friendlyName": "Fusion Tokamak IV",
-   "maxOutput_GW": 1250,
-   "specificPower_tGW": 4,
+   "maxOutput_GW": 1290,
+   "specificPower_tGW": 3,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakIV",
    "generalUse": true,
@@ -852,18 +686,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.3,
-      "metals": 0.5,
-      "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.52,
+      "nobleMetals": 0.16
    },
    "iconResource": "shipbuildericons/ICO_FusionTokamakIV"
 },
  {
    "dataName": "FusionTokamakV",
    "friendlyName": "Fusion Tokamak V",
-   "maxOutput_GW": 5200,
+   "maxOutput_GW": 5060,
    "specificPower_tGW": 1,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakV",
@@ -875,16 +706,158 @@
       "volatiles": 0.3,
       "metals": 0.5,
       "nobleMetals": 0.16,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "exotics": 0.02
    },
    "iconResource": "shipbuildericons/ICO_FusionTokamakV"
 },
  {
+   "dataName": "HybridConfinementFusionReactorI",
+   "friendlyName": "Hybrid Confinement Fusion Reactor I",
+   "maxOutput_GW": 200,
+   "specificPower_tGW": 4,
+   "powerPlantClass": "Hybrid_Confinement_Fusion",
+   "requiredProjectName": "Project_HybridConfinementFusionReactorI",
+   "generalUse": true,
+   "efficiency": 0.97,
+   "crew": 12,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.18,
+      "metals": 0.4,
+      "nobleMetals": 0.4
+   },
+   "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorI"
+},
+ {
+   "dataName": "HybridConfinementFusionReactorII",
+   "friendlyName": "Hybrid Confinement Fusion Reactor II",
+   "maxOutput_GW": 560,
+   "specificPower_tGW": 2,
+   "powerPlantClass": "Hybrid_Confinement_Fusion",
+   "requiredProjectName": "Project_HybridConfinementFusionReactorII",
+   "generalUse": true,
+   "efficiency": 0.98,
+   "crew": 12,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.18,
+      "metals": 0.4,
+      "nobleMetals": 0.4
+   },
+   "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorII"
+},
+ {
+   "dataName": "HybridConfinementFusionReactorIII",
+   "friendlyName": "Hybrid Confinement Fusion Reactor III",
+   "maxOutput_GW": 1900,
+   "specificPower_tGW": 1,
+   "powerPlantClass": "Hybrid_Confinement_Fusion",
+   "requiredProjectName": "Project_HybridConfinementFusionReactorIII",
+   "generalUse": true,
+   "efficiency": 0.99,
+   "crew": 12,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.18,
+      "metals": 0.4,
+      "nobleMetals": 0.4
+   },
+   "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorIII"
+},
+ {
+   "dataName": "HybridConfinementFusionReactorIV",
+   "friendlyName": "Hybrid Confinement Fusion Reactor IV",
+   "maxOutput_GW": 11370,
+   "specificPower_tGW": 0.05,
+   "powerPlantClass": "Hybrid_Confinement_Fusion",
+   "requiredProjectName": "Project_HybridConfinementFusionReactorIV",
+   "generalUse": true,
+   "efficiency": 0.99,
+   "crew": 12,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.18,
+      "metals": 0.4,
+      "nobleMetals": 0.4
+   },
+   "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorIV"
+},
+ {
+   "dataName": "ZPinchFusionReactorI",
+   "friendlyName": "Z-Pinch Fusion Reactor I",
+   "maxOutput_GW": 280,
+   "specificPower_tGW": 13,
+   "powerPlantClass": "Z_Pinch_Fusion",
+   "requiredProjectName": "Project_ZPinchFusionReactorI",
+   "generalUse": false,
+   "efficiency": 0.95,
+   "crew": 12,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.2,
+      "metals": 0.48,
+      "nobleMetals": 0.3
+   },
+   "iconResource": "shipbuildericons/ICO_ZPinchFusionReactorI"
+},
+ {
+   "dataName": "ZPinchFusionReactorII",
+   "friendlyName": "Z-Pinch Fusion Reactor II",
+   "maxOutput_GW": 650,
+   "specificPower_tGW": 5,
+   "powerPlantClass": "Z_Pinch_Fusion",
+   "requiredProjectName": "Project_ZPinchFusionReactorII",
+   "generalUse": false,
+   "efficiency": 0.95,
+   "crew": 12,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.2,
+      "metals": 0.48,
+      "nobleMetals": 0.3
+   },
+   "iconResource": "shipbuildericons/ICO_ZPinchFusionReactorII"
+},
+ {
+   "dataName": "ZPinchFusionReactorIII",
+   "friendlyName": "Z-Pinch Fusion Reactor III",
+   "maxOutput_GW": 2540,
+   "specificPower_tGW": 2,
+   "powerPlantClass": "Z_Pinch_Fusion",
+   "requiredProjectName": "Project_ZPinchFusionReactorIII",
+   "generalUse": false,
+   "efficiency": 0.95,
+   "crew": 12,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.2,
+      "metals": 0.45,
+      "nobleMetals": 0.33
+   },
+   "iconResource": "shipbuildericons/ICO_ZPinchFusionReactorIII"
+},
+ {
+   "dataName": "ZPinchFusionReactorIV",
+   "friendlyName": "Z-Pinch Fusion Reactor IV",
+   "maxOutput_GW": 3970,
+   "specificPower_tGW": 0.5,
+   "powerPlantClass": "Z_Pinch_Fusion",
+   "requiredProjectName": "Project_ZPinchFusionReactorIV",
+   "generalUse": false,
+   "efficiency": 0.97,
+   "crew": 23,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.2,
+      "metals": 0.45,
+      "nobleMetals": 0.33
+   },
+   "iconResource": "shipbuildericons/ICO_ZPinchFusionReactorIV"
+},
+ {
    "dataName": "FlowStabilizedZPinchFusionReactor",
    "friendlyName": "Flow Stabilized Z-Pinch Fusion Reactor",
-   "maxOutput_GW": 300000,
+   "maxOutput_GW": 7800,
    "specificPower_tGW": 0.0068,
    "powerPlantClass": "Z_Pinch_Fusion",
    "requiredProjectName": "Project_FlowStabilizedZPinchFusionReactor",
@@ -895,80 +868,15 @@
       "water": 0.02,
       "volatiles": 0.2,
       "metals": 0.45,
-      "nobleMetals": 0.3,
-      "fissiles": 0.02,
-      "antimatter": null,
+      "nobleMetals": 0.32,
       "exotics": 0.01
    },
    "iconResource": "shipbuildericons/ICO_FlowStabilizedZPinchFusionReactor"
 },
  {
-   "dataName": "MirrorCellFusionReactorI",
-   "friendlyName": "Mirror Cell Fusion Reactor I",
-   "maxOutput_GW": 60,
-   "specificPower_tGW": 13.4,
-   "powerPlantClass": "Mirrored_Magnetic_Confinement_Fusion",
-   "requiredProjectName": "Project_MirrorCellFusionReactorI",
-   "generalUse": true,
-   "efficiency": 0.93,
-   "crew": 12,
-   "weightedBuildMaterials": {
-      "water": 0.02,
-      "volatiles": 0.2,
-      "metals": 0.52,
-      "nobleMetals": 0.24,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_MirrorCellFusionReactorI"
-},
- {
-   "dataName": "MirrorCellFusionReactorII",
-   "friendlyName": "Mirror Cell Fusion Reactor II",
-   "maxOutput_GW": 360,
-   "specificPower_tGW": 6.5,
-   "powerPlantClass": "Mirrored_Magnetic_Confinement_Fusion",
-   "requiredProjectName": "Project_MirrorCellFusionReactorII",
-   "generalUse": true,
-   "efficiency": 0.95,
-   "crew": 10,
-   "weightedBuildMaterials": {
-      "water": 0.02,
-      "volatiles": 0.2,
-      "metals": 0.52,
-      "nobleMetals": 0.24,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_MirrorCellFusionReactorII"
-},
- {
-   "dataName": "MirrorCellFusionReactorIII",
-   "friendlyName": "Mirror Cell Fusion Reactor III",
-   "maxOutput_GW": 1400,
-   "specificPower_tGW": 1.2,
-   "powerPlantClass": "Mirrored_Magnetic_Confinement_Fusion",
-   "requiredProjectName": "Project_MirrorCellFusionReactorIII",
-   "generalUse": true,
-   "efficiency": 0.98,
-   "crew": 8,
-   "weightedBuildMaterials": {
-      "water": 0.02,
-      "volatiles": 0.2,
-      "metals": 0.52,
-      "nobleMetals": 0.24,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
-   },
-   "iconResource": "shipbuildericons/ICO_MirrorCellFusionReactorIII"
-},
- {
    "dataName": "InertialConfinementFusionReactorI",
    "friendlyName": "Inertial Confinement Fusion Reactor I",
-   "maxOutput_GW": 5,
+   "maxOutput_GW": 390,
    "specificPower_tGW": 17.6,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorI",
@@ -978,18 +886,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.15,
-      "metals": 0.46,
-      "nobleMetals": 0.35,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.48,
+      "nobleMetals": 0.35
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorI"
 },
  {
    "dataName": "InertialConfinementFusionReactorII",
    "friendlyName": "Inertial Confinement Fusion Reactor II",
-   "maxOutput_GW": 30,
+   "maxOutput_GW": 860,
    "specificPower_tGW": 12,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorII",
@@ -999,18 +904,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.15,
-      "metals": 0.46,
-      "nobleMetals": 0.35,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.48,
+      "nobleMetals": 0.35
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorII"
 },
  {
    "dataName": "InertialConfinementFusionReactorIII",
    "friendlyName": "Inertial Confinement Fusion Reactor III",
-   "maxOutput_GW": 200,
+   "maxOutput_GW": 3170,
    "specificPower_tGW": 10,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorIII",
@@ -1020,18 +922,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.15,
-      "metals": 0.46,
-      "nobleMetals": 0.35,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.48,
+      "nobleMetals": 0.35
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorIII"
 },
  {
    "dataName": "InertialConfinementFusionReactorIV",
    "friendlyName": "Inertial Confinement Fusion Reactor IV",
-   "maxOutput_GW": 650,
+   "maxOutput_GW": 5550,
    "specificPower_tGW": 20,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorIV",
@@ -1041,18 +940,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.15,
-      "metals": 0.46,
-      "nobleMetals": 0.35,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.48,
+      "nobleMetals": 0.35
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorIV"
 },
  {
    "dataName": "InertialConfinementFusionReactorV",
    "friendlyName": "Inertial Confinement Fusion Reactor V",
-   "maxOutput_GW": 10000,
+   "maxOutput_GW": 19290,
    "specificPower_tGW": 1,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorV",
@@ -1062,18 +958,15 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.15,
-      "metals": 0.46,
-      "nobleMetals": 0.35,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": null
+      "metals": 0.48,
+      "nobleMetals": 0.35
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorV"
 },
  {
    "dataName": "InertialConfinementFusionReactorVI",
    "friendlyName": "Inertial Confinement Fusion Reactor VI",
-   "maxOutput_GW": 22000,
+   "maxOutput_GW": 20420,
    "specificPower_tGW": 0.068,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorVI",
@@ -1085,16 +978,14 @@
       "volatiles": 0.15,
       "metals": 0.45,
       "nobleMetals": 0.35,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": 0.01
+      "exotics": 0.03
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorVI"
 },
  {
    "dataName": "InertialConfinementFusionReactorVII",
    "friendlyName": "Inertial Confinement Fusion Reactor VII",
-   "maxOutput_GW": 3100000,
+   "maxOutput_GW": 306430,
    "specificPower_tGW": 0.002,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorVII",
@@ -1106,11 +997,65 @@
       "volatiles": 0.15,
       "metals": 0.45,
       "nobleMetals": 0.34,
-      "fissiles": 0.02,
-      "antimatter": null,
-      "exotics": 0.02
+      "exotics": 0.04
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorVII"
+},
+ {
+   "dataName": "AlienHybridConfinementFusionReactor",
+   "friendlyName": "Alien Hybrid Confinement Fusion Reactor",
+   "maxOutput_GW": 1000,
+   "specificPower_tGW": 1,
+   "powerPlantClass": "Hybrid_Confinement_Fusion",
+   "requiredProjectName": "Project_AlienMasterProject",
+   "generalUse": true,
+   "efficiency": 0.99,
+   "crew": 4,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.16,
+      "metals": 0.67,
+      "nobleMetals": 0.15
+   },
+   "iconResource": "shipbuildericons/ICO_AlienHybridConfinementFusionReactor"
+},
+ {
+   "dataName": "AlienAdvancedHybridConfinementFusionReactor",
+   "friendlyName": "Alien Advanced Hybrid Confinement Fusion Reactor",
+   "maxOutput_GW": 6400,
+   "specificPower_tGW": 0.35,
+   "powerPlantClass": "Hybrid_Confinement_Fusion",
+   "requiredProjectName": "Project_AlienMasterProject",
+   "generalUse": true,
+   "efficiency": 0.995,
+   "crew": 4,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.16,
+      "metals": 0.665,
+      "nobleMetals": 0.15,
+      "exotics": 0.005
+   },
+   "iconResource": "shipbuildericons/ICO_AlienHybridConfinementFusionReactor"
+},
+ {
+   "dataName": "AlienSuperAdvancedHybridConfinementFusionReactor",
+   "friendlyName": "Alien Super Advanced Hybrid Confinement Fusion Reactor",
+   "maxOutput_GW": 21510,
+   "specificPower_tGW": 0.05,
+   "powerPlantClass": "Hybrid_Confinement_Fusion",
+   "requiredProjectName": "Project_AlienAdvancedMasterProject",
+   "generalUse": true,
+   "efficiency": 0.998,
+   "crew": 4,
+   "weightedBuildMaterials": {
+      "water": 0.02,
+      "volatiles": 0.16,
+      "metals": 0.665,
+      "nobleMetals": 0.15,
+      "exotics": 0.005
+   },
+   "iconResource": "shipbuildericons/ICO_AlienHybridConfinementFusionReactor"
 },
  {
    "dataName": "AntimatterPlasmaCoreReactorI",
@@ -1123,13 +1068,10 @@
    "efficiency": 0.9975,
    "crew": 12,
    "weightedBuildMaterials": {
-      "water": null,
       "volatiles": 0.3,
       "metals": 0.48,
       "nobleMetals": 0.2,
-      "fissiles": null,
-      "antimatter": 0.02,
-      "exotics": null
+      "antimatter": 0.02
    },
    "iconResource": "shipbuildericons/ICO_AntimatterPlasmaCoreReactorI"
 },
@@ -1144,13 +1086,10 @@
    "efficiency": 0.9975,
    "crew": 12,
    "weightedBuildMaterials": {
-      "water": null,
       "volatiles": 0.3,
       "metals": 0.48,
       "nobleMetals": 0.2,
-      "fissiles": null,
-      "antimatter": 0.02,
-      "exotics": null
+      "antimatter": 0.02
    },
    "iconResource": "shipbuildericons/ICO_AntimatterPlasmaCoreReactorII"
 },
@@ -1165,11 +1104,9 @@
    "efficiency": 0.9975,
    "crew": 12,
    "weightedBuildMaterials": {
-      "water": null,
       "volatiles": 0.32,
       "metals": 0.45,
       "nobleMetals": 0.2,
-      "fissiles": null,
       "antimatter": 0.02,
       "exotics": 0.01
    },
@@ -1186,11 +1123,9 @@
    "efficiency": 0.9975,
    "crew": 12,
    "weightedBuildMaterials": {
-      "water": null,
       "volatiles": 0.3,
       "metals": 0.3,
       "nobleMetals": 0.3,
-      "fissiles": null,
       "antimatter": 0.05,
       "exotics": 0.05
    },

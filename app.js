@@ -303,6 +303,8 @@ function init() {
         techs = templateData.tech;
         projects = templateData.project;
         
+        projects = projects.filter(project => !project.disable);
+        
         projects.forEach(project => {project.isProject = true});
 
         [].concat(techs, projects).forEach((tech) => {

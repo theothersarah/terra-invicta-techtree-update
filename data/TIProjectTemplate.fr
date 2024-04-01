@@ -12,7 +12,7 @@ TIProjectTemplate.description.Project_TheirOperations=Les forces de l’ordre na
 
 TIProjectTemplate.displayName.Project_TheirMovements=Déplacements extraterrestres
 TIProjectTemplate.summary.Project_TheirMovements=Nous essayons maintenant de suivre à la trace les déplacements extraterrestres afin de localiser des extraterrestres sur Terre.
-TIProjectTemplate.description.Project_TheirMovements=En étudiant des résidus trouvés à proximité des endroits où les extraterrestres auraient été observés, nous avons établi qu’au lieu de transpirer comme les humains, ces extraterrestres dissipent la chaleur de façon similaire à de la glace carbonique se sublimant de l’état solide à gazeux.<br/><br/> Heureusement pour nous, repérer ce phénomène est relativement simple. Au point le plus haut de la guerre contre le terrorisme, la plupart des nations utilisaient déjà l’imagerie infrarouge frontale pour détecter les menaces biologiques sous forme d’aérosols. En augmentant les quantités et capacités de tels systèmes, nous serons en mesure de détecter la présence de ce sous-produit extraterrestre en temps réel.
+TIProjectTemplate.description.Project_TheirMovements=En étudiant des résidus trouvés à proximité des endroits où les extraterrestres auraient été observés, nous avons établi qu’au lieu de transpirer comme les humains, ces extraterrestres dissipent la chaleur de façon similaire à de la glace carbonique se sublimant de l’état solide à gazeux.<br/><br/>Heureusement pour nous, repérer ce phénomène est relativement simple. Au point le plus haut de la guerre contre le terrorisme, la plupart des nations utilisaient déjà l’imagerie infrarouge frontale pour détecter les menaces biologiques sous forme d’aérosols. En augmentant les quantités et capacités de tels systèmes, nous serons en mesure de détecter la présence de ce sous-produit extraterrestre en temps réel.
 
 TIProjectTemplate.displayName.Project_TheirOrigin=Origines des extraterrestres
 TIProjectTemplate.summary.Project_TheirOrigin=Nous utilisons des données astronomiques pour émettre des théories sur l’origine des extraterrestres.
@@ -60,7 +60,7 @@ TIProjectTemplate.description.Project_TheAlienNation=Il n’y a qu’un seul che
 
 TIProjectTemplate.displayName.Project_HydraInterrogation=Interrogatoire d’hydre
 TIProjectTemplate.summary.Project_HydraInterrogation=Nous écrivons un nouveau chapitre de l’histoire humaine en dialoguant avec une espèce extraterrestre intelligente.
-TIProjectTemplate.description.Project_HydraInterrogation=Étant donné que le langage des hydres est un langage tonal agglutinant basé principalement sur les émissions olfactives, il a fallu énormément de temps et de patience pour deviner le sens utile des déclarations multisensorielles de notre captif. Mais chaque échec est bien évidemment une opportunité d’apprendre. Chaque fâcheuse impasse met fin à nos questions, mais nous apporte de grandes connaissances sur l’étrange langage du sujet extraterrestre. Après d’innombrables difficultés, une sorte d’échange a été établi.
+TIProjectTemplate.description.Project_HydraInterrogation=Étant donné que le langage des hydres est très simple, mais que ses facteurs complexes tels que le sens et le ton découlent principalement d’émissions olfactives, il a fallu énormément de temps et de patience pour deviner le sens utile des déclarations multisensorielles de notre captif. Mais chaque échec est bien évidemment une opportunité d’apprentissage. Chaque fâcheuse impasse atteinte par nos interrogatoire ne nous apporté que plus de connaissances sur l’étrange langage du sujet extraterrestre. Après d’innombrables difficultés, une sorte d’échange a été établi.
 
 TIProjectTemplate.displayName.Project_TheirPurpose=Leur but
 TIProjectTemplate.summary.Project_TheirPurpose=Nous sondons davantage notre captif pour apprendre la raison de l’invasion de notre planète par les hydres.
@@ -89,7 +89,7 @@ TIProjectTemplate.description.Project_TheChokePoint=L’étude approfondie du tr
 TIProjectTemplate.displayName.Project_HydraBiowarfare=Guerre biologique contre les hydres
 TIProjectTemplate.summary.Project_HydraBiowarfare=Nous déterminons la façon d’exploiter la plus grande faiblesse des hydres à l’avantage de l’humanité.
 TIProjectTemplate.description.Project_HydraBiowarfare=La révélation que, malgré toute leur arrogance, les hydres ont une peur fermement ancrée d’une attaque biologique a été notre ligne directrice dans notre recherche d’un moyen plus simple de les tuer et à terme de les terrasser définitivement. Nos études ont confirmé qu’en raison de la nature des envahisseurs, une forme particulière d’arme biologique serait en effet leur talon d’Achille. Nos virologistes ont été en mesure d’exploiter cette faiblesse dans des tests à petite échelle avec des résultats dévastateurs, mais réaliser cet exploit à l’échelle nécessaire pour mettre un terme à leur menace inhumaine exigera une innovation plus importante.
-
+ 
 TIProjectTemplate.displayName.Project_PherocyteMastery=Maîtrise des phérocytes
 TIProjectTemplate.summary.Project_PherocyteMastery=Nous cherchons un moyen de retourner la situation contre les hydres : de contrôler leurs esprits comme ils le font avec nous.
 TIProjectTemplate.description.Project_PherocyteMastery=Bien que le fait que les extraterrestres puissent si facilement contrôler l’esprit humain soit antithétique à nos intérêts, il est bien plus dans notre intérêt d’être capables de nous-mêmes contrôler les esprits, qu’il s’agisse d’hydres ou d’humains. Reproduire les cellules phérocytes extraterrestres a été, comme nous nous y attendions, très difficile, en raison des différences biologiques profondes entre eux et nous. Cela s’est même avéré impossible. Reproduire artificiellement leurs effets est en revanche tout à fait possible. Les chances se sont enfin égalisées.
@@ -120,7 +120,7 @@ TIProjectTemplate.description.Project_ResistVictory=Depuis son lancement, l’in
 
 TIProjectTemplate.displayName.Project_SubmitVictory=Le chemin du Paradis
 TIProjectTemplate.summary.Project_SubmitVictory=Nous cherchons la vérité des vérités pour notre mouvement : comment atteindre la véritable grandeur au service des extraterrestres.
-TIProjectTemplate.description.Project_SubmitVictory=Ayant atteint un état de sécurité fragile, nous sommes de plus en plus nombreux à estimer que les émissaires ne devraient pas être craints. Et pourtant, ce serait un statu quo insatisfaisant. Après des discussions tendues parmi les fidèles, nous avons atteint un consensus ; un qui incorpore les opinions de ceux qui souhaitent servir les hydres indiscutablement et de ceux qui ne les voient que comme un tremplin pour l’humanité toute entière.
+TIProjectTemplate.description.Project_SubmitVictory=Ayant atteint un état de sécurité fragile, nous sommes de plus en plus nombreux à estimer que les émissaires ne devraient pas être craints. Et pourtant, ce serait un statu quo insatisfaisant. Après des discussions tendues parmi les fidèles, nous avons atteint un consensus ; un qui incorpore les opinions de ceux qui souhaitent servir les émissaires indiscutablement et de ceux qui ne les voient que comme un tremplin pour l’humanité toute entière.
 
 TIProjectTemplate.displayName.Project_CoexistencePact=Pacte de coexistence
 TIProjectTemplate.summary.Project_CoexistencePact=Nous établissons exactement ce dont nous aurons besoin pour satisfaire les exigences choquantes des extraterrestres.
@@ -128,7 +128,7 @@ TIProjectTemplate.description.Project_CoexistencePact=Bien que certains d’entr
 
 TIProjectTemplate.displayName.Project_APermanentPeace=Une paix permanente
 TIProjectTemplate.summary.Project_APermanentPeace=Nous cherchons à convaincre les extraterrestres qu’une solution pacifique est la seule solution possible.
-TIProjectTemplate.description.Project_APermanentPeace=Toute chance réaliste de dissuader les hydres, c’est-à-dire de mettre fin à la guerre sans recourir à la violence ni à la soumission, reposait sur des avancées sur plusieurs fronts. La première était de concevoir une arme capable de leur faire peur. Une fois cette étape réussie, du moins en théorie, la seconde était de persuader notre captif encore méfiant de convaincre les siens que leur cap actuel ne mène qu’à une destruction mutuelle. Nos intentions demeurent pacifiques, mais afin d’atteindre cette paix, il nous a fallu nous comporter avec une certaine agressivité. 
+TIProjectTemplate.description.Project_APermanentPeace=Toute chance réaliste de dissuader les hydres, c’est-à-dire de mettre fin à la guerre sans recourir à la violence ni à la soumission, reposait sur des avancées sur plusieurs fronts. La première était de concevoir une arme capable de leur faire peur. Une fois cette étape réussie, du moins en théorie, la deuxième était de persuader notre captif encore méfiant de convaincre les siens que leur cap actuel ne mènerait qu’à une destruction mutuelle. Nos intentions demeurent pacifiques, mais afin d’atteindre cette paix, nous avons dû recourir à une certaine agressivité. 
 
 TIProjectTemplate.displayName.Project_KilltheHive=Élimination de la ruche
 TIProjectTemplate.summary.Project_KilltheHive=Nous concevons une arme biologique basée sur les phérocytes, capable d’éliminer la menace des hydres de façon permanente.
@@ -145,7 +145,7 @@ TIProjectTemplate.description.Project_EnslavetheMasters=Suite à de minutieuses 
 TIProjectTemplate.displayName.Project_TheFinalAssault=L’Attaque finale
 TIProjectTemplate.summary.Project_TheFinalAssault=Nous finalisons nos plans pour engager le combat contre la force principale des hydres dans le but de sécuriser nos frontières stellaires une bonne fois pour toutes.
 TIProjectTemplate.description.Project_TheFinalAssault=Nous avons atteint un consensus : malgré les dangers, la seule méthode certaine de mettre fin aux tentatives d’invasions extraterrestres est de faire s’affaisser le trou de ver, leur retirant ainsi l’accès à notre système solaire. Cela nécessitera une opération conjointe d’une ampleur sans précédent. Nous avons constitué une équipe de choc qui sera le fer de lance de cette mission. Dire qu’il reste encore des données inconnues serait sûrement le plus grand euphémisme de l’histoire, mais toute la civilisation humaine dépend de notre réussite. Nous sommes concentrés. Nous sommes confiants. Nous sommes prêts.
-
+ 
 TIProjectTemplate.displayName.Project_TheOneTruePath=La seule vraie voie
 TIProjectTemplate.summary.Project_TheOneTruePath=Afin d’empêcher notre assujettissement total et d’aspirer à un futur harmonieux, nous cherchons à conclure un petit compromis avec les hydres.
 TIProjectTemplate.description.Project_TheOneTruePath=Bien que nous ne puissions peut-être jamais espérer être les égaux des Émissaires, l’humanité mérite d’être plus que du bétail à leurs yeux. En nous accordant une plus grande liberté, nous pourrions mieux les aider, eux et leur cause, et accomplir de grandes choses ensemble. Afin de les en convaincre, nous avons utilisé notre compréhension de plus en plus poussée de leur langage et de leur culture pour leur solliciter une opportunité de prouver notre loyauté infaillible, une bonne fois pour toutes. 
@@ -156,7 +156,7 @@ TIProjectTemplate.description.Project_AlienFlora=La quantité d’informations �
 
 TIProjectTemplate.displayName.Project_TheirComputers=Ordinateurs extraterrestres
 TIProjectTemplate.summary.Project_TheirComputers=Nous essayons de déchiffrer le but et le fonctionnement des machines apparemment utilisées pour contrôler le vaisseau spatial extraterrestre.
-TIProjectTemplate.description.Project_TheirComputers=La tâche d’identifier les plus grosses machines récupérées dans le vaisseau extraterrestre a mis nos plus éminents scientifiques à l’épreuve : elles sont si éloignées de l’idée fondamentale que nous nous faisons des systèmes informatiques. Mais bien que nous soyons maintenant convaincus qu’il s’agit en effet de sortes d’ordinateurs, comprendre leur but exact et leur fonction est une tout autre chose. Leur interface n’est aucunement conçue pour des mains ou des voix humaines, et même leur retour visuel est si peu présent que c’en est déroutant. Notre meilleure hypothèse est que l’éventail d’étranges blocs spongieux que nous avons trouvés dans la plus intacte de ces machines constitue une forme d’entrée-sortie sensorielle (peut-être pour un fonctionnement olfactif ?). Compte tenu des limitations humaines concernant le décodage et les émanations d’odeurs, ce n’est pas quelque chose que nous pouvons facilement répliquer, bien que nous puissions peut-être avec le temps devenir capables de créer des alternatives synthétiques.<br/><br/>Les éléments de traitement de l’ordinateur, eux, ont été légèrement plus simples à catégoriser. De ce que nous pouvons en dire, ils emploient une forme hautement avancée d’informatique et de photonique quantiques que nous avons nous-mêmes également récemment étudiées, ce qui leur permet vraisemblablement de superviser leurs voyages, de naviguer et de communiquer d’un bout à l’autre de ce système solaire avec une efficacité dont nous ne pouvons aujourd’hui que rêver. 
+TIProjectTemplate.description.Project_TheirComputers=La simple tâche d’identification des plus grosses machines obtenues auprès des extraterrestre a mis nos plus éminents scientifiques à l’épreuve : elles sont si éloignées de l’idée fondamentale que nous nous faisons des systèmes informatiques. Mais bien que nous soyons maintenant convaincus qu’il s’agit en effet de sortes d’ordinateurs, comprendre leur but exact et leur fonction est une tout autre chose. Leur interface n’est aucunement conçue pour des mains ou des voix humaines, et même leur retour visuel est si peu présent que c’en est déroutant. Notre meilleure hypothèse est que l’éventail d’étranges blocs spongieux que nous avons trouvés dans la plus intacte de ces machines constitue une forme d’entrée-sortie sensorielle (peut-être pour un fonctionnement olfactif ?). Compte tenu des limitations humaines concernant le décodage et les émanations d’odeurs, ce n’est pas quelque chose que nous pouvons facilement répliquer, bien que nous puissions peut-être avec le temps devenir capables de créer des alternatives synthétiques.<br/><br/>Les éléments de traitement de l’ordinateur, eux, ont été légèrement plus simples à catégoriser. De ce que nous pouvons en dire, ils emploient une forme hautement avancée d’informatique et de photonique quantiques que nous avons nous-mêmes également récemment étudiées, ce qui leur permet vraisemblablement de superviser leurs voyages, de naviguer et de communiquer d’un bout à l’autre de ce système solaire avec une efficacité dont nous ne pouvons aujourd’hui que rêver. 
 
 TIProjectTemplate.displayName.Project_TheirRobotics=Robotique extraterrestre
 TIProjectTemplate.summary.Project_TheirRobotics=Nous étudions l’éventail de machines à bord utilisées pour subvenir aux besoins du vaisseau extraterrestre et de ses occupants.
@@ -166,7 +166,7 @@ TIProjectTemplate.displayName.Project_TheirWarships=Vaisseaux de guerre extrater
 TIProjectTemplate.summary.Project_TheirWarships=Nous tentons de développer notre compréhension de la flotte extraterrestre et de ses capacités.
 TIProjectTemplate.description.Project_TheirWarships=Peut-être que l’aspect le plus étrangement rassurant de nos toutes premières observations des vaisseaux extraterrestres traversant notre système solaire est que leur fonctionnement suit les mêmes principes scientifiques fondamentaux qui gouvernent l’univers à notre connaissance. Leurs matériaux et leurs technologies de propulsion dépassaient bien entendu nos propres capacités, mais nous pouvions au moins constater que ces vaisseaux de guerre interplanétaires étaient régis par les mêmes lois de Newton, d’Einstein et bien d’autres, tout comme nous le sommes.<br/><br/>Maintenant que nous avons néanmoins eu l’occasion de voir l’un de leurs vaisseaux de plus près, nous constatons qu’il nous reste encore beaucoup à apprendre. Leurs propulseurs dépendent d’un type de fusion utilisant un hybride de plusieurs techniques de confinement du plasma. Leurs radiateurs et leurs dissipateurs thermiques sont superbement efficaces dans leur gestion des pertes de chaleur.<br/><br/>En temps voulu, nous serons peut-être en mesure de rétroconcevoir certains aspects de leur technologie pour nos propres usages, et d’en tirer des façons d’améliorer nos capacités de combat contre les vaisseaux extraterrestres.
 
-
+// END OBJECTIVE PROJECTS
 
 TIProjectTemplate.displayName.Project_CommercialResearch=Recherche commerciale
 TIProjectTemplate.summary.Project_CommercialResearch=Nous dirigeons notre énergie vers l’amélioration de notre situation financière.
@@ -310,7 +310,7 @@ TIProjectTemplate.description.Project_CompositeArmor=Notre matériau de blindage
 TIProjectTemplate.displayName.Project_NanotubeArmor=Blindage en nanotubes
 TIProjectTemplate.summary.Project_NanotubeArmor=<shipmodule>
 TIProjectTemplate.description.Project_NanotubeArmor=Notre matériau de blindage le plus avancé sera immédiatement appliqué à nos modules d’habitat.
-TIProjectTemplate.displayName.Project_AdamantaneArmor=Blindage en adamantane
+TIProjectTemplate.displayName.Project_AdamantaneArmor=Armure en adamantane
 TIProjectTemplate.summary.Project_AdamantaneArmor=<shipmodule>
 TIProjectTemplate.description.Project_AdamantaneArmor=Notre matériau de blindage le plus avancé sera immédiatement appliqué à nos modules d’habitat.
 TIProjectTemplate.displayName.Project_ExoticArmor=Blindage en exomatériaux
@@ -359,7 +359,7 @@ TIProjectTemplate.displayName.Project_ShipsoftheLine=Vaisseaux de ligne
 TIProjectTemplate.summary.Project_ShipsoftheLine=De grandes coques de vaisseaux de guerre construites pour le combat.
 TIProjectTemplate.displayName.Project_Titans=Titans
 TIProjectTemplate.summary.Project_Titans=Nous développons une coque de vaisseau de guerre capable de porter une puissance de feu stupéfiante.
-TIProjectTemplate.displayName.Project_ISRUModule=Utilisation des ressources in situ
+TIProjectTemplate.displayName.Project_ISRUModule=Module d’utilisation des ressources in situ
 TIProjectTemplate.summary.Project_ISRUModule=Un module URIS permettrait à nos vaisseaux de se réapprovisionner en propergol au sein de sites non améliorés du système solaire.
 TIProjectTemplate.displayName.Project_RemassScoop=Optimisation de masse
 TIProjectTemplate.summary.Project_RemassScoop=Une conception aérodynamique permet également aux vaisseaux de récupérer du propergol d’hydrogène à partir de l’atmosphère des planètes géantes gazeuses.
@@ -443,6 +443,8 @@ TIProjectTemplate.displayName.Project_FissionPile=Pile à fission
 TIProjectTemplate.summary.Project_FissionPile=<habmodule>
 TIProjectTemplate.displayName.Project_FusionPile=Pile à fusion
 TIProjectTemplate.summary.Project_FusionPile=<habmodule>
+TIProjectTemplate.displayName.Project_HeavyFissionPile=Pile à fission lourde
+TIProjectTemplate.summary.Project_HeavyFissionPile=<habmodule>
 TIProjectTemplate.displayName.Project_HydroponicsBay=Baie hydroponique
 TIProjectTemplate.summary.Project_HydroponicsBay=<habmodule>
 TIProjectTemplate.displayName.Project_InformationScienceLab=Laboratoire de sciences de l’information
@@ -499,6 +501,8 @@ TIProjectTemplate.displayName.Project_FissionReactorArray=Réseau de réacteurs 
 TIProjectTemplate.summary.Project_FissionReactorArray=<habmodule>
 TIProjectTemplate.displayName.Project_FusionReactorArray=Réseau de réacteurs à fusion
 TIProjectTemplate.summary.Project_FusionReactorArray=<habmodule>
+TIProjectTemplate.displayName.Project_HeavyFissionReactorArray=Réseau de réacteurs à fission lourds
+TIProjectTemplate.summary.Project_HeavyFissionReactorArray=<habmodule>
 TIProjectTemplate.displayName.Project_InformationScienceResearchCenter=Centre de recherche des sciences de l’information
 TIProjectTemplate.summary.Project_InformationScienceResearchCenter=<habmodule>
 TIProjectTemplate.displayName.Project_LayeredDefenseArray=Réseau de défense hiérarchisé
@@ -568,6 +572,8 @@ TIProjectTemplate.displayName.Project_FusionReactorFarm=Ferme de réacteurs à f
 TIProjectTemplate.summary.Project_FusionReactorFarm=<habmodule>
 TIProjectTemplate.displayName.Project_GeriatricsFacility=Centre de gériatrie
 TIProjectTemplate.summary.Project_GeriatricsFacility=<habmodule>
+TIProjectTemplate.displayName.Project_HeavyFissionReactorFarm=Ferme de réacteurs à fission lourds
+TIProjectTemplate.summary.Project_HeavyFissionReactorFarm=<habmodule>
 TIProjectTemplate.displayName.Project_HeavyFusionReactorFarm=Ferme de réacteurs à fusion lourds
 TIProjectTemplate.summary.Project_HeavyFusionReactorFarm=<habmodule>
 TIProjectTemplate.displayName.Project_InformationScienceInstitute=Institut de sciences de l’information
@@ -1414,7 +1420,7 @@ TIProjectTemplate.displayName.Project_RapidDistillationTechniques=Techniques de 
 TIProjectTemplate.summary.Project_RapidDistillationTechniques=Des microbes génétiquement modifiés nous aident à filtrer les composants volatiles de nos mines.
 TIProjectTemplate.displayName.Project_DeepSpaceMetallurgy=Métallurgie dans l’espace lointain
 TIProjectTemplate.summary.Project_DeepSpaceMetallurgy=Des techniques de raffinage à faible gravité nous aident à extraire plus de matériaux des minerais.
-TIProjectTemplate.displayName.Project_MolecularBenefication=Bonification moléculaire
+TIProjectTemplate.displayName.Project_MolecularBenefication=Enrichissement moléculaire
 TIProjectTemplate.summary.Project_MolecularBenefication=Nous extrayons plus de métaux rares à partir des minéraux spatiaux, augmentant ainsi notre production de métaux nobles et construisant de nouveaux modules de vaisseaux.
 TIProjectTemplate.displayName.Project_RapidFissileEnrichment=Enrichissement fissile rapide
 TIProjectTemplate.summary.Project_RapidFissileEnrichment=Nous transformons l’uranium et le thorium à basse teneur en matériaux fissiles utiles.

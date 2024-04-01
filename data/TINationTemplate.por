@@ -877,10 +877,10 @@ TINationTemplate.displayNameWithArticle.HUN=Hungria
 TINationTemplate.nationAdjective.HUN=da Hungria
 TINationTemplate.displayNameWithArticlePrep.HUN=na Hungria
 
-TINationTemplate.displayName.ING=Íngria
-TINationTemplate.displayNameWithArticle.ING=Íngria
-TINationTemplate.nationAdjective.ING=da Íngria
-TINationTemplate.displayNameWithArticlePrep.ING=na Íngria
+TINationTemplate.displayName.ING=República de Petersburgo
+TINationTemplate.displayNameWithArticle.ING=a República de Petersburgo
+TINationTemplate.nationAdjective.ING=da República de Petersburgo
+TINationTemplate.displayNameWithArticlePrep.ING=na República de Petersburgo
 
 TINationTemplate.displayName.IVO=Costa do Marfim
 TINationTemplate.displayNameWithArticle.IVO=Costa do Marfim
@@ -912,10 +912,10 @@ TINationTemplate.displayNameWithArticle.ROM=Romênia
 TINationTemplate.nationAdjective.ROM=da Romênia
 TINationTemplate.displayNameWithArticlePrep.ROM=na Romênia
 
-TINationTemplate.displayName.ROS=Rostovskaya
-TINationTemplate.displayNameWithArticle.ROS=Rostovskaya
-TINationTemplate.nationAdjective.ROS=da Rostovskaya
-TINationTemplate.displayNameWithArticlePrep.ROS=na Rostovskaya
+TINationTemplate.displayName.ROS=Congregação dos Cossacos do Don
+TINationTemplate.displayNameWithArticle.ROS=a Congregação dos Cossacos do Don
+TINationTemplate.nationAdjective.ROS=da Congregação dos Cossacos do Don
+TINationTemplate.displayNameWithArticlePrep.ROS=na Congregação dos Cossacos do Don
 
 TINationTemplate.displayName.SAH=Saarauí
 TINationTemplate.displayNameWithArticle.SAH=Saarauí

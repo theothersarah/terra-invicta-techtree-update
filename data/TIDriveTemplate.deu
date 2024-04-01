@@ -626,3 +626,5 @@ TIDriveTemplate.EV=Austrittsgeschwindigkeit:<rcol>{0} km/s (Rang: {1})</rcol>
 TIDriveTemplate.Efficiency=Energieeffizienz:<rcol>{0}</rcol>
 TIDriveTemplate.RequiredPowerPlant=Erforderliche Energiequelle:<rcol>{0}</rcol>
 TIDriveTemplate.CombatThrust=Kampfschub:<rcol>{0}x ({1} Newtons)</rcol>
+TIDriveTemplate.OpenCycle=Dieser Antrieb verwendet eine <h>offene Kühlung</h>. Das bedeutet, dass die Wärme durch den Treibstoff abgeleitet wird. Ein Schiff mit diesem Antrieb benötigt nur wenige Kühlelemente zur sicheren Funktion. Antriebe mit hoher Schubkraft und niedriger Abgasgeschwindigkeit sind in der Regel offene Antriebe.
+TIDriveTemplate.ClosedCycle=Dieser Antrieb verwendet eine <h>geschlossene Kühlung</h>. Das bedeutet, dass schwere Kühlelemente erforderlich sind, um die entstehende Hitze abzuführen. In der Regel werden sie von Antrieben mit hoher Abgasgeschwindigkeit benötigt.

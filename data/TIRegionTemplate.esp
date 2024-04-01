@@ -713,7 +713,7 @@ TIRegionTemplate.BoostFacilityName.Brazzaville=
 TIRegionTemplate.BoostFacilityName.Senegambia=
 TIRegionTemplate.BoostFacilityName.IvoryCoast=
 
-TIRegionAlienEntityState.displayNameWithLocation={0}-{1}
+TIRegionAlienEntityState.displayNameWithLocation={0} en {1}
 TIRegionAlienEntityState.BasicDescriptor=Fenómenos alienígenas
 TIRegionAlienActivityState.displayName=Actividad alienígena
 TIRegionAlienActivityState.description=Tenemos informes de avistamientos de alienígenas en esta región.

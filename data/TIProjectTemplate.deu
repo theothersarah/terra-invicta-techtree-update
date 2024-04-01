@@ -60,7 +60,7 @@ TIProjectTemplate.description.Project_TheAlienNation=Es gibt nur einen Pfad zur 
 
 TIProjectTemplate.displayName.Project_HydraInterrogation=Hydras verhören
 TIProjectTemplate.summary.Project_HydraInterrogation=Wir treten erstmals mit einer intelligenten außerirdischen Spezies in Dialog und schlagen damit ein neues Kapitel in der Geschichte der Menschheit auf.
-TIProjectTemplate.description.Project_HydraInterrogation=Die Hydrasprache ist eine agglutinierende tonale Sprache, in der olfaktorische Reize eine wichtige Rolle spielen. Deshalb hat es uns unglaublich viel Zeit und Geduld gekostet, die Bedeutung der multisensorischen Deklarationen unseres Gefangenen zu entschlüsseln. Jeder Fehlschlag war aber zugleich auch eine Lernmöglichkeit – mit jeder Sackgasse, in die wir geraten sind, haben wir gleichzeitig einen besseren Einblick in die seltsame Sprache der Aliens erhalten. Nach unzähligen Misserfolgen ist es uns endlich gelungen, eine Art Dialog zu etablieren.
+TIProjectTemplate.description.Project_HydraInterrogation=Weil die gesprochene Sprache der Hydra so einfach ist und komplexe Faktoren wie Bedeutung und Tonfall in erster Linie durch Geruchsemissionen entstehen, hat es uns unglaublich viel Zeit und Geduld gekostet, die Bedeutung der multisensorischen Deklarationen unseres Gefangenen zu entschlüsseln. Jeder Fehlschlag war aber zugleich auch eine Lernmöglichkeit – mit jeder Sackgasse, in die wir geraten sind, haben wir gleichzeitig einen besseren Einblick in die seltsame Sprache der Aliens erhalten. Nach unzähligen Misserfolgen ist es uns endlich gelungen, eine Art Dialog zu etablieren.
 
 TIProjectTemplate.displayName.Project_TheirPurpose=Ihre Absichten
 TIProjectTemplate.summary.Project_TheirPurpose=Wir verhören die gefangene Hydra weiter, um herauszufinden, warum die Aliens mit der Invasion unseres Planeten begonnen haben.
@@ -89,7 +89,7 @@ TIProjectTemplate.description.Project_TheChokePoint=Weitere Untersuchungen des H
 TIProjectTemplate.displayName.Project_HydraBiowarfare=Biologische Kriegsführung gegen die Hydras
 TIProjectTemplate.summary.Project_HydraBiowarfare=Wir arbeiten unentwegt daran, die größte Schwäche der Hydras zu unserem größten Vorteil zu machen.
 TIProjectTemplate.description.Project_HydraBiowarfare=Hinter der schier endlosen Arroganz der Hydras verbirgt sich eine tief verwurzelte Angst vor biologischen Angriffen. Dank dieser Erkenntnis haben wir einen einfacheren Weg gefunden, sie zu beseitigen. Wir hoffen, sie so schlussendlich auch ein für alle Mal besiegen zu können. Untersuchungen haben bestätigt, dass eine bestimmte Biowaffe tatsächlich die Achillesferse der Invasoren ist. Unsere Virologen haben in Tests im kleineren Maßstab bereits versucht, diese Schwäche auszunutzen – mit äußerst vielversprechenden Ergebnissen. Um auf dieser Weise der außerirdischen Bedrohung ein Ende zu setzen, bedarf es jedoch weiterer Innovationen.
-
+ 
 TIProjectTemplate.displayName.Project_PherocyteMastery=Kontrolle über Phärozyten
 TIProjectTemplate.summary.Project_PherocyteMastery=Wir erforschen Möglichkeiten, die mächtigste Waffe der Hydras gegen sie zu nutzen und sie unserer Kontrolle zu unterwerfen.
 TIProjectTemplate.description.Project_PherocyteMastery=Der Gedanke, dass Aliens einfach den Verstand jedes beliebigen Menschen kontrollieren können, ist uns zutiefst zuwider – der Gedanke, selbst Hydras oder Menschen kontrollieren zu können, ist dagegen überaus verlockend. Wie erwartet war es unmöglich, die Phärozyten der Aliens direkt zu replizieren, da die biologischen Unterschiede zwischen ihnen und uns einfach zu groß sind. Wir konnten ihre Wirkung jedoch auf künstliche Weise nachahmen. Das Kräfteverhältnis ist nun endlich ausgeglichen.
@@ -120,7 +120,7 @@ TIProjectTemplate.description.Project_ResistVictory=Seit der Gründung unserer B
 
 TIProjectTemplate.displayName.Project_SubmitVictory=Der Weg zum Paradies
 TIProjectTemplate.summary.Project_SubmitVictory=Unsere Bewegung ist auf der Suche nach der höchsten Wahrheit: Wie können wir wahre Größe erreichen, während wir den Aliens dienen?
-TIProjectTemplate.description.Project_SubmitVictory=Auch wenn die Lage noch immer prekär ist, das Überleben der Menschheit ist vorerst gesichert. Immer mehr von uns glauben mittlerweile, dass wir die Gesandten nicht fürchten müssen. Trotzdem wäre der Status quo auf lange Sicht unbefriedigend. Nach vielen hitzigen Diskussionen unter den Gläubigen haben wir einen Konsens zwischen all jenen gefunden, die den Hydras bedingungslos dienen wollen, und allen anderen, die in den Hydras die Möglichkeit sehen, die Menschheit als Ganzes auf die nächste Stufe zu heben.
+TIProjectTemplate.description.Project_SubmitVictory=Auch wenn die Lage noch immer prekär ist, das Überleben der Menschheit ist vorerst gesichert. Immer mehr von uns glauben mittlerweile, dass wir die Gesandten nicht fürchten müssen. Trotzdem wäre der Status quo auf lange Sicht unbefriedigend. Nach vielen hitzigen Diskussionen unter den Gläubigen haben wir einen Konsens zwischen all jenen gefunden, die den Botschaftern bedingungslos dienen wollen, und allen anderen, die in ihnen die Möglichkeit sehen, die Menschheit als Ganzes auf die nächste Stufe zu heben.
 
 TIProjectTemplate.displayName.Project_CoexistencePact=Koexistenzpakt
 TIProjectTemplate.summary.Project_CoexistencePact=Wir ermitteln, was genau erforderlich ist, um die schockierenden Forderungen der Aliens zu erfüllen.
@@ -145,18 +145,18 @@ TIProjectTemplate.description.Project_EnslavetheMasters=Nach sorgfältigen strat
 TIProjectTemplate.displayName.Project_TheFinalAssault=Der letzte Angriff
 TIProjectTemplate.summary.Project_TheFinalAssault=Wir arbeiten an den letzten Details unserer Pläne, die Hauptstreitmacht der Hydras anzugreifen, um unser Sonnensystem ein für alle Mal zu sichern.
 TIProjectTemplate.description.Project_TheFinalAssault=Wir haben einen Konsens erzielt. Auch wenn es überaus gefährlich ist, es gibt nur einen sicheren Weg, die Invasionsbemühungen der Aliens zu stoppen: Wir müssen das Wurmloch zum Kollaps bringen und damit ihren Zugang zu unserem Sonnensystem abschneiden. Dazu benötigen wir eine Streitmacht von nie dagewesener Größe. Wir haben ein Angriffsteam zusammengestellt, das als dessen Speerspitze dienen wird. Es wäre die größte Untertreibung der Menschheitsgeschichte, zu sagen, dass es noch einige Unwägbarkeiten gibt. Das Schicksal der gesamten Menschheit lastet auf unseren Schultern. Wir sind fokussiert. Wir wissen, was wir können. Wir sind bereit.
-
+ 
 TIProjectTemplate.displayName.Project_TheOneTruePath=Der eine wahre Weg
 TIProjectTemplate.summary.Project_TheOneTruePath=Wir wollen unsere totale Unterwerfung verhindern und streben eine harmonische Zukunft an. Deshalb versuchen wir, einen gewissen Kompromiss mit den Hydras zu erreichen.
 TIProjectTemplate.description.Project_TheOneTruePath=Die Hoffnung mag verschwindend gering sein, dass uns die Gesandten jemals als ebenbürtig betrachten werden. Trotzdem verdient die Menschheit ein besseres Schicksal, als ihre Leibeigenen zu sein. Mit mehr Freiheiten könnten wir ihnen besser helfen und gemeinsam Großartiges erreichen. Wir verstehen ihre Sprache und ihre Kultur immer besser und haben dieses Wissen genutzt, um sie um eine Chance zu bitten, ihnen unsere treue Ergebenheit zu beweisen. 
 
 TIProjectTemplate.displayName.Project_AlienFlora=Außerirdische Flora
 TIProjectTemplate.summary.Project_AlienFlora=Unsere Biologen untersuchen die nichtirdischen Lebensformen, die wir an verschiedenen Orten gefunden haben.
-TIProjectTemplate.description.Project_AlienFlora=Unsere Untersuchungen der vegetativen Lebensformen, die wir „Xenoflora“ getauft haben, waren nicht sehr aufschlussreich, obwohl wir alles versucht haben. Das Problem ist, dass wir es bis jetzt nicht geschafft haben, das Erbgut der Xenoflora vollständig zu entschlüsseln, da einige Bestandteile – salopp gesagt – dermaßen fremdartig sind, dass sie für uns aktuell unbegreiflich sind. Es ist uns auch nicht gelungen, etwas über ihre Herkunft herauszufinden, außer dass sie definitiv nicht von dieser Welt stammen. Wir haben bereits mehrfach Xenoflora in der Nähe von Absturzstellen der Aliens gefunden, die Chance auf einen kausalen Zusammenhang ist also hoch.<br/><br/>Auch das Verhalten der Xenoflora unterstreicht diese Annahme. Sie breitet sich schneller aus als alle bekannten Pflanzen und Pilze der Erde, und das mit einer fast maschinenhaften Gleichförmigkeit. Unsere aktuelle Hypothese ist, dass die Xenoflora in irgendeiner Art und Weise genetisch verändert oder gar von Grund auf konstruiert wurde. Sie kann ganze Regionen in Rekordzeit kolonisieren und verdrängt dabei alle einheimischen Pflanzen. Wir wissen noch nicht, zu welchem Zweck. Wir sollten deshalb einen Weg finden, die Ausbreitung dieser Organismen mit biologischen oder militärischen Mitteln einzudämmen. 
+TIProjectTemplate.description.Project_AlienFlora=Unsere Untersuchungen der vegetativen Lebensformen, die wir „Xenoflora“ getauft haben, waren nur begrenzt aufschlussreich, obwohl wir alles versucht haben. Das Problem ist, dass wir es bis jetzt nicht geschafft haben, das Erbgut der Xenoflora vollständig zu entschlüsseln, da einige Bestandteile – salopp gesagt – dermaßen fremdartig sind, dass sie für uns aktuell unbegreiflich sind. Es ist uns auch nicht gelungen, etwas über ihre Herkunft herauszufinden, außer dass sie definitiv nicht von dieser Welt stammen. Wir haben bereits mehrfach Xenoflora in der Nähe von Absturzstellen der Aliens gefunden, die Chance auf einen kausalen Zusammenhang ist also hoch.<br/><br/>Auch das Verhalten der Xenoflora unterstreicht diese Annahme. Sie breitet sich schneller aus als alle bekannten Pflanzen und Pilze der Erde, und das mit einer fast maschinenhaften Gleichförmigkeit. Unsere aktuelle Hypothese ist, dass die Xenoflora in irgendeiner Art und Weise genetisch verändert oder gar von Grund auf konstruiert wurde. Sie kann ganze Regionen in Rekordzeit kolonisieren und verdrängt dabei alle einheimischen Pflanzen. Wir wissen noch nicht, zu welchem Zweck. Wir sollten deshalb einen Weg finden, die Ausbreitung dieser Organismen mit biologischen oder militärischen Mitteln einzudämmen. 
 
 TIProjectTemplate.displayName.Project_TheirComputers=Aliencomputer
 TIProjectTemplate.summary.Project_TheirComputers=Wir versuchen, die Funktionsweise der Maschinen zu entschlüsseln, die anscheinend das Alienraumschiff steuern.
-TIProjectTemplate.description.Project_TheirComputers=Schon die Frage, worum es sich bei den größeren Maschinen handelt, die wir aus dem Schiff der Aliens geborgen haben, hat die Köpfe unserer schlauesten Wissenschaftler zum Rauchen gebracht, da sich die Maschinen stark von unserem Konzept eines Rechners unterscheiden. Wir sind nun davon überzeugt, dass es sich bei den Maschinen tatsächlich um Computer handelt, aber noch weit davon entfernt, ihren genauen Zweck und ihre genaue Funktionsweise zu verstehen. Ihr Interface ist nicht für menschliche Hände oder menschliche Stimmen konzipiert und bietet überraschend wenig visuelles Feedback. Die wenigen noch funktionstüchtigen Maschinen haben einige seltsame, schwammähnliche Polster, und unsere beste Hypothese lautet, dass es sich dabei um eine Art sensorische Schnittstelle handelt – vielleicht werden sie olfaktorisch betrieben? Wir Menschen haben von Natur aus einen eingeschränkten Geruchssinn und wenig Kontrolle über die Emission von Gerüchen, weshalb wir ein derartiges System unmöglich direkt bedienen können. Vielleicht gelingt es uns jedoch, eine synthetische Alternative zu entwickeln.<br/><br/>Die eigentlichen Rechenelemente des Computers waren einfacher zu identifizieren. So weit wir beurteilen können, nutzen die Aliens eine hochentwickelte Form des photonischen Quantencomputers, den wir vor Kurzem selbst entwickelt haben. Sie können dadurch unser Sonnensystem überwachen sowie darin navigieren und kommunizieren – mit einer Effizienz, von der wir bisher nur träumen können. 
+TIProjectTemplate.description.Project_TheirComputers=Schon die Frage, worum es sich bei den größeren Maschinen der Aliens handelt, hat die Köpfe unserer schlauesten Wissenschaftler zum Rauchen gebracht, da sich die Maschinen stark von unserem Konzept eines Rechners unterscheiden. Wir sind nun davon überzeugt, dass es sich bei den Maschinen tatsächlich um Computer handelt, aber noch weit davon entfernt, ihren genauen Zweck und ihre genaue Funktionsweise zu verstehen. Ihr Interface ist nicht für menschliche Hände oder menschliche Stimmen konzipiert und bietet überraschend wenig visuelles Feedback. Die wenigen noch funktionstüchtigen Maschinen haben einige seltsame, schwammähnliche Polster, und unsere beste Hypothese lautet, dass es sich dabei um eine Art sensorische Schnittstelle handelt – vielleicht werden sie olfaktorisch betrieben? Wir Menschen haben von Natur aus einen eingeschränkten Geruchssinn und wenig Kontrolle über die Emission von Gerüchen, weshalb wir ein derartiges System unmöglich direkt bedienen können. Vielleicht gelingt es uns jedoch, eine synthetische Alternative zu entwickeln.<br/><br/>Die eigentlichen Rechenelemente des Computers waren einfacher zu identifizieren. So weit wir beurteilen können, nutzen die Aliens eine hochentwickelte Form des photonischen Quantencomputers, den wir vor Kurzem selbst entwickelt haben. Sie können dadurch unser Sonnensystem überwachen sowie darin navigieren und kommunizieren – mit einer Effizienz, von der wir bisher nur träumen können. 
 
 TIProjectTemplate.displayName.Project_TheirRobotics=Alienrobotik
 TIProjectTemplate.summary.Project_TheirRobotics=Wir untersuchen die verschiedenen Maschinen an Bord des Alienraumschiffs, die das Schiff instand halten und dessen Besatzung versorgen.
@@ -166,7 +166,7 @@ TIProjectTemplate.displayName.Project_TheirWarships=Alienkriegsschiffe
 TIProjectTemplate.summary.Project_TheirWarships=Wir arbeiten daran, mehr über die Alienflotte und deren Fähigkeiten herauszufinden.
 TIProjectTemplate.description.Project_TheirWarships=Kurioserweise hatten unsere ersten Sichtungen von außerirdischen Raumschiffen in unserem Sonnensystem auch einen beruhigenden Aspekt: Anscheinend unterliegen sie denselben wissenschaftlichen Grundprinzipien, die unseren Theorien nach die Basis für unser Universum bilden. Die Materialien und Antriebstechnologien der Schiffe sind natürlich viel fortschrittlicher als alles, was wir besitzen, aber zumindest haben wir die Gewissheit, dass die Gesetze von Newton, Einstein und Co. auch für ihre interplanetaren Kriegsschiffe gelten.<br/><br/>Nachdem wir nun eines ihrer Schiffe genauer untersuchen konnten, ist klar, dass wir noch viel lernen müssen. Sie verwenden eine Art Fusionsantrieb mit einer Kombination verschiedener Plasmaeinschlussverfahren. Ihre Kühlelemente und Wärmespeicher sind unglaublich effizient in der Verwaltung der Abwärme.<br/><br/>Es könnte zwar etwas dauern, aber mit ein wenig Reverse-Engineering können wir vielleicht eines Tages einige der Technologien für unsere Zwecke nutzen und Wege finden, unsere Kampffähigkeiten gegen die außerirdischen Schiffe zu verbessern.
 
-
+// END OBJECTIVE PROJECTS
 
 TIProjectTemplate.displayName.Project_CommercialResearch=Wirtschaftsforschung
 TIProjectTemplate.summary.Project_CommercialResearch=Wir konzentrieren unsere Bemühungen darauf, unsere finanzielle Lage zu verbessern.
@@ -310,7 +310,7 @@ TIProjectTemplate.description.Project_CompositeArmor=Unser fortschrittlichstes P
 TIProjectTemplate.displayName.Project_NanotubeArmor=Nanoröhrenpanzerung
 TIProjectTemplate.summary.Project_NanotubeArmor=<shipmodule>
 TIProjectTemplate.description.Project_NanotubeArmor=Unser fortschrittlichstes Panzermaterial wird sofort zum Schutz unserer Habitatsmodule eingesetzt.
-TIProjectTemplate.displayName.Project_AdamantaneArmor=Adamantan-Panzerung
+TIProjectTemplate.displayName.Project_AdamantaneArmor=Diamantharte Panzerung
 TIProjectTemplate.summary.Project_AdamantaneArmor=<shipmodule>
 TIProjectTemplate.description.Project_AdamantaneArmor=Unser fortschrittlichstes Panzermaterial wird sofort zum Schutz unserer Habitatsmodule eingesetzt.
 TIProjectTemplate.displayName.Project_ExoticArmor=Exotische Panzerung
@@ -359,7 +359,7 @@ TIProjectTemplate.displayName.Project_ShipsoftheLine=Linienschiffe
 TIProjectTemplate.summary.Project_ShipsoftheLine=Wir entwickeln riesige Kriegsschiffrümpfe für Schlachten.
 TIProjectTemplate.displayName.Project_Titans=Titanen
 TIProjectTemplate.summary.Project_Titans=Wir entwickeln einen Kriegsschiffrumpf, der eine erstaunliche Feuerkraft ermöglicht.
-TIProjectTemplate.displayName.Project_ISRUModule=Ressourcennutzung in situ
+TIProjectTemplate.displayName.Project_ISRUModule=Ressourcennutzungsmodul in situ
 TIProjectTemplate.summary.Project_ISRUModule=Ein RNIS-Modul ermöglicht es unseren Schiffen, auch an nicht ausgebauten Standorten in unserem Sonnensystem Treibstoff zu tanken.
 TIProjectTemplate.displayName.Project_RemassScoop=Massenrückgewinner
 TIProjectTemplate.summary.Project_RemassScoop=Wir arbeiten an einem aerodynamischen Schiffsdesign, das es den Schiffen auch ermöglicht, Wasserstofftreibstoff aus der Atmosphäre von Gasriesen zu gewinnen.
@@ -443,6 +443,8 @@ TIProjectTemplate.displayName.Project_FissionPile=Kernspaltungsreaktor
 TIProjectTemplate.summary.Project_FissionPile=<habmodule>
 TIProjectTemplate.displayName.Project_FusionPile=Fusionsreaktor
 TIProjectTemplate.summary.Project_FusionPile=<habmodule>
+TIProjectTemplate.displayName.Project_HeavyFissionPile=Schwerer Kernspaltungsreaktor
+TIProjectTemplate.summary.Project_HeavyFissionPile=<habmodule>
 TIProjectTemplate.displayName.Project_HydroponicsBay=Hydrokulturanlage
 TIProjectTemplate.summary.Project_HydroponicsBay=<habmodule>
 TIProjectTemplate.displayName.Project_InformationScienceLab=Labor – Informationswissenschaften
@@ -499,6 +501,8 @@ TIProjectTemplate.displayName.Project_FissionReactorArray=Kernspaltungsreaktoran
 TIProjectTemplate.summary.Project_FissionReactorArray=<habmodule>
 TIProjectTemplate.displayName.Project_FusionReactorArray=Fusionsreaktoranlage
 TIProjectTemplate.summary.Project_FusionReactorArray=<habmodule>
+TIProjectTemplate.displayName.Project_HeavyFissionReactorArray=Schwere Kernspaltungsreaktoranlage
+TIProjectTemplate.summary.Project_HeavyFissionReactorArray=<habmodule>
 TIProjectTemplate.displayName.Project_InformationScienceResearchCenter=Forschungszentrum – Informationswissenschaften
 TIProjectTemplate.summary.Project_InformationScienceResearchCenter=<habmodule>
 TIProjectTemplate.displayName.Project_LayeredDefenseArray=Mehrschichtiges Verteidigungsarray
@@ -568,6 +572,8 @@ TIProjectTemplate.displayName.Project_FusionReactorFarm=Fusionsreaktorfarm
 TIProjectTemplate.summary.Project_FusionReactorFarm=<habmodule>
 TIProjectTemplate.displayName.Project_GeriatricsFacility=Geriatrische Einrichtung
 TIProjectTemplate.summary.Project_GeriatricsFacility=<habmodule>
+TIProjectTemplate.displayName.Project_HeavyFissionReactorFarm=Schwere Kernspaltungsreaktorfarm
+TIProjectTemplate.summary.Project_HeavyFissionReactorFarm=<habmodule>
 TIProjectTemplate.displayName.Project_HeavyFusionReactorFarm=Schwerfusionsreaktorfarm
 TIProjectTemplate.summary.Project_HeavyFusionReactorFarm=<habmodule>
 TIProjectTemplate.displayName.Project_InformationScienceInstitute=Institut – Informationswissenschaften
