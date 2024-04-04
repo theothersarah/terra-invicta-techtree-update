@@ -246,11 +246,9 @@ function init() {
 
     // Fetch and parse localization files
     const localizationFiles = [
-        {"filename": "TITechTemplate." + lang, "type": "tech"},
-        {"filename": "TIProjectTemplate." + lang, "type": "project"},
-        {"filename": "TIEffectTemplate." + lang, "type": "effect"},
         {"filename": "TIBatteryTemplate." + lang, "type": "battery"},
         {"filename": "TIDriveTemplate." + lang, "type": "drive"},
+        {"filename": "TIEffectTemplate." + lang, "type": "effect"},
         {"filename": "TIFactionTemplate." + lang, "type": "faction"},
         {"filename": "TIGunTemplate." + lang, "type": "gun"},
         {"filename": "TIHabModuleTemplate." + lang, "type": "habmodule"},
@@ -262,11 +260,14 @@ function init() {
         {"filename": "TIOrgTemplate." + lang, "type": "org"},
         {"filename": "TIParticleWeaponTemplate." + lang, "type": "particleweapon"},
         {"filename": "TIPlasmaWeaponTemplate." + lang, "type": "plasmaweapon"},
-        {"filename": "TIRegionTemplate." + lang, "type": "region"},
         {"filename": "TIPowerPlantTemplate." + lang, "type": "powerplant"},
+        {"filename": "TIProjectTemplate." + lang, "type": "project"},
         {"filename": "TIRadiatorTemplate." + lang, "type": "radiator"},
+        {"filename": "TIRegionTemplate." + lang, "type": "region"},
         {"filename": "TIShipArmorTemplate." + lang, "type": "shiparmor"},
         {"filename": "TIShipHullTemplate." + lang, "type": "shiphull"},
+        {"filename": "TITechTemplate." + lang, "type": "tech"},
+        {"filename": "TITraitTemplate." + lang, "type": "trait"},
         {"filename": "TIUtilityModuleTemplate." + lang, "type": "utilitymodule"}
     ];
 
@@ -274,6 +275,7 @@ function init() {
 
     // Fetch and parse template files
     const templateFiles = [
+        {"filename": "TIBatteryTemplate.json", "type": "battery"},
         {"filename": "TIBilateralTemplate.json", "type": "bilateral"},
         {"filename": "TIDriveTemplate.json", "type": "drive"},
         {"filename": "TIEffectTemplate.json", "type": "effect"},
@@ -292,6 +294,7 @@ function init() {
         {"filename": "TIShipArmorTemplate.json", "type": "shiparmor"},
         {"filename": "TIShipHullTemplate.json", "type": "shiphull"},
         {"filename": "TITechTemplate.json", "type": "tech"},
+        {"filename": "TITraitTemplate.json", "type": "trait"},
         {"filename": "TIUtilityModuleTemplate.json", "type": "utilitymodule"}
     ]
 
@@ -304,9 +307,7 @@ function init() {
         effects = templateData.effect;
         techs = templateData.tech;
         projects = templateData.project;
-        
-        projects = projects.filter(project => !project.disable);
-        
+
         projects.forEach(project => {project.isProject = true});
 
         [].concat(techs, projects).forEach((tech) => {
@@ -335,7 +336,7 @@ function init() {
 
 function parseTemplate(text, templateType) {
     let data = JSON.parse(text);
-    templateData[templateType] = data;
+    templateData[templateType] = data.filter(entry => !entry.disable);
 }
 
 function initSearchBox() {

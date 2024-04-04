@@ -11,6 +11,10 @@ class TechSidebar extends React.Component {
             return "effect." + dataName + ".description";
         }
         
+        if (description.match(/<skip.*>/)) {
+            return "Hidden effect: " + dataName;
+        }
+        
         const effectObj = this.findEffectByName(dataName);
         const effectVal = effectObj ? effectObj.value : 0;
         const effectStr = effectObj ? effectObj.strValue : "";
@@ -76,25 +80,10 @@ class TechSidebar extends React.Component {
             } else {
                  return "tech." + node.dataName + ".summary";
             }
-            return "";
         }
 
         if (summary.match(/<.*module>/)) {
-            let summaryElements = [React.createElement(
-                'p',
-                null,
-                summary.replace(/<.*module>/, "")
-            )];
-            const dataModules = this.findModule(node.dataName);
-            dataModules.forEach(dataModule => {
-
-                summaryElements.push(React.createElement(
-                    'div',
-                    null,
-                    this.buildModuleDisplay(dataModule)
-                ));
-            });
-            return summaryElements;
+            return "Unlocks one or more modules.";
         } else {
             return React.createElement(
                 'p',
@@ -121,16 +110,18 @@ class TechSidebar extends React.Component {
         }
     }
     
-    findModule(moduleName) {
+    findModules(projectName) {
         let results = [];
-        for (let modType in templateData) {
+        const modTypes = ["battery", "drive", "gun", "habmodule", "heatsink", "laserweapon", "magneticgun", "missile", "particleweapon", "plasmaweapon", "powerplant", "radiator", "shiparmor", "shiphull", "utilitymodule"];
+        modTypes.forEach(modType => {
             templateData[modType].forEach(module => {
-                if (module.requiredProjectName === moduleName)
+                if (module.requiredProjectName === projectName)
                     results.push({"data": module, "type": modType});
             });
-        }
+        });
         return results;
     }
+    
     getIcon(dataModule) {
         if (dataModule.iconResource) {
             return dataModule.iconResource;
@@ -184,6 +175,10 @@ class TechSidebar extends React.Component {
     
         let moduleDisplayElements = [];
         let icon = this.getIcon(dataModule.data);
+
+            moduleDisplayElements.push(React.createElement(
+                'br'
+            ));
 
         if (icon) {
             moduleDisplayElements.push(React.createElement(
@@ -307,7 +302,6 @@ class TechSidebar extends React.Component {
         )];
         
         let probabilities = [];
-        
         if (node.isProject) {
             probabilities.push(React.createElement(
                 'h4',
@@ -336,34 +330,38 @@ class TechSidebar extends React.Component {
         }
 
         let resourceLabel, resourceText;
-        if (node.resourcesGranted && node.resourcesGranted.filter(resource => resource.resource !== "").length > 0) {
-            let resourceString = "";
-            node.resourcesGranted.filter(resource => resource.resource !== "").forEach(resource => {
-                resourceString += resource.resource + " (" + resource.value + ")";
-            });
+        if (node.isProject) {
+            if (node.resourcesGranted && node.resourcesGranted.filter(resource => resource.resource !== "").length > 0) {
+                let resourceString = "";
+                node.resourcesGranted.filter(resource => resource.resource !== "").forEach(resource => {
+                    resourceString += resource.resource + " (" + resource.value + ")";
+                });
 
-            resourceLabel = React.createElement(
-                "h4",
-                null,
-                "Resources Granted"
-            );
+                resourceLabel = React.createElement(
+                    "h4",
+                    null,
+                    "Resources Granted"
+                );
 
-            resourceText = React.createElement(
-                "p",
-                null,
-                resourceString
-            );
+                resourceText = React.createElement(
+                    "p",
+                    null,
+                    resourceString
+                );
+            }
         }
 
         let org;
-        if (node.orgGranted && node.orgGranted !== "") {
-            let displayName = getLocalizationString("org", node.orgGranted, "displayName");
-            org = React.createElement(
-                "h4",
-                null,
-                "Org granted: ",
-                displayName ? displayName : node.orgGranted
-            );
+        if (node.isProject) {
+            if (node.orgGranted && node.orgGranted !== "") {
+                let displayName = getLocalizationString("org", node.orgGranted, "displayName");
+                org = React.createElement(
+                    "h4",
+                    null,
+                    "Org granted: ",
+                    displayName ? displayName : node.orgGranted
+                );
+            }
         }
 
         let prereqsText, prereqsList;
@@ -454,106 +452,120 @@ class TechSidebar extends React.Component {
         }
 
         let milestones;
-        if (node.requiredMilestone && node.requiredMilestone !== "") {
-            milestones = React.createElement(
-                "h4",
-                null,
-                "Milestones Needed: ",
-                node.requiredMilestone
-            );
+        if (node.isProject) {
+            if (node.requiredMilestone && node.requiredMilestone !== "") {
+                milestones = React.createElement(
+                    "h4",
+                    null,
+                    "Milestones Needed: ",
+                    node.requiredMilestone
+                );
+            }
         }
 
         let requiredObjectives;
-        if (node.requiredObjectiveNames && node.requiredObjectiveNames.filter(objective => objective !== "").length > 0) {
-            let objString = node.requiredObjectiveNames.filter(objective => objective !== "").join(", ");
+        if (node.isProject) {
+            if (node.requiredObjectiveNames && node.requiredObjectiveNames.filter(objective => objective !== "").length > 0) {
+                let objString = node.requiredObjectiveNames.filter(objective => objective !== "").join(", ");
 
-            requiredObjectives = React.createElement(
-                "h4",
-                null,
-                "Objectives Required: ",
-                objString
-            );
+                requiredObjectives = React.createElement(
+                    "h4",
+                    null,
+                    "Objectives Required: ",
+                    objString
+                );
+            }
         }
 
         let factionReq;
-        if (node.factionPrereq && node.factionPrereq.filter(faction => faction !== "").length > 0) {
-            let factionString = node.factionPrereq.filter(faction => faction !== "")
-                .map((faction) => getReadable("faction", faction, "displayName")).join(", ");
+        if (node.isProject) {
+            if (node.factionPrereq && node.factionPrereq.filter(faction => faction !== "").length > 0) {
+                let factionString = node.factionPrereq.filter(faction => faction !== "")
+                    .map((faction) => getReadable("faction", faction, "displayName")).join(", ");
 
-            factionReq = React.createElement(
-                "h4",
-                null,
-                "Only Available to Factions: ",
-                factionString
-            );
+                factionReq = React.createElement(
+                    "h4",
+                    null,
+                    "Only Available to Factions: ",
+                    factionString
+                );
+            }
         }
 
         let nationReq;
-        if (node.requiresNation && node.requiresNation !== "") {
-            nationReq = React.createElement(
-                "h4",
-                null,
-                "Required Nations: ",
-                getReadable("nation", node.requiresNation, "displayName")
-            );
+        if (node.isProject) {
+            if (node.requiresNation && node.requiresNation !== "") {
+                nationReq = React.createElement(
+                    "h4",
+                    null,
+                    "Required Nations: ",
+                    getReadable("nation", node.requiresNation, "displayName")
+                );
+            }
         }
 
         let regionReq;
-        if (!nationReq && node.requiredControlPoint && node.requiredControlPoint.filter(region => region !== "").length > 0) {
-            let regionString = node.requiredControlPoint.filter(region => region !== "").join(", ");
+        if (node.isProject) {
+            if (!nationReq && node.requiredControlPoint && node.requiredControlPoint.filter(region => region !== "").length > 0) {
+                let regionString = node.requiredControlPoint.filter(region => region !== "").join(", ");
 
-            regionReq = React.createElement(
-                "h4",
-                null,
-                "Required Control Points: ",
-                regionString
-            );
+                regionReq = React.createElement(
+                    "h4",
+                    null,
+                    "Required Control Points: ",
+                    regionString
+                );
+            }
         }
         
         let claimsDescription, claimsList;
-        let claims = templateData["bilateral"].filter(claim => claim.projectUnlockName == node.dataName && claim.relationType == "Claim");
-        if (claims.length > 0) {
-            let claimsElements = claims.map(claim => {
-                return React.createElement(
-                    "li",
-                    { key: claim },
-                    this.getReadableClaim(claim)
-                );
-            });
+        if (node.isProject) {
+            let claims = templateData["bilateral"].filter(claim => claim.projectUnlockName == node.dataName && claim.relationType == "Claim");
+            if (claims.length > 0) {
+                let claimsElements = claims.map(claim => {
+                    return React.createElement(
+                        "li",
+                        { key: claim },
+                        this.getReadableClaim(claim)
+                    );
+                });
 
-            claimsDescription = React.createElement(
-                "h4",
-                null,
-                "Claims"
-            );
-            claimsList = React.createElement(
-                "ul",
-                null,
-                claimsElements
-            );
+                claimsDescription = React.createElement(
+                    "h4",
+                    null,
+                    "Claims"
+                );
+                claimsList = React.createElement(
+                    "ul",
+                    null,
+                    claimsElements
+                );
+            }
         }
         
         let adjacenciesDescription, adjacenciesList;
-        let adjacencies = templateData["bilateral"].filter(adjaceny => adjaceny.projectUnlockName == node.dataName && adjaceny.relationType == "PhysicalAdjacency");
-        if (adjacencies.length > 0) {
-            let adjacenciesElements = adjacencies.map(adjacency => {
-                return React.createElement(
-                    "li",
-                    { key: adjacency },
-                    this.getReadableAdjacency(adjacency)
-                );
-            });
+        if (node.isProject) {
+            let adjacencies = templateData["bilateral"].filter(adjaceny => adjaceny.projectUnlockName == node.dataName && adjaceny.relationType == "PhysicalAdjacency");
+            if (adjacencies.length > 0) {
+                let adjacenciesElements = adjacencies.map(adjacency => {
+                    return React.createElement(
+                        "li",
+                        { key: adjacency },
+                        this.getReadableAdjacency(adjacency)
+                    );
+                });
 
-            adjacenciesDescription = React.createElement(
-                "h4",
-                null,
-                "Adjacencies"
-            );
-            adjacenciesList = React.createElement(
-                "ul",
-                null,
-                adjacenciesElements
-            );
+                adjacenciesDescription = React.createElement(
+                    "h4",
+                    null,
+                    "Adjacencies"
+                );
+                adjacenciesList = React.createElement(
+                    "ul",
+                    null,
+                    adjacenciesElements
+                );
+            }
         }
 
         let effectDescription, effectList;
@@ -579,27 +591,55 @@ class TechSidebar extends React.Component {
         }
         
         let orgMarketDescription, orgMarketList;
-        let orgMarket = templateData["org"].filter(org => org.requiredTechName == node.dataName);
-        if (orgMarket.length > 0) {
-            let orgMarketElements = orgMarket.map(org => {
-                let displayName = getLocalizationString("org", org.dataName, "displayName");
-                return React.createElement(
-                    "li",
-                    { key: org },
-                    displayName ? displayName : org.dataName
-                );
-            });
+        if (!node.isProject) {
+            let orgMarket = templateData["org"].filter(org => org.requiredTechName == node.dataName);
+            if (orgMarket.length > 0) {
+                let orgMarketElements = orgMarket.map(org => {
+                    let displayName = getLocalizationString("org", org.dataName, "displayName");
+                    return React.createElement(
+                        "li",
+                        { key: org },
+                        displayName ? displayName : org.dataName
+                    );
+                });
 
-            orgMarketDescription = React.createElement(
-                "h4",
-                null,
-                "Orgs Added to Market"
-            );
-            orgMarketList = React.createElement(
-                "ul",
-                null,
-                orgMarketElements
-            );
+                orgMarketDescription = React.createElement(
+                    "h4",
+                    null,
+                    "Orgs Added to Market"
+                );
+                orgMarketList = React.createElement(
+                    "ul",
+                    null,
+                    orgMarketElements
+                );
+            }
+        }
+        
+        let traitDescription, traitList;
+        if (node.isProject) {
+            let traits = templateData["trait"].filter(aug => aug.projectDataName == node.dataName);
+            if (traits.length > 0) {
+                let traitElements = traits.map(trait => {
+                    let displayName = getLocalizationString("trait", trait.dataName, "displayName");
+                    return React.createElement(
+                        "li",
+                        { key: trait },
+                        displayName ? displayName : trait.dataName
+                    );
+                });
+
+                traitDescription = React.createElement(
+                    "h4",
+                    null,
+                    "Councilor Traits Available"
+                );
+                traitList = React.createElement(
+                    "ul",
+                    null,
+                    traitElements
+                );
+            }
         }
 
         let completionLabel, completionText, completionString;
@@ -622,6 +662,34 @@ class TechSidebar extends React.Component {
                 null,
                 completionString
             );
+        }
+        
+        let moduleDescription, moduleList;
+        if (node.isProject) {
+            let modules = this.findModules(node.dataName);
+        
+            if (modules.length > 0) {
+                let moduleElements = modules.map(module => {
+                    let displayName = getLocalizationString(module.type, module.data.dataName, "displayName");
+                    return React.createElement(
+                        "p",
+                        { key: module },
+                        displayName ? displayName : module.data.dataName,
+                        this.buildModuleDisplay(module)
+                    );
+                });
+
+                moduleDescription = React.createElement(
+                    "h4",
+                    null,
+                    "Modules Unlocked"
+                );
+                moduleList = React.createElement(
+                    "p",
+                    null,
+                    moduleElements
+                );
+            }
         }
 
         return React.createElement(
@@ -667,9 +735,12 @@ class TechSidebar extends React.Component {
             org,
             orgMarketDescription,
             orgMarketList,
-
             effectDescription,
             effectList,
+            traitDescription,
+            traitList,
+            moduleDescription,
+            moduleList,
 
             // Completion
             completionLabel,
