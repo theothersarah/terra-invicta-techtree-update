@@ -530,6 +530,39 @@ class TechSidebar extends React.Component {
             }
         }
         
+        let endgame;
+        if (!node.isProject) {
+            if (node.endGameTech) {
+                endgame = React.createElement(
+                    "h4",
+                    null,
+                    "Endgame tech"
+                );
+            }
+        }
+        
+        let onceGlobal;
+        if (node.isProject) {
+            if (node.oneTimeGlobally) {
+                onceGlobal = React.createElement(
+                    "h4",
+                    null,
+                    "Completable once globally"
+                );
+            }
+        }
+        
+        let repeatable;
+        if (node.isProject) {
+            if (node.repeatable) {
+                repeatable = React.createElement(
+                    "h4",
+                    null,
+                    "Repeatable"
+                );
+            }
+        }
+        
         let claimsDescription, claimsList;
         if (node.isProject) {
             let claims = templateData["bilateral"].filter(claim => claim.projectUnlockName == node.dataName && claim.relationType == "Claim");
@@ -733,6 +766,11 @@ class TechSidebar extends React.Component {
             requiredObjectives,
             nationReq,
             regionReq,
+
+            // Flags
+            endgame,
+            onceGlobal,
+            repeatable,
 
             // Summary
             summaryLabel,
