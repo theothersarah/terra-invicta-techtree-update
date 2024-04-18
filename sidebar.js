@@ -477,6 +477,18 @@ class TechSidebar extends React.Component {
             }
         }
 
+        let factionAlways;
+        if (node.isProject) {
+            if (node.factionAlways && node.factionAlways !== "") {
+                factionAlways = React.createElement(
+                    "h5",
+                    null,
+                    "Always available to ",
+                    getReadable("faction", node.factionAlways, "displayName")
+                );
+            }
+        }
+
         let factionReq;
         if (node.isProject) {
             if (node.factionPrereq && node.factionPrereq.filter(faction => faction !== "").length > 0) {
@@ -484,9 +496,9 @@ class TechSidebar extends React.Component {
                     .map((faction) => getReadable("faction", faction, "displayName")).join(", ");
 
                 factionReq = React.createElement(
-                    "h4",
+                    "h5",
                     null,
-                    "Only Available to Factions: ",
+                    "Only Available to ",
                     factionString
                 );
             }
@@ -709,6 +721,8 @@ class TechSidebar extends React.Component {
             ),
             costText,
             probabilities,
+            factionAlways,
+            factionReq,
 
             // Requirements
             prereqsText,
@@ -717,7 +731,6 @@ class TechSidebar extends React.Component {
             blockingList,
             milestones,
             requiredObjectives,
-            factionReq,
             nationReq,
             regionReq,
 
