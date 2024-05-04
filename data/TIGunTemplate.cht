@@ -1,5 +1,7 @@
-TIGunTemplate.displayName.30mmAutocannon=30 mm 自動機槍
-TIGunTemplate.description.30mmAutocannon=用於防禦的速射自動機槍
+TIGunTemplate.displayName.30mmAutocannon=30 mm 自動機砲
+TIGunTemplate.description.30mmAutocannon=用於防禦的速射自動機砲。
+TIGunTemplate.displayName.40mmAutocannon=40 mm 自動機砲
+TIGunTemplate.description.40mmAutocannon=為太空戰鬥進行過最佳化的先進自動機砲，能作為進攻與防禦手段使用。
 TIGunTemplate.displayName.6-inchCannon=6 吋炮
 TIGunTemplate.description.6-inchCannon=小型短程海軍炮塔，適用於我們的太空船。
 TIGunTemplate.displayName.8-inchCannon=8 吋炮

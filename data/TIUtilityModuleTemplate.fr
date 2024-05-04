@@ -1,23 +1,25 @@
 TIUtilityModuleTemplate.displayName.ISRUModule=Module URIS
-TIUtilityModuleTemplate.description.ISRUModule=Le module Utilisation des ressources in situ permet aux vaisseaux de se recharger en propergol dans les emplacements d’habitat non améliorés qui produisent toutes les matières premières présentes dans le propergol du vaisseau. Les vaisseaux qui utilisent <h>tout type</h> de propergol peuvent faire le plein à n’importe quel emplacement.
+TIUtilityModuleTemplate.description.ISRUModule=Le module Utilisation des ressources in situ permet aux vaisseaux de se recharger en propergol dans les emplacements d’habitat non améliorés qui produisent toutes les matières premières présentes dans le propergol du vaisseau. Les vaisseaux qui utilisent <h>tout type</h> de propergol peuvent faire le plein à n’importe quel emplacement. Interdit aux vaisseaux qui utilisent l’antimatière en guise de propergol.
 TIUtilityModuleTemplate.displayName.RemassScoop=Optimisation de masse
 TIUtilityModuleTemplate.description.RemassScoop=L’optimisation de masse améliore les qualités aérodynamiques du vaisseau, le protège des dégâts dus à l’aérofreinage et lui permet de remplir les réserves de propergol en <h>hydrogène</h> avec uniquement de l’<color=#FFFFFFFF><sprite name="water"></color> depuis les orbites d’interface des planètes joviennes. Les vaisseaux qui utilisent <h>tout type</h> de propergol peuvent également faire le plein dans les mondes joviens.
 TIUtilityModuleTemplate.displayName.MuonSpiker=Catalyseur à muons
 TIUtilityModuleTemplate.description.MuonSpiker=Les muons catalysent les réactions de fusion nucléaire et augmentent ainsi de {1} la poussée des propulseurs à fusion.
 TIUtilityModuleTemplate.displayName.NeutroniumSpiker=Catalyseur à neutronium
-TIUtilityModuleTemplate.description.NeutroniumSpiker=Un petit nombre d’électrons libres est généré puis utilisé pour catalyser les réactions nucléaires, augmentant ainsi de {1} la poussée des propulseurs à fusion et à fission.
+TIUtilityModuleTemplate.description.NeutroniumSpiker=Un petit nombre d’électrons libres est généré puis utilisé pour catalyser les réactions nucléaires, augmentant ainsi de {1} la poussée des propulseurs à fission.
 TIUtilityModuleTemplate.displayName.AntimatterSpiker=Catalyseur à antimatière
 TIUtilityModuleTemplate.description.AntimatterSpiker=Une minuscule quantité d'antimatière est stockée et utilisée pour catalyser les réactions nucléaires, augmentant ainsi de {1} la poussée des propulseurs à fusion et à fission. 
 TIUtilityModuleTemplate.displayName.MobileSpaceScienceLab=Laboratoire mobile de recherche spatiale
 TIUtilityModuleTemplate.description.MobileSpaceScienceLab=Une équipe scientifique rejoint l'équipage. La recherche spatiale augmente de {5} et le vaisseau peut inspecter, depuis les orbites d'interface, les corps spatiaux à la recherche d'emplacements de base.
 TIUtilityModuleTemplate.displayName.RepairBay=Aire de réparation
-TIUtilityModuleTemplate.description.RepairBay=Une équipe de contrôle des dégâts renforcée ainsi qu'un atelier qui effectue des réparations plus approfondies, même loin des chantiers spatiaux.
+TIUtilityModuleTemplate.description.RepairBay=Une équipe de contrôle des avaries renforcée ainsi qu'un atelier qui effectue des réparations plus approfondies, même loin des chantiers spatiaux. <br><br/>Augmente de façon significative l’efficacité de vos équipes de contrôle des avaries lors des combats. Hors combat, l’Aire de réparation permet la réparation partielle de la Passerelle, du Support de vie, de la Batterie et des modules de Contrôle des avaries, et augmente la limite de réparation des modules détruits de 5 à 25 %. <br><br/><h>Notez que certains modules comme les armes et les modules utilitaires ne peuvent être réparés à une station uniquement après avoir été détruits.</h>
+TIUtilityModuleTemplate.displayName.SalvageBay=Soute de récupération
+TIUtilityModuleTemplate.description.SalvageBay=Un escadron de drones et de techniciens qui récupèrent des matériaux issus des vaisseaux détruits après un combat. Augmente notre récupération jusqu’à {8}. Une flotte ne peut pas augmenter son bonus de récupération de plus de 50 %.
 TIUtilityModuleTemplate.displayName.MarineAssaultUnit=Unité d’assaut des marines
-TIUtilityModuleTemplate.description.MarineAssaultUnit=Permets aux vaisseaux de lancer des assauts sur des habitats. Valeur d’assaut : <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
+TIUtilityModuleTemplate.description.MarineAssaultUnit=Permet aux vaisseaux de lancer des assauts sur des habitats. Valeur d’assaut : <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.AdvancedMarineAssaultUnit=Unité d’assaut avancée des marines
-TIUtilityModuleTemplate.description.AdvancedMarineAssaultUnit=Permets aux vaisseaux de lancer des assauts sur des habitats. Valeur d’assaut : <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
+TIUtilityModuleTemplate.description.AdvancedMarineAssaultUnit=Permet aux vaisseaux de lancer des assauts sur des habitats. Valeur d’assaut : <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.EliteMarineAssaultUnit=Unité d’assaut d’élite des marines
-TIUtilityModuleTemplate.description.EliteMarineAssaultUnit=Permets aux vaisseaux de lancer des assauts sur des habitats. Valeur d’assaut : <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
+TIUtilityModuleTemplate.description.EliteMarineAssaultUnit=Permet aux vaisseaux de lancer des assauts sur des habitats. Valeur d’assaut : <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.Spartans=Spartiates
 TIUtilityModuleTemplate.description.Spartans=Unité de marines fanatiques d’élite pour nos vaisseaux. Valeur d’attaque : <color=#FFFFFFFF><sprite name="army_level"></color>{3}.
 TIUtilityModuleTemplate.displayName.Rangers=Soldats
@@ -59,11 +61,19 @@ TIUtilityModuleTemplate.description.AutomatedFissionPlatformKit=Permet de constr
 TIUtilityModuleTemplate.displayName.AutomatedFissionOutpostKit=Kit d'avant-poste de fission automatisé
 TIUtilityModuleTemplate.description.AutomatedFissionOutpostKit=Permet de construire une petite base de minage nucléaire à la surface d'un corps spatial. Peut être réapprovisionné en réparant le vaisseau dans un chantier spatial.
 TIUtilityModuleTemplate.displayName.ElectronicCountermeasures1=CME
-TIUtilityModuleTemplate.description.ElectronicCountermeasures1=Les contre-mesures électroniques interfèrent avec le guidage des systèmes de missiles et de torpilles ennemis. Le missile a {6} de chances de détoner de manière précoce, sans infliger de dégâts. Nécessite un projet spécial pour contrer les missiles extraterrestres.
-TIUtilityModuleTemplate.displayName.ElectronicCountermeasures2=CME II
-TIUtilityModuleTemplate.description.ElectronicCountermeasures2=Les contre-mesures électroniques interfèrent avec le guidage des systèmes de missiles et de torpilles ennemis. Le missile a {6} de chances de détoner de manière précoce, sans infliger de dégâts. Nécessite un projet spécial pour contrer les missiles extraterrestres.
-TIUtilityModuleTemplate.displayName.ElectronicCountermeasures3=CME III
-TIUtilityModuleTemplate.description.ElectronicCountermeasures3=Les contre-mesures électroniques interfèrent avec le guidage des systèmes de missiles et de torpilles ennemis. Le missile a {6} de chances de détoner de manière précoce, sans infliger de dégâts. Nécessite un projet spécial pour contrer les missiles extraterrestres.
+TIUtilityModuleTemplate.description.ElectronicCountermeasures1=Les contre-mesures électroniques ont jusqu’à {6} de chance(s) de lancer le refroidissement forcé d’une arme ennemie lorsque ce vaisseau est visé, l’efficacité des CME étant de moins en moins importante avec une portée réduite de l’ennemi. Les missiles non nucléaires ont aussi {6} de chance(s) d’exploser de façon précoce et de ne causer aucun dégât. Nécessitent un projet spécial pour fonctionner contre les armes extraterrestres.
+TIUtilityModuleTemplate.displayName.ElectronicCountermeasures2=CME Mk2
+TIUtilityModuleTemplate.description.ElectronicCountermeasures2=Les contre-mesures électroniques ont jusqu’à {6} de chance(s) de lancer le refroidissement forcé d’une arme ennemie lorsque ce vaisseau est visé, l’efficacité des CME étant de moins en moins importante avec une portée réduite de l’ennemi. Les missiles non nucléaires ont aussi {6} de chance(s) d’exploser de façon précoce et de ne causer aucun dégât. Nécessitent un projet spécial pour fonctionner contre les armes extraterrestres.
+TIUtilityModuleTemplate.displayName.ElectronicCountermeasures3=CME Mk3
+TIUtilityModuleTemplate.description.ElectronicCountermeasures3=Les contre-mesures électroniques ont jusqu’à {6} de chance(s) de lancer le refroidissement forcé d’une arme ennemie lorsque ce vaisseau est visé, l’efficacité des CME étant de moins en moins importante avec une portée réduite de l’ennemi. Les missiles non nucléaires ont aussi {6} de chance(s) d’exploser de façon précoce et de ne causer aucun dégât. Nécessitent un projet spécial pour fonctionner contre les armes extraterrestres.
+TIUtilityModuleTemplate.displayName.TargetingComputer1=Ordinateur de ciblage
+TIUtilityModuleTemplate.description.TargetingComputer1=Améliore les tonneaux d’un vaisseau pour déjouer les CME ennemies et les dégâts aux capteurs de {9}.
+TIUtilityModuleTemplate.displayName.TargetingComputer2=Ordinateur de ciblage Mk2
+TIUtilityModuleTemplate.description.TargetingComputer2=Améliore les tonneaux d’un vaisseau pour déjouer les CME ennemies et les dégâts aux capteurs de {9}.
+TIUtilityModuleTemplate.displayName.TargetingComputer3=Ordinateur de ciblage Mk3
+TIUtilityModuleTemplate.description.TargetingComputer3=Améliore les tonneaux d’un vaisseau pour déjouer les CME ennemies et les dégâts aux capteurs de {9}.
+TIUtilityModuleTemplate.displayName.FlagBridge=Module de pont
+TIUtilityModuleTemplate.description.FlagBridge=Un centre de coordination de la flotte mené par un commandant senior et son équipage. Réduit le coût de contrôle de mission de la flotte de {7}. Un seul un vaisseau par flotte peut fournir ce bonus. La flotte doit avoir au moins deux vaisseaux.
 TIUtilityModuleTemplate.displayName.HydraInfiltrationPod=Inconnu
 TIUtilityModuleTemplate.description.HydraInfiltrationPod=La fonction de ce module est inconnue.
 TIUtilityModuleTemplate.displayName.SalamanderTerrorUnitPod=Inconnu
@@ -76,6 +86,8 @@ TIUtilityModuleTemplate.displayName.AlienFusionPlatformKit=Inconnu
 TIUtilityModuleTemplate.description.AlienFusionPlatformKit=La fonction de ce module est inconnue.
 TIUtilityModuleTemplate.displayName.AlienNeutroniumSpiker=Inconnu
 TIUtilityModuleTemplate.description.AlienNeutroniumSpiker=La fonction de ce module est inconnue.
+TIUtilityModuleTemplate.displayName.AlienMuonSpiker=Inconnu
+TIUtilityModuleTemplate.description.AlienMuonSpiker=La fonction de ce module est inconnue.
 TIUtilityModuleTemplate.displayName.AlienSlushHydrogenTankage=Inconnu
 TIUtilityModuleTemplate.description.AlienSlushHydrogenTankage=La fonction de ce module est inconnue.
 TIUtilityModuleTemplate.displayName.AlienHydronTrap=Inconnu
@@ -84,8 +96,15 @@ TIUtilityModuleTemplate.displayName.AlienRepairBay=Inconnu
 TIUtilityModuleTemplate.description.AlienRepairBay=La fonction de ce module est inconnue.
 TIUtilityModuleTemplate.displayName.AlienECM=Inconnu
 TIUtilityModuleTemplate.description.AlienECM=La fonction de ce module est inconnue.
+TIUtilityModuleTemplate.displayName.AlienTargetingComputer=Inconnu
+TIUtilityModuleTemplate.description.AlienTargetingComputer=La fonction de ce module est inconnue.
 TIUtilityModuleTemplate.displayName.AlienSurveillanceModule=Inconnu
 TIUtilityModuleTemplate.description.AlienSurveillanceModule=La fonction de ce module est inconnue.
+TIUtilityModuleTemplate.displayName.AlienMagazine=Inconnu
+TIUtilityModuleTemplate.description.AlienMagazine=La fonction de ce module est inconnue.
 TIUtilityModuleTemplate.description.RequiresHydrogenPropellant=<h>Nécessite un réacteur capable d’utiliser l’hydrogène comme agent propulseur.</h>
+TIUtilityModuleTemplate.description.RequiresFissionDrive=<h>Nécessite un réacteur à fission nucléaire.</h>
 TIUtilityModuleTemplate.description.RequiresNuclearDrive=<h>Nécessite un réacteur nucléaire.</h>
 TIUtilityModuleTemplate.description.RequiresFusionDrive=<h>Nécessite un réacteur à fusion.</h>
+TIUtilityModuleTemplate.description.RequiresNonISRUDrive=<h>Interdit sur les vaisseaux dotés de propulseurs avec une capacité URIS innée.</h>
+TIUtilityModuleTemplate.description.ConsTier=<h>Autorisé uniquement sur les coques de plus grande taille.</h>

@@ -14,10 +14,10 @@ TINationTemplate.displayName.ALN=Administración alienígena
 TINationTemplate.displayNameWithArticle.ALN=la administración alienígena
 TINationTemplate.nationAdjective.ALN=Alienígena
 TINationTemplate.displayNameWithArticlePrep.ALN=en la nación alienígena
-TINationTemplate.displayName.ALP=Países Alpinos
-TINationTemplate.displayNameWithArticle.ALP=los Países Alpinos
+TINationTemplate.displayName.ALP=Austria
+TINationTemplate.displayNameWithArticle.ALP=Austria
 TINationTemplate.nationAdjective.ALP=de Austria
-TINationTemplate.displayNameWithArticlePrep.ALP=en los Países Alpinos
+TINationTemplate.displayNameWithArticlePrep.ALP=en Austria
 TINationTemplate.displayName.ARG=Argentina
 TINationTemplate.displayNameWithArticle.ARG=Argentina
 TINationTemplate.nationAdjective.ARG=de Argentina
@@ -133,7 +133,7 @@ TINationTemplate.displayNameWithArticlePrep.CSA=en el Dominio de América
 TINationTemplate.displayName.CSD=Cascadia
 TINationTemplate.displayNameWithArticle.CSD=Cascadia
 TINationTemplate.nationAdjective.CSD=de Cascadia
-TINationTemplate.displayNameWithArticlePrep.CSD=Cascadia
+TINationTemplate.displayNameWithArticlePrep.CSD=en Cascadia
 TINationTemplate.displayName.CUB=Cuba
 TINationTemplate.displayNameWithArticle.CUB=Cuba
 TINationTemplate.nationAdjective.CUB=de Cuba
@@ -142,14 +142,10 @@ TINationTemplate.displayName.DEN=Dinamarca
 TINationTemplate.displayNameWithArticle.DEN=Dinamarca
 TINationTemplate.nationAdjective.DEN=de Dinamarca
 TINationTemplate.displayNameWithArticlePrep.DEN=en Dinamarca
-TINationTemplate.displayName.DEU=República Democrática Alemana
-TINationTemplate.displayNameWithArticle.DEU=la República Democrática Alemana
-TINationTemplate.nationAdjective.DEU=de Alemania
-TINationTemplate.displayNameWithArticlePrep.DEU=en la República Democrática Alemana
-TINationTemplate.displayName.DOM=El Dominio Superior
-TINationTemplate.displayNameWithArticle.DOM=el Dominio Superior
-TINationTemplate.nationAdjective.DOM=del Dominio Superior
-TINationTemplate.displayNameWithArticlePrep.DOM=en el Dominio Superior
+TINationTemplate.displayName.DEU=Alemania Occidental
+TINationTemplate.displayNameWithArticle.DEU=Alemania Occidental
+TINationTemplate.nationAdjective.DEU=de Alemania Occidental
+TINationTemplate.displayNameWithArticlePrep.DEU=en Alemania Occidental
 TINationTemplate.displayName.DVD=Drávida Nadu
 TINationTemplate.displayNameWithArticle.DVD=Drávida Nadu
 TINationTemplate.nationAdjective.DVD=de Drávida Nadu
@@ -191,7 +187,7 @@ TINationTemplate.displayNameWithArticle.EUA=Francia
 TINationTemplate.nationAdjective.EUA=de Francia
 TINationTemplate.displayNameWithArticlePrep.EUA=en Francia
 TINationTemplate.displayName.FAM=Amazonas Libre
-TINationTemplate.displayNameWithArticle.FAM=Amazonas Libre
+TINationTemplate.displayNameWithArticle.FAM=el Amazonas Libre
 TINationTemplate.nationAdjective.FAM=del Amazonas Libre
 TINationTemplate.displayNameWithArticlePrep.FAM=en el Amazonas Libre
 TINationTemplate.displayName.FIN=Finlandia
@@ -214,18 +210,18 @@ TINationTemplate.displayName.GRL=Groenlandia
 TINationTemplate.displayNameWithArticle.GRL=Groenlandia
 TINationTemplate.nationAdjective.GRL=de Groenlandia
 TINationTemplate.displayNameWithArticlePrep.GRL=en Groenlandia
-TINationTemplate.displayName.GUA=Cantón
-TINationTemplate.displayNameWithArticle.GUA=Cantón
-TINationTemplate.nationAdjective.GUA=de Cantón
-TINationTemplate.displayNameWithArticlePrep.GUA=en Cantón
+TINationTemplate.displayName.GUA=Liangguang
+TINationTemplate.displayNameWithArticle.GUA=Liangguang
+TINationTemplate.nationAdjective.GUA=de Liangguang
+TINationTemplate.displayNameWithArticlePrep.GUA=en Liangguang
 TINationTemplate.displayName.GUS=Monarquías del Golfo
 TINationTemplate.displayNameWithArticle.GUS=las monarquías del Golfo
 TINationTemplate.nationAdjective.GUS=de las monarquías del Golfo
 TINationTemplate.displayNameWithArticlePrep.GUS=en las monarquías del Golfo
-TINationTemplate.displayName.HYS=Países del Himalaya
-TINationTemplate.displayNameWithArticle.HYS=los Países del Himalaya
-TINationTemplate.nationAdjective.HYS=de los Países del Himalaya
-TINationTemplate.displayNameWithArticlePrep.HYS=en los Países del Himalaya
+TINationTemplate.displayName.HYS=Bután-Nepal
+TINationTemplate.displayNameWithArticle.HYS=Bután-Nepal
+TINationTemplate.nationAdjective.HYS=de Nepal
+TINationTemplate.displayNameWithArticlePrep.HYS=en Bután-Nepal
 TINationTemplate.displayName.IDN=Java
 TINationTemplate.displayNameWithArticle.IDN=Java
 TINationTemplate.nationAdjective.IDN=de Java
@@ -310,8 +306,8 @@ TINationTemplate.displayName.LBY=Libia
 TINationTemplate.displayNameWithArticle.LBY=Libia
 TINationTemplate.nationAdjective.LBY=de Libia
 TINationTemplate.displayNameWithArticlePrep.LBY=en Libia
-TINationTemplate.displayName.LWG=Baja Guinea
-TINationTemplate.displayNameWithArticle.LWG=Baja Guinea
+TINationTemplate.displayName.LWG=Estados de Baja Guinea
+TINationTemplate.displayNameWithArticle.LWG=Estados de Baja Guinea
 TINationTemplate.nationAdjective.LWG=de Baja Guinea
 TINationTemplate.displayNameWithArticlePrep.LWG=en Baja Guinea
 TINationTemplate.displayName.LKA=Sri Lanka
@@ -342,10 +338,10 @@ TINationTemplate.displayName.MMR=Myanmar
 TINationTemplate.displayNameWithArticle.MMR=Myanmar
 TINationTemplate.nationAdjective.MMR=de Myanmar
 TINationTemplate.displayNameWithArticlePrep.MMR=en Myanmar
-TINationTemplate.displayName.MNC=Manchuria
-TINationTemplate.displayNameWithArticle.MNC=Manchuria
-TINationTemplate.nationAdjective.MNC=de Manchuria
-TINationTemplate.displayNameWithArticlePrep.MNC=en Manchuria
+TINationTemplate.displayName.MNC=Guandong
+TINationTemplate.displayNameWithArticle.MNC=Guandong
+TINationTemplate.nationAdjective.MNC=de Guandong
+TINationTemplate.displayNameWithArticlePrep.MNC=en Guandong
 TINationTemplate.displayName.MNG=Mongolia
 TINationTemplate.displayNameWithArticle.MNG=Mongolia
 TINationTemplate.nationAdjective.MNG=de Mongolia
@@ -366,10 +362,10 @@ TINationTemplate.displayName.NER=Níger
 TINationTemplate.displayNameWithArticle.NER=Níger
 TINationTemplate.nationAdjective.NER=de Níger
 TINationTemplate.displayNameWithArticlePrep.NER=en Níger
-TINationTemplate.displayName.NET=Benelux
-TINationTemplate.displayNameWithArticle.NET=Benelux
+TINationTemplate.displayName.NET=Países Bajos
+TINationTemplate.displayNameWithArticle.NET=los Países Bajos
 TINationTemplate.nationAdjective.NET=de los Países Bajos
-TINationTemplate.displayNameWithArticlePrep.NET=en Benelux
+TINationTemplate.displayNameWithArticlePrep.NET=en los Países Bajos
 TINationTemplate.displayName.NGA=Nigeria
 TINationTemplate.displayNameWithArticle.NGA=Nigeria
 TINationTemplate.nationAdjective.NGA=de Nigeria
@@ -398,10 +394,10 @@ TINationTemplate.displayName.PAL=Palestina
 TINationTemplate.displayNameWithArticle.PAL=Palestina
 TINationTemplate.nationAdjective.PAL=de Palestina
 TINationTemplate.displayNameWithArticlePrep.PAL=en Palestina
-TINationTemplate.displayName.PCS=Estados del Pacífico
-TINationTemplate.displayNameWithArticle.PCS=los Estados del Pacífico
-TINationTemplate.nationAdjective.PCS=de los Estados del Pacífico
-TINationTemplate.displayNameWithArticlePrep.PCS=en los Estados del Pacífico
+TINationTemplate.displayName.PCS=Melanesia
+TINationTemplate.displayNameWithArticle.PCS=Melanesia
+TINationTemplate.nationAdjective.PCS=de Melanesia
+TINationTemplate.displayNameWithArticlePrep.PCS=en Melanesia
 TINationTemplate.displayName.PER=Perú
 TINationTemplate.displayNameWithArticle.PER=Perú
 TINationTemplate.nationAdjective.PER=de Perú
@@ -478,10 +474,10 @@ TINationTemplate.displayName.SDN=Sudán
 TINationTemplate.displayNameWithArticle.SDN=Sudán
 TINationTemplate.nationAdjective.SDN=de Sudán
 TINationTemplate.displayNameWithArticlePrep.SDN=en Sudán
-TINationTemplate.displayName.SEN=Arabia Saudí
-TINationTemplate.displayNameWithArticle.SEN=Arabia Saudí
-TINationTemplate.nationAdjective.SEN=de Arabia Saudí
-TINationTemplate.displayNameWithArticlePrep.SEN=en Arabia Saudí
+TINationTemplate.displayName.SAU=Arabia Saudí
+TINationTemplate.displayNameWithArticle.SAU=Arabia Saudí
+TINationTemplate.nationAdjective.SAU=de Arabia Saudí
+TINationTemplate.displayNameWithArticlePrep.SAU=en Arabia Saudí
 TINationTemplate.displayName.SGP=Singapur
 TINationTemplate.displayNameWithArticle.SGP=Singapur
 TINationTemplate.nationAdjective.SGP=de Singapur
@@ -566,10 +562,10 @@ TINationTemplate.displayName.TZA=Tanzania
 TINationTemplate.displayNameWithArticle.TZA=Tanzania
 TINationTemplate.nationAdjective.TZA=de Tanzania
 TINationTemplate.displayNameWithArticlePrep.TZA=en Tanzania
-TINationTemplate.displayName.UGA=Países de los Grandes Lagos
-TINationTemplate.displayNameWithArticle.UGA=los Países de los Grandes Lagos
+TINationTemplate.displayName.UGA=Uganda
+TINationTemplate.displayNameWithArticle.UGA=Uganda
 TINationTemplate.nationAdjective.UGA=de Uganda
-TINationTemplate.displayNameWithArticlePrep.UGA=en los Países de los Grandes Lagos
+TINationTemplate.displayNameWithArticlePrep.UGA=en Uganda
 TINationTemplate.displayName.UPG=Guinea Superior
 TINationTemplate.displayNameWithArticle.UPG=Guinea Superior
 TINationTemplate.nationAdjective.UPG=de Guinea Superior
@@ -618,26 +614,26 @@ TINationTemplate.displayName.WGA=Alemania Occidental
 TINationTemplate.displayNameWithArticle.WGA=Alemania Occidental
 TINationTemplate.nationAdjective.WGA=de Alemania Occidental
 TINationTemplate.displayNameWithArticlePrep.WGA=en Alemania Occidental
-TINationTemplate.displayName.WUR=Fujian
-TINationTemplate.displayNameWithArticle.WUR=Fujian
-TINationTemplate.nationAdjective.WUR=de Fujian
-TINationTemplate.displayNameWithArticlePrep.WUR=en Fujian
+TINationTemplate.displayName.WUR=Huanan
+TINationTemplate.displayNameWithArticle.WUR=Huanan
+TINationTemplate.nationAdjective.WUR=de Huanan
+TINationTemplate.displayNameWithArticlePrep.WUR=en Huanan
 TINationTemplate.displayName.YEM=Yemen
 TINationTemplate.displayNameWithArticle.YEM=Yemen
 TINationTemplate.nationAdjective.YEM=de Yemen
 TINationTemplate.displayNameWithArticlePrep.YEM=en Yemen
-TINationTemplate.displayName.YUN=Yunnan
-TINationTemplate.displayNameWithArticle.YUN=Yunnan
-TINationTemplate.nationAdjective.YUN=de Yunnan
-TINationTemplate.displayNameWithArticlePrep.YUN=en Yunnan
+TINationTemplate.displayName.YUN=Yungui
+TINationTemplate.displayNameWithArticle.YUN=Yungui
+TINationTemplate.nationAdjective.YUN=de Yungui
+TINationTemplate.displayNameWithArticlePrep.YUN=en Yungui
 TINationTemplate.displayName.ZAF=Sudáfrica
 TINationTemplate.displayNameWithArticle.ZAF=Sudáfrica
 TINationTemplate.nationAdjective.ZAF=de Sudáfrica
 TINationTemplate.displayNameWithArticlePrep.ZAF=en Sudáfrica
-TINationTemplate.displayName.ZMB=Zambia-Malawi
-TINationTemplate.displayNameWithArticle.ZMB=Zambia-Malawi
+TINationTemplate.displayName.ZMB=Zambia
+TINationTemplate.displayNameWithArticle.ZMB=Zambia
 TINationTemplate.nationAdjective.ZMB=de Zambia
-TINationTemplate.displayNameWithArticlePrep.ZMB=en Zambia-Malawi
+TINationTemplate.displayNameWithArticlePrep.ZMB=en Zambia
 TINationTemplate.displayName.ZWE=Zimbabue
 TINationTemplate.displayNameWithArticle.ZWE=Zimbabue
 TINationTemplate.nationAdjective.ZWE=de Zimbabue
@@ -772,11 +768,6 @@ TINationTemplate.unionDisplayName.SCA=Federación Nórdica
 TINationTemplate.unionDisplayNameWithArticle.SCA=la Federación Nórdica
 TINationTemplate.unionAdjective.SCA=de la Federación Nórdica
 TINationTemplate.unionDisplayNameWithArticlePrep.SCA=en la Federación Nórdica
-
-TINationTemplate.unionDisplayName.UGN=Comunidad Africana Occidental
-TINationTemplate.unionDisplayNameWithArticle.UGN=la Comunidad Africana Occidental
-TINationTemplate.unionAdjective.UGN=del África Occidental
-TINationTemplate.unionDisplayNameWithArticlePrep.UGN=en la Comunidad Africana Occidental
 
 TINationTemplate.unionDisplayName.USA=Estados Unidos de Norteamérica
 TINationTemplate.unionDisplayNameWithArticle.USA=de los Estados Unidos de Norteamérica
@@ -927,25 +918,20 @@ TINationTemplate.displayNameWithArticle.SEG=Senegambia
 TINationTemplate.nationAdjective.SEG=de Senegambia
 TINationTemplate.displayNameWithArticlePrep.SEG=en Senegambia
 
-TINationTemplate.unionDisplayName.SEG=Comunidad Africana Occidental
-TINationTemplate.unionDisplayNameWithArticle.SEG=la Comunidad Africana Occidental
-TINationTemplate.unionAdjective.SEG=del África Occidental
-TINationTemplate.unionDisplayNameWithArticlePrep.SEG=en la Comunidad Africana Occidental
-
 TINationTemplate.displayName.SLO=Eslovaquia
 TINationTemplate.displayNameWithArticle.SLO=Eslovaquia
 TINationTemplate.nationAdjective.SLO=de Eslovaquia
 TINationTemplate.displayNameWithArticlePrep.SLO=en Eslovaquia
 
-TINationTemplate.displayName.SBK=Países Balcánicos Meridionales
-TINationTemplate.displayNameWithArticle.SBK=los Países Balcánicos Meridionales
-TINationTemplate.nationAdjective.SBK=de los Balcanes Meridionales
-TINationTemplate.displayNameWithArticlePrep.SBK=en los Países Balcánicos Meridionales
+TINationTemplate.displayName.SBK=Albania
+TINationTemplate.displayNameWithArticle.SBK=Albania
+TINationTemplate.nationAdjective.SBK=de Albania
+TINationTemplate.displayNameWithArticlePrep.SBK=en Albania
 
-TINationTemplate.unionDisplayName.SBK=Yugoslavia
-TINationTemplate.unionDisplayNameWithArticle.SBK=Yugoslavia
-TINationTemplate.unionAdjective.SBK=de Yugoslavia
-TINationTemplate.unionDisplayNameWithArticlePrep.SBK=en Yugoslavia
+TINationTemplate.unionDisplayName.SER=Yugoslavia
+TINationTemplate.unionDisplayNameWithArticle.SER=Yugoslavia
+TINationTemplate.unionAdjective.SER=de Yugoslavia
+TINationTemplate.unionDisplayNameWithArticlePrep.SER=en Yugoslavia
 
 TINationTemplate.displayName.SUR=Surinam
 TINationTemplate.displayNameWithArticle.SUR=Surinam
@@ -972,15 +958,302 @@ TINationTemplate.displayNameWithArticle.PAT=la Patagonia
 TINationTemplate.nationAdjective.PAT=de la Patagonia
 TINationTemplate.displayNameWithArticlePrep.PAT=en la Patagonia
 
-TINationTemplate.displayName.CAY=Cayena
-TINationTemplate.displayNameWithArticle.CAY=Cayena
-TINationTemplate.nationAdjective.CAY=de Cayena
-TINationTemplate.displayNameWithArticlePrep.CAY=en Cayena
+TINationTemplate.displayName.PGN=Guayana Francesa
+TINationTemplate.displayNameWithArticle.PGN=la Guayana Francesa
+TINationTemplate.nationAdjective.PGN=de la Guayana Francesa
+TINationTemplate.displayNameWithArticlePrep.PGN=en la Guayana Francesa
 
 TINationTemplate.displayName.PNG=Papúa Nueva Guinea
 TINationTemplate.displayNameWithArticle.PNG=Papúa Nueva Guinea
 TINationTemplate.nationAdjective.PNG=de Papúa Nueva Guinea
 TINationTemplate.displayNameWithArticlePrep.PNG=en Papúa Nueva Guinea
 
+TINationTemplate.displayName.YUC=Yucatán
+TINationTemplate.displayNameWithArticle.YUC=Yucatán
+TINationTemplate.nationAdjective.YUC=de Yucatán
+TINationTemplate.displayNameWithArticlePrep.YUC=en Yucatán
 
+TINationTemplate.displayName.RIO=Río Bravo
+TINationTemplate.displayNameWithArticle.RIO=Río Bravo
+TINationTemplate.nationAdjective.RIO=de Río Bravo
+TINationTemplate.displayNameWithArticlePrep.RIO=en Río Bravo
 
+TINationTemplate.displayName.MCS=Estados Federados de Micronesia
+TINationTemplate.displayNameWithArticle.MCS=los Estados Federados de Micronesia
+TINationTemplate.nationAdjective.MCS=de los Estados Federados de Micronesia
+TINationTemplate.displayNameWithArticlePrep.MCS=en los Estados Federados de Micronesia
+
+TINationTemplate.displayName.PLS=Polinesia
+TINationTemplate.displayNameWithArticle.PLS=la Polinesia
+TINationTemplate.nationAdjective.PLS=de la Polinesia
+TINationTemplate.displayNameWithArticlePrep.PLS=en la Polinesia
+
+TINationTemplate.displayName.SER=Serbia-Kosovo
+TINationTemplate.displayNameWithArticle.SER=Serbia-Kosovo
+TINationTemplate.nationAdjective.SER=de Serbia
+TINationTemplate.displayNameWithArticlePrep.SER=en Serbia-Kosovo
+
+TINationTemplate.displayName.ATL=Unión del Atlántico
+TINationTemplate.displayNameWithArticle.ATL=la Unión del Atlántico
+TINationTemplate.nationAdjective.ATL=del Atlántico
+TINationTemplate.displayNameWithArticlePrep.ATL=en la Unión del Atlántico
+
+TINationTemplate.displayName.BRT=Bretaña
+TINationTemplate.displayNameWithArticle.BRT=Bretaña
+TINationTemplate.nationAdjective.BRT=de Bretaña
+TINationTemplate.displayNameWithArticlePrep.BRT=en Bretaña
+
+TINationTemplate.displayName.NUB=Nubia
+TINationTemplate.displayNameWithArticle.NUB=Nubia
+TINationTemplate.nationAdjective.NUB=de Nubia
+TINationTemplate.displayNameWithArticlePrep.NUB=en Nubia
+
+TINationTemplate.displayName.JEF=Jefferson
+TINationTemplate.displayNameWithArticle.JEF=Jefferson
+TINationTemplate.nationAdjective.JEF=de Jefferson
+TINationTemplate.displayNameWithArticlePrep.JEF=en Jefferson
+
+TINationTemplate.displayName.SWI=Suiza
+TINationTemplate.displayNameWithArticle.SWI=Suiza
+TINationTemplate.nationAdjective.SWI=de Suiza
+TINationTemplate.displayNameWithArticlePrep.SWI=en Suiza
+
+TINationTemplate.displayName.KOM=República de Komi
+TINationTemplate.displayNameWithArticle.KOM=la República de Komi
+TINationTemplate.nationAdjective.KOM=de la República de Komi
+TINationTemplate.displayNameWithArticlePrep.KOM=en la República de Komi
+
+TINationTemplate.displayName.MIN=Mindanao
+TINationTemplate.displayNameWithArticle.MIN=Mindanao
+TINationTemplate.nationAdjective.MIN=de Mindanao
+TINationTemplate.displayNameWithArticlePrep.MIN=en Mindanao
+
+TINationTemplate.displayName.KHU=Juzestán
+TINationTemplate.displayNameWithArticle.KHU=Juzestán
+TINationTemplate.nationAdjective.KHU=de Juzestán
+TINationTemplate.displayNameWithArticlePrep.KHU=en Juzestán
+
+TINationTemplate.displayName.BAV=Bavaria
+TINationTemplate.displayNameWithArticle.BAV=Bavaria
+TINationTemplate.nationAdjective.BAV=de Bavaria
+TINationTemplate.displayNameWithArticlePrep.BAV=en Bavaria
+
+TINationTemplate.displayName.BEN=Benin-Togo
+TINationTemplate.displayNameWithArticle.BEN=Benin-Togo
+TINationTemplate.nationAdjective.BEN=de Benin-Togo
+TINationTemplate.displayNameWithArticlePrep.BEN=en Benin-Togo
+
+TINationTemplate.displayName.BGM=Bélgica-Luxemburgo
+TINationTemplate.displayNameWithArticle.BGM=Bélgica-Luxemburgo
+TINationTemplate.nationAdjective.BGM=de Bélgica
+TINationTemplate.displayNameWithArticlePrep.BGM=en Bélgica-Luxemburgo
+
+TINationTemplate.displayName.COR=República del Congo
+TINationTemplate.displayNameWithArticle.COR=la República del Congo
+TINationTemplate.nationAdjective.COR=del Congo
+TINationTemplate.displayNameWithArticlePrep.COR=en la República del Congo
+
+TINationTemplate.displayName.CRY=Canarias Libre
+TINationTemplate.displayNameWithArticle.CRY=Canarias Libre
+TINationTemplate.nationAdjective.CRY=de Canarias
+TINationTemplate.displayNameWithArticlePrep.CRY=en Canarias Libre
+
+TINationTemplate.displayName.FUJ=Fujian
+TINationTemplate.displayNameWithArticle.FUJ=Fujian
+TINationTemplate.nationAdjective.FUJ=de Fujian
+TINationTemplate.displayNameWithArticlePrep.FUJ=en Fujian
+
+TINationTemplate.displayName.GUJ=Guyarat
+TINationTemplate.displayNameWithArticle.GUJ=Guyarat
+TINationTemplate.nationAdjective.GUJ=de Guyarat
+TINationTemplate.displayNameWithArticlePrep.GUJ=en Guyarat
+
+TINationTemplate.displayName.GWA=Gwalior
+TINationTemplate.displayNameWithArticle.GWA=Gwalior
+TINationTemplate.nationAdjective.GWA=de Gwalior
+TINationTemplate.displayNameWithArticlePrep.GWA=en Gwalior
+
+TINationTemplate.displayName.HYD=Hyderabad
+TINationTemplate.displayNameWithArticle.HYD=Hyderabad
+TINationTemplate.nationAdjective.HYD=de Hyderabad
+TINationTemplate.displayNameWithArticlePrep.HYD=en Hyderabad
+
+TINationTemplate.displayName.JAI=Jaipur
+TINationTemplate.displayNameWithArticle.JAI=Jaipur
+TINationTemplate.nationAdjective.JAI=de Jaipur
+TINationTemplate.displayNameWithArticlePrep.JAI=en Jaipur
+
+TINationTemplate.displayName.MAH=Maharastra
+TINationTemplate.displayNameWithArticle.MAH=Maharastra
+TINationTemplate.nationAdjective.MAH=de Maharastra
+TINationTemplate.displayNameWithArticlePrep.MAH=en Maharastra
+
+TINationTemplate.displayName.MOL=Moldavia
+TINationTemplate.displayNameWithArticle.MOL=Moldavia
+TINationTemplate.nationAdjective.MOL=de Moldavia
+TINationTemplate.displayNameWithArticlePrep.MOL=en Moldavia
+
+TINationTemplate.displayName.NCF=Confederación del Norte del Cáucaso
+TINationTemplate.displayNameWithArticle.NCF=la Confederación del Norte del Cáucaso
+TINationTemplate.nationAdjective.NCF=del Cáucaso
+TINationTemplate.displayNameWithArticlePrep.NCF=en la Confederación del Norte del Cáucaso
+
+TINationTemplate.displayName.RNA=Nueva África
+TINationTemplate.displayNameWithArticle.RNA=Nueva África
+TINationTemplate.nationAdjective.RNA=de Nueva África
+TINationTemplate.displayNameWithArticlePrep.RNA=en Nueva África
+
+TINationTemplate.displayName.RYU=República de Ryukyu
+TINationTemplate.displayNameWithArticle.RYU=la República de Ryukyu
+TINationTemplate.nationAdjective.RYU=de la República de Ryukyu
+TINationTemplate.displayNameWithArticlePrep.RYU=en la República de Ryukyu
+
+TINationTemplate.displayName.SAO=São Paulo
+TINationTemplate.displayNameWithArticle.SAO=São Paulo
+TINationTemplate.nationAdjective.SAO=de São Paulo
+TINationTemplate.displayNameWithArticlePrep.SAO=en São Paulo
+
+TINationTemplate.displayName.SHG=Shaangan
+TINationTemplate.displayNameWithArticle.SHG=Shaangan
+TINationTemplate.nationAdjective.SHG=de Shaangan
+TINationTemplate.displayNameWithArticlePrep.SHG=en Shaangan
+
+TINationTemplate.displayName.SOL=Somalilandia
+TINationTemplate.displayNameWithArticle.SOL=Somalilandia
+TINationTemplate.nationAdjective.SOL=de Somalilandia
+TINationTemplate.displayNameWithArticlePrep.SOL=en Somalilandia
+
+TINationTemplate.displayName.YMS=Yemen del Sur
+TINationTemplate.displayNameWithArticle.YMS=Yemen del Sur
+TINationTemplate.nationAdjective.YMS=de Yemen del Sur
+TINationTemplate.displayNameWithArticlePrep.YMS=en Yemen del Sur
+
+TINationTemplate.displayName.WCA=Oeste de Canadá
+TINationTemplate.displayNameWithArticle.WCA=el Oeste de Canadá
+TINationTemplate.nationAdjective.WCA=del Oeste de Canadá
+TINationTemplate.displayNameWithArticlePrep.WCA=en el Oeste de Canadá
+
+TINationTemplate.displayName.HKO=Hong Kong
+TINationTemplate.displayNameWithArticle.HKO=Hong Kong
+TINationTemplate.nationAdjective.HKO=de Hong Kong
+TINationTemplate.displayNameWithArticlePrep.HKO=en Hong Kong
+
+TINationTemplate.displayName.MAL=Malaui
+TINationTemplate.displayNameWithArticle.MAL=Malaui
+TINationTemplate.nationAdjective.MAL=de Malaui
+TINationTemplate.displayNameWithArticlePrep.MAL=en Malaui
+
+TINationTemplate.displayName.CPV=Cabo Verde
+TINationTemplate.displayNameWithArticle.CPV=Cabo Verde
+TINationTemplate.nationAdjective.CPV=de Cabo Verde
+TINationTemplate.displayNameWithArticlePrep.CPV=en Cabo Verde
+
+TINationTemplate.displayName.SPE=Estado Sud-Peruano
+TINationTemplate.displayNameWithArticle.SPE=el Estado Sud-Peruano
+TINationTemplate.nationAdjective.SPE=del Estado Sud-Peruano
+TINationTemplate.displayNameWithArticlePrep.SPE=en el Estado Sud-Peruano
+
+TINationTemplate.displayName.RWB=Ruanda-Urundi
+TINationTemplate.displayNameWithArticle.RWB=Ruanda-Urundi
+TINationTemplate.nationAdjective.RWB=de Ruanda-Urundi
+TINationTemplate.displayNameWithArticlePrep.RWB=en Rwanda-Burundi
+
+TINationTemplate.displayName.GHA=Ghana
+TINationTemplate.displayNameWithArticle.GHA=Ghana
+TINationTemplate.nationAdjective.GHA=de Ghana
+TINationTemplate.displayNameWithArticlePrep.GHA=en Ghana
+
+TINationTemplate.displayName.LEB=Líbano
+TINationTemplate.displayNameWithArticle.LEB=el Líbano
+TINationTemplate.nationAdjective.LEB=del Líbano
+TINationTemplate.displayNameWithArticlePrep.LEB=en el Líbano
+
+TINationTemplate.displayName.GIN=Guinea-Bisáu
+TINationTemplate.displayNameWithArticle.GIN=Guinea-Bisáu
+TINationTemplate.nationAdjective.GIN=de Guinea
+TINationTemplate.displayNameWithArticlePrep.GIN=en Guinea-Bisáu
+
+TINationTemplate.displayName.LBR=Liberia
+TINationTemplate.displayNameWithArticle.LBR=Liberia
+TINationTemplate.nationAdjective.LBR=de Liberia
+TINationTemplate.displayNameWithArticlePrep.LBR=en Liberia
+
+TINationTemplate.displayName.SLE=Sierra Leona
+TINationTemplate.displayNameWithArticle.SLE=Sierra Leona
+TINationTemplate.nationAdjective.SLE=de Sierra Leona
+TINationTemplate.displayNameWithArticlePrep.SLE=en Sierra Leona
+
+TINationTemplate.displayName.UAE=Emiratos Árabes Unidos
+TINationTemplate.displayNameWithArticle.UAE=los Emiratos Árabes Unidos
+TINationTemplate.nationAdjective.UAE=de los Emiratos Árabes Unidos
+TINationTemplate.displayNameWithArticlePrep.UAE=en los Emiratos Árabes Unidos
+
+TINationTemplate.displayName.LTU=Lituania
+TINationTemplate.displayNameWithArticle.LTU=Lituania
+TINationTemplate.nationAdjective.LTU=de Lituania
+TINationTemplate.displayNameWithArticlePrep.LTU=en Lituania
+
+TINationTemplate.displayName.LVA=Letonia
+TINationTemplate.displayNameWithArticle.LVA=Letonia
+TINationTemplate.nationAdjective.LVA=de Letonia
+TINationTemplate.displayNameWithArticlePrep.LVA=en Letonia
+
+TINationTemplate.displayName.EST=Estonia
+TINationTemplate.displayNameWithArticle.EST=Estonia
+TINationTemplate.nationAdjective.EST=de Letonia
+TINationTemplate.displayNameWithArticlePrep.EST=en Letonia
+
+TINationTemplate.displayName.CRS=Croacia-Eslovenia
+TINationTemplate.displayNameWithArticle.CRS=Croacia-Eslovenia
+TINationTemplate.nationAdjective.CRS=de Croacia
+TINationTemplate.displayNameWithArticlePrep.CRS=en Croacia-Eslovenia
+
+TINationTemplate.displayName.BSM=Bosnia-Herzegovina-Montenegro
+TINationTemplate.displayNameWithArticle.BSM=Bosnia-Herzegovina-Montenegro
+TINationTemplate.nationAdjective.BSM=de Bosnia
+TINationTemplate.displayNameWithArticlePrep.BSM=en Bosnia-Herzegovina-Montenegro
+
+TINationTemplate.displayName.CYE=Cirenaica
+TINationTemplate.displayNameWithArticle.CYE=Cirenaica
+TINationTemplate.nationAdjective.CYE=de Cirenaica
+TINationTemplate.displayNameWithArticlePrep.CYE=en Cirenaica
+
+TINationTemplate.displayName.DJI=Yibuti
+TINationTemplate.displayNameWithArticle.DJI=Yibuti
+TINationTemplate.nationAdjective.DJI=de Yibuti
+TINationTemplate.displayNameWithArticlePrep.DJI=en Yibuti
+
+TINationTemplate.displayName.DAR=Darfur
+TINationTemplate.displayNameWithArticle.DAR=Darfur
+TINationTemplate.nationAdjective.DAR=de Darfur
+TINationTemplate.displayNameWithArticlePrep.DAR=en Darfur
+
+TINationTemplate.displayName.DOM=República Dominicana
+TINationTemplate.displayNameWithArticle.DOM=la República Dominicana
+TINationTemplate.nationAdjective.DOM=de la República Dominicana
+TINationTemplate.displayNameWithArticlePrep.DOM=en la República Dominicana
+
+TINationTemplate.displayName.HTI=Haití
+TINationTemplate.displayNameWithArticle.HTI=Haití
+TINationTemplate.nationAdjective.HTI=de Haití
+TINationTemplate.displayNameWithArticlePrep.HTI=en Haití
+
+TINationTemplate.displayName.MKD=Macedonia del Norte
+TINationTemplate.displayNameWithArticle.MKD=Macedonia del Norte
+TINationTemplate.nationAdjective.MKD=de Macedonia del Norte
+TINationTemplate.displayNameWithArticlePrep.MKD=en Macedonia del Norte
+
+TINationTemplate.displayName.AZA=Azawad
+TINationTemplate.displayNameWithArticle.AZA=Azawad
+TINationTemplate.nationAdjective.AZA=de Azawad
+TINationTemplate.displayNameWithArticlePrep.AZA=en Azawad
+
+TINationTemplate.displayName.PAD=Padania
+TINationTemplate.displayNameWithArticle.PAD=Padania
+TINationTemplate.nationAdjective.PAD=de Padania
+TINationTemplate.displayNameWithArticlePrep.PAD=en Padania
+
+TINationTemplate.displayName.KAC=Kachin-Arakan
+TINationTemplate.displayNameWithArticle.KAC=Kachin-Arakan
+TINationTemplate.nationAdjective.KAC=de Kachin-Arakan
+TINationTemplate.displayNameWithArticlePrep.KAC=en Kachin-Arakan

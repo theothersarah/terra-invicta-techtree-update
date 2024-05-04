@@ -7,7 +7,7 @@ TILaserWeaponTemplate.description.120cmIRLaserBattery=Un laser de combat infraro
 TILaserWeaponTemplate.displayName.360cmIRLaserBattery=Laser infrarouge de 360 cm
 TILaserWeaponTemplate.description.360cmIRLaserBattery=Un grand laser de combat infrarouge à courte portée monté sur tourelle.
 TILaserWeaponTemplate.displayName.240cmIRLaserCannon=Canon laser infrarouge de 240 cm
-TILaserWeaponTemplate.description.240cmIRLaserCannon=Un petit canon laser infrarouge à courte portée installable sur la plupart de nos vaisseaux.
+TILaserWeaponTemplate.description.240cmIRLaserCannon=Un petit canon laser infrarouge à courte portée pouvant installable sur la plupart de nos vaisseaux.
 TILaserWeaponTemplate.displayName.480cmIRLaserCannon=Canon laser infrarouge de 480 cm
 TILaserWeaponTemplate.description.480cmIRLaserCannon=Un canon laser infrarouge de taille moyenne à courte portée.
 TILaserWeaponTemplate.displayName.720cmIRLaserCannon=Canon laser infrarouge de 720 cm
@@ -160,6 +160,20 @@ TILaserWeaponTemplate.displayName.Alien768cmVioletLaserCannon=Canon laser violet
 TILaserWeaponTemplate.description.Alien768cmVioletLaserCannon=Une grande arme extraterrestre à énergie dirigée.
 TILaserWeaponTemplate.displayName.Alien1024cmVioletLaserCannon=Canon laser violet extraterrestre de 1 024 cm
 TILaserWeaponTemplate.description.Alien1024cmVioletLaserCannon=Une énorme arme extraterrestre à énergie dirigée.
+TILaserWeaponTemplate.displayName.Alien384cmXaserBattery=Batterie laser extraterrestre à rayon X de 384 cm
+TILaserWeaponTemplate.description.Alien384cmXaserBattery=Une arme laser extraterrestre avancée.
+TILaserWeaponTemplate.displayName.Alien256cmXaserCannon=Canon laser extraterrestre à rayon X de 256 cm
+TILaserWeaponTemplate.description.Alien256cmXaserCannon=Un petit canon laser extraterrestre avancé.
+TILaserWeaponTemplate.displayName.Alien512cmXaserCannon=Canon laser extraterrestre à rayon X de 512 cm
+TILaserWeaponTemplate.description.Alien512cmXaserCannon=Un canon laser extraterrestre avancé.
+TILaserWeaponTemplate.displayName.Alien768cmXaserCannon=Canon laser extraterrestre à rayon X de 768 cm
+TILaserWeaponTemplate.description.Alien768cmXaserCannon=Un grand canon laser extraterrestre avancé.
+TILaserWeaponTemplate.displayName.Alien1024cmXaserCannon=Canon laser extraterrestre à rayon X de 1024 cm
+TILaserWeaponTemplate.description.Alien1024cmXaserCannon=Un énorme canon laser extraterrestre avancé.
+TILaserWeaponTemplate.displayName.Alien768cmGraserCannon==Canon laser extraterrestre à rayon Gamma de 768 cm
+TILaserWeaponTemplate.description.Alien768cmGraserCannon=Un grand canon laser extraterrestre exotique.
+TILaserWeaponTemplate.displayName.Alien1024cmGraserCannon=Canon laser extraterrestre à rayon Gamma de 1024 cm
+TILaserWeaponTemplate.description.Alien1024cmGraserCannon=Un énorme canon laser extraterrestre exotique.
 TILaserWeaponTemplate.displayName.RegionDefenseIRLaser=Laser infrarouge à réseau surface-orbite
 TILaserWeaponTemplate.displayName.RegionDefenseGreenLaser=Laser vert à réseau surface-orbite
 TILaserWeaponTemplate.displayName.RegionDefenseIRArcLaser=Laser infrarouge à arc à réseau surface-orbite
@@ -202,3 +216,5 @@ TIBeamWeaponTemplate.Power=Puissance de tir de base : <rcol>{0} MJ ({1} dég�
 TIBeamWeaponTemplate.PowerOnly=Puissance de tir de base : <rcol>{0} MJ</rcol>
 TILaserWeaponTemplate.ArmorPiercingAtRange=Efficacité du blindage à {0} km : <rcol>{1}</rcol>
 TILaserWeaponTemplate.Wavelength=Longueur d'onde :<rcol>{0} nm</rcol>
+
+

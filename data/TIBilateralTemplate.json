@@ -6340,7 +6340,7 @@
    "relationType": "Claim",
    "nation1": "CPH",
    "region1": "Qassimah",
-   "projectUnlockName": "Project_TheGreaterCaliphate"
+   "projectUnlockName": "Project_TheCaliphate"
  },
  {
    "dataName": "ClaimCPHRabat",
@@ -7909,6 +7909,13 @@
    "initialOwner": true
  },
  {
+   "dataName": "ClaimEUAMakhachkala",
+   "relationType": "Claim",
+   "nation1": "EUA",
+   "region1": "Makhachkala",
+   "projectUnlockName": "Project_GreatEuropa"
+ },
+ {
    "dataName": "ClaimEUAMilan",
    "relationType": "Claim",
    "nation1": "EUA",
@@ -8027,6 +8034,13 @@
    "relationType": "Claim",
    "nation1": "EUA",
    "region1": "Spain"
+ },
+ {
+   "dataName": "ClaimEUASurgut",
+   "relationType": "Claim",
+   "nation1": "EUA",
+   "region1": "Surgut",
+   "projectUnlockName": "Project_GreatEuropa"
  },
  {
    "dataName": "ClaimEUASweden",
@@ -8158,6 +8172,13 @@
    "relationType": "Claim",
    "nation1": "FNT",
    "region1": "Greenland",
+   "projectUnlockName": "Project_FirstNation"
+ },
+ {
+   "dataName": "ClaimFNTKamchatka",
+   "relationType": "Claim",
+   "nation1": "FNT",
+   "region1": "Kamchatka",
    "projectUnlockName": "Project_FirstNation"
  },
  {
@@ -10031,13 +10052,6 @@
    "projectUnlockName": "Project_PatagoniaIndependenceMovement"
  },
  {
-   "dataName": "ClaimPCSAmericanPacific",
-   "relationType": "Claim",
-   "nation1": "PCS",
-   "region1": "AmericanPacific",
-   "projectUnlockName": "Project_EndofAmerica"
- },
- {
    "dataName": "ClaimPCSFrenchPacific",
    "relationType": "Claim",
    "nation1": "PCS",
@@ -10126,11 +10140,18 @@
    "initialOwner": true
  },
  {
+   "dataName": "ClaimPLSAmericanPacific",
+   "relationType": "Claim",
+   "nation1": "PLS",
+   "region1": "AmericanPacific",
+   "projectUnlockName": "Project_EndofAmerica",
+   "capitalClaim": true
+ },
+ {
    "dataName": "ClaimPLSPolynesia",
    "relationType": "Claim",
    "nation1": "PLS",
    "region1": "Polynesia",
-   "capitalClaim": true,
    "initialOwner": true
  },
  {
@@ -11248,6 +11269,27 @@
    "capitalClaim": true
  },
  {
+   "dataName": "ClaimSPEPeru",
+   "relationType": "Claim",
+   "nation1": "SPE",
+   "region1": "Peru",
+   "projectUnlockName": "Project_PeruvianConfederation"
+ },
+ {
+   "dataName": "ClaimSPEEcuador",
+   "relationType": "Claim",
+   "nation1": "SPE",
+   "region1": "Ecuador",
+   "projectUnlockName": "Project_PeruvianConfederation"
+ },
+ {
+   "dataName": "ClaimSPEValparaiso",
+   "relationType": "Claim",
+   "nation1": "SPE",
+   "region1": "Valparaiso",
+   "projectUnlockName": "Project_PeruvianConfederation"
+ },
+ {
    "dataName": "ClaimSSDSouthSudan",
    "relationType": "Claim",
    "nation1": "SSD",
@@ -12097,10 +12139,10 @@
    "projectUnlockName": "Project_GreaterUnitedNorthAmerica"
  },
  {
-   "dataName": "ClaimUSAFrenchCaribbean",
+   "dataName": "ClaimUSAFrenchWestIndies",
    "relationType": "Claim",
    "nation1": "USA",
-   "region1": "FrenchCaribbean",
+   "region1": "FrenchWestIndies",
    "projectUnlockName": "Project_GreaterUnitedNorthAmerica"
  },
  {
@@ -12158,6 +12200,13 @@
    "nation1": "USA",
    "region1": "MexicoCity",
    "projectUnlockName": "Project_GreaterUnitedNorthAmerica"
+ },
+ {
+   "dataName": "ClaimUSAMicronesia",
+   "relationType": "Claim",
+   "nation1": "USA",
+   "region1": "Micronesia",
+   "projectUnlockName": "Project_UnitedNorthAmerica"
  },
  {
    "dataName": "ClaimUSAMississippiDelta",
@@ -14576,6 +14625,12 @@
    "relationType": "PhysicalAdjacency",
    "region1": "Hijaz",
    "region2": "Najd"
+ },
+ {
+   "dataName": "PhysicalAdjacencyHijazQassimah",
+   "relationType": "PhysicalAdjacency",
+   "region1": "Hijaz",
+   "region2": "Qassimah"
  },
  {
    "dataName": "PhysicalAdjacencyHijazYemen",

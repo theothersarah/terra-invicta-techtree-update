@@ -1280,7 +1280,7 @@
    ],
    "effects": [
       "Effect_RegionGDPGainHijaz",
-      "Effect_RegionGDPGainEgypt"
+      "Effect_RegionGDPGainCairo"
    ],
    "oneTimeGlobally": true,
    "repeatable": false,
@@ -2396,6 +2396,7 @@
    "dataName": "Project_CompositeArmor",
    "techCategory": "Materials",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Armor",
    "researchCost": 1000,
    "prereqs": [
@@ -2434,6 +2435,7 @@
    "dataName": "Project_NanotubeArmor",
    "techCategory": "Materials",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Armor",
    "researchCost": 5000,
    "prereqs": [
@@ -3056,7 +3058,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 5,
    "maxUnlockChance": 100,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 1.8e-10
+      }
+   ]
 },
  {
    "friendlyName": "Mobile Space Science Lab",
@@ -3258,6 +3265,7 @@
    "dataName": "Project_Magazine",
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Missiles",
    "researchCost": 500,
    "prereqs": [
@@ -6220,8 +6228,7 @@
    "researchCost": 7500,
    "prereqs": [
       "AntimatterContainment",
-      "FissionPulseDrives",
-      "MagneticNozzles"
+      "FissionPulseDrives"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -6229,7 +6236,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 5,
    "maxUnlockChance": 25,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 1.5e-12
+      }
+   ]
 },
  {
    "friendlyName": "Neutronium Microfission Drive",
@@ -6240,8 +6252,7 @@
    "researchCost": 5000,
    "prereqs": [
       "Project_UltracoldNeutronContainment",
-      "FissionPulseDrives",
-      "MagneticNozzles"
+      "FissionPulseDrives"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -6260,8 +6271,7 @@
    "researchCost": 1000,
    "prereqs": [
       "ZPinchTechniques",
-      "FissionPulseDrives",
-      "MagneticNozzles"
+      "FissionPulseDrives"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -6598,6 +6608,7 @@
    "dataName": "Project_TeardropDrive",
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
+   "AI_criticalTech": true,
    "AI_projectRole": "Propulsion",
    "researchCost": 3000,
    "prereqs": [
@@ -6616,6 +6627,7 @@
    "dataName": "Project_LarsDrive",
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
+   "AI_criticalTech": true,
    "AI_projectRole": "Propulsion",
    "researchCost": 1500,
    "prereqs": [
@@ -6750,6 +6762,7 @@
    "dataName": "Project_Dumbo",
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
+   "AI_criticalTech": true,
    "AI_projectRole": "Propulsion",
    "researchCost": 1000,
    "prereqs": [
@@ -7526,6 +7539,7 @@
    "dataName": "Project_MoltenCoreFissionReactorI",
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
+   "AI_criticalTech": true,
    "AI_projectRole": "PowerPlant",
    "researchCost": 500,
    "prereqs": [
@@ -7797,7 +7811,8 @@
    "researchCost": 15000,
    "prereqs": [
       "ProtonProtonFusion",
-      "Project_ElectrostaticConfinementFusionReactorII"
+      "Project_ElectrostaticConfinementFusionReactorII",
+      "Project_Exotics"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -7952,7 +7967,8 @@
    "researchCost": 35000,
    "prereqs": [
       "ProtonProtonFusion",
-      "Project_FusionTokamakIV"
+      "Project_FusionTokamakIV",
+      "Project_ExoticHybridSystems"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8247,8 +8263,8 @@
    "researchCost": 80000,
    "prereqs": [
       "ProtonProtonFusion",
-      "TerawattFusionReactors",
-      "Project_InertialConfinementFusionReactorV"
+      "Project_InertialConfinementFusionReactorV",
+      "Project_ExoticHybridSystems"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8266,8 +8282,7 @@
    "AI_projectRole": "PowerPlant",
    "researchCost": 100000,
    "prereqs": [
-      "Project_InertialConfinementFusionReactorVI",
-      "Project_ExoticHybridSystems"
+      "Project_InertialConfinementFusionReactorVI"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8285,7 +8300,7 @@
    "AI_projectRole": "PowerPlant",
    "researchCost": 25000,
    "prereqs": [
-      "AntimatterContainment",
+      "AntimatterMassProduction",
       "GasCoreFissionSystems"
    ],
    "oneTimeGlobally": false,
@@ -8294,7 +8309,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 20,
    "maxUnlockChance": 100,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 0.002
+      }
+   ]
 },
  {
    "friendlyName": "Antimatter Plasma Core Reactor II",
@@ -8304,9 +8324,8 @@
    "AI_projectRole": "PowerPlant",
    "researchCost": 50000,
    "prereqs": [
-      "AntimatterMassProduction",
-      "MagneticPlasmaConfinementTechniques",
-      "Project_AntimatterPlasmaCoreReactorI"
+      "Project_AntimatterPlasmaCoreReactorI",
+      "MagneticPlasmaConfinementTechniques"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8314,7 +8333,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 10,
    "maxUnlockChance": 100,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 0.002
+      }
+   ]
 },
  {
    "friendlyName": "Antimatter Plasma Core Reactor III",
@@ -8324,9 +8348,8 @@
    "AI_projectRole": "PowerPlant",
    "researchCost": 75000,
    "prereqs": [
-      "AntimatterMassProduction",
-      "Diamondoids",
       "Project_AntimatterPlasmaCoreReactorII",
+      "Diamondoids",
       "Project_Exotics"
    ],
    "oneTimeGlobally": false,
@@ -8335,7 +8358,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 5,
    "maxUnlockChance": 100,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 0.002
+      }
+   ]
 },
  {
    "friendlyName": "Antimatter Beam Core Reactor",
@@ -8345,8 +8373,7 @@
    "AI_projectRole": "PowerPlant",
    "researchCost": 100000,
    "prereqs": [
-      "AntimatterMassProduction",
-      "Diamondoids",
+      "Project_AntimatterPlasmaCoreReactorIII",
       "Project_ExoticHybridSystems"
    ],
    "oneTimeGlobally": false,
@@ -8355,7 +8382,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 5,
    "maxUnlockChance": 50,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 0.005
+      }
+   ]
 },
  {
    "friendlyName": "Hypergolic High Explosive Missiles",
@@ -8381,6 +8413,7 @@
    "dataName": "Project_CopperheadMissileBay",
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Missiles",
    "researchCost": 650,
    "prereqs": [
@@ -8419,6 +8452,7 @@
    "dataName": "Project_LanceheadMissileBay",
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Missiles",
    "researchCost": 1500,
    "prereqs": [
@@ -8495,8 +8529,9 @@
    "dataName": "Project_AresTorpedoBay",
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Missiles",
-   "researchCost": 2000,
+   "researchCost": 5000,
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
       "SolidCoreFissionSystems"
@@ -8515,7 +8550,7 @@
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
    "AI_projectRole": "Missiles",
-   "researchCost": 1500,
+   "researchCost": 2000,
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
       "Project_Liquid-FuelRockets"
@@ -8534,7 +8569,7 @@
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
    "AI_projectRole": "Missiles",
-   "researchCost": 1500,
+   "researchCost": 2000,
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
       "MilitarizationofSpace",
@@ -8554,7 +8589,7 @@
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
    "AI_projectRole": "Missiles",
-   "researchCost": 1500,
+   "researchCost": 5000,
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
       "MilitarizationofSpace",
@@ -8575,7 +8610,7 @@
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
    "AI_projectRole": "Missiles",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
       "FissionPulseDrives",
@@ -8667,7 +8702,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 5,
    "maxUnlockChance": 10,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 0.000006
+      }
+   ]
 },
  {
    "friendlyName": "Potassium Heat Sinks",
@@ -9008,7 +9048,12 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 10,
    "maxUnlockChance": 50,
-   "resourcesGranted": []
+   "resourcesGranted": [
+      {
+         "resource": "Antimatter",
+         "value": 6.4e-10
+      }
+   ]
 },
  {
    "friendlyName": "Spinal Neutron Lance",
@@ -10691,7 +10736,7 @@
  {
    "friendlyName": "Idea Viruses",
    "dataName": "Project_IdeaViruses",
-   "techCategory": "SocialScience",
+   "techCategory": "Xenology",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "Councilors",
    "researchCost": 10000,
@@ -13242,6 +13287,7 @@
    "dataName": "Project_ECM1",
    "techCategory": "InformationScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Armor",
    "researchCost": 500,
    "prereqs": [
@@ -13260,6 +13306,7 @@
    "dataName": "Project_ECM2",
    "techCategory": "InformationScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Armor",
    "researchCost": 3000,
    "prereqs": [
@@ -14076,6 +14123,7 @@
    "dataName": "Project_40mmAutocannon",
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Kinetics",
    "researchCost": 250,
    "prereqs": [
@@ -14116,7 +14164,8 @@
    "AI_projectRole": "Fleet",
    "researchCost": 5000,
    "prereqs": [
-      "SpaceNavies"
+      "SpaceNavies",
+      "Project_PatrolVessels"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -14131,6 +14180,7 @@
    "dataName": "Project_TargetingComputer1",
    "techCategory": "InformationScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Fleet",
    "researchCost": 500,
    "prereqs": [
@@ -14153,6 +14203,7 @@
    "dataName": "Project_TargetingComputer2",
    "techCategory": "InformationScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Fleet",
    "researchCost": 3000,
    "prereqs": [
@@ -14175,6 +14226,7 @@
    "dataName": "Project_TargetingComputer3",
    "techCategory": "InformationScience",
    "AI_techRole": "SpaceWar",
+   "AI_criticalTech": true,
    "AI_projectRole": "Fleet",
    "researchCost": 10000,
    "prereqs": [
@@ -14211,6 +14263,25 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 10,
    "maxUnlockChance": 70,
+   "resourcesGranted": []
+},
+ {
+   "friendlyName": "Armor Struts",
+   "dataName": "Project_ArmorStruts",
+   "techCategory": "Materials",
+   "AI_techRole": "SpaceWar",
+   "AI_projectRole": "Armor",
+   "researchCost": 1000,
+   "prereqs": [
+      "Superalloys",
+      "OrbitalShipbuilding"
+   ],
+   "oneTimeGlobally": false,
+   "repeatable": false,
+   "factionAvailableChance": 90,
+   "initialUnlockChance": 0,
+   "deltaUnlockChance": 10,
+   "maxUnlockChance": 100,
    "resourcesGranted": []
 },
  {

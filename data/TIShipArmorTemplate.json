@@ -26,19 +26,7 @@
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_SteelArmor",
-   "kj": {
-      "mol": 349
-   },
-   "boilingPoint_K": 1643,
-   "molarVolume": 7.09,
-   "1x1-meter Plate Thickness (mm)": 0.3746721619,
-   "Mass (kg) per Damage Point": 2.94,
-   "meltingPoint_K": 1648,
-   "specificHeat_jkgK": 530,
-   "heatofFusion_MJkg": 0.285,
-   "1 damage volume (m3)": 0.0003746721619,
-   "1 damage thickness_m": 0.07493443237
+   "iconResource": "shipbuildericons/ICO_SteelArmor"
 },
  {
    "dataName": "TitaniumArmor",
@@ -67,23 +55,7 @@
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_TitaniumArmor",
-   "kj": {
-      "mol": 421,
-      "g": 8.77
-   },
-   "g": {
-      "mol": 48
-   },
-   "boilingPoint_K": 3560,
-   "molarVolume": 10.64,
-   "1x1-meter Plate Thickness (mm)": 0.4731331349,
-   "Mass (kg) per Damage Point": 2.28,
-   "meltingPoint_K": 1941,
-   "specificHeat_jkgK": 523,
-   "heatofFusion_MJkg": 0.419,
-   "1 damage volume (m3)": 0.0004731331349,
-   "1 damage thickness_m": 0.09462662699
+   "iconResource": "shipbuildericons/ICO_TitaniumArmor"
 },
  {
    "dataName": "SiliconCarbideArmor",
@@ -112,23 +84,7 @@
          "value": 0
       }
    ],
-   "iconResource": "shipbuildericons/ICO_SiliconCarbideArmor",
-   "kj": {
-      "mol": 369,
-      "g": 9.2
-   },
-   "g": {
-      "mol": 40.0962
-   },
-   "boilingPoint_K": 3003,
-   "molarVolume": 12.45,
-   "1x1-meter Plate Thickness (mm)": 0.6293464237,
-   "Mass (kg) per Damage Point": 2.02,
-   "meltingPoint_K": 3003,
-   "specificHeat_jkgK": 670,
-   "heatofFusion_MJkg": 0.37,
-   "1 damage volume (m3)": 0.0006293464237,
-   "1 damage thickness_m": 0.1258692847
+   "iconResource": "shipbuildericons/ICO_SiliconCarbideArmor"
 },
  {
    "dataName": "BoronCarbideArmor",
@@ -157,23 +113,7 @@
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_BoronCarbideArmor",
-   "kj": {
-      "mol": 394.56,
-      "g": 7.14
-   },
-   "g": {
-      "mol": 55.2547
-   },
-   "boilingPoint_K": 3770,
-   "molarVolume": 29.1,
-   "1x1-meter Plate Thickness (mm)": 1.111555733,
-   "Mass (kg) per Damage Point": 2.8,
-   "meltingPoint_K": 3036,
-   "specificHeat_jkgK": 840,
-   "heatofFusion_MJkg": 2.03,
-   "1 damage volume (m3)": 0.001111555733,
-   "1 damage thickness_m": 0.2223111467
+   "iconResource": "shipbuildericons/ICO_BoronCarbideArmor"
 },
  {
    "dataName": "CompositeArmor",
@@ -203,22 +143,7 @@
          "value": 0
       }
    ],
-   "iconResource": "shipbuildericons/ICO_CompositeArmor",
-   "kj": {
-      "mol": 824.2,
-      "g": 4.21
-   },
-   "g": {
-      "mol": 195.851
-   },
-   "boilingPoint_K": 6270,
-   "molarVolume": 9.53,
-   "1x1-meter Plate Thickness (mm)": 0.6908462867,
-   "Mass (kg) per Damage Point": 1.33,
-   "specificHeat_jkgK": 171,
-   "heatofFusion_MJkg": 0.56,
-   "1 damage volume (m3)": 0.0006908462867,
-   "1 damage thickness_m": 0.1381692573
+   "iconResource": "shipbuildericons/ICO_CompositeArmor"
 },
  {
    "dataName": "FoamedMetalArmor",
@@ -248,14 +173,7 @@
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_FoamedMetalArmor",
-   "kj": {
-      "mol": 377.5
-   },
-   "1x1-meter Plate Thickness (mm)": 0.9057971014,
-   "Mass (kg) per Damage Point": 0.83,
-   "1 damage volume (m3)": 0.0009057971014,
-   "1 damage thickness_m": 0.1811594203
+   "iconResource": "shipbuildericons/ICO_FoamedMetalArmor"
 },
  {
    "dataName": "NanotubeArmor",
@@ -285,18 +203,7 @@
          "value": 0
       }
    ],
-   "iconResource": "shipbuildericons/ICO_NanotubeArmor",
-   "kj": {
-      "mol": 355.8
-   },
-   "boilingPoint_K": 3400,
-   "molarVolume": 3.42,
-   "1x1-meter Plate Thickness (mm)": 0.3928346952,
-   "Mass (kg) per Damage Point": 0.68,
-   "specificHeat_jkgK": 717,
-   "heatofFusion_MJkg": 2.5,
-   "1 damage volume (m3)": 0.0003928346952,
-   "1 damage thickness_m": 0.07856693903
+   "iconResource": "shipbuildericons/ICO_NanotubeArmor"
 },
  {
    "dataName": "AdamantaneArmor",
@@ -326,18 +233,7 @@
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_AdamantaneArmor",
-   "kj": {
-      "mol": 355.8
-   },
-   "boilingPoint_K": 4500,
-   "molarVolume": 3.42,
-   "1x1-meter Plate Thickness (mm)": 0.1866347148,
-   "Mass (kg) per Damage Point": 0.34,
-   "specificHeat_jkgK": 516,
-   "heatofFusion_MJkg": 5.3,
-   "1 damage volume (m3)": 0.0001866347148,
-   "1 damage thickness_m": 0.03732694296
+   "iconResource": "shipbuildericons/ICO_AdamantaneArmor"
 },
  {
    "dataName": "ExoticArmor",
@@ -345,8 +241,8 @@
    "weightedBuildMaterials": {
       "volatiles": 0.4,
       "metals": 0.4,
-      "nobleMetals": 0.15,
-      "exotics": 0.05
+      "nobleMetals": 0.16,
+      "exotics": 0.04
    },
    "requiredProjectName": "Project_ExoticArmor",
    "xRayHalfValue_cm": 5.2,
@@ -367,15 +263,7 @@
          "value": 0
       }
    ],
-   "iconResource": "shipbuildericons/ICO_ExoticArmor",
-   "boilingPoint_K": 6300,
-   "molarVolume": 19.2,
-   "1x1-meter Plate Thickness (mm)": 0.1298701299,
-   "Mass (kg) per Damage Point": 0.29,
-   "specificHeat_jkgK": 850,
-   "heatofFusion_MJkg": 0.5,
-   "1 damage volume (m3)": 0.0001298701299,
-   "1 damage thickness_m": 0.02597402597
+   "iconResource": "shipbuildericons/ICO_ExoticArmor"
 },
  {
    "dataName": "HybridArmor",
@@ -389,31 +277,23 @@
    "requiredProjectName": "Project_HybridArmor",
    "xRayHalfValue_cm": 4.5,
    "baryonicHalfValue_cm": 11,
-   "density_kgm3": 1400,
+   "density_kgm3": 2000,
    "heatofVaporization_MJkg": 80,
    "specialties": [
       {
          "armorSpecialty": "XRayResistance",
-         "value": 7.744
+         "value": 9.133
       },
       {
          "armorSpecialty": "BaryonicResistance",
-         "value": 1.596
+         "value": 1.707
       },
       {
          "armorSpecialty": "LaserResistance",
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_HybridArmor",
-   "boilingPoint_K": 6300,
-   "molarVolume": 19.2,
-   "1x1-meter Plate Thickness (mm)": 0.1785714286,
-   "Mass (kg) per Damage Point": 0.25,
-   "specificHeat_jkgK": 900,
-   "heatofFusion_MJkg": 0.5,
-   "1 damage volume (m3)": 0.0001785714286,
-   "1 damage thickness_m": 0.03571428571
+   "iconResource": "shipbuildericons/ICO_HybridArmor"
 },
  {
    "dataName": "AlienAdamantaneArmor",
@@ -443,15 +323,7 @@
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_AdamantaneArmor",
-   "boilingPoint_K": 4500,
-   "molarVolume": 3.42,
-   "1x1-meter Plate Thickness (mm)": 0.1866347148,
-   "Mass (kg) per Damage Point": 0.34,
-   "specificHeat_jkgK": 516,
-   "heatofFusion_MJkg": 5.3,
-   "1 damage volume (m3)": 0.0001866347148,
-   "1 damage thickness_m": 0.03732694296
+   "iconResource": "shipbuildericons/ICO_AdamantaneArmor"
 },
  {
    "dataName": "AlienExoticArmor",
@@ -481,14 +353,6 @@
          "value": 0.75
       }
    ],
-   "iconResource": "shipbuildericons/ICO_ExoticArmor",
-   "boilingPoint_K": 6300,
-   "molarVolume": 19.2,
-   "1x1-meter Plate Thickness (mm)": 0.1298701299,
-   "Mass (kg) per Damage Point": 0.29,
-   "specificHeat_jkgK": 850,
-   "heatofFusion_MJkg": 0.5,
-   "1 damage volume (m3)": 0.0001298701299,
-   "1 damage thickness_m": 0.02597402597
+   "iconResource": "shipbuildericons/ICO_ExoticArmor"
 }
 ]

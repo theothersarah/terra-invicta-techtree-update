@@ -8,6 +8,8 @@ TIShipArmorTemplate.displayName.BoronCarbideArmor=Blindaje de carburo de boro
 TIShipArmorTemplate.description.BoronCarbideArmor=Blindaje resistente de «diamante negro» hecho a partir de la reducción de trióxido de boro en una atmósfera de carbono.
 TIShipArmorTemplate.displayName.CompositeArmor=Blindaje compuesto
 TIShipArmorTemplate.description.CompositeArmor=Ofrece una gran protección y ligereza al alternar capas de cerámica y de metales.
+TIShipArmorTemplate.displayName.FoamedMetalArmor=Blindaje de espuma metálica
+TIShipArmorTemplate.description.FoamedMetalArmor=Blindaje de «espuma» de titanio de baja densidad y otras aleaciones, recubierto con placas de cerámica que ofrece protección y ligereza a nuestra nave espacial.
 TIShipArmorTemplate.displayName.NanotubeArmor=Blindaje de nanotubos
 TIShipArmorTemplate.description.NanotubeArmor=Blindaje de última generación, creado a partir de la fusión de nanotubos de carbono.
 TIShipArmorTemplate.displayName.AdamantaneArmor=Blindaje adamantino
@@ -20,9 +22,29 @@ TIShipArmorTemplate.displayName.AlienAdamantaneArmor=Blindaje alienígena de dia
 TIShipArmorTemplate.description.AlienAdamantaneArmor=Un material de origen alienígena, que parece haber sido creado a partir de la manipulación del carbón.
 TIShipArmorTemplate.displayName.AlienExoticArmor=Blindaje exótico alienígena
 TIShipArmorTemplate.description.AlienExoticArmor=Un material de origen alienígena con propiedades exóticas.
-TIShipArmorTemplate.FrontBackTonsPerPoint={0} toneladas por puntos de blindaje del morro o de la cola
-TIShipArmorTemplate.LateralTonsPerPoint={0} toneladas por punto de blindaje lateral
-TIShipArmorTemplate.ResourcesPerTon=Recursos para la construcción por tonelada: {0}
-TIShipArmorTemplate.KineticsResistance=Bonificación a la resistencia ante daños cinéticos
-TIShipArmorTemplate.LaserResistance=Bonificación a la resistencia ante daños por láser
-TIShipArmorTemplate.ChippingResistance=Bonificación a la resistencia ante golpes
+
+TIShipArmorTemplate.ResourcesPerTon=Coste por tonelada:<rcol>{0}</rcol>
+TIShipArmorTemplate.KineticsResistance=Bonificación a la resistencia de {0} ante daños cinéticos
+TIShipArmorTemplate.LaserResistance=Bonificación a la resistencia de {0} ante daños por láser
+TIShipArmorTemplate.ChippingResistance=Bonificación a la resistencia de {0} ante golpes
+TIShipArmorTemplate.KineticsVulnerability=Las armas cinéticas infligen {0} de daño adicional
+TIShipArmorTemplate.LaserVulnerability=Los láseres infligen {0} de daño adicional
+TIShipArmorTemplate.ChippingVulnerability=Los golpes infligen {0} de daño adicional al blindaje
+TIShipArmorTemplate.XRayResistance=Bonificación a la resistencia de {0} ante los rayos X que emiten las armas de partículas en función del acero
+TIShipArmorTemplate.XRayVulnerability=Los rayos X que emiten las armas de partículas infligen {0} de daño adicional
+TIShipArmorTemplate.BaryonicResistance=Bonificación a la resistencia de {0} ante los neutrones que emiten las armas de partículas
+TIShipArmorTemplate.BaryonicVulnerability=Los neutrones que emiten las armas de partículas infligen {0} de daño adicional
+
+TIShipArmorTemplate.ThicknessPerPoint=Grosor por punto:<rcol>{0} cm</rcol>
+
+TIShipArmorTemplate.NoseTailTonsPerPoint=Masa por punto de blindaje de la cola:<rcol>{0} toneladas</rcol>
+TIShipArmorTemplate.LateralTonsPerPoint=Masa por punto de blindaje de los costados:<rcol>{0} toneladas</rcol>
+
+TIShipArmorTemplate.MaxArmorThickness_Lateral=Grosor máximo del blindaje de los costados:<rcol>{0} cm</rcol>
+TIShipArmorTemplate.MaxArmorThickness_Nose=Grosor máximo del blindaje del morro:<rcol>{0} cm</rcol>
+TIShipArmorTemplate.MaxArmorThickness_Tail=Grosor máximo del blindaje de la cola:<rcol>{0} cm</rcol>
+
+TIShipArmorTemplate.MaxArmorPoints_Lateral=Blindaje máximo de los costados:<rcol>{0}</rcol>
+TIShipArmorTemplate.MaxArmorPoints_Nose=Blindaje máximo del morro:<rcol>{0}</rcol>
+TIShipArmorTemplate.MaxArmorPoints_Tail=Blindaje máximo de la cola:<rcol>{0}</rcol>
+

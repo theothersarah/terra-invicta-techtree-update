@@ -250,7 +250,7 @@ TITechTemplate.description.ElectrostaticPlasmaConfinement=若使用靜電場進�
 
 TITechTemplate.displayName.ElectrostaticPropulsion=靜電推進
 TITechTemplate.summary.ElectrostaticPropulsion=我們開發出使用靜電場加速推進劑的推力器。
-TITechTemplate.quote.ElectrostaticPropulsion=「告訴我還需要什麼，才能更快把更多人送到更遠的地方，不然我們將永遠被迫防守——那就等於慢慢輸掉。」<br/><align=right>{resistLeader}<align=left><br/><align=right>出席英國太空計畫的技術設計簡報<align=left>
+TITechTemplate.quote.ElectrostaticPropulsion=「各位同僚們，以後我們不用點燃核子火球，就能抵達火星和附近小行星。」<br/><align=right>{cooperateLeader}<align=left><br/><align=right>於 C9 聯盟高峰會的演講<align=left>
 TITechTemplate.description.ElectrostaticPropulsion=打從數十年前我們第一次把人送上太空，許多因素使得人類仍被束縛在地球上，其中最要緊的就是燃料需求。任何深太空推進系統都須盡可能有效處理燃料，才能展開長途旅行。<br/><br/>現在，透過使用靜電場，研究人員相信他們已找到可行的解決方案。這種新的推力器概念採用別緻的靜電場陣列以導引和加速燃料。燃料會通過幾乎無摩擦的管線系統來獲得速度，一旦達到想要的速度，燃料就會從推力器排出，推動太空船前進。這種推力器的美妙之處在於可調整靜電場，讓太空船針對每次的操作選擇剛剛好的加速量。目前的設計已能精準控制太空船的推進力，但工程師相信，到時候，我們將能使用高能量靜電場來進一步推升燃料速度。 
 
 TITechTemplate.displayName.ElectrothermalPropulsion=電熱推進
@@ -303,15 +303,6 @@ TITechTemplate.summary.HighEnergyElectromagneticPropulsion=物理學家改良電
 TITechTemplate.quote.HighEnergyElectromagneticPropulsion=「重點不是誰火力最猛，而是誰移動速度最快。雖然說如果沒有確實做好計畫，一過去就會被殺死。」<br/><align=right>{destroyLeader}<align=left><br/><align=right>於美國南方司令部雜誌《Diálogo》的採訪<align=left>
 TITechTemplate.description.HighEnergyElectromagneticPropulsion=在電磁推進證實為可行方式後，我們就能開始探索如何進一步改良。雖然電磁驅動無法達到化學火箭的推進力，但我們可以將其打造成「低質量高效能」的推進方式，減少能源消耗，也不需要大型散熱器。隨著下一代探索及運輸太空船的研發持續發展，室溫超導體與其他素材的突破讓我們能控制並導引能量電漿以及固態物質。不久之後，我們就能打破太空旅行目前的界限。
 
-TITechTemplate.displayName.HighEnergyElectrostaticPropulsion=高能量靜電推進
-TITechTemplate.summary.HighEnergyElectrostaticPropulsion=我們進一步改良透過靜電場加速的推力器。
-TITechTemplate.quote.HighEnergyElectrostaticPropulsion=「若要考慮在其他世界建造人類社會，我們必須從過去的錯誤中學習。這是重新開始的機會，好讓公平和平等成為我們生活的基石。」<br/><align=right>{appeaseLeader}<align=left><br/><align=right>於國際和平會議的演講<align=left>
-TITechTemplate.description.HighEnergyElectrostaticPropulsion=太陽系是一座資源寶庫，可協助我們成為註定能成為的遨遊太空的種族。當然，這不會免除我們對人類聰明才智的需要。我們渴望探索太陽系最遙遠的角落，甚或是太陽系之外，因此期待靜電推進系統能再進化。<br/><br/>新的推力器概念奠基於現有的靜電驅動器，但採用更強大的靜電場，並結合更輕的游離推進劑。這種推進劑的加速過程更快，最大速度也大幅提升。強化後的靜電場體積較小，因此允許更緊密的驅動器設計。裝上這種新型推進器後，船艦將能輕鬆超越目前太空旅行的極限。
-
-TITechTemplate.displayName.HighEnergyElectrothermalPropulsion=高能量電熱推進
-TITechTemplate.summary.HighEnergyElectrothermalPropulsion=透過加強對電磁場的控制，就能產生高能量的電漿以加熱更輕的推進劑。
-TITechTemplate.quote.HighEnergyElectrothermalPropulsion=「各位同僚們，以後我們不用點燃核子火球，就能抵達火星和附近小行星。」<br/><align=right>{cooperateLeader}<align=left><br/><align=right>於 C9 聯盟高峰會的演講<align=left>
-TITechTemplate.description.HighEnergyElectrothermalPropulsion=目前為止，太空船能抵達的範圍很有限，我們只能探索離我們最近的鄰居，但是，高能量電熱推進將協助我們把影響力拓展至太陽系最遙遠的角落。<br/><br/>研究人員奠基於現有的電熱驅動器，在改良電磁控制場後，就能為電漿增壓。這種新的控制場可直接讓增壓電漿穿過輕量推進劑，在噴嘴系統中產生高能量的氣流。透過使用一種完全無摩擦的新塗層，可讓氣流達到比上一代更高的速度。這種更高的速度會直接轉化為更強大的推進力，同時提供更精準的方向控制——這正是實現外行星探索所需要的。 
 
 TITechTemplate.displayName.HighEnergyLasers=高能量雷射炮
 TITechTemplate.summary.HighEnergyLasers=工程師開發出強大的導能裝置，擁有發展成武器和點燃核融合的潛力。
@@ -323,10 +314,6 @@ TITechTemplate.summary.HighTemperatureSuperconductors=科學家開發出可在�
 TITechTemplate.quote.HighTemperatureSuperconductors=「除了一陣刺骨的寒意，很少有東西能讓人有效清除雜念、集中精力。為了感謝你參與本課程，歡迎使用我們的家用冷療室，有 75 折優惠。」<br/><align=right>{submitLeader}<align=left><br/><align=right>出自她的<i>《越燒越亮》</i>課程的開課歡迎電子郵件<align=left>
 TITechTemplate.description.HighTemperatureSuperconductors=超導體這種物質傳輸電力時沒有阻力，所以也不會有能量損失，因此在人類為了應對外星人到來而開發相關突破性科技時，超導體對極端的能源要求而言至關重要。可惜的是，超導體向來僅限於極低的溫度環境。數十年來，即使是最尖端的超導體，也只能在華式 -220 度 (攝氏 -140 度) 以下運作。直到 2020 年代初，才成功做出碳、氫、硫的晶體化合物，組成能在室溫下運作的超導體，但令人懊惱的是，其應用依然有限。不過最終，我們開發出一種具有超導性質的化合物，即便在嚴酷的系外高溫環境下也能運作，且僅有極少的能量損失。同樣重要的突破則是在磁場的高效屏蔽方面，磁場對太空船和太空武器而言不可或缺，卻會破壞超導性。這意味著我們擁有驚人的潛力，能在深太空推進和深太空戰鬥方面大幅進步。
 
-TITechTemplate.displayName.HydrogenLithium6Fusion=氫鋰-6 核融合
-TITechTemplate.summary.HydrogenLithium6Fusion=為了前進天空，科學家掌握第一種無中子核融合反應，並利用其能量。 
-TITechTemplate.quote.HydrogenLithium6Fusion=「科技就像是我們的鏡子，當我們觸碰到核融合這種太陽的動力，就觸碰到了引領我們走出黑暗的光明。」<br/><align=right>{submitLeader}<align=left><br/><align=right>出自播客節目《看見亮光》<align=left>
-TITechTemplate.description.HydrogenLithium6Fusion=既然我們能在太空建造核融合反應爐，就能將目光轉向多種燃料來源的選擇。氫和鋰都是太陽系中豐沛的資源，透過運用在核分裂和武器研究中對鋰的理解，我們將打造出第一代氫鋰-6 核融合反應爐。<br/><br/>氫與鋰融合時會發生無中子反應，這種反應的優點在於能用水和渦輪收集能量，因為能量大多是以電磁輻射的形式釋放，而非中子。比起嘗試捕捉中子，將電磁輻射轉換成電力容易多了。此外，我們也能捨棄保護周圍生命體所需的笨重中子屏蔽，使反應爐比前幾代更輕更小。<br/><br/>之後我們就能打造出更快、更輕的船艦，幫助我們擴張至太陽系更深處。  
 
 TITechTemplate.displayName.ImprovedShipbuildingTechniques=造船技術提升
 TITechTemplate.summary.ImprovedShipbuildingTechniques=工程師開發建造更輕、更大的太空船的作法。
@@ -465,13 +452,13 @@ TITechTemplate.description.NetworkedGlobalDefense=長久以來，多虧有智慧
 
 TITechTemplate.displayName.NetworkedPropaganda=宣傳計畫網路
 TITechTemplate.summary.NetworkedPropaganda=我們研究如何在網路的多對多環境中形塑公共意見。
-TITechTemplate.quote.NetworkedPropaganda=「假新聞、不實訊息……叫什麼都不重要，明擺的事實就是強者為之，弱者怨之。這就是弱者絕對不可能變成強者的原因。」<br/><align=right>{exploitLeader}<align=left><br/><align=right>於僅限百萬富翁參加的 Clubhouse 討論<align=left>
+TITechTemplate.quote.NetworkedPropaganda=「假新聞、不實訊息……叫什麼都不重要，明擺的事實就是強者為之，弱者怨之。這就是弱者絕對不可能變成強者的原因。」<br/><align=right>{exploitLeader}<align=left><br/><align=right>於僅限百萬富翁參加的會所討論<align=left>
 TITechTemplate.description.NetworkedPropaganda=在這最動盪的時代，若說人們不需要控制人的心靈，也至少越來越需要有影響力的心靈。隨著外星人的到來改變了昔日的忠誠、形成新的支持，國際疆界 (或實際上是星球疆界) 根本不會對訊息傳播造成任何阻礙。模控學的出現也在這方面提供了驚人的機會。我們正在測試實驗性的新植入體，以摒除過去對裝置、螢幕、纜線的需求，並讓任何人在任何地方幾乎即時收發訊息和影片。<br/><br/>用於組織運動、群眾外包計畫、大規模協調救助行動的潛力無窮無盡，卻也可能被用於剝削。這不單是指行銷廣告，還包括惡意地讓他人慢慢屈從其意志、煽動政變，或透過長期直接了當的不實訊息宣傳活動來動搖對手。但這個大眾傳播的新時代就像回不去神燈的精靈——勝者為王。
 
-TITechTemplate.displayName.NeutroniumContainment=零號元素容納
-TITechTemplate.summary.NeutroniumContainment=物理學家研究容納自由中子和防止衰變的方法，以用作催化劑。
-TITechTemplate.quote.NeutroniumContainment=「你會為我的無知和浪漫皺起眉頭，但你看，如果在這團混亂之中能有一個好結果，那就是我能告訴我的孩子，每架太空船心裡都有一顆小星星。」<br/><align=right>{resistLeader}<align=left><br/><align=right>參訪洛斯阿拉莫斯國家實驗室後的私人信件<align=left>
-TITechTemplate.description.NeutroniumContainment=若要使用零號元素 (即在巨大中子星的核心發現的物質) 作為可能的能量來源，首先必須有能力重建它最初生成時的強大重力，否則它會迅速衰變，爆發出致命的輻射。如果能利用這種爆發，就可取得驚人數量的能量，但截至目前，連最聰明的科學家也無法容納這種自由中子。不過科學家現在認為，他們可以利用超高密度的鑽石烷，做出蜂巢狀的網格，最終能承受構成中子簡併物質之次原子粒子所造成的驚人壓力 (因為兩顆次原子粒子本來不會同時存在於同一個地方)，從而防止過早衰變。終於安全地讓中子屈從我們的意志後，科學家相信我們能打造出過去無法想像的核分裂太空船驅動器。 
+TITechTemplate.displayName.Neutronics=中子學
+TITechTemplate.summary.Neutronics=物理學家研發出方法，既能將中子送到需要的地方，還能避免它們出現在不需要的地方。
+TITechTemplate.quote.Neutronics=「你會為我的無知和浪漫皺起眉頭，但你看，如果在這團混亂之中能有一個好結果，那就是我能告訴我的孩子，每架太空船心裡都有一顆小星星。」<br/><align=right>{resistLeader}<align=left><br/><align=right>參訪洛斯阿拉莫斯國家實驗室後的私人信件<align=left>
+TITechTemplate.description.Neutronics=中子——這種中性的次原子粒子，伴隨著質子與電子一同組成了宇宙中絕大多數的原子——其實有著廣泛的用途。中子束能夠觸發核反應，而這不只為我們的太空船提供了動力，同時也可用作武器。然而，許多核分裂與核融合反應也會產生狂放的中子，而這些中子對仰賴這些反應的人類來說是相當危險的。如今，強大的新型電腦使我們能前所未有地精確模擬中子的行為。這讓我們得以打造新的裝置來控制它們，並開發輕型的防護層來保護脆弱的生命。此外，我們也看到了一條通往終極夢想的途徑：捕捉並長時間儲存超低溫中子，以阻止中子通常會發生的快速衰變。這將使我們能將它們用作極高效率的催化劑，但要實現這一步，我們需要對材料科學有全新的理解。
 
 TITechTemplate.displayName.NextGenerationAerospace=下一代航太
 TITechTemplate.summary.NextGenerationAerospace=航空工程師研究可重複使用的次軌道和單節入軌飛行器。
@@ -483,10 +470,10 @@ TITechTemplate.summary.NuclearFissioninSpace=我們嘗試將數十年前提出�
 TITechTemplate.quote.NuclearFissioninSpace=「1954 年，美國造出第一台核動力潛艇，改變了海戰的發展方向。現在，就讓我們打造第一架核動力太空船，讓我們重新定義太空戰。」<br/><align=right>{resistLeader}<align=left><br/><align=right>出自邱吉爾造船廠啟用時的演講<align=left>
 TITechTemplate.description.NuclearFissioninSpace=從 1938 年發現核分裂以來，我們一直運用這些知識來生產和獲取——不僅建造了動力設備，也打造了大規模毀滅性武器。數十年來，我們越來越瞭解這統治宇宙的力量，並能進一步改良反應過程。但截至目前，反應爐都需要重力的拉力，來圍阻連鎖反應和保持水的流動。如果水不流動，什麼都不會發生，因為必須由核分裂把水加熱，讓水變成蒸氣，蒸氣轉動渦輪，渦輪才會產生能量。<br/><br/>現在，結合深太空推進的新概念和數十年的核分裂經驗，我們首次能在太空中穩定製造核反應。有了新的反應爐設計，我們不再需要重力來收集原子分裂所釋放的能量，新的圍阻系統也能在零重力的環境下，確保安全持續的連鎖反應。<br/><br/>多虧了這項成就，核分裂動力的太空船現在可以抵達太陽系最黑暗、最遙遠的角落。核反應爐將為太空船、武器和太空殖民地提供動力，讓我們得以利用地球大氣層之外的無數資源，在廣闊的太空中與外星人相會，而非束縛在家園的土地上。此外，這些新科技將幫助我們打造出下一代固體核分裂系統，在太空探索更大的核融合能源潛力。
 
-TITechTemplate.displayName.NuclearFusioninSpace=太空核融合
-TITechTemplate.summary.NuclearFusioninSpace=我們將核融合用於動力和推進科技。
+TITechTemplate.displayName.NuclearFusioninSpace=太空核融合方法論
+TITechTemplate.summary.NuclearFusioninSpace=我們正在探索利用核融合用於發電和推進技術的方式。
 TITechTemplate.quote.NuclearFusioninSpace=「我們在科學和科技方面的進展，可能是解開天堂大門的鑰匙，但也可能解開地獄之門。我們必須每一次都做出明智選擇，否則可能會再也無法選擇。」<br/><align=right>{appeaseLeader}<align=left><br/><align=right>於聯合國科學高峰會的演講<align=left>
-TITechTemplate.description.NuclearFusioninSpace=從看見天空中燃燒的太陽起，我們就一直很想知道它如何產生光芒和動力。早在 1920 年，科學家就提出理論，說明核融合的無限可能。如今，來自外太空的生命抵達地球，帶來了無數挑戰和機會，我們必須實現這個製造新能源的夢想。<br/><br/>我們終於讓不可能成為可能：可控制的太空核融合。透過使用強大的超導磁鐵和雷射，我們改良了這項科技，能把較小的原子推在一起，融合成較重的元素。達成核融合的竅門，在於克服阻止原子自行融合的排斥力，讓核子結合力勝出，使原子合併。把較輕的原子融合成較重的原子時，我們發現愛因斯坦的著名定律再次獲得驗證：能量和質量合併後，會創造出新的東西，同時釋出多餘能量。釋放出來的能量正是關鍵，不僅能滿足深太空殖民地的嚴苛動力要求，也能滿足需求越來越大的太空船驅動器和武器。<br/><br/>科學家相信，這次的突破有助於在廣闊的太空創造公平的競爭環境，他們也預測，既然太空核融合反應爐的基本原理確實可行，我們很快就會看到使用鋰、氫，甚或是氘和氚 (兩種強力的氫同位素)的反應爐。這種能量來源的多功能性肯定無極限。  
+TITechTemplate.description.NuclearFusioninSpace=從看見天空中燃燒的太陽起，我們就一直很想知道它如何產生光芒和動力。早在 1920 年，科學家就提出理論，說明核融合的無限可能。如今，來自外太空的生命抵達地球，帶來了無數挑戰和機會，我們必須實現這個製造新能源的夢想。<br/><br/>我們終於為化不可能為可能鋪出了康莊大道：可控制的核融合。透過使用強大的磁鐵和雷射，我們改良了這項科技，能把較小的原子推在一起，融合成較重的元素。達成核融合的竅門，在於克服阻止原子自行融合的排斥力，讓核子結合力勝出，使原子合併。把較輕的原子融合成較重的原子時，我們發現愛因斯坦的著名定律再次獲得驗證：能量和質量合併後，會創造出新的東西，同時釋出多餘能量。釋放出來的能量正是關鍵，不僅能滿足深太空殖民地的嚴苛動力要求，也能滿足需求越來越大的太空船驅動器和武器。<br/><br/>科學家相信，這次的突破有助於在廣闊的太空創造公平的競爭環境，他們也預測，既然太空核融合反應爐的基本原理確實可行，我們很快就會看到使用氘和氚這兩種強力的氫同位素的反應爐。但我們也必須掌握幾種約束機制中的至少一種，才能控制並引導我們所創造的龐大能量。一旦達成這個目標，這種能量來源的多功能性肯定無極限。  
 
 TITechTemplate.displayName.OrbitalShipbuilding=軌道造船
 TITechTemplate.summary.OrbitalShipbuilding=為非大氣飛行器建造零重力裝配設施。
@@ -508,16 +495,16 @@ TITechTemplate.summary.OurSpaceFuture=隨著我們越來越多人在太空生活
 TITechTemplate.quote.OurSpaceFuture=「相信並接受外頭還有其他靈魂吧——那也是由神創造的，和我們一樣。加入他們、展開跨星際的心靈交會，既是我們的任務、我們的職責，也是我們的榮幸。」<br/><align=right>{submitLeader}<align=left><br/>出自容外浸信會的宣傳傳單，於淨化火焰之夜前五個月<align=left>
 TITechTemplate.description.OurSpaceFuture=如今已無法回頭，人類已在太空中發展軍事和工業，更別提人口不停增長，還覺得地球生活是越來越遙遠的記憶。是時候加倍努力，不再認為自己是受限於地球的物種。換句話說，我們要建立新形式的法律、秩序和通訊，來治理陸地、天空和太空，而在適應這混合型新社會的過程中，將產生無數的動盪。因此，為了抵禦內憂外患，我們還需要受過特殊訓練的部隊。至於如何達成這一切，我們現在已有具體方案，一旦實現，我們就可以認真考慮建立真正的、更大規模的太空社會。
 
-
 TITechTemplate.displayName.OutpostHabs=前哨殖民地
 TITechTemplate.summary.OutpostHabs=建造長期的基本艙體，以在太空永久居住。
 TITechTemplate.quote.OutpostHabs=「這世界上有兩種人：一種只想著回家，一種只想著離家。」<br/><align=right>{escapeLeader}<align=left><br/><align=right>出自早已不復存在的線上約會檔案<align=left>
 TITechTemplate.description.OutpostHabs=一段時間以來，我們已能讓少數訓練有素的太空人在外太空舒適生活幾個月，現在是時候努力推動更長期、甚至無限期的太空生活了。奠基於數十年來在地球最不適合生存之處的工程經驗，我們最近開發出第一代前哨殖民地。不同於我們最早期專為科學研究而嘗試的設計，這種新型太空站具有各式各樣的功能，可作為數十人的外太空家園，且包括太空人、工程師以外的更多居民。除了基本的生命支持和動力功能，前哨站的設計也將太空未來納入考量。前哨站本身已足夠驚奇，還能根據每個人的特定任務要求進一步自訂。
 
-TITechTemplate.displayName.ParticleCannon=粒子炮
-TITechTemplate.summary.ParticleCannon=武器化的粒子加速器可繞過裝甲，但只在極近的射程內才算實用。
+TITechTemplate.displayName.ParticleCannon=粒子束
+TITechTemplate.summary.ParticleCannon=可用來誘導各種原子反應的高能粒子加速器。
 TITechTemplate.quote.ParticleCannon=「從巨大的原子擊破器到家用電視顯像管，粒子加速器的用途非常廣泛。實務上，我認為沒有理由不把它武器化，道德上也許另當別論。」<br/><align=right>{cooperateLeader}<align=left><br/><align=right>於北京中央軍事委員會聽證會上的科學證詞<align=left>
-TITechTemplate.description.ParticleCannon=粒子炮也許聽起來像從電影裡偷來的概念，但外星生命也是如此，一直到最近才獲得證實。在科學界，第一款粒子炮原型的概念早已醞釀多時。<br/><br/>這種新型武器會發射高度集中、極短促噴發的質子，可以穿透多種材質。這些質子束是運用超導粒子加速器以生成和加速，再用電磁透鏡使光束聚焦瞄準。<br/><br/>儘管可調式粒子炮能繞過大部分的傳統裝甲，但因為帶電粒子本身的性質，目前的射程非常有限。粒子會相互排斥，因此一旦粒子束離開加速器的約束電磁場，就會開始擴散，失去其致命力量。不過，就近距離戰鬥而言，即使在太空中，第一代粒子炮仍有極具毀滅性的潛力。 
+TITechTemplate.description.ParticleCannon=能將混沌的一點物質聚焦成能精確引導之原子束的技術早已存在數十年，但新一代的粒子加速器採用脈衝雷射或是在電漿中利用電子後燃器來將龐大能量傳輸給目標粒子。這能大幅縮減加速器的尺寸與能源需求；今日動輒數公里長的直線型或環狀對撞機，很快就能裝載在我們的實驗室或太空船內。<br/><br/>此技術的應用範圍極廣：小型粒子加速器能用在推進系統中，觸發所需的核反應。作為武器，它們可以對電子設備和軟性目標造成嚴重破壞，但初期僅能在極近距離內發揮作用。最終，我們或許能利用它們打造以太空為基地的對撞機，協助生產能量儲存密度極高的介質──反物質。
+
 
 TITechTemplate.displayName.PhasedArrayLasers=相列雷射炮
 TITechTemplate.summary.PhasedArrayLasers=進階雷射武器，暱稱為相位炮，使用由人工智慧控制的鏡面陣列達到極長距離的瞄準。
@@ -539,10 +526,15 @@ TITechTemplate.summary.PredictiveGenetics=透過個人基因組學和轉譯生�
 TITechTemplate.quote.PredictiveGenetics=「如果這些結果是準確的，那我們即將顛覆整個醫療體系。在確定拿到專利之前，在場所有人都不准洩漏出去。拿到專利後，黃金時代隨即展開。各位，我們即將從生命本身獲利。」<br/><align=right>{exploitLeader}<align=left><br/><align=right>出自桑戈馬製藥的季度委員會會議記錄<align=left>
 TITechTemplate.description.PredictiveGenetics=人類一直在追求長生不死，或追求至少能有意義地拖延死神的到來。儘管預測遺傳學不是魔法石，仍是巨大的飛躍，使我們得以延長生命的持續時間，並顯著提高生命晚期幾十年的生活品質。從「人類基因組計畫」的基礎出發，預測遺傳學的最新進展終將使醫療人員能夠識別和修正與複雜疾病相關的基因標記，包括第二型糖尿病、鮮為人知的遺傳疾病，甚至是大多數的癌症。再結合創新的分析方法和尖端人工智慧後，人類有望活出更長壽、更健康的生命。一旦世界各國充分利用這些最新發展，幾乎所有自我們第一次從海裡爬上岸後曾重創人類的疾病，都將迅速成為歷史。
 
-TITechTemplate.displayName.ProtonBoronFusion=質子硼核融合
-TITechTemplate.summary.ProtonBoronFusion=無中子核融合反應方面的突破，使反應爐的燃料及成本使用效率更甚以往。
-TITechTemplate.quote.ProtonBoronFusion=「恕我直言，真正重要的只有兩件事：從我們必須迅速處理的地方下手，且不在過程中喪命。」<br/><align=right>{resistLeader}<align=left><br/><align=right>於英國國防與安全加速器的研究提案審查會議<align=left>
-TITechTemplate.description.ProtonBoronFusion=連續幾代的核融合科技使我們遠遠上升到地球的重力井上方，且能抵達 (並利用) 鄰近的世界。多虧了氘氦 -3 核融合，我們和<i>他們</i>之間的鴻溝逐漸縮小。然而，作為燃料來源，氘終究過於稀缺，無法無限期支持我們的太空擴張。<br/><br/>奠基於對氘氦 -3 核融合的理解，研究人員取得了重大突破——可持續的無中子核融合反應，且燃料成本極低。其中關鍵在於質子硼核融合。儘管質子和硼的點火溫度較高，在太陽系的含量卻遠遠超過氘。此外，我們最新的固態能源收集器還可以有效利用這種反應，因為所有能量都是以電磁輻射的形式釋放，不會從中子輻射損失能量。<br/><br/>這種新型核融合反應爐可產生更多能量，且成本更低、所需屏蔽更少，因此能為我們做好準備，打造出更大型的太空殖民地、太空站，以及驅動器更強大更厲害的船艦。而且，這還只是我們探索利用恆星自身力量的起點。
+TITechTemplate.displayName.AneutronicFusion=無中子核融合
+TITechTemplate.summary.AneutronicFusion=無中子核融合反應方面的突破，使反應爐的燃料及成本使用效率更甚以往。
+TITechTemplate.quote.AneutronicFusion=「科技就像是我們的鏡子，當我們觸碰到核融合這種太陽的動力，就觸碰到了引領我們走出黑暗的光明。」<br/><align=right>{submitLeader}<align=left><br/><align=right>出自播客節目《看見亮光》<align=left>
+TITechTemplate.description.AneutronicFusion=連續幾代的核融合科技使我們遠遠上升到地球的重力井上方，且能抵達 (並利用) 鄰近的世界。多虧了氘氦 -3 核融合，我們和<i>他們</i>之間的鴻溝逐漸縮小。然而，作為燃料來源，氘終究過於稀缺，無法無限期支持我們的太空擴張。<br/><br/>奠基於對氘氦 -3 核融合的理解，研究人員取得了重大突破——可持續的無中子核融合反應，且燃料成本極低。其中關鍵在於質子硼核融合，以及氫和鋰-6 的融合。儘管質子和硼的點火溫度較高，在太陽系的含量卻遠遠超過氘。此外，我們最新的固態能源收集器還可以有效利用這種反應，因為所有能量都是以電磁輻射的形式釋放，不會從中子輻射損失能量。<br/><br/>這種新型核融合反應爐可產生更多能量，且成本更低、所需屏蔽更少，因此能為我們做好準備，打造出更大型的太空殖民地、太空站，以及驅動器更強大更厲害的船艦。而且，這還只是我們探索利用恆星自身力量的起點。
+
+TITechTemplate.displayName.Superalloys=超級合金
+TITechTemplate.summary.Superalloys=我們從原子開始設計組裝強韌的金屬合金。
+TITechTemplate.quote.Superalloys=「恕我直言，真正重要的只有兩件事：從我們必須迅速處理的地方下手，且不在過程中喪命。」<br/><align=right>{resistLeader}<align=left><br/><align=right>於英國國防與安全加速器的研究提案審查會議<align=left>
+TITechTemplate.description.Superalloys=由於對碳奈米管、鑽石烷與其他碳同素異形體的材料科學研究突飛猛進，冶金學在材料科學中逐漸退居次要地位。然而，在預測化學和奈米尺度的原子操控技術方面的進步也使我們能夠開發新型合金，這些合金的特色在於金屬和其他材料的組合，無論天然環境或工業時代的熔爐都無法生成。更為常見的元素如鐵、鋁、鎳、鈷可以依合成模式排列，而像錸、鎢、鉿等較稀有元素能添加作為強化劑。最終成品的性質雖多有不同，卻可能在耐熱性、抗拉強度、或對惡劣環境的耐受度上達到前所未見的境界。這將推動裝甲、熱遮蔽、電漿圍阻、武器等領域的發展。
 
 TITechTemplate.displayName.ProtonProtonFusion=雙質子核融合
 TITechTemplate.summary.ProtonProtonFusion=透過掌握核融合反應的終極形式，我們將馴服太陽的力量。 
@@ -609,6 +601,11 @@ TITechTemplate.summary.SpaceMiningandRefining=我們開發在無空氣的低重�
 TITechTemplate.quote.SpaceMiningandRefining=「我們不能只派出一堆挖土機，就期待得到最好的結果——天上的土根本就不一樣。我們可能會在一堆米上面蓋房子。」<br/><align=right>{escapeLeader}<align=left><br/><align=right>出自他不定期的電子報〈為明天做準備〉<align=left>
 TITechTemplate.description.SpaceMiningandRefining=把原料送到地球重力井上方，完全違背了長遠發展的思維。為了進一步在太空擴展，我們必須能從太空至少取得一些需要的資源。幸運的是，附近的小行星不乏礦物和稀有金屬，我們可以由此開始在太空建造船艦和設施。最迫切需要的是鐵、碳、氮、鋁、銅、氧和水，金和鉑也能迅速取得。但是，在太空中開採資源和在地球上不同。一方面，低重力或微重力意味著，開採的資源不能整齊倒入容器，或自動按照重力來分類，再者，我們也無法直接在星球地表建造設施。<br/><br/>為了解決這些問題，我們設計的第一種方法相當平淡無奇。此系統由長電纜 (至多一公里) 和收集袋組成，用來將設備連接到小行星，並防止開採的資源直接飄走。這是重要的開始，但真正的大規模採礦還需要更先進的解決方案，以及更多在當地執行和發揮的能力，而不是依賴從地球運送。
 
+TITechTemplate.displayName.SpaceNavies=太空海軍
+TITechTemplate.summary.SpaceNavies=軍事領袖拋棄傳統的陸地指揮概念，轉而採用新的組織典範。
+TITechTemplate.quote.SpaceNavies=「太空衝突和地面戰爭根本無法類比，儘管士官一直試著說成一樣。在冰上展開坦克裝甲戰？在無處可躲的地方展開潛艇戰？在沒有重力要克服、沒有氣流要對抗的地方展開空戰？企圖想出普世皆準的比喻只會導致錯誤的假設和損毀的船艦。就教背後的物理學和決策集吧，我們的人學得會的。」<br/><align=right>{resistLeader}<align=left><br/><align=right>致聯合國太空學院指揮官的電子郵件<align=left>
+TITechTemplate.description.SpaceNavies=太空領域中最早的衝突，或許不是國與國之間的衝突，而是軍隊中海軍與空軍這兩種不同軍種的衝突。起初，空軍將太空視作其制空領域的延伸，而率先宣示主權。但隨著發射任務逐漸演變成長期部署，太空載具的稱呼也變成太空船，作息習慣也隨之改變：軍官輪值守望，船員們則需共事並朝夕相處數月甚至數年。然而，即便如此，艦上生活也不完全等同於傳統海軍，艦艇的內部設計更像建築物，又得面對長時間的無重力環境。我們的軍官和船員不斷學習與調整，制定新的戰術和流程，並形塑新的文化。
+
 TITechTemplate.displayName.SpaceResearch=太空研究
 TITechTemplate.summary.SpaceResearch=我們開發專門的方法，以在零重力和行星環境中執行研究。
 TITechTemplate.quote.SpaceResearch=「我很榮幸能獲選參加這一生一次的體驗。他們在這裡能做的事簡直不可思議。他們對於微重力長期影響的研究很有趣，燃燒方面的進展還可能徹底改變地球上的能源生產。」<br/><align=right>{cooperateLeader}<align=left><br/><align=right>到國際太空站參加校外教學時的影片訪談<br/>擷取自紀錄片<i>《青少年天才》</i><align=left>
@@ -648,6 +645,11 @@ TITechTemplate.displayName.TitanicSpacecraft=巨型太空船
 TITechTemplate.summary.TitanicSpacecraft=工程師開發大型戰艦和星際太空船的設計。
 TITechTemplate.quote.TitanicSpacecraft=「我不想死在什麼悲慘的有毒世界。我想死在離地球無數光年以外的地方，在完美的天空下，徜徉在完美的海邊，微笑著。」<br/><align=right>{escapeLeader}<align=left><br/><align=right>出自他不定期的網路電子報〈為明天做準備〉<align=left>
 TITechTemplate.description.TitanicSpacecraft=太陽系是人類的探索和佔領目標，但若要真正做到，需要比過去更多的人力，甚或是更多的力量。這也許聽起來很粗糙，但最好的解決方案就是最顯而易見的：更大的船艦，以承載更多船員、更多補給、更多武器，以及更密的裝甲。過去認為，打造在世界之間穿梭的巨大飛船至少需要花幾十年，但多虧了極強大的反應爐和推進科技，現在完全可以實現這曾經荒謬的工程。一如既往，質量依然是最大的阻礙，而且必須攜帶充足的燃料和推進劑，才能一次保持數週的高 Delta-V——若要嘗試離開此太陽系，甚至需要保持幾年。現在，我們根據「火炬」原理，做出了建造巨型飛船的可行設計，具有高推進力和高比衝，可處於幾乎持續加速的狀態，強大到巨大船體的質量幾乎不算數。 
+
+TITechTemplate.displayName.Tokamaks=環磁機
+TITechTemplate.summary.Tokamaks=新一代的環形核融合反應爐和推進器運用磁力約束方法。
+TITechTemplate.quote.Tokamaks=「告訴我還需要什麼，才能更快把更多人送到更遠的地方，不然我們將永遠被迫防守——那就等於慢慢輸掉。」<br/><align=right>{resistLeader}<align=left><br/><align=right>出席英國太空計畫的技術設計簡報<align=left>
+TITechTemplate.description.Tokamaks=我們早期在磁約束融合方面取得的成功是仰賴排列成一行的巨大磁鏡。雖然能成功運作，但其質量限制了它作為遠程推進系統的能力。我們下一步是開發托卡馬克，這是一個俄羅斯術語，指的是利用磁環形體來容納核融合等離子體的反應堆。利用磁場來維持高能等離子體的狀態，曾被人比喻為用濕麵條去固定正在融化的明膠，但有了足夠的電腦輔助磁場管理，我們已經能夠實現淨能量增益，並開始研發利用這種技術的新型推進系統。    
 
 TITechTemplate.displayName.TransformPhages=改造噬菌體
 TITechTemplate.summary.TransformPhages=基因工程師創造可編輯活人基因的生物機器。
@@ -739,7 +741,6 @@ TITechTemplate.quote.ResistanceLifeScience=「母親在晚年告訴我，我們�
 TITechTemplate.quote.ResistanceMaterials=「材質向來定義著人類的進程，石器、鐵器，然後是鋼和矽。所以讓我問得清楚一點：這就是定義未來的下一個發現嗎？」
 TITechTemplate.quote.ResistanceEnergy=「解決能源危機？我們開發核能的時候這麼說，掌握核融合時也這麼說。讓我們現實一點：無論發明什麼新科技來產生動力，我們都會需要更多。」
 TITechTemplate.quote.ResistanceInformationScience=「我不想要聽起來像跳針的唱片，但資訊確實是我們最大的武器。所以，叫研究人員回來聽她的提案吧。這一次，不要因為還沒聽懂細節就打斷她。」
-TITechTemplate.quote.ResistanceMilitaryScience=「太空衝突和地面戰爭根本無法類比，儘管士官一直試著說成一樣。在冰上展開坦克裝甲戰？在無處可躲的地方展開潛艇戰？在沒有重力要克服、沒有氣流要對抗的地方展開空戰？企圖想出普世皆準的比喻只會導致錯誤的假設和損毀的船艦。就教背後的物理學和決策集吧，我們的人學得會的。」
 TITechTemplate.quote.ResistanceSocialScience=「我見過發生核子末日的可能性如何影響社會，也見過外星人到來對人類的影響。就假設我已充分掌握人類心理的運作方式，能理解基本原則吧。」
 
 TITechTemplate.quote.EscapeSpaceScience=「飛馬座的那顆行星改變了一切。那是第一顆繞著類太陽星體運轉的系外行星，1995 年發現時革新了整個天文界。當然，也開啟了拋下地球、航向新世界的大門。」 
@@ -792,3 +793,16 @@ TITechTemplate.quote.ExploitMilitaryScience=「把原理圖洩漏出去，然後
 TITechTemplate.quote.ExploitSocialScience=「早期的羅馬人真是精明：把軍隊停在你家的領土外，給你選要加入還是滅亡。只要付出讓自己的文化融入的小小代價，就能保全性命。太聰明了。」
 
 TITechTemplate.desc.EndGameReroll=在完成時，最終目標科技會重新擲骰，解鎖陣營計畫。
+
+
+TITechTemplate.quote.HighEnergyElectrostaticPropulsion_deprecated=「若要考慮在其他世界建造人類社會，我們必須從過去的錯誤中學習。這是重新開始的機會，好讓公平和平等成為我們生活的基石。」<br/><align=right>{appeaseLeader}<align=left><br/><align=right>於國際和平會議的演講<align=left>
+
+TITechTemplate.summary.HighEnergyElectrostaticPropulsion_deprecated=我們進一步改良透過靜電場加速的推力器。
+TITechTemplate.description.HighEnergyElectrostaticPropulsion_deprecated=太陽系是一座資源寶庫，可協助我們成為註定能成為的遨遊太空的種族。當然，這不會免除我們對人類聰明才智的需要。我們渴望探索太陽系最遙遠的角落，甚或是太陽系之外，因此期待靜電推進系統能再進化。<br/><br/>新的推力器概念奠基於現有的靜電驅動器，但採用更強大的靜電場，並結合更輕的游離推進劑。這種推進劑的加速過程更快，最大速度也大幅提升。強化後的靜電場體積較小，因此允許更緊密的驅動器設計。裝上這種新型推進器後，船艦將能輕鬆超越目前太空旅行的極限。
+TITechTemplate.summary.HighEnergyElectrothermalPropulsion_deprecated=透過加強對電磁場的控制，就能產生高能量的電漿以加熱更輕的推進劑。
+TITechTemplate.description.HighEnergyElectrothermalPropulsion_deprecated=目前為止，太空船能抵達的範圍很有限，我們只能探索離我們最近的鄰居，但是，高能量電熱推進將協助我們把影響力拓展至太陽系最遙遠的角落。<br/><br/>研究人員奠基於現有的電熱驅動器，在改良電磁控制場後，就能為電漿增壓。這種新的控制場可直接讓增壓電漿穿過輕量推進劑，在噴嘴系統中產生高能量的氣流。透過使用一種完全無摩擦的新塗層，可讓氣流達到比上一代更高的速度。這種更高的速度會直接轉化為更強大的推進力，同時提供更精準的方向控制——這正是實現外行星探索所需要的。 
+TITechTemplate.description.ParticleCannon_Deprecated=粒子炮也許聽起來像從電影裡偷來的概念，但外星生命也是如此，一直到最近才獲得證實。在科學界，第一款粒子炮原型的概念早已醞釀多時。<br/><br/>這種新型武器會發射高度集中、極短促噴發的質子，可以穿透多種材質。這些質子束是運用超導粒子加速器以生成和加速，再用電磁透鏡使光束聚焦瞄準。<br/><br/>儘管可調式粒子炮能繞過大部分的傳統裝甲，但因為帶電粒子本身的性質，目前的射程非常有限。粒子會相互排斥，因此一旦粒子束離開加速器的約束電磁場，就會開始擴散，失去其致命力量。不過，就近距離戰鬥而言，即使在太空中，第一代粒子炮仍有極具毀滅性的潛力。 
+TITechTemplate.summary.NeutroniumContainment_Deprecated=物理學家研究容納自由中子和防止衰變的方法，以用作催化劑。
+TITechTemplate.description.NeutroniumContainment_Deprecated=若要使用零號元素 (即在巨大中子星的核心發現的物質) 作為可能的能量來源，首先必須有能力重建它最初生成時的強大重力，否則它會迅速衰變，爆發出致命的輻射。如果能利用這種爆發，就可取得驚人數量的能量，但截至目前，連最聰明的科學家也無法容納這種自由中子。不過科學家現在認為，他們可以利用超高密度的鑽石烷，做出蜂巢狀的網格，最終能承受構成中子簡併物質之次原子粒子所造成的驚人壓力 (因為兩顆次原子粒子本來不會同時存在於同一個地方)，從而防止過早衰變。終於安全地讓中子屈從我們的意志後，科學家相信我們能打造出過去無法想像的核分裂太空船驅動器。 
+TITechTemplate.summary.HydrogenLithium6Fusion_deprecated=為了前進天空，科學家掌握第一種無中子核融合反應，並利用其能量。 
+TITechTemplate.description.HydrogenLithium6Fusion_deprecated=既然我們能在太空建造核融合反應爐，就能將目光轉向多種燃料來源的選擇。氫和鋰都是太陽系中豐沛的資源，透過運用在核分裂和武器研究中對鋰的理解，我們將打造出第一代氫鋰-6 核融合反應爐。<br/><br/>氫與鋰融合時會發生無中子反應，這種反應的優點在於能用水和渦輪收集能量，因為能量大多是以電磁輻射的形式釋放，而非中子。比起嘗試捕捉中子，將電磁輻射轉換成電力容易多了。此外，我們也能捨棄保護周圍生命體所需的笨重中子屏蔽，使反應爐比前幾代更輕更小。<br/><br/>之後我們就能打造出更快、更輕的船艦，幫助我們擴張至太陽系更深處。  

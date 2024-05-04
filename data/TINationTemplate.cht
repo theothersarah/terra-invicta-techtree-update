@@ -14,10 +14,10 @@ TINationTemplate.displayName.ALN=外星行政區
 TINationTemplate.displayNameWithArticle.ALN=外星行政區
 TINationTemplate.nationAdjective.ALN=外星
 TINationTemplate.displayNameWithArticlePrep.ALN=外星國家境內
-TINationTemplate.displayName.ALP=阿爾卑斯山脈國家
-TINationTemplate.displayNameWithArticle.ALP=阿爾卑斯山脈國家
+TINationTemplate.displayName.ALP=奧地利
+TINationTemplate.displayNameWithArticle.ALP=奧地利
 TINationTemplate.nationAdjective.ALP=奧地利
-TINationTemplate.displayNameWithArticlePrep.ALP=阿爾卑斯山脈國家境內
+TINationTemplate.displayNameWithArticlePrep.ALP=奧地利境內
 TINationTemplate.displayName.ARG=阿根廷
 TINationTemplate.displayNameWithArticle.ARG=阿根廷
 TINationTemplate.nationAdjective.ARG=阿根廷
@@ -142,14 +142,10 @@ TINationTemplate.displayName.DEN=丹麥
 TINationTemplate.displayNameWithArticle.DEN=丹麥
 TINationTemplate.nationAdjective.DEN=丹麥
 TINationTemplate.displayNameWithArticlePrep.DEN=丹麥境內
-TINationTemplate.displayName.DEU=東德民主共和國
-TINationTemplate.displayNameWithArticle.DEU=東德民主共和國境內
-TINationTemplate.nationAdjective.DEU=德文
-TINationTemplate.displayNameWithArticlePrep.DEU=東德民主共和國境內
-TINationTemplate.displayName.DOM=大自治領地
-TINationTemplate.displayNameWithArticle.DOM=大自治領地
-TINationTemplate.nationAdjective.DOM=大自治領地
-TINationTemplate.displayNameWithArticlePrep.DOM=大自治領地境內
+TINationTemplate.displayName.DEU=東德
+TINationTemplate.displayNameWithArticle.DEU=東德
+TINationTemplate.nationAdjective.DEU=東德
+TINationTemplate.displayNameWithArticlePrep.DEU=東德境內
 TINationTemplate.displayName.DVD=達羅毗荼納德邦
 TINationTemplate.displayNameWithArticle.DVD=達羅毗荼納德邦
 TINationTemplate.nationAdjective.DVD=達羅毗荼納德邦
@@ -214,18 +210,18 @@ TINationTemplate.displayName.GRL=格陵蘭
 TINationTemplate.displayNameWithArticle.GRL=格陵蘭
 TINationTemplate.nationAdjective.GRL=格陵蘭
 TINationTemplate.displayNameWithArticlePrep.GRL=格陵蘭境內
-TINationTemplate.displayName.GUA=廣東
-TINationTemplate.displayNameWithArticle.GUA=廣東
-TINationTemplate.nationAdjective.GUA=廣東
-TINationTemplate.displayNameWithArticlePrep.GUA=廣東省境內
+TINationTemplate.displayName.GUA=兩廣
+TINationTemplate.displayNameWithArticle.GUA=兩廣
+TINationTemplate.nationAdjective.GUA=兩廣
+TINationTemplate.displayNameWithArticlePrep.GUA=兩廣境內
 TINationTemplate.displayName.GUS=波斯灣國家
 TINationTemplate.displayNameWithArticle.GUS=波斯灣國家
 TINationTemplate.nationAdjective.GUS=波斯灣國家
 TINationTemplate.displayNameWithArticlePrep.GUS=波斯灣國家境內
-TINationTemplate.displayName.HYS=喜馬拉雅山脈國家
-TINationTemplate.displayNameWithArticle.HYS=喜馬拉雅山脈國家
-TINationTemplate.nationAdjective.HYS=喜馬拉雅山脈國家
-TINationTemplate.displayNameWithArticlePrep.HYS=喜馬拉雅山脈國家境內
+TINationTemplate.displayName.HYS=尼泊爾 - 不丹
+TINationTemplate.displayNameWithArticle.HYS=尼泊爾 - 不丹
+TINationTemplate.nationAdjective.HYS=尼泊爾
+TINationTemplate.displayNameWithArticlePrep.HYS=尼泊爾 - 不丹境內
 TINationTemplate.displayName.IDN=爪哇島
 TINationTemplate.displayNameWithArticle.IDN=爪哇島
 TINationTemplate.nationAdjective.IDN=爪哇
@@ -310,8 +306,8 @@ TINationTemplate.displayName.LBY=利比亞
 TINationTemplate.displayNameWithArticle.LBY=利比亞
 TINationTemplate.nationAdjective.LBY=利比亞
 TINationTemplate.displayNameWithArticlePrep.LBY=利比亞境內
-TINationTemplate.displayName.LWG=下幾內亞
-TINationTemplate.displayNameWithArticle.LWG=下幾內亞
+TINationTemplate.displayName.LWG=下幾內亞國家
+TINationTemplate.displayNameWithArticle.LWG=下幾內亞國家
 TINationTemplate.nationAdjective.LWG=下幾內亞
 TINationTemplate.displayNameWithArticlePrep.LWG=下幾內亞境內
 TINationTemplate.displayName.LKA=斯里蘭卡
@@ -342,10 +338,10 @@ TINationTemplate.displayName.MMR=緬甸
 TINationTemplate.displayNameWithArticle.MMR=緬甸
 TINationTemplate.nationAdjective.MMR=緬甸
 TINationTemplate.displayNameWithArticlePrep.MMR=緬甸境內
-TINationTemplate.displayName.MNC=滿洲
-TINationTemplate.displayNameWithArticle.MNC=滿洲
-TINationTemplate.nationAdjective.MNC=滿洲
-TINationTemplate.displayNameWithArticlePrep.MNC=滿洲境內
+TINationTemplate.displayName.MNC=廣東
+TINationTemplate.displayNameWithArticle.MNC=廣東
+TINationTemplate.nationAdjective.MNC=廣東
+TINationTemplate.displayNameWithArticlePrep.MNC=廣東境內
 TINationTemplate.displayName.MNG=蒙古
 TINationTemplate.displayNameWithArticle.MNG=蒙古
 TINationTemplate.nationAdjective.MNG=蒙古
@@ -366,10 +362,10 @@ TINationTemplate.displayName.NER=尼日
 TINationTemplate.displayNameWithArticle.NER=尼日
 TINationTemplate.nationAdjective.NER=尼日
 TINationTemplate.displayNameWithArticlePrep.NER=尼日境內
-TINationTemplate.displayName.NET=比荷盧聯盟
-TINationTemplate.displayNameWithArticle.NET=比荷盧聯盟
-TINationTemplate.nationAdjective.NET=荷蘭文
-TINationTemplate.displayNameWithArticlePrep.NET=比荷盧聯盟境內
+TINationTemplate.displayName.NET=荷蘭
+TINationTemplate.displayNameWithArticle.NET=荷蘭境內
+TINationTemplate.nationAdjective.NET=荷蘭
+TINationTemplate.displayNameWithArticlePrep.NET=荷蘭境內
 TINationTemplate.displayName.NGA=奈及利亞
 TINationTemplate.displayNameWithArticle.NGA=奈及利亞
 TINationTemplate.nationAdjective.NGA=奈及利亞
@@ -398,10 +394,10 @@ TINationTemplate.displayName.PAL=巴勒斯坦
 TINationTemplate.displayNameWithArticle.PAL=巴勒斯坦
 TINationTemplate.nationAdjective.PAL=巴勒斯坦
 TINationTemplate.displayNameWithArticlePrep.PAL=巴勒斯坦境內
-TINationTemplate.displayName.PCS=太平洋國家
-TINationTemplate.displayNameWithArticle.PCS=太平洋國家
-TINationTemplate.nationAdjective.PCS=太平洋
-TINationTemplate.displayNameWithArticlePrep.PCS=太平洋國家境內
+TINationTemplate.displayName.PCS=美拉尼西亞國家
+TINationTemplate.displayNameWithArticle.PCS=美拉尼西亞國家
+TINationTemplate.nationAdjective.PCS=美拉尼西亞
+TINationTemplate.displayNameWithArticlePrep.PCS=美拉尼西亞國家境內
 TINationTemplate.displayName.PER=秘魯
 TINationTemplate.displayNameWithArticle.PER=秘魯
 TINationTemplate.nationAdjective.PER=秘魯
@@ -412,15 +408,15 @@ TINationTemplate.nationAdjective.PHL=菲律賓
 TINationTemplate.displayNameWithArticlePrep.PHL=菲律賓境內
 TINationTemplate.displayName.POL=波蘭
 TINationTemplate.displayNameWithArticle.POL=波蘭
-TINationTemplate.nationAdjective.POL=波蘭文
+TINationTemplate.nationAdjective.POL=波蘭
 TINationTemplate.displayNameWithArticlePrep.POL=波蘭境內
 TINationTemplate.displayName.PRK=北韓
 TINationTemplate.displayNameWithArticle.PRK=北韓
-TINationTemplate.nationAdjective.PRK=韓文
+TINationTemplate.nationAdjective.PRK=韓國
 TINationTemplate.displayNameWithArticlePrep.PRK=北韓境內
 TINationTemplate.displayName.PRT=葡萄牙
 TINationTemplate.displayNameWithArticle.PRT=葡萄牙
-TINationTemplate.nationAdjective.PRT=葡萄牙文
+TINationTemplate.nationAdjective.PRT=葡萄牙
 TINationTemplate.displayNameWithArticlePrep.PRT=葡萄牙境內
 TINationTemplate.displayName.PRY=巴拉圭
 TINationTemplate.displayNameWithArticle.PRY=巴拉圭
@@ -465,7 +461,7 @@ TINationTemplate.displayNameWithArticlePrep.SIC=西西里島境內
 TINationTemplate.displayName.SCH=四川
 TINationTemplate.displayNameWithArticle.SCH=四川
 TINationTemplate.nationAdjective.SCH=四川
-TINationTemplate.displayNameWithArticlePrep.SCH=四川省境內
+TINationTemplate.displayNameWithArticlePrep.SCH=四川境內
 TINationTemplate.displayName.SCA=瑞典
 TINationTemplate.displayNameWithArticle.SCA=瑞典
 TINationTemplate.nationAdjective.SCA=瑞典
@@ -478,10 +474,10 @@ TINationTemplate.displayName.SDN=蘇丹
 TINationTemplate.displayNameWithArticle.SDN=蘇丹
 TINationTemplate.nationAdjective.SDN=蘇丹
 TINationTemplate.displayNameWithArticlePrep.SDN=蘇丹境內
-TINationTemplate.displayName.SEN=沙烏地阿拉伯
-TINationTemplate.displayNameWithArticle.SEN=沙烏地阿拉伯
-TINationTemplate.nationAdjective.SEN=沙烏地
-TINationTemplate.displayNameWithArticlePrep.SEN=沙烏地阿拉伯境內
+TINationTemplate.displayName.SAU=沙烏地阿拉伯
+TINationTemplate.displayNameWithArticle.SAU=沙烏地阿拉伯
+TINationTemplate.nationAdjective.SAU=沙烏地
+TINationTemplate.displayNameWithArticlePrep.SAU=沙烏地阿拉伯境內
 TINationTemplate.displayName.SGP=新加坡
 TINationTemplate.displayNameWithArticle.SGP=新加坡
 TINationTemplate.nationAdjective.SGP=新加坡
@@ -490,10 +486,10 @@ TINationTemplate.displayName.SIB=西伯利亞
 TINationTemplate.displayNameWithArticle.SIB=西伯利亞
 TINationTemplate.nationAdjective.SIB=西伯利亞
 TINationTemplate.displayNameWithArticlePrep.SIB=西伯利亞境內
-TINationTemplate.displayName.SIN=信德省
-TINationTemplate.displayNameWithArticle.SIN=信德省
+TINationTemplate.displayName.SIN=信德
+TINationTemplate.displayNameWithArticle.SIN=信德
 TINationTemplate.nationAdjective.SIN=信德
-TINationTemplate.displayNameWithArticlePrep.SIN=信德省境內
+TINationTemplate.displayNameWithArticlePrep.SIN=信德境內
 TINationTemplate.displayName.SOM=索馬利亞
 TINationTemplate.displayNameWithArticle.SOM=索馬利亞
 TINationTemplate.nationAdjective.SOM=索馬利亞
@@ -556,7 +552,7 @@ TINationTemplate.nationAdjective.TUN=突尼西亞
 TINationTemplate.displayNameWithArticlePrep.TUN=突尼西亞境內
 TINationTemplate.displayName.TUR=土耳其
 TINationTemplate.displayNameWithArticle.TUR=土耳其
-TINationTemplate.nationAdjective.TUR=土耳其文
+TINationTemplate.nationAdjective.TUR=土耳其
 TINationTemplate.displayNameWithArticlePrep.TUR=土耳其境內
 TINationTemplate.displayName.TWN=台灣
 TINationTemplate.displayNameWithArticle.TWN=台灣
@@ -566,10 +562,10 @@ TINationTemplate.displayName.TZA=坦尚尼亞
 TINationTemplate.displayNameWithArticle.TZA=坦尚尼亞
 TINationTemplate.nationAdjective.TZA=坦尚尼亞
 TINationTemplate.displayNameWithArticlePrep.TZA=坦尚尼亞境內
-TINationTemplate.displayName.UGA=五大湖州
-TINationTemplate.displayNameWithArticle.UGA=五大湖州
+TINationTemplate.displayName.UGA=烏干達
+TINationTemplate.displayNameWithArticle.UGA=烏干達
 TINationTemplate.nationAdjective.UGA=烏干達
-TINationTemplate.displayNameWithArticlePrep.UGA=五大湖州境內
+TINationTemplate.displayNameWithArticlePrep.UGA=烏干達境內
 TINationTemplate.displayName.UPG=上幾內亞
 TINationTemplate.displayNameWithArticle.UPG=上幾內亞
 TINationTemplate.nationAdjective.UPG=上幾內亞
@@ -618,26 +614,26 @@ TINationTemplate.displayName.WGA=西德
 TINationTemplate.displayNameWithArticle.WGA=西德
 TINationTemplate.nationAdjective.WGA=西德
 TINationTemplate.displayNameWithArticlePrep.WGA=西德境內
-TINationTemplate.displayName.WUR=福建
-TINationTemplate.displayNameWithArticle.WUR=福建
-TINationTemplate.nationAdjective.WUR=福建
-TINationTemplate.displayNameWithArticlePrep.WUR=福建省境內
+TINationTemplate.displayName.WUR=華南
+TINationTemplate.displayNameWithArticle.WUR=華南
+TINationTemplate.nationAdjective.WUR=華南
+TINationTemplate.displayNameWithArticlePrep.WUR=華南境內
 TINationTemplate.displayName.YEM=葉門
 TINationTemplate.displayNameWithArticle.YEM=葉門
 TINationTemplate.nationAdjective.YEM=葉門
 TINationTemplate.displayNameWithArticlePrep.YEM=葉門境內
-TINationTemplate.displayName.YUN=雲南
-TINationTemplate.displayNameWithArticle.YUN=雲南
-TINationTemplate.nationAdjective.YUN=雲南
-TINationTemplate.displayNameWithArticlePrep.YUN=雲南省境內
+TINationTemplate.displayName.YUN=雲貴
+TINationTemplate.displayNameWithArticle.YUN=雲貴
+TINationTemplate.nationAdjective.YUN=雲貴
+TINationTemplate.displayNameWithArticlePrep.YUN=雲貴境內
 TINationTemplate.displayName.ZAF=南非
 TINationTemplate.displayNameWithArticle.ZAF=南非
 TINationTemplate.nationAdjective.ZAF=南非
 TINationTemplate.displayNameWithArticlePrep.ZAF=南非境內
-TINationTemplate.displayName.ZMB=尚比亞—馬拉威
-TINationTemplate.displayNameWithArticle.ZMB=尚比亞—馬拉威
+TINationTemplate.displayName.ZMB=尚比亞
+TINationTemplate.displayNameWithArticle.ZMB=尚比亞
 TINationTemplate.nationAdjective.ZMB=尚比亞
-TINationTemplate.displayNameWithArticlePrep.ZMB=尚比亞—馬拉威境內
+TINationTemplate.displayNameWithArticlePrep.ZMB=尚比亞境內
 TINationTemplate.displayName.ZWE=辛巴威
 TINationTemplate.displayNameWithArticle.ZWE=辛巴威
 TINationTemplate.nationAdjective.ZWE=辛巴威
@@ -715,7 +711,7 @@ TINationTemplate.unionDisplayNameWithArticlePrep.PER=秘魯邦聯境內
 
 TINationTemplate.unionDisplayName.PRK=朝鮮民主主義人民共和國
 TINationTemplate.unionDisplayNameWithArticle.PRK=朝鮮民主主義人民共和國
-TINationTemplate.unionAdjective.PRK=北韓
+TINationTemplate.unionAdjective.PRK=韓國
 TINationTemplate.unionDisplayNameWithArticlePrep.PRK=朝鮮民主主義人民共和國境內
 
 TINationTemplate.unionDisplayName.JPN=太平洋防禦聯盟
@@ -730,7 +726,7 @@ TINationTemplate.unionDisplayNameWithArticlePrep.KAZ=中亞聯盟
 
 TINationTemplate.unionDisplayName.KOR=大韓民國
 TINationTemplate.unionDisplayNameWithArticle.KOR=大韓民國
-TINationTemplate.unionAdjective.KOR=大韓民國
+TINationTemplate.unionAdjective.KOR=韓國
 TINationTemplate.unionDisplayNameWithArticlePrep.KOR=大韓民國境內
 
 TINationTemplate.unionDisplayName.TWN=中華民國
@@ -772,11 +768,6 @@ TINationTemplate.unionDisplayName.SCA=北歐聯盟
 TINationTemplate.unionDisplayNameWithArticle.SCA=北歐聯盟
 TINationTemplate.unionAdjective.SCA=北歐
 TINationTemplate.unionDisplayNameWithArticlePrep.SCA=北歐聯盟境內
-
-TINationTemplate.unionDisplayName.UGN=西非共同體
-TINationTemplate.unionDisplayNameWithArticle.UGN=西非共同體
-TINationTemplate.unionAdjective.UGN=西非
-TINationTemplate.unionDisplayNameWithArticlePrep.UGN=西非共同體境內
 
 TINationTemplate.unionDisplayName.USA=北美合眾國
 TINationTemplate.unionDisplayNameWithArticle.USA=北美合眾國
@@ -914,7 +905,7 @@ TINationTemplate.displayNameWithArticlePrep.ROM=羅馬尼亞境內
 
 TINationTemplate.displayName.ROS=頓河哥薩克
 TINationTemplate.displayNameWithArticle.ROS=頓河哥薩克
-TINationTemplate.nationAdjective.ROS=頓河哥薩克人
+TINationTemplate.nationAdjective.ROS=頓河哥薩克
 TINationTemplate.displayNameWithArticlePrep.ROS=頓河哥薩克境內
 
 TINationTemplate.displayName.SAH=撒拉威
@@ -927,25 +918,20 @@ TINationTemplate.displayNameWithArticle.SEG=塞內甘比亞
 TINationTemplate.nationAdjective.SEG=塞內甘比亞
 TINationTemplate.displayNameWithArticlePrep.SEG=塞內甘比亞境內
 
-TINationTemplate.unionDisplayName.SEG=西非共同體
-TINationTemplate.unionDisplayNameWithArticle.SEG=西非共同體
-TINationTemplate.unionAdjective.SEG=西非
-TINationTemplate.unionDisplayNameWithArticlePrep.SEG=西非共同體境內
-
 TINationTemplate.displayName.SLO=斯洛伐克
 TINationTemplate.displayNameWithArticle.SLO=斯洛伐克
 TINationTemplate.nationAdjective.SLO=斯洛伐克
 TINationTemplate.displayNameWithArticlePrep.SLO=斯洛伐克境內
 
-TINationTemplate.displayName.SBK=南巴爾幹半島國家
-TINationTemplate.displayNameWithArticle.SBK=南巴爾幹半島國家
-TINationTemplate.nationAdjective.SBK=南巴爾幹半島
-TINationTemplate.displayNameWithArticlePrep.SBK=南巴爾幹半島國家境內
+TINationTemplate.displayName.SBK=阿爾巴尼亞
+TINationTemplate.displayNameWithArticle.SBK=阿爾巴尼亞
+TINationTemplate.nationAdjective.SBK=阿爾巴尼亞
+TINationTemplate.displayNameWithArticlePrep.SBK=阿爾巴尼亞境內
 
-TINationTemplate.unionDisplayName.SBK=南斯拉夫
-TINationTemplate.unionDisplayNameWithArticle.SBK=南斯拉夫
-TINationTemplate.unionAdjective.SBK=南斯拉夫
-TINationTemplate.unionDisplayNameWithArticlePrep.SBK=南斯拉夫境內
+TINationTemplate.unionDisplayName.SER=南斯拉夫
+TINationTemplate.unionDisplayNameWithArticle.SER=南斯拉夫
+TINationTemplate.unionAdjective.SER=南斯拉夫
+TINationTemplate.unionDisplayNameWithArticlePrep.SER=南斯拉夫境內
 
 TINationTemplate.displayName.SUR=蘇利南
 TINationTemplate.displayNameWithArticle.SUR=蘇利南
@@ -972,12 +958,302 @@ TINationTemplate.displayNameWithArticle.PAT=巴塔哥尼亞
 TINationTemplate.nationAdjective.PAT=巴塔哥尼亞
 TINationTemplate.displayNameWithArticlePrep.PAT=巴塔哥尼亞境內
 
-TINationTemplate.displayName.CAY=卡宴
-TINationTemplate.displayNameWithArticle.CAY=卡宴
-TINationTemplate.nationAdjective.CAY=卡宴
-TINationTemplate.displayNameWithArticlePrep.CAY=卡宴境內
+TINationTemplate.displayName.PGN=法屬圭亞那
+TINationTemplate.displayNameWithArticle.PGN=法屬圭亞那
+TINationTemplate.nationAdjective.PGN=法屬圭亞那
+TINationTemplate.displayNameWithArticlePrep.PGN=法屬圭亞那境內
 
 TINationTemplate.displayName.PNG=巴布亞紐幾內亞
 TINationTemplate.displayNameWithArticle.PNG=巴布亞紐幾內亞
 TINationTemplate.nationAdjective.PNG=巴布亞
 TINationTemplate.displayNameWithArticlePrep.PNG=巴布亞紐幾內亞境內
+
+TINationTemplate.displayName.YUC=尤加敦
+TINationTemplate.displayNameWithArticle.YUC=尤加敦
+TINationTemplate.nationAdjective.YUC=尤加敦
+TINationTemplate.displayNameWithArticlePrep.YUC=尤加敦境內
+
+TINationTemplate.displayName.RIO=里約布拉沃
+TINationTemplate.displayNameWithArticle.RIO=里約布拉沃
+TINationTemplate.nationAdjective.RIO=里約布拉沃
+TINationTemplate.displayNameWithArticlePrep.RIO=里約布拉沃境內
+
+TINationTemplate.displayName.MCS=密克羅尼西亞國家
+TINationTemplate.displayNameWithArticle.MCS=密克羅尼西亞國家
+TINationTemplate.nationAdjective.MCS=密克羅尼西亞
+TINationTemplate.displayNameWithArticlePrep.MCS=密克羅尼西亞國家境內
+
+TINationTemplate.displayName.PLS=玻里尼西亞國家
+TINationTemplate.displayNameWithArticle.PLS=玻里尼西亞國家
+TINationTemplate.nationAdjective.PLS=玻里尼西亞
+TINationTemplate.displayNameWithArticlePrep.PLS=玻里尼西亞國家境內
+
+TINationTemplate.displayName.SER=塞爾維亞 - 科索沃
+TINationTemplate.displayNameWithArticle.SER=塞爾維亞 - 科索沃
+TINationTemplate.nationAdjective.SER=塞爾維亞
+TINationTemplate.displayNameWithArticlePrep.SER=塞爾維亞 - 科索沃境內
+
+TINationTemplate.displayName.ATL=大西洋聯盟
+TINationTemplate.displayNameWithArticle.ATL=大西洋聯盟
+TINationTemplate.nationAdjective.ATL=大西洋
+TINationTemplate.displayNameWithArticlePrep.ATL=大西洋聯盟境內
+
+TINationTemplate.displayName.BRT=不列塔尼
+TINationTemplate.displayNameWithArticle.BRT=不列塔尼
+TINationTemplate.nationAdjective.BRT=布雷頓
+TINationTemplate.displayNameWithArticlePrep.BRT=不列塔尼境內
+
+TINationTemplate.displayName.NUB=奴比亞
+TINationTemplate.displayNameWithArticle.NUB=奴比亞
+TINationTemplate.nationAdjective.NUB=奴比亞
+TINationTemplate.displayNameWithArticlePrep.NUB=奴比亞境內
+
+TINationTemplate.displayName.JEF=傑佛遜自由州
+TINationTemplate.displayNameWithArticle.JEF=傑佛遜自由州
+TINationTemplate.nationAdjective.JEF=傑佛遜
+TINationTemplate.displayNameWithArticlePrep.JEF=傑佛遜自由州境內
+
+TINationTemplate.displayName.SWI=瑞士
+TINationTemplate.displayNameWithArticle.SWI=瑞士
+TINationTemplate.nationAdjective.SWI=瑞士
+TINationTemplate.displayNameWithArticlePrep.SWI=瑞士境內
+
+TINationTemplate.displayName.KOM=科密共和國
+TINationTemplate.displayNameWithArticle.KOM=科密共和國
+TINationTemplate.nationAdjective.KOM=科密
+TINationTemplate.displayNameWithArticlePrep.KOM=科密共和國境內
+
+TINationTemplate.displayName.MIN=民答那峨島
+TINationTemplate.displayNameWithArticle.MIN=民答那峨島
+TINationTemplate.nationAdjective.MIN=民答那峨島
+TINationTemplate.displayNameWithArticlePrep.MIN=民答那峨島境內
+
+TINationTemplate.displayName.KHU=胡哲斯坦
+TINationTemplate.displayNameWithArticle.KHU=胡哲斯坦
+TINationTemplate.nationAdjective.KHU=胡哲斯坦
+TINationTemplate.displayNameWithArticlePrep.KHU=胡哲斯坦境內
+
+TINationTemplate.displayName.BAV=巴伐利亞
+TINationTemplate.displayNameWithArticle.BAV=巴伐利亞
+TINationTemplate.nationAdjective.BAV=巴伐利亞
+TINationTemplate.displayNameWithArticlePrep.BAV=巴伐利亞境內
+
+TINationTemplate.displayName.BEN=貝南 - 東鄉
+TINationTemplate.displayNameWithArticle.BEN=貝南 - 東鄉
+TINationTemplate.nationAdjective.BEN=貝南 - 東鄉
+TINationTemplate.displayNameWithArticlePrep.BEN=貝南 - 東鄉境內
+
+TINationTemplate.displayName.BGM=比利時 - 盧森堡
+TINationTemplate.displayNameWithArticle.BGM=比利時 - 盧森堡
+TINationTemplate.nationAdjective.BGM=比利時
+TINationTemplate.displayNameWithArticlePrep.BGM=比利時 - 盧森堡境內
+
+TINationTemplate.displayName.COR=剛果共和國
+TINationTemplate.displayNameWithArticle.COR=剛果共和國
+TINationTemplate.nationAdjective.COR=剛果
+TINationTemplate.displayNameWithArticlePrep.COR=剛果共和國境內
+
+TINationTemplate.displayName.CRY=加那利自由群島
+TINationTemplate.displayNameWithArticle.CRY=加那利自由群島
+TINationTemplate.nationAdjective.CRY=加那利
+TINationTemplate.displayNameWithArticlePrep.CRY=加那利自由群島境內
+
+TINationTemplate.displayName.FUJ=福建
+TINationTemplate.displayNameWithArticle.FUJ=福建
+TINationTemplate.nationAdjective.FUJ=福建
+TINationTemplate.displayNameWithArticlePrep.FUJ=福建境內
+
+TINationTemplate.displayName.GUJ=古加拉特
+TINationTemplate.displayNameWithArticle.GUJ=古加拉特
+TINationTemplate.nationAdjective.GUJ=古加拉特
+TINationTemplate.displayNameWithArticlePrep.GUJ=古加拉特境內
+
+TINationTemplate.displayName.GWA=瓜里奧
+TINationTemplate.displayNameWithArticle.GWA=瓜里奧
+TINationTemplate.nationAdjective.GWA=瓜里奧
+TINationTemplate.displayNameWithArticlePrep.GWA=瓜里奧境內
+
+TINationTemplate.displayName.HYD=海得拉巴德
+TINationTemplate.displayNameWithArticle.HYD=海得拉巴德
+TINationTemplate.nationAdjective.HYD=海得拉巴德
+TINationTemplate.displayNameWithArticlePrep.HYD=海得拉巴德境內
+
+TINationTemplate.displayName.JAI=齋浦爾
+TINationTemplate.displayNameWithArticle.JAI=齋浦爾
+TINationTemplate.nationAdjective.JAI=齋浦爾
+TINationTemplate.displayNameWithArticlePrep.JAI=齋浦爾境內
+
+TINationTemplate.displayName.MAH=馬哈拉什特拉
+TINationTemplate.displayNameWithArticle.MAH=馬哈拉什特拉
+TINationTemplate.nationAdjective.MAH=馬哈拉什特拉
+TINationTemplate.displayNameWithArticlePrep.MAH=馬哈拉什特拉境內
+
+TINationTemplate.displayName.MOL=摩爾多瓦
+TINationTemplate.displayNameWithArticle.MOL=摩爾多瓦
+TINationTemplate.nationAdjective.MOL=摩爾多瓦
+TINationTemplate.displayNameWithArticlePrep.MOL=摩爾多瓦境內
+
+TINationTemplate.displayName.NCF=北高加索邦聯
+TINationTemplate.displayNameWithArticle.NCF=北高加索邦聯
+TINationTemplate.nationAdjective.NCF=高加索
+TINationTemplate.displayNameWithArticlePrep.NCF=北高加索邦聯境內
+
+TINationTemplate.displayName.RNA=新非洲
+TINationTemplate.displayNameWithArticle.RNA=新非洲
+TINationTemplate.nationAdjective.RNA=新非洲
+TINationTemplate.displayNameWithArticlePrep.RNA=新非洲境內
+
+TINationTemplate.displayName.RYU=琉球共和國
+TINationTemplate.displayNameWithArticle.RYU=琉球共和國
+TINationTemplate.nationAdjective.RYU=琉球
+TINationTemplate.displayNameWithArticlePrep.RYU=琉球共和國境內
+
+TINationTemplate.displayName.SAO=聖保羅
+TINationTemplate.displayNameWithArticle.SAO=聖保羅
+TINationTemplate.nationAdjective.SAO=聖保羅
+TINationTemplate.displayNameWithArticlePrep.SAO=聖保羅境內
+
+TINationTemplate.displayName.SHG=陝甘
+TINationTemplate.displayNameWithArticle.SHG=陝甘
+TINationTemplate.nationAdjective.SHG=陝甘
+TINationTemplate.displayNameWithArticlePrep.SHG=陝甘境內
+
+TINationTemplate.displayName.SOL=索馬利蘭
+TINationTemplate.displayNameWithArticle.SOL=索馬利蘭
+TINationTemplate.nationAdjective.SOL=索馬利蘭
+TINationTemplate.displayNameWithArticlePrep.SOL=索馬利蘭境內
+
+TINationTemplate.displayName.YMS=南葉門
+TINationTemplate.displayNameWithArticle.YMS=南葉門
+TINationTemplate.nationAdjective.YMS=南葉門
+TINationTemplate.displayNameWithArticlePrep.YMS=南葉門境內
+
+TINationTemplate.displayName.WCA=加拿大西部
+TINationTemplate.displayNameWithArticle.WCA=加拿大西部
+TINationTemplate.nationAdjective.WCA=加拿大西部
+TINationTemplate.displayNameWithArticlePrep.WCA=加拿大西部境內
+
+TINationTemplate.displayName.HKO=香港
+TINationTemplate.displayNameWithArticle.HKO=香港
+TINationTemplate.nationAdjective.HKO=香港
+TINationTemplate.displayNameWithArticlePrep.HKO=香港境內
+
+TINationTemplate.displayName.MAL=馬拉威
+TINationTemplate.displayNameWithArticle.MAL=馬拉威
+TINationTemplate.nationAdjective.MAL=馬拉威
+TINationTemplate.displayNameWithArticlePrep.MAL=馬拉威境內
+
+TINationTemplate.displayName.CPV=維德角
+TINationTemplate.displayNameWithArticle.CPV=維德角
+TINationTemplate.nationAdjective.CPV=維德角
+TINationTemplate.displayNameWithArticlePrep.CPV=維德角境內
+
+TINationTemplate.displayName.SPE=南祕魯
+TINationTemplate.displayNameWithArticle.SPE=南祕魯
+TINationTemplate.nationAdjective.SPE=南秘魯
+TINationTemplate.displayNameWithArticlePrep.SPE=南祕魯境內
+
+TINationTemplate.displayName.RWB=盧安達 - 蒲隆地
+TINationTemplate.displayNameWithArticle.RWB=盧安達 - 蒲隆地
+TINationTemplate.nationAdjective.RWB=盧安達
+TINationTemplate.displayNameWithArticlePrep.RWB=盧安達 - 蒲隆地境內
+
+TINationTemplate.displayName.GHA=迦納
+TINationTemplate.displayNameWithArticle.GHA=迦納
+TINationTemplate.nationAdjective.GHA=迦納
+TINationTemplate.displayNameWithArticlePrep.GHA=迦納境內
+
+TINationTemplate.displayName.LEB=黎巴嫩
+TINationTemplate.displayNameWithArticle.LEB=黎巴嫩
+TINationTemplate.nationAdjective.LEB=黎巴嫩
+TINationTemplate.displayNameWithArticlePrep.LEB=黎巴嫩境內
+
+TINationTemplate.displayName.GIN=幾內亞 - 幾內亞 - 比紹
+TINationTemplate.displayNameWithArticle.GIN=幾內亞 - 幾內亞 - 比紹
+TINationTemplate.nationAdjective.GIN=幾內亞
+TINationTemplate.displayNameWithArticlePrep.GIN=幾內亞 - 幾內亞 - 比紹境內
+
+TINationTemplate.displayName.LBR=賴比瑞亞
+TINationTemplate.displayNameWithArticle.LBR=賴比瑞亞
+TINationTemplate.nationAdjective.LBR=賴比瑞亞
+TINationTemplate.displayNameWithArticlePrep.LBR=賴比瑞亞境內
+
+TINationTemplate.displayName.SLE=獅子山
+TINationTemplate.displayNameWithArticle.SLE=獅子山
+TINationTemplate.nationAdjective.SLE=獅子山
+TINationTemplate.displayNameWithArticlePrep.SLE=獅子山境內
+
+TINationTemplate.displayName.UAE=阿拉伯聯合大公國
+TINationTemplate.displayNameWithArticle.UAE=阿拉伯聯合大公國
+TINationTemplate.nationAdjective.UAE=阿拉伯聯合大公國
+TINationTemplate.displayNameWithArticlePrep.UAE=阿拉伯聯合大公國境內
+
+TINationTemplate.displayName.LTU=立陶宛
+TINationTemplate.displayNameWithArticle.LTU=立陶宛
+TINationTemplate.nationAdjective.LTU=立陶宛
+TINationTemplate.displayNameWithArticlePrep.LTU=立陶宛境內
+
+TINationTemplate.displayName.LVA=拉脫維亞
+TINationTemplate.displayNameWithArticle.LVA=拉脫維亞
+TINationTemplate.nationAdjective.LVA=拉脫維亞
+TINationTemplate.displayNameWithArticlePrep.LVA=拉脫維亞境內
+
+TINationTemplate.displayName.EST=愛沙尼亞
+TINationTemplate.displayNameWithArticle.EST=愛沙尼亞
+TINationTemplate.nationAdjective.EST=愛沙尼亞
+TINationTemplate.displayNameWithArticlePrep.EST=愛沙尼亞境內
+
+TINationTemplate.displayName.CRS=克羅埃西亞 - 斯洛維尼亞
+TINationTemplate.displayNameWithArticle.CRS=克羅埃西亞 - 斯洛維尼亞
+TINationTemplate.nationAdjective.CRS=克羅埃西亞
+TINationTemplate.displayNameWithArticlePrep.CRS=克羅埃西亞 - 斯洛維尼亞境內
+
+TINationTemplate.displayName.BSM=波士尼亞 - 赫塞哥維納 - 蒙特內哥羅
+TINationTemplate.displayNameWithArticle.BSM=波士尼亞 - 赫塞哥維納 - 蒙特內哥羅
+TINationTemplate.nationAdjective.BSM=波士尼亞
+TINationTemplate.displayNameWithArticlePrep.BSM=波士尼亞 - 赫塞哥維納 - 蒙特內哥羅境內
+
+TINationTemplate.displayName.CYE=基里奈卡
+TINationTemplate.displayNameWithArticle.CYE=基里奈卡
+TINationTemplate.nationAdjective.CYE=基里奈卡
+TINationTemplate.displayNameWithArticlePrep.CYE=基里奈卡境內
+
+TINationTemplate.displayName.DJI=吉布地
+TINationTemplate.displayNameWithArticle.DJI=吉布地
+TINationTemplate.nationAdjective.DJI=吉布地
+TINationTemplate.displayNameWithArticlePrep.DJI=吉布地境內
+
+TINationTemplate.displayName.DAR=達夫
+TINationTemplate.displayNameWithArticle.DAR=達夫
+TINationTemplate.nationAdjective.DAR=達夫
+TINationTemplate.displayNameWithArticlePrep.DAR=達夫境內
+
+TINationTemplate.displayName.DOM=多明尼加共和國
+TINationTemplate.displayNameWithArticle.DOM=多明尼加共和國
+TINationTemplate.nationAdjective.DOM=多明尼加共和國
+TINationTemplate.displayNameWithArticlePrep.DOM=多明尼加共和國境內
+
+TINationTemplate.displayName.HTI=海地
+TINationTemplate.displayNameWithArticle.HTI=海地
+TINationTemplate.nationAdjective.HTI=海地
+TINationTemplate.displayNameWithArticlePrep.HTI=海地境內
+
+TINationTemplate.displayName.MKD=北馬其頓
+TINationTemplate.displayNameWithArticle.MKD=北馬其頓
+TINationTemplate.nationAdjective.MKD=北馬其頓
+TINationTemplate.displayNameWithArticlePrep.MKD=北馬其頓境內
+
+TINationTemplate.displayName.AZA=阿札瓦德
+TINationTemplate.displayNameWithArticle.AZA=阿札瓦德
+TINationTemplate.nationAdjective.AZA=阿札瓦德
+TINationTemplate.displayNameWithArticlePrep.AZA=阿札瓦德境內
+
+TINationTemplate.displayName.PAD=帕達尼亞
+TINationTemplate.displayNameWithArticle.PAD=帕達尼亞
+TINationTemplate.nationAdjective.PAD=帕達尼亞
+TINationTemplate.displayNameWithArticlePrep.PAD=帕達尼亞境內
+
+TINationTemplate.displayName.KAC=克欽 - 阿拉干
+TINationTemplate.displayNameWithArticle.KAC=克欽 - 阿拉干
+TINationTemplate.nationAdjective.KAC=克欽
+TINationTemplate.displayNameWithArticlePrep.KAC=克欽 - 阿拉干境內

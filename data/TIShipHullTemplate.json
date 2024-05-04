@@ -2423,6 +2423,7 @@
          "y": 3
       },
       {
+         "moduleSlotType": "TailArmor",
          "x": 1,
          "y": 7
       },
@@ -2499,12 +2500,12 @@
       {
          "moduleSlotType": "Utility",
          "x": 4,
-         "y": 2
+         "y": 1
       },
       {
          "moduleSlotType": "Utility",
          "x": 4,
-         "y": 4
+         "y": 5
       },
       {
          "moduleSlotType": "Propellant",

@@ -1,5 +1,7 @@
 TIGunTemplate.displayName.30mmAutocannon=30mm機関砲
 TIGunTemplate.description.30mmAutocannon=防御用として有効な連射機関砲。
+TIGunTemplate.displayName.40mmAutocannon=40mm機関砲
+TIGunTemplate.description.40mmAutocannon=宇宙戦に最適化され、攻撃と防御の両方の役割をこなすことができる先進的な機関砲。
 TIGunTemplate.displayName.6-inchCannon=6インチ砲
 TIGunTemplate.description.6-inchCannon=小型で近距離用の海兵隊砲塔を我々の宇宙船用に調整したもの。
 TIGunTemplate.displayName.8-inchCannon=8インチ砲

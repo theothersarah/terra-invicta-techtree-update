@@ -95,9 +95,15 @@
    "constructionTimeModifier": 1,
    "miningModifier": 0,
    "controlPointCapacity": 0,
-   "techBonuses": [],
+   "techBonuses": [
+      {
+         "category": "Energy",
+         "bonus": 0.05
+      }
+   ],
    "specialRules": [
-      "HarvestAntimatter"
+      "HarvestAntimatter",
+      "TechBonusDiminishingReturns"
    ],
    "specialRulesValue": 0.25,
    "supportMaterials_month": {
@@ -2042,9 +2048,15 @@
    "constructionTimeModifier": 1,
    "miningModifier": 0,
    "controlPointCapacity": 0,
-   "techBonuses": [],
+   "techBonuses": [
+      {
+         "category": "Energy",
+         "bonus": 0.2
+      }
+   ],
    "specialRules": [
-      "HarvestAntimatter"
+      "HarvestAntimatter",
+      "TechBonusDiminishingReturns"
    ],
    "specialRulesValue": 0.5,
    "supportMaterials_month": {
@@ -3769,7 +3781,6 @@
    "specialRules": [
       "Requires_Inhabited_Body",
       "NotInIrradiated",
-      "TechBonusDiminishingReturns",
       "AtrocityToKill"
    ],
    "supportMaterials_month": {
@@ -4078,9 +4089,15 @@
    "constructionTimeModifier": 1,
    "miningModifier": 0,
    "controlPointCapacity": 0,
-   "techBonuses": [],
+   "techBonuses": [
+      {
+         "category": "Energy",
+         "bonus": 0.5
+      }
+   ],
    "specialRules": [
-      "HarvestAntimatter"
+      "HarvestAntimatter",
+      "TechBonusDiminishingReturns"
    ],
    "specialRulesValue": 1,
    "supportMaterials_month": {

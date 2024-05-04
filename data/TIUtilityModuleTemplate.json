@@ -448,15 +448,17 @@
    "requiredProjectName": "Project_ComponentArmor",
    "minConsTier": 0,
    "powerRequirement_MW": 0,
+   "noCombatRepair": true,
    "weightedBuildMaterials": {
       "volatiles": 0.5,
       "metals": 0.5
    },
    "specialModuleRules": [
       "ComponentArmor",
-      "RadHardened"
+      "RadHardened",
+      "ImmuneToDamage"
    ],
-   "specialModuleValue": 0.5,
+   "specialModuleValue": 0.75,
    "iconResource": "shipbuildericons/ICO_ComponentArmor"
 },
  {
@@ -809,6 +811,26 @@
    ],
    "specialModuleValue": 0.5,
    "iconResource": "shipbuildericons/ICO_TargetingComputer3"
+},
+ {
+   "dataName": "ArmorStruts",
+   "friendlyName": "Armor Struts",
+   "crew": 0,
+   "mass_tons": 100,
+   "grouping": 11,
+   "requiredProjectName": "Project_ArmorStruts",
+   "minConsTier": 0,
+   "powerRequirement_MW": 0,
+   "noCombatRepair": true,
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.9
+   },
+   "specialModuleRules": [
+      "ArmorStruts"
+   ],
+   "specialModuleValue": 1,
+   "iconResource": "shipbuildericons/ICO_ArmorStruts"
 },
  {
    "dataName": "HydraInfiltrationPod",

@@ -257,6 +257,7 @@ function init() {
         {"filename": "TIMagneticGunTemplate." + lang, "type": "magneticgun"},
         {"filename": "TIMissileTemplate." + lang, "type": "missile"},
         {"filename": "TINationTemplate." + lang, "type": "nation"},
+        {"filename": "TIObjectiveTemplate." + lang, "type": "objective"},
         {"filename": "TIOrgTemplate." + lang, "type": "org"},
         {"filename": "TIParticleWeaponTemplate." + lang, "type": "particleweapon"},
         {"filename": "TIPlasmaWeaponTemplate." + lang, "type": "plasmaweapon"},
@@ -436,13 +437,15 @@ function parselocalization(text, localizationType) {
         if (!localizationStrings[localizationType][keyId]) {
             localizationStrings[localizationType][keyId] = {};
         }
+        
+        if (keySplit.length == 3) {
+            localizationStrings[localizationType][keyId][keySplit[1]] = value;
+        } else {
+            if (!localizationStrings[localizationType][keyId][keySplit[1]]) {
+                localizationStrings[localizationType][keyId][keySplit[1]] = {};
+            }
 
-        if (keySplit[1] == "displayName") {
-            localizationStrings[localizationType][keyId].displayName = value;
-        } else if (keySplit[1] == "summary") {
-            localizationStrings[localizationType][keyId].summary = value;
-        } else if (keySplit[1] == "description") {
-            localizationStrings[localizationType][keyId].description = value;
+            localizationStrings[localizationType][keyId][keySplit[1]][keySplit[3]] = value;
         }
     });
 }

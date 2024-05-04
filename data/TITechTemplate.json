@@ -173,7 +173,7 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 25000,
+   "researchCost": 10000,
    "prereqs": [
       "AdvancedHydrogenContainment",
       "AdvancedAtomicManipulation"
@@ -189,7 +189,7 @@
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 100000,
+   "researchCost": 125000,
    "prereqs": [
       "AntimatterContainment",
       "OurSpaceFuture",
@@ -216,7 +216,7 @@
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": false,
    "endGameTech": false,
-   "researchCost": 70000,
+   "researchCost": 60000,
    "prereqs": [
       "AntimatterContainment",
       "MilitarizationofSpace"
@@ -574,7 +574,8 @@
       "Superalloys"
    ],
    "effects": [
-      "Effect_GlobalFusionTechIncrease"
+      "Effect_GlobalFusionTechIncrease",
+      "Effect_Economy_BasePCGDPIncrease02"
    ]
 },
  {
@@ -684,7 +685,7 @@
    "dataName": "ElectrostaticPropulsion",
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
-   "AI_criticalTech": true,
+   "AI_criticalTech": false,
    "endGameTech": false,
    "researchCost": 3000,
    "prereqs": [
@@ -1156,7 +1157,8 @@
    ],
    "effects": [
       "Effect_ExploreJupiter",
-      "Effect_SpaceMineFreebies6"
+      "Effect_SpaceMineFreebies6",
+      "Effect_TechProbeSpeed"
    ]
 },
  {
@@ -1168,12 +1170,14 @@
    "endGameTech": false,
    "researchCost": 2500,
    "prereqs": [
-      "OutpostHabs"
+      "OutpostHabs",
+      "Skywatch"
    ],
    "effects": [
       "Effect_ExploreMars",
       "Effect_ExploreEarthLagrangePoints",
-      "Effect_SpaceMineFreebies6"
+      "Effect_SpaceMineFreebies6",
+      "Effect_TechProbeSpeed"
    ]
 },
  {
@@ -1190,7 +1194,8 @@
    ],
    "effects": [
       "Effect_ExploreSaturn",
-      "Effect_SpaceMineFreebies6"
+      "Effect_SpaceMineFreebies6",
+      "Effect_TechProbeSpeed"
    ]
 },
  {
@@ -1212,12 +1217,13 @@
    "researchCost": 3500,
    "prereqs": [
       "MissiontoMars",
-      "Skywatch",
+      "SpaceMiningandRefining",
       "DeepSpacePropulsionConcepts"
    ],
    "effects": [
       "Effect_ExploreAsteroids",
-      "Effect_SpaceMineFreebies6"
+      "Effect_SpaceMineFreebies6",
+      "Effect_TechProbeSpeed"
    ]
 },
  {
@@ -1234,7 +1240,8 @@
    ],
    "effects": [
       "Effect_ExploreInnerPlanets",
-      "Effect_SpaceMineFreebies3"
+      "Effect_SpaceMineFreebies3",
+      "Effect_TechProbeSpeed"
    ]
 },
  {
@@ -1250,7 +1257,8 @@
    ],
    "effects": [
       "Effect_ExploreLuna",
-      "Effect_SpaceMineFreebies3"
+      "Effect_SpaceMineFreebies3",
+      "Effect_TechProbeSpeed"
    ]
 },
  {
@@ -1269,7 +1277,8 @@
    "effects": [
       "Effect_ExploreOuterPlanets",
       "Effect_ExploreKuiperBelt",
-      "Effect_SpaceMineFreebies6"
+      "Effect_SpaceMineFreebies6",
+      "Effect_TechProbeSpeed"
    ]
 },
  {
@@ -1380,7 +1389,7 @@
    "dataName": "NuclearFusioninSpace",
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
-   "AI_criticalTech": true,
+   "AI_criticalTech": false,
    "endGameTech": false,
    "researchCost": 50000,
    "prereqs": [
@@ -1576,7 +1585,7 @@
    "researchCost": 10000,
    "prereqs": [
       "AdvancedAtomicManipulation",
-      "PhotonicComputing"
+      "AdvancedNeuralNetworks"
    ]
 },
  {

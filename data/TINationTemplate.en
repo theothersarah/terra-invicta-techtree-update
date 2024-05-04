@@ -1071,7 +1071,7 @@ TINationTemplate.displayNameWithArticlePrep.GUJ=in Gujarat
 TINationTemplate.displayName.GWA=Gwalior
 TINationTemplate.displayNameWithArticle.GWA=Gwalior
 TINationTemplate.nationAdjective.GWA=Gwalior
-TINationTemplate.displayNameWithArticlePrep.GWA=in Gwailior
+TINationTemplate.displayNameWithArticlePrep.GWA=in Gwalior
 
 TINationTemplate.displayName.HYD=Hyderabad
 TINationTemplate.displayNameWithArticle.HYD=Hyderabad
@@ -1103,10 +1103,10 @@ TINationTemplate.displayNameWithArticle.RNA=New Afrika
 TINationTemplate.nationAdjective.RNA=New Afrikan
 TINationTemplate.displayNameWithArticlePrep.RNA=in New Afrika
 
-TINationTemplate.displayName.RYU=Republic of the Ryukus
-TINationTemplate.displayNameWithArticle.RYU=the Republic of the Ryukus
-TINationTemplate.nationAdjective.RYU=Ryukuan
-TINationTemplate.displayNameWithArticlePrep.RYU=in the Republic of the Ryukus
+TINationTemplate.displayName.RYU=Republic of the Ryukyus
+TINationTemplate.displayNameWithArticle.RYU=the Republic of the Ryukyus
+TINationTemplate.nationAdjective.RYU=Ryukyuan
+TINationTemplate.displayNameWithArticlePrep.RYU=in the Republic of the Ryukyus
 
 TINationTemplate.displayName.SAO=São Paulo
 TINationTemplate.displayNameWithArticle.SAO=São Paulo
@@ -1148,10 +1148,10 @@ TINationTemplate.displayNameWithArticle.CPV=Cabo Verde
 TINationTemplate.nationAdjective.CPV=Cabo Verdean
 TINationTemplate.displayNameWithArticlePrep.CPV=in Cabo Verde
 
-TINationTemplate.displayName.SPE=South Peru
-TINationTemplate.displayNameWithArticle.SPE=South Peru
-TINationTemplate.nationAdjective.SPE=South Peruvian
-TINationTemplate.displayNameWithArticlePrep.SPE=in South Peru
+TINationTemplate.displayName.SPE=Qullana Suyu Marka
+TINationTemplate.displayNameWithArticle.SPE=Qullana Suyu Marka
+TINationTemplate.nationAdjective.SPE=Qullanan
+TINationTemplate.displayNameWithArticlePrep.SPE=in Qullana Suyu Marka
 
 TINationTemplate.displayName.RWB=Rwanda-Burundi
 TINationTemplate.displayNameWithArticle.RWB=Rwanda-Burundi
@@ -1234,7 +1234,7 @@ TINationTemplate.nationAdjective.DOM=Dominican Republic
 TINationTemplate.displayNameWithArticlePrep.DOM=in the Dominican Republic
 
 TINationTemplate.displayName.HTI=Haiti
-TINationTemplate.displayNameWithArticle.HTI=Hati
+TINationTemplate.displayNameWithArticle.HTI=Haiti
 TINationTemplate.nationAdjective.HTI=Haitian
 TINationTemplate.displayNameWithArticlePrep.HTI=in Haiti
 

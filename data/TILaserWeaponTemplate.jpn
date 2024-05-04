@@ -160,6 +160,20 @@ TILaserWeaponTemplate.displayName.Alien768cmVioletLaserCannon=768cmエイリア�
 TILaserWeaponTemplate.description.Alien768cmVioletLaserCannon=大型エイリアン指向性エネルギー兵器。
 TILaserWeaponTemplate.displayName.Alien1024cmVioletLaserCannon=1024cmエイリアン・バイオレット・レーザー砲
 TILaserWeaponTemplate.description.Alien1024cmVioletLaserCannon=巨大エイリアン指向性エネルギー兵器。
+TILaserWeaponTemplate.displayName.Alien384cmXaserBattery=384cmエイリアン・X線レーザー砲台
+TILaserWeaponTemplate.description.Alien384cmXaserBattery=高度なエイリアンレーザー兵器。
+TILaserWeaponTemplate.displayName.Alien256cmXaserCannon=256cmエイリアン・X線レーザー砲台
+TILaserWeaponTemplate.description.Alien256cmXaserCannon=高度なエイリアン小型レーザー砲。
+TILaserWeaponTemplate.displayName.Alien512cmXaserCannon=512cmエイリアン・X線レーザー砲台
+TILaserWeaponTemplate.description.Alien512cmXaserCannon=高度なエイリアンレーザー砲。
+TILaserWeaponTemplate.displayName.Alien768cmXaserCannon=768cmエイリアン・X線レーザー砲台
+TILaserWeaponTemplate.description.Alien768cmXaserCannon=高度なエイリアン大型レーザー砲。
+TILaserWeaponTemplate.displayName.Alien1024cmXaserCannon=1024cmエイリアン・X線レーザー砲台
+TILaserWeaponTemplate.description.Alien1024cmXaserCannon=高度なエイリアン巨大レーザー砲。
+TILaserWeaponTemplate.displayName.Alien768cmGraserCannon=768cmエイリアン・ガンマ線レーザー砲台
+TILaserWeaponTemplate.description.Alien768cmGraserCannon=エキゾチックなエイリアンの大型レーザー砲。
+TILaserWeaponTemplate.displayName.Alien1024cmGraserCannon=1024cmエイリアン・ガンマ線レーザー砲台
+TILaserWeaponTemplate.description.Alien1024cmGraserCannon=エキゾチックなエイリアンの巨大レーザー砲。
 TILaserWeaponTemplate.displayName.RegionDefenseIRLaser=地対軌道用赤外線レーザー・アレイ
 TILaserWeaponTemplate.displayName.RegionDefenseGreenLaser=地対軌道用グリーン・レーザー・アレイ
 TILaserWeaponTemplate.displayName.RegionDefenseIRArcLaser=地対軌道用赤外線アークレーザー・アレイ
@@ -202,3 +216,5 @@ TIBeamWeaponTemplate.Power=基本射撃パワー：<rcol>{0}MJ（{1}ダメージ
 TIBeamWeaponTemplate.PowerOnly=基本射撃パワー：<rcol>{0}MJ</rcol>
 TILaserWeaponTemplate.ArmorPiercingAtRange={0}kmでの装甲の有効性：<rcol>{1}</rcol>
 TILaserWeaponTemplate.Wavelength=波長：<rcol>{0}nm</rcol>
+
+

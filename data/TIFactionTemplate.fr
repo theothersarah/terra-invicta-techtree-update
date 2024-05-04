@@ -248,9 +248,12 @@ TIFactionTemplate.Diplomacy.Submit.Appease.War=Nous voyons au travers de votre s
 TIFactionTemplate.Diplomacy.Submit.Appease.Conflict=Vous les craignez, alors que vous devriez les vénérer. Ouvrez vos cœurs, ou subissez notre courroux.
 TIFactionTemplate.Diplomacy.Submit.Appease.Tolerance=Bien que vous rejetiez leur amour, vous acceptez leur supériorité. C'est assez, pour l'instant.
 TIFactionTemplate.Diplomacy.Alien.Submit.Tolerance=Salutations, fidèle serviteur (<color=#9964FF>À genoux, animal domestique</color>). Nous vous aimons (<color=#9964FF>vous n'êtes rien</color>).
-TIFactionTemplate.Diplomacy.Alien.Appease.War=Cédez (<color=#9964FF>mourrez</color>).
-TIFactionTemplate.Diplomacy.Alien.Appease.Conflict=Soumission = survie (<color=#9964FF>Résistance =anéantissement</color>.
+TIFactionTemplate.Diplomacy.Alien.Appease.War=Cédez (<color=#9964FF>mourez</color>).
+TIFactionTemplate.Diplomacy.Alien.Appease.Conflict=Soumission = survie (<color=#9964FF>Résistance =anéantissement</color>).
 TIFactionTemplate.Diplomacy.Alien.Appease.Tolerance=Vous êtes tolérés (<color=#9964FF>Vous ne représentez pas une menace</color>).
 TIFactionTemplate.Diplomacy.Alien.Cooperate.War=Obstacle inattendu (<color=#9964FF>Expurgez la menace</color>).
 TIFactionTemplate.Diplomacy.Alien.Cooperate.Conflict=Cessez. Cessez. Cessez. (<color=#9964FF>Menace. Menace. Menace.</color>).
 TIFactionTemplate.Diplomacy.Alien.Cooperate.Tolerance=Communication = acceptable (<color=#9964FF>Humain =persuasion possible ?</color>).
+
+
+

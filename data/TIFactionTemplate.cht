@@ -78,7 +78,7 @@ TIFactionTemplate.CampaignStart.SubmitCouncil=你好，{0}。特使團已任命�
 TIFactionTemplate.Introduction.Summary=我們遇見了{0}。
 TIFactionTemplate.Introduction.ResistCouncil=我們遇見了{0}。<br/><br/>此團體的領袖深信外星人對人類是威脅，將會阻止人類掌握自己的未來，他們正在暗中準備和外星人作戰。<br/><br/>{4}<br/>   - {1} {2} {3}
 TIFactionTemplate.Introduction.DestroyCouncil=我們遇見了{0}。<br/><br/>此陣營集結了這個世界上所有的排外主義者。他們的追隨者一律反對外星人的到來，甚至還威脅那些和外星人溝通的支持者。<br/><br/>{4}<br/>   - {1} {2} {3}
-TIFactionTemplate.Introduction.ExploitCouncil=我們遇見了{0}。<br/><br/>這個低調的集團鮮少透露他們的宗旨或手段。在某些地區，他們會散播不實的謠言，主張外星登陸是地球政府和企業捏造出來的謊言；但在其他地區，他們又捏造出一種不存在的外星疾病，並成立了公司販賣號稱可以抵抗該疾病的產品。<br/><br/>{4}<br/>   - {1} {2} {3}
+TIFactionTemplate.Introduction.ExploitCouncil=我們遇見了{0}。<br/><br/>這個低調的集團鮮少透露他們的宗旨或手段。在某些地區，他們會散播不實的謠言，主張外星登陸是地球政府和企業捏造出來的謊言；但在其他地區，他們又捏造出一種不存在的外星疾病，並成立公司來販賣號稱可以抵抗該疾病的產品。<br/><br/>{4}<br/>   - {1} {2} {3}
 TIFactionTemplate.Introduction.SubmitCouncil=我們遇到了{0}。<br/><br/>這個團體認定外星人擁有神聖的起源，並自稱為外星人的預知者……兼保衛者。<br/><br/>{4}<br/>   - {1} {2} {3}
 TIFactionTemplate.Introduction.AppeaseCouncil=我們遇見了{0}。<br/><br/>這個組織的領袖由一群官員組成，他們相信外星人用這麼低調的方式到來代表他們會造成威脅，但也認為任何能夠星際旅行的物種都不是人類有辦法對抗的存在。<br/><br/>{4}<br/>   - {1} {2} {3}
 TIFactionTemplate.Introduction.CooperateCouncil=我們遇見了{0}。<br/><br/>這個陣營由地球的科學家所主導，他們認為能夠在星球間穿梭的物種一定已經非常先進，不會訴諸暴力來解決問題。他們主張人類必須想辦法搭起一座橋梁，確保外星人以平等的姿態對待我們。<br/><br/>{4}<br/>   - {1} {2} {3}
@@ -249,7 +249,7 @@ TIFactionTemplate.Diplomacy.Submit.Appease.Conflict=你現在害怕他們，但�
 TIFactionTemplate.Diplomacy.Submit.Appease.Tolerance=雖然你拒絕他們的愛，你確實接受了他們的優越地位。這樣就夠了——至少目前來說夠了。
 TIFactionTemplate.Diplomacy.Alien.Submit.Tolerance=你好，忠實的僕從 (<color=#9964FF>跪下，家畜</color>)。你深受喜愛 (<color=#9964FF>你一文不值</color>)。
 TIFactionTemplate.Diplomacy.Alien.Appease.War=屈服 (<color=#9964FF>去死</color>)。
-TIFactionTemplate.Diplomacy.Alien.Appease.Conflict=服從＝存活（<color=#9964FF>反抗＝滅亡</color>。
+TIFactionTemplate.Diplomacy.Alien.Appease.Conflict=服從＝存活（<color=#9964FF>反抗＝滅亡</color>)。
 TIFactionTemplate.Diplomacy.Alien.Appease.Tolerance=我們容忍你的存在 (<color=#9964FF>你不具威脅</color>)。
 TIFactionTemplate.Diplomacy.Alien.Cooperate.War=討厭的障礙 (<color=#9964FF>除掉威脅</color>)。
 TIFactionTemplate.Diplomacy.Alien.Cooperate.Conflict=停止，停止，停止。 (<color=#9964FF>威脅，威脅，威脅。</color>)

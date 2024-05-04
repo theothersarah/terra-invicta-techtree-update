@@ -267,6 +267,13 @@
    ]
 },
  {
+   "dataName": "Effect_TechProbeSpeed",
+   "instantEffect": "DummyInstantEffect",
+   "effectTarget": "SourceFaction",
+   "effectDuration": "instant",
+   "duration_months": -1
+},
+ {
    "dataName": "Effect_CanFoundTier1Station",
    "operation": "SetToFixedValue",
    "value": 1,
@@ -5363,11 +5370,11 @@
    "duration_months": -1
 },
  {
-   "dataName": "Effect_RegionGDPGainEgypt",
+   "dataName": "Effect_RegionGDPGainCairo",
    "instantEffect": "RegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Egypt",
+   "strValue": "Cairo",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1

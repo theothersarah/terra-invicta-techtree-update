@@ -251,7 +251,7 @@
    "requiredProjectName": "Project_MoltenSaltFissionReactorI",
    "generalUse": true,
    "efficiency": 0.92,
-   "crew": 9,
+   "crew": 8,
    "weightedBuildMaterials": {
       "water": 0.1,
       "volatiles": 0.2,
@@ -265,12 +265,12 @@
    "dataName": "MoltenSaltFissionReactorII",
    "friendlyName": "Molten Salt Fission Reactor II",
    "maxOutput_GW": 420,
-   "specificPower_tGW": 2,
+   "specificPower_tGW": 1.8,
    "powerPlantClass": "Molten_Salt_Core_Fission",
    "requiredProjectName": "Project_MoltenSaltFissionReactorII",
    "generalUse": true,
-   "efficiency": 0.92,
-   "crew": 9,
+   "efficiency": 0.93,
+   "crew": 8,
    "weightedBuildMaterials": {
       "water": 0.1,
       "volatiles": 0.2,
@@ -511,7 +511,7 @@
  {
    "dataName": "ElectrostaticConfinementFusionReactorI",
    "friendlyName": "Electrostatic Confinement Fusion Reactor I",
-   "maxOutput_GW": 52,
+   "maxOutput_GW": 46,
    "specificPower_tGW": 1,
    "powerPlantClass": "Electrostatic_Confinement_Fusion",
    "requiredProjectName": "Project_ElectrostaticConfinementFusionReactorI",
@@ -609,7 +609,7 @@
    "powerPlantClass": "Mirrored_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_MirrorCellFusionReactorIII",
    "generalUse": true,
-   "efficiency": 0.98,
+   "efficiency": 0.97,
    "crew": 8,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -622,12 +622,12 @@
  {
    "dataName": "FusionTokamakI",
    "friendlyName": "Fusion Tokamak I",
-   "maxOutput_GW": 143,
-   "specificPower_tGW": 28,
+   "maxOutput_GW": 128,
+   "specificPower_tGW": 12,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakI",
    "generalUse": true,
-   "efficiency": 0.85,
+   "efficiency": 0.92,
    "crew": 16,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -640,12 +640,12 @@
  {
    "dataName": "FusionTokamakII",
    "friendlyName": "Fusion Tokamak II",
-   "maxOutput_GW": 451,
-   "specificPower_tGW": 14,
+   "maxOutput_GW": 401,
+   "specificPower_tGW": 8,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakII",
    "generalUse": true,
-   "efficiency": 0.88,
+   "efficiency": 0.94,
    "crew": 12,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -658,12 +658,12 @@
  {
    "dataName": "FusionTokamakIII",
    "friendlyName": "Fusion Tokamak III",
-   "maxOutput_GW": 641,
-   "specificPower_tGW": 10,
+   "maxOutput_GW": 624,
+   "specificPower_tGW": 5,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakIII",
    "generalUse": true,
-   "efficiency": 0.92,
+   "efficiency": 0.96,
    "crew": 10,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -676,12 +676,12 @@
  {
    "dataName": "FusionTokamakIV",
    "friendlyName": "Fusion Tokamak IV",
-   "maxOutput_GW": 1290,
+   "maxOutput_GW": 1260,
    "specificPower_tGW": 3,
    "powerPlantClass": "Toroid_Magnetic_Confinement_Fusion",
    "requiredProjectName": "Project_FusionTokamakIV",
    "generalUse": true,
-   "efficiency": 0.935,
+   "efficiency": 0.975,
    "crew": 10,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -713,7 +713,7 @@
  {
    "dataName": "HybridConfinementFusionReactorI",
    "friendlyName": "Hybrid Confinement Fusion Reactor I",
-   "maxOutput_GW": 200,
+   "maxOutput_GW": 180,
    "specificPower_tGW": 4,
    "powerPlantClass": "Hybrid_Confinement_Fusion",
    "requiredProjectName": "Project_HybridConfinementFusionReactorI",
@@ -731,7 +731,7 @@
  {
    "dataName": "HybridConfinementFusionReactorII",
    "friendlyName": "Hybrid Confinement Fusion Reactor II",
-   "maxOutput_GW": 560,
+   "maxOutput_GW": 510,
    "specificPower_tGW": 2,
    "powerPlantClass": "Hybrid_Confinement_Fusion",
    "requiredProjectName": "Project_HybridConfinementFusionReactorII",
@@ -777,16 +777,16 @@
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.18,
-      "metals": 0.4,
-      "nobleMetals": 0.4
+      "metals": 0.1,
+      "nobleMetals": 0.7
    },
    "iconResource": "shipbuildericons/ICO_HybridConfinementFusionReactorIV"
 },
  {
    "dataName": "ZPinchFusionReactorI",
    "friendlyName": "Z-Pinch Fusion Reactor I",
-   "maxOutput_GW": 280,
-   "specificPower_tGW": 13,
+   "maxOutput_GW": 260,
+   "specificPower_tGW": 10,
    "powerPlantClass": "Z_Pinch_Fusion",
    "requiredProjectName": "Project_ZPinchFusionReactorI",
    "generalUse": false,
@@ -803,7 +803,7 @@
  {
    "dataName": "ZPinchFusionReactorII",
    "friendlyName": "Z-Pinch Fusion Reactor II",
-   "maxOutput_GW": 650,
+   "maxOutput_GW": 610,
    "specificPower_tGW": 5,
    "powerPlantClass": "Z_Pinch_Fusion",
    "requiredProjectName": "Project_ZPinchFusionReactorII",
@@ -821,12 +821,12 @@
  {
    "dataName": "ZPinchFusionReactorIII",
    "friendlyName": "Z-Pinch Fusion Reactor III",
-   "maxOutput_GW": 2540,
-   "specificPower_tGW": 2,
+   "maxOutput_GW": 2510,
+   "specificPower_tGW": 1.5,
    "powerPlantClass": "Z_Pinch_Fusion",
    "requiredProjectName": "Project_ZPinchFusionReactorIII",
    "generalUse": false,
-   "efficiency": 0.95,
+   "efficiency": 0.96,
    "crew": 12,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -840,7 +840,7 @@
    "dataName": "ZPinchFusionReactorIV",
    "friendlyName": "Z-Pinch Fusion Reactor IV",
    "maxOutput_GW": 3970,
-   "specificPower_tGW": 0.5,
+   "specificPower_tGW": 0.4,
    "powerPlantClass": "Z_Pinch_Fusion",
    "requiredProjectName": "Project_ZPinchFusionReactorIV",
    "generalUse": false,
@@ -857,7 +857,7 @@
  {
    "dataName": "FlowStabilizedZPinchFusionReactor",
    "friendlyName": "Flow Stabilized Z-Pinch Fusion Reactor",
-   "maxOutput_GW": 7800,
+   "maxOutput_GW": 7590,
    "specificPower_tGW": 0.0068,
    "powerPlantClass": "Z_Pinch_Fusion",
    "requiredProjectName": "Project_FlowStabilizedZPinchFusionReactor",
@@ -876,7 +876,7 @@
  {
    "dataName": "InertialConfinementFusionReactorI",
    "friendlyName": "Inertial Confinement Fusion Reactor I",
-   "maxOutput_GW": 390,
+   "maxOutput_GW": 370,
    "specificPower_tGW": 17.6,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorI",
@@ -899,7 +899,7 @@
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorII",
    "generalUse": true,
-   "efficiency": 0.87,
+   "efficiency": 0.89,
    "crew": 12,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -917,7 +917,7 @@
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorIII",
    "generalUse": true,
-   "efficiency": 0.89,
+   "efficiency": 0.92,
    "crew": 12,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -930,12 +930,12 @@
  {
    "dataName": "InertialConfinementFusionReactorIV",
    "friendlyName": "Inertial Confinement Fusion Reactor IV",
-   "maxOutput_GW": 5550,
-   "specificPower_tGW": 20,
+   "maxOutput_GW": 5500,
+   "specificPower_tGW": 5,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorIV",
    "generalUse": true,
-   "efficiency": 0.975,
+   "efficiency": 0.95,
    "crew": 12,
    "weightedBuildMaterials": {
       "water": 0.02,
@@ -948,18 +948,19 @@
  {
    "dataName": "InertialConfinementFusionReactorV",
    "friendlyName": "Inertial Confinement Fusion Reactor V",
-   "maxOutput_GW": 19290,
+   "maxOutput_GW": 19090,
    "specificPower_tGW": 1,
    "powerPlantClass": "Inertial_Confinement_Fusion",
    "requiredProjectName": "Project_InertialConfinementFusionReactorV",
    "generalUse": true,
-   "efficiency": 0.95,
+   "efficiency": 0.975,
    "crew": 10,
    "weightedBuildMaterials": {
       "water": 0.02,
       "volatiles": 0.15,
       "metals": 0.48,
-      "nobleMetals": 0.35
+      "nobleMetals": 0.35,
+      "exotics": 0.01
    },
    "iconResource": "shipbuildericons/ICO_InertialConfinementFusionReactorV"
 },

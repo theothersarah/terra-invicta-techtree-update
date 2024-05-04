@@ -457,21 +457,32 @@ class TechSidebar extends React.Component {
                 milestones = React.createElement(
                     "h4",
                     null,
-                    "Milestones Needed: ",
-                    node.requiredMilestone
+                    "Milestone Needed: ",
+                    getReadable("objective", node.requiredMilestone, "MilestoneFulfilled")
                 );
             }
         }
 
         let requiredObjectives;
         if (node.isProject) {
-            if (node.requiredObjectiveNames && node.requiredObjectiveNames.filter(objective => objective !== "").length > 0) {
-                let objString = node.requiredObjectiveNames.filter(objective => objective !== "").join(", ");
+            if (node.requiredObjectiveName && node.requiredObjectiveName !== "") {
+                let objString;
+                let objLocStrings = getReadable("objective", node.requiredObjectiveName, "displayName");
+                
+                if (typeof objLocStrings === "string") {
+                    objString = objLocStrings;
+                } else {
+                    let objStrings = [];
+                    Object.entries(objLocStrings).forEach(x => {
+                        objStrings.push(x[1] + " (" + getReadable("faction", x[0], "displayName") + ")");
+                    });
+                    objString = objStrings.join(", ");
+                }
 
                 requiredObjectives = React.createElement(
                     "h4",
                     null,
-                    "Objectives Required: ",
+                    "Objective Required: ",
                     objString
                 );
             }
