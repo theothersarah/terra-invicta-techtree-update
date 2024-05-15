@@ -40,7 +40,7 @@ class TechSidebar extends React.Component {
                 return "our faction";
                 
             case "{18}":
-                return Math.abs((effectVal - 1.0)).toLocaleString(locale, {style: "percent"});
+                return Math.abs((1.0/effectVal - 1.0)).toLocaleString(locale, {style: "percent"});
                 
             case "{19}":
                 return (-effectVal).toString();
