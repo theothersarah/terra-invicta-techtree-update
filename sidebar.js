@@ -519,18 +519,21 @@ class TechSidebar extends React.Component {
         let requiredObjectives, altRequiredObjectives;
         if (node.isProject) {
             if (node.requiredObjectiveName && node.requiredObjectiveName !== "") {
-                let objectiveNames = this.getObjectiveNames(node.requiredObjectiveName);
-                
-                if (node.altRequiredObjectiveName && node.altRequiredObjectiveName !== "") {
-                    objectiveNames = objectiveNames.concat(", ", this.getObjectiveNames(node.altRequiredObjectiveName));
-                }
-                
                 requiredObjectives = React.createElement(
                     "h4",
                     null,
                     "Objective Required: ",
-                    objectiveNames
+                    this.getObjectiveNames(node.requiredObjectiveName)
                 );
+                
+                if (node.altRequiredObjectiveName && node.altRequiredObjectiveName !== "") {
+                    altRequiredObjectives = React.createElement(
+                        "h4",
+                        null,
+                        "Objective Required (Alternate): ",
+                        this.getObjectiveNames(node.altRequiredObjectiveName)
+                    );
+                }
             }
         }
 
