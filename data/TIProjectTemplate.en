@@ -36,7 +36,7 @@ TIProjectTemplate.description.Project_HydraLanguage=While it will take some time
 
 TIProjectTemplate.displayName.Project_TheirTechnology=Alien Technology
 TIProjectTemplate.summary.Project_TheirTechnology=We examine recovered alien technology to reveal its strengths, weaknesses and potential applications.
-TIProjectTemplate.description.Project_TheirTechnology=Since the moment we recovered it, our research and engineering divisions have been constantly requesting samples of the alien technology. Today alone we have seen no less than 48 requests for everything from recovered databanks to simple bulkhead fasteners.<br/><br/>This is understandable, given that each item is a potential treasure trove of knowledge, both at a technological level - how does it operate, and what is its purpose? - and a chemical one - what was it created from, and where? The recovered technology has begun to yield its secrets, the theoretical applications of which very much depend on our own intentions. Unfortunately, with such a finite amount of these alien artifacts to hand, we can for now only scratch the surface of their potential.
+TIProjectTemplate.description.Project_TheirTechnology=Since the moment we recovered it, our research and engineering divisions have been constantly requesting samples of the alien technology. Today alone we have seen no fewer than 48 requests for everything from recovered databanks to simple bulkhead fasteners.<br/><br/>This is understandable, given that each item is a potential treasure trove of knowledge, both at a technological level - how does it operate, and what is its purpose? - and a chemical one - what was it created from, and where? The recovered technology has begun to yield its secrets, the theoretical applications of which very much depend on our own intentions. Unfortunately, with such a finite amount of these alien artifacts to hand, we can for now only scratch the surface of their potential.
 
 TIProjectTemplate.displayName.Project_Exotics=Exotic Materials
 TIProjectTemplate.summary.Project_Exotics=We further analyze samples of the recovered extrasolar material essential to the aliens' construction and war effort.
@@ -103,7 +103,7 @@ TIProjectTemplate.summary.Project_CooperateVictory=We seek a means of drawing th
 TIProjectTemplate.description.Project_CooperateVictory=We can no longer have our cake and eat it: that much is clear. We cannot be an organization that offers surrender with one hand, but slaughter with the other. Peace is the only realistic long-term outcome for humanity, and on that enough of us are now agreed. We will demand that those amongst us who hold more extreme views either compromise or leave. Once we are of one mind, no matter what it might cost us, we can enact our great plan: to prove decisively to the aliens that Earth is not theirs for the taking, but neither is it their enemy.
 
 TIProjectTemplate.displayName.Project_DestroyVictory=Purify the Earth
-TIProjectTemplate.summary.Project_DestroyVictory=We reach agreement on how best to drive the aliens away for good
+TIProjectTemplate.summary.Project_DestroyVictory=We reach agreement on how best to drive the aliens away for good.
 TIProjectTemplate.description.Project_DestroyVictory=We've been fighting back for some time now, doing all we can to protect the human race from an invasion that shows no signs of slowing down. But playing defense indefinitely is not a long-term solution, especially when other factions on Earth want to throw in the towel. It's time to play offense, before it's too late - and at last we've worked out exactly how we're going to do that.
 
 TIProjectTemplate.displayName.Project_EscapeVictory=Leave the Cradle
@@ -152,7 +152,7 @@ TIProjectTemplate.description.Project_TheOneTruePath=Though we perhaps cannot ho
 
 TIProjectTemplate.displayName.Project_AlienFlora=Alien Flora
 TIProjectTemplate.summary.Project_AlienFlora=Our biologists study the nonsapient life forms that were collected from several sites.
-TIProjectTemplate.description.Project_AlienFlora=There was a limited amount to be gleaned from our study of the vegetative lifeform we have dubbed 'xenoflora', but not a lack of trying. The issue is that we have thus far been unable to fully crack its genetic make-up, for elements thereof are so, for lack of a better word, alien as to be thoroughly inscrutable to us at the present time. Neither have we been able to divine any clues as to its origin, other than to say it is most certainly not of this Earth. While we have previously observed some correlation between xenoflora growth and alien crash sites, causation now seems highly probable.<br/><br/>Even its behavior supports this conclusion - it spreads faster than any terrestrial flora or even fungus, and with eerie, almost machine-like regularity. To suggest that the xenoflora has been in some way genetically altered - or even wholly designed - would not be an unreasonable hypothesis. If left unchecked, it could very likely colonize a region in record time, preventing the growth of all other flora. To what end we do not yet know. It would therefore be prudent to find a way to limit the organism's spread, whether through military or biological means. 
+TIProjectTemplate.description.Project_AlienFlora=There was a limited amount to be gleaned from our study of the vegetative lifeform we have dubbed 'xenoflora', but not for a lack of trying. The issue is that we have thus far been unable to fully crack its genetic make-up, for elements thereof are so, for lack of a better word, alien as to be thoroughly inscrutable to us at the present time. Neither have we been able to divine any clues as to its origin, other than to say it is most certainly not of this Earth. While we have previously observed some correlation between xenoflora growth and alien crash sites, causation now seems highly probable.<br/><br/>Even its behavior supports this conclusion - it spreads faster than any terrestrial flora or even fungus, and with eerie, almost machine-like regularity. To suggest that the xenoflora has been in some way genetically altered - or even wholly designed - would not be an unreasonable hypothesis. If left unchecked, it could very likely colonize a region in record time, preventing the growth of all other flora. To what end we do not yet know. It would therefore be prudent to find a way to limit the organism's spread, whether through military or biological means. 
 
 TIProjectTemplate.displayName.Project_TheirComputers=Alien Computers
 TIProjectTemplate.summary.Project_TheirComputers=We attempt to decipher the purpose and operation of the machines seemingly used to control the alien spacecraft.
@@ -194,6 +194,12 @@ TIProjectTemplate.displayName.Project_WakhanCorridorProject=Wakhan Corridor Proj
 TIProjectTemplate.summary.Project_WakhanCorridorProject=A highway between Afghanistan and Xinjiang.
 TIProjectTemplate.displayName.Project_DarienGapRoad=Darien Gap Road
 TIProjectTemplate.summary.Project_DarienGapRoad=We cut through the jungle to connect Central and South America at last.
+TIProjectTemplate.displayName.Project_DiphuPass=Diphu Pass Opening
+TIProjectTemplate.summary.Project_DiphuPass=A goat trail turns into a highway connecting Tibet and northern Myanmar.
+TIProjectTemplate.displayName.Project_PalkStraitBridge=Palk Strait Bridge
+TIProjectTemplate.summary.Project_PalkStraitBridge=Sri Lanka is connected to mainland India via a bridge and tunnel system.
+TIProjectTemplate.displayName.Project_NorthChannelCrossing=North Channel Crossing
+TIProjectTemplate.summary.Project_NorthChannelCrossing=A quick jaunt from Scotland to Ireland.
 TIProjectTemplate.displayName.Project_AtzlanNation=Aztlán Nation
 TIProjectTemplate.summary.Project_AtzlanNation=The American Southwest and northern Mexico form a national identity.
 TIProjectTemplate.displayName.Project_BreakupofIndonesia=Breakup of Indonesia
@@ -392,6 +398,8 @@ TIProjectTemplate.displayName.Project_LaserEngine=Laser Engine
 TIProjectTemplate.summary.Project_LaserEngine=A module to increase power for our ship laser weapons.
 TIProjectTemplate.displayName.Project_AdvancedLaserEngine=Advanced Laser Engine
 TIProjectTemplate.summary.Project_AdvancedLaserEngine=A ship module to significantly increase power output from our laser weapons.
+TIProjectTemplate.displayName.Project_Cyclotron=Cyclotron
+TIProjectTemplate.summary.Project_Cyclotron=A ship module to significantly increase power output from our particle weapons.
 TIProjectTemplate.displayName.Project_LiquidHydrogenContainment=Liquid Hydrogen Containment
 TIProjectTemplate.summary.Project_LiquidHydrogenContainment=<shipmodule>
 TIProjectTemplate.displayName.Project_SlushHydrogenTankage=Slush Hydrogen Tankage
@@ -475,6 +483,8 @@ TIProjectTemplate.description.Project_OutpostCore=Bases may be founded at hab si
 TIProjectTemplate.displayName.Project_OutpostMiningComplex=Outpost Mining Complex
 TIProjectTemplate.summary.Project_OutpostMiningComplex=<habmodule>
 TIProjectTemplate.description.Project_OutpostMiningComplex=Mines add space resources to our stockpile. Each base may only have one mine, and they are built in the slot to the north of the core module.
+TIProjectTemplate.displayName.Project_ParticleCollider=Particle Collider
+TIProjectTemplate.summary.Project_ParticleCollider=<habmodule>
 TIProjectTemplate.displayName.Project_PlatformCore=Platform Core
 TIProjectTemplate.summary.Project_PlatformCore=<habmodule>
 TIProjectTemplate.description.Project_PlatformCore=Stations may be founded in orbits. Platforms may have up to four additional small modules.

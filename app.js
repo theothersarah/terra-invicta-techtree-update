@@ -490,7 +490,7 @@ function parseNode(nodeType, dumpAllEdges) {
                 prereqCopy.push(findTechByName(prereq));
             });
         }
-
+        
         prereqCopy.sort((a, b) => {
             const catA = a.techCategory === tech.techCategory;
             const catB = b.techCategory === tech.techCategory;
@@ -503,7 +503,14 @@ function parseNode(nodeType, dumpAllEdges) {
 
             return b.researchCost - a.researchCost;
         });
-
+        
+        if (tech.altPrereq0) {
+            let prereq = tech.altPrereq0;
+                if (prereq !== "" && isValidNode(nodeType, prereq)) {
+                    prereqCopy.push(findTechByName(prereq));
+                }
+        }
+        
         if (dumpAllEdges) {
             prereqCopy.forEach((prereq, index) => {
                 edges.push({

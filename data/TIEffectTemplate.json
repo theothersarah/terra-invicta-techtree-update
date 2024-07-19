@@ -132,6 +132,21 @@
    ]
 },
  {
+   "dataName": "Effect_ExploreVenus",
+   "operation": "DecreaseToValue",
+   "value": 0.65,
+   "effectTarget": "AllHumanFactions",
+   "effectDuration": "permanent",
+   "stackable": false,
+   "duration_months": -1,
+   "initialFactionsStr": [
+      "AlienCouncil"
+   ],
+   "contexts": [
+      "InnerExplorationRange_AU"
+   ]
+},
+ {
    "dataName": "Effect_ExploreInnerPlanets",
    "operation": "DecreaseToValue",
    "value": 0.1,
@@ -582,7 +597,30 @@
    "instantEffect": "NationSetCanBuildSpaceDefenses",
    "effectTarget": "AllNations",
    "effectDuration": "instant",
-   "duration_months": -1
+   "duration_months": -1,
+   "initialFactionsStr": [
+      "AlienCouncil"
+   ]
+},
+ {
+   "dataName": "Effect_AllowBuildSTOFighters",
+   "instantEffect": "NationSetCanBuildSTOFighters",
+   "effectTarget": "AllNations",
+   "effectDuration": "instant",
+   "duration_months": -1,
+   "initialFactionsStr": [
+      "AlienCouncil"
+   ]
+},
+ {
+   "dataName": "Effect_AllowDecontaminateRegion",
+   "instantEffect": "NationSetCanDecontaminateRegion",
+   "effectTarget": "AllNations",
+   "effectDuration": "instant",
+   "duration_months": -1,
+   "initialFactionsStr": [
+      "AlienCouncil"
+   ]
 },
  {
    "dataName": "Effect_SpaceScan",
@@ -5301,170 +5339,210 @@
 },
  {
    "dataName": "Effect_RegionGDPGainSpain",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Spain",
+   "strValue": "map_Spain",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainRabat",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Rabat",
+   "strValue": "map_Morocco",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
-   "dataName": "Effect_RegionGDPGainYemen",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "dataName": "Effect_RegionGDPGainAden",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.2,
    "instantRnd": 0.1,
-   "strValue": "Yemen",
+   "strValue": "map_Aden",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
-   "dataName": "Effect_RegionGDPGainMekelle",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "dataName": "Effect_RegionGDPGainDjibouti",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.2,
    "instantRnd": 0.1,
-   "strValue": "Mekelle",
+   "strValue": "map_Djibouti",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainJava",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Java",
+   "strValue": "map_Java",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainSumatra",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Sumatra",
+   "strValue": "map_Sumatra",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainHijaz",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Hijaz",
+   "strValue": "map_Hijaz",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainCairo",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Cairo",
+   "strValue": "map_Egypt",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainAfghanistan",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Afghanistan",
+   "strValue": "map_Afghanistan",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainXinjiang",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Xinjiang",
+   "strValue": "map_Xinjiang",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainPanama",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Panama",
+   "strValue": "map_Panama",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainColombia",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Colombia",
+   "strValue": "map_Colombia",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainTibet",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Tibet",
+   "strValue": "map_Tibet",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
-   "dataName": "Effect_RegionGDPGainMyanmar",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "dataName": "Effect_RegionGDPGainUpperMyanmar",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Myanmar",
+   "strValue": "map_UpperMyanmar",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainAlaska",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "Alaska",
+   "strValue": "map_Alaska",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
-   "dataName": "Effect_RegionGDPGainRussianFarEast",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "dataName": "Effect_RegionGDPGainKamchatka",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "RussianFarEast",
+   "strValue": "map_Kamchatka",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
 },
  {
    "dataName": "Effect_RegionGDPGainMalayPeninsula",
-   "instantEffect": "RegionGDPPctChange_StrValue",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
    "value": 0.1,
    "instantRnd": 0.1,
-   "strValue": "MalayPeninsula",
+   "strValue": "map_MalayPeninsula",
+   "effectTarget": "InputState",
+   "effectDuration": "instant",
+   "duration_months": -1
+},
+ {
+   "dataName": "Effect_RegionGDPGainSriLanka",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
+   "value": 0.1,
+   "instantRnd": 0.1,
+   "strValue": "map_SriLanka",
+   "effectTarget": "InputState",
+   "effectDuration": "instant",
+   "duration_months": -1
+},
+ {
+   "dataName": "Effect_RegionGDPGainChennai",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
+   "value": 0.1,
+   "instantRnd": 0.1,
+   "strValue": "map_Chennai",
+   "effectTarget": "InputState",
+   "effectDuration": "instant",
+   "duration_months": -1
+},
+ {
+   "dataName": "Effect_RegionGDPGainScotland",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
+   "value": 0.1,
+   "instantRnd": 0.1,
+   "strValue": "map_Scotland",
+   "effectTarget": "InputState",
+   "effectDuration": "instant",
+   "duration_months": -1
+},
+ {
+   "dataName": "Effect_RegionGDPGainNorthernIreland",
+   "instantEffect": "MapRegionGDPPctChange_StrValue",
+   "value": 0.1,
+   "instantRnd": 0.1,
+   "strValue": "map_NorthernIreland",
    "effectTarget": "InputState",
    "effectDuration": "instant",
    "duration_months": -1
@@ -5840,7 +5918,7 @@
    "value": 1,
    "effectTarget": "SourceFaction",
    "effectDuration": "permanent",
-   "stackable": false,
+   "stackable": true,
    "duration_months": -1,
    "contexts": [
       "InfiltratedCount"

@@ -3,7 +3,7 @@
    "dataName": "ISRUModule",
    "friendlyName": "ISRU Module",
    "crew": 5,
-   "mass_tons": 40,
+   "mass_tons": 100,
    "grouping": 0,
    "requiredProjectName": "Project_ISRUModule",
    "minConsTier": 0,
@@ -47,7 +47,7 @@
    "dataName": "MuonSpiker",
    "friendlyName": "Muon Spiker",
    "crew": 3,
-   "mass_tons": 40,
+   "mass_tons": 30,
    "grouping": 3,
    "requiredProjectName": "Project_MuonSpiker",
    "minConsTier": 0,
@@ -71,7 +71,7 @@
    "dataName": "NeutroniumSpiker",
    "friendlyName": "Neutronium Spiker",
    "crew": 3,
-   "mass_tons": 40,
+   "mass_tons": 30,
    "grouping": 3,
    "requiredProjectName": "Project_NeutroniumSpiker",
    "minConsTier": 0,
@@ -95,7 +95,7 @@
    "dataName": "AntimatterSpiker",
    "friendlyName": "Antimatter Spiker",
    "crew": 3,
-   "mass_tons": 40,
+   "mass_tons": 30,
    "grouping": 3,
    "requiredProjectName": "Project_AntimatterSpiker",
    "minConsTier": 0,
@@ -104,9 +104,9 @@
       "water": 0.1,
       "volatiles": 0.2,
       "metals": 0.3,
-      "nobleMetals": 0.39995999999,
+      "nobleMetals": 0.399959999999,
       "fissiles": 0.00004,
-      "antimatter": 7.5e-12
+      "antimatter": 1e-12
    },
    "specialModuleRules": [
       "ThrustMultiplier",
@@ -738,7 +738,7 @@
    "friendlyName": "Flag Bridge",
    "crew": 18,
    "mass_tons": 90,
-   "grouping": -1,
+   "grouping": 14,
    "requiredProjectName": "Project_FlagBridge",
    "minConsTier": 2,
    "powerRequirement_MW": 1,
@@ -817,7 +817,7 @@
    "friendlyName": "Armor Struts",
    "crew": 0,
    "mass_tons": 100,
-   "grouping": 11,
+   "grouping": 12,
    "requiredProjectName": "Project_ArmorStruts",
    "minConsTier": 0,
    "powerRequirement_MW": 0,
@@ -831,6 +831,47 @@
    ],
    "specialModuleValue": 1,
    "iconResource": "shipbuildericons/ICO_ArmorStruts"
+},
+ {
+   "dataName": "Cyclotron",
+   "friendlyName": "Cyclotron",
+   "crew": 3,
+   "mass_tons": 50,
+   "grouping": -1,
+   "requiredProjectName": "Project_Cyclotron",
+   "minConsTier": 0,
+   "powerRequirement_MW": 5,
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.6,
+      "nobleMetals": 0.3
+   },
+   "specialModuleRules": [
+      "ParticleBeamPowerBonus",
+      "RadHardened"
+   ],
+   "specialModuleValue": 20,
+   "iconResource": "shipbuildericons/ICO_Cyclotron"
+},
+ {
+   "dataName": "VectorThrusters",
+   "friendlyName": "VectorThrusters",
+   "crew": 0,
+   "mass_tons": 20,
+   "grouping": 13,
+   "requiredProjectName": "Project_PatrolVessels",
+   "minConsTier": 0,
+   "powerRequirement_MW": 0,
+   "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.9
+   },
+   "specialModuleRules": [
+      "RotationalThrust",
+      "ImmuneToDamage"
+   ],
+   "specialModuleValue": 1500000,
+   "iconResource": "shipbuildericons/ICO_AdditionalVectorThrusters"
 },
  {
    "dataName": "HydraInfiltrationPod",

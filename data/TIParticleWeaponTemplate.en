@@ -88,4 +88,4 @@ TIParticleWeaponTemplate.XRayDamage=X-Ray Damage (radiation):<rcol>{0}</rcol>
 TIParticleWeaponTemplate.BaryonicDamage=Baryonic Damage (radiation), {0}x to internals:<rcol>{1}</rcol>
 
 TIParticleWeaponTemplate.Defense.MissilesOnly=<h>Defensive fire will only target missiles.</h>
-TIParticleWeaponTemplate.Defense.ReducedEffectiveness=<h>Defensive fire against non-missile targets will be of reduced effectiveness</h>
+TIParticleWeaponTemplate.Defense.ReducedEffectiveness=<h>Defensive fire against non-missile targets will have reduced effectiveness</h>

@@ -1164,7 +1164,7 @@
    "techCategory": "Materials",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "ExpandNation",
-   "researchCost": 2000,
+   "researchCost": 5000,
    "prereqs": [
       "ArrivalInternationalDevelopment"
    ],
@@ -1186,13 +1186,13 @@
    "techCategory": "Materials",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "ExpandNation",
-   "researchCost": 1000,
+   "researchCost": 2500,
    "prereqs": [
       "ArrivalInternationalDevelopment"
    ],
    "effects": [
-      "Effect_RegionGDPGainYemen",
-      "Effect_RegionGDPGainMekelle"
+      "Effect_RegionGDPGainAden",
+      "Effect_RegionGDPGainDjibouti"
    ],
    "oneTimeGlobally": true,
    "repeatable": false,
@@ -1208,7 +1208,7 @@
    "techCategory": "Materials",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "ExpandNation",
-   "researchCost": 2000,
+   "researchCost": 2500,
    "prereqs": [
       "ArrivalInternationalDevelopment"
    ],
@@ -1236,7 +1236,7 @@
    ],
    "effects": [
       "Effect_RegionGDPGainAlaska",
-      "Effect_RegionGDPGainRussianFarEast"
+      "Effect_RegionGDPGainKamchatka"
    ],
    "oneTimeGlobally": true,
    "repeatable": false,
@@ -1252,7 +1252,7 @@
    "techCategory": "Materials",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "ExpandNation",
-   "researchCost": 2000,
+   "researchCost": 2500,
    "prereqs": [
       "ArrivalInternationalDevelopment"
    ],
@@ -1274,7 +1274,7 @@
    "techCategory": "Materials",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "ExpandNation",
-   "researchCost": 2000,
+   "researchCost": 2500,
    "prereqs": [
       "ArrivalInternationalDevelopment"
    ],
@@ -1296,7 +1296,7 @@
    "techCategory": "Materials",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "ExpandNation",
-   "researchCost": 2000,
+   "researchCost": 2500,
    "prereqs": [
       "ArrivalInternationalDevelopment"
    ],
@@ -1325,6 +1325,72 @@
    "effects": [
       "Effect_RegionGDPGainPanama",
       "Effect_RegionGDPGainColombia"
+   ],
+   "oneTimeGlobally": true,
+   "repeatable": false,
+   "factionAvailableChance": 20,
+   "initialUnlockChance": 20,
+   "deltaUnlockChance": 0,
+   "maxUnlockChance": 20,
+   "resourcesGranted": []
+},
+ {
+   "friendlyName": "Diphu Pass",
+   "dataName": "Project_DiphuPass",
+   "techCategory": "Materials",
+   "AI_techRole": "EarthPolitics",
+   "AI_projectRole": "ExpandNation",
+   "researchCost": 2500,
+   "prereqs": [
+      "ArrivalInternationalDevelopment"
+   ],
+   "effects": [
+      "Effect_RegionGDPGainUpperMyanmar",
+      "Effect_RegionGDPGainTibet"
+   ],
+   "oneTimeGlobally": true,
+   "repeatable": false,
+   "factionAvailableChance": 20,
+   "initialUnlockChance": 20,
+   "deltaUnlockChance": 0,
+   "maxUnlockChance": 20,
+   "resourcesGranted": []
+},
+ {
+   "friendlyName": "Palk Strait Bridge",
+   "dataName": "Project_PalkStraitBridge",
+   "techCategory": "Materials",
+   "AI_techRole": "EarthPolitics",
+   "AI_projectRole": "ExpandNation",
+   "researchCost": 2500,
+   "prereqs": [
+      "ArrivalInternationalDevelopment"
+   ],
+   "effects": [
+      "Effect_RegionGDPGainChennai",
+      "Effect_RegionGDPGainSriLanka"
+   ],
+   "oneTimeGlobally": true,
+   "repeatable": false,
+   "factionAvailableChance": 20,
+   "initialUnlockChance": 20,
+   "deltaUnlockChance": 0,
+   "maxUnlockChance": 20,
+   "resourcesGranted": []
+},
+ {
+   "friendlyName": "North Channel Crossing",
+   "dataName": "Project_NorthChannelCrossing",
+   "techCategory": "Materials",
+   "AI_techRole": "EarthPolitics",
+   "AI_projectRole": "ExpandNation",
+   "researchCost": 7500,
+   "prereqs": [
+      "ArrivalInternationalDevelopment"
+   ],
+   "effects": [
+      "Effect_RegionGDPGainScotland",
+      "Effect_RegionGDPGainNorthernIreland"
    ],
    "oneTimeGlobally": true,
    "repeatable": false,
@@ -3201,6 +3267,25 @@
    "resourcesGranted": []
 },
  {
+   "friendlyName": "Cyclotron",
+   "dataName": "Project_Cyclotron",
+   "techCategory": "Energy",
+   "AI_techRole": "SpaceWar",
+   "AI_projectRole": "EnergyWeapons",
+   "researchCost": 5000,
+   "prereqs": [
+      "SuperconductingMagnets",
+      "Project_ElectronLance"
+   ],
+   "oneTimeGlobally": false,
+   "repeatable": false,
+   "factionAvailableChance": 50,
+   "initialUnlockChance": 0,
+   "deltaUnlockChance": 5,
+   "maxUnlockChance": 100,
+   "resourcesGranted": []
+},
+ {
    "friendlyName": "Liquid Hydrogen Containment",
    "dataName": "Project_LiquidHydrogenContainment",
    "techCategory": "Materials",
@@ -3584,7 +3669,7 @@
    "prereqs": [
       "Project_AutomatedPlatformCore",
       "Project_FissionPile",
-      "AdministrationAlgorithms"
+      "WhiteCollarAutomation"
    ],
    "altPrereq0": "Project_AutomatedOutpostCore",
    "oneTimeGlobally": false,
@@ -3826,7 +3911,7 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "HabInfrastructure",
-   "researchCost": 4000,
+   "researchCost": 5000,
    "prereqs": [
       "AneutronicFusion",
       "Project_FusionPile"
@@ -3884,7 +3969,6 @@
    "dataName": "Project_LifeScienceLab",
    "techCategory": "LifeScience",
    "AI_techRole": "SpaceDevelopment",
-   "AI_projectRole": "Research",
    "researchCost": 300,
    "prereqs": [
       "Project_PlatformCore"
@@ -3999,6 +4083,20 @@
    "initialUnlockChance": 0,
    "deltaUnlockChance": 25,
    "maxUnlockChance": 100,
+   "resourcesGranted": []
+},
+ {
+   "friendlyName": "Particle Collider",
+   "dataName": "Project_ParticleCollider",
+   "techCategory": "Energy",
+   "AI_techRole": "SpaceDevelopment",
+   "AI_projectRole": "Antimatter",
+   "researchCost": 15000,
+   "prereqs": [
+      "AntimatterContainment",
+      "ParticleCannon",
+      "Project_PlatformCore"
+   ],
    "resourcesGranted": []
 },
  {
@@ -4211,7 +4309,7 @@
    "prereqs": [
       "Project_OrbitalCore",
       "Project_AdministrationNode",
-      "AdministrationAlgorithms",
+      "WhiteCollarAutomation",
       "ArrivalInternationalRelations"
    ],
    "altPrereq0": "Project_SettlementCore",
@@ -4229,11 +4327,10 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Antimatter",
-   "researchCost": 1000,
+   "researchCost": 30000,
    "prereqs": [
       "Project_OrbitalCore",
-      "AdvancedAtomicManipulation",
-      "ParticleCannon",
+      "Project_ParticleCollider",
       "AntimatterMassProduction"
    ],
    "oneTimeGlobally": false,
@@ -4253,7 +4350,8 @@
    "researchCost": 1000,
    "prereqs": [
       "Project_OrbitalCore",
-      "Project_BroadcastOutlet"
+      "Project_BroadcastOutlet",
+      "NetworkedPropaganda"
    ],
    "altPrereq0": "Project_SettlementCore",
    "oneTimeGlobally": false,
@@ -4296,7 +4394,7 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_EnergyLab",
@@ -4400,7 +4498,7 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "HabInfrastructure",
-   "researchCost": 7500,
+   "researchCost": 10000,
    "prereqs": [
       "Project_HeavyFusionPile",
       "Project_FusionReactorArray"
@@ -4419,7 +4517,7 @@
    "techCategory": "InformationScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_InformationScienceLab",
@@ -4462,7 +4560,7 @@
    "techCategory": "LifeScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_LifeScienceLab",
@@ -4505,7 +4603,7 @@
    "techCategory": "Materials",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_MaterialsLab",
@@ -4526,7 +4624,7 @@
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
    "AI_projectRole": "Research",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_MilitaryScienceLab",
@@ -4586,7 +4684,7 @@
    "resourcesGranted": []
 },
  {
-   "friendlyName": "Orbital Hospital",
+   "friendlyName": "Orbital Medical Center",
    "dataName": "Project_OrbitalHospital",
    "techCategory": "LifeScience",
    "AI_techRole": "SpaceDevelopment",
@@ -4611,7 +4709,7 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "AI_projectRole": "Research",
-   "researchCost": 1500,
+   "researchCost": 2500,
    "prereqs": [
       "Project_OrbitalCore",
       "QuantumComputing"
@@ -4762,7 +4860,7 @@
    "techCategory": "SocialScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_SocialScienceLab",
@@ -4823,7 +4921,7 @@
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_SpaceScienceLab",
@@ -4844,7 +4942,7 @@
    "techCategory": "Xenology",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Objective",
-   "researchCost": 1000,
+   "researchCost": 1500,
    "prereqs": [
       "Project_OrbitalCore",
       "Project_XenologyLab",
@@ -4869,7 +4967,7 @@
    "prereqs": [
       "Project_RingCore",
       "Project_AdministrationTower",
-      "WhiteCollarAutomation",
+      "AdministrationAlgorithms",
       "ArrivalGovernance"
    ],
    "altPrereq0": "Project_ColonyCore",
@@ -4888,10 +4986,11 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "AI_projectRole": "HabInfrastructure",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "Project_RingCore",
-      "Project_Farm"
+      "Project_Farm",
+      "DesignerLifeforms"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -4996,10 +5095,12 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "AI_projectRole": "MissionControl",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_OperationsCenter"
+      "Project_OperationsCenter",
+      "QuantumEncryption",
+      "FleetLogistics"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5016,10 +5117,11 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_EnergyResearchCenter"
+      "Project_EnergyResearchCenter",
+      "AdministrationAlgorithms"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5058,10 +5160,11 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_SkunkWorks"
+      "Project_SkunkWorks",
+      "AdministrationAlgorithms"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5094,15 +5197,16 @@
    "resourcesGranted": []
 },
  {
-   "friendlyName": "Geriatrics Facility",
+   "friendlyName": "Space Hospital",
    "dataName": "Project_GeriatricsFacility",
    "techCategory": "LifeScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Money",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "Project_RingCore",
-      "Project_OrbitalHospital"
+      "Project_OrbitalHospital",
+      "TransformPhages"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -5140,7 +5244,7 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "AI_projectRole": "HabInfrastructure",
-   "researchCost": 15000,
+   "researchCost": 25000,
    "prereqs": [
       "Project_FusionReactorFarm",
       "TerawattFusionReactors"
@@ -5159,7 +5263,7 @@
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Propulsion",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "Project_RingCore",
       "DeuteriumHelium3Fusion",
@@ -5180,10 +5284,11 @@
    "techCategory": "InformationScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_InformationScienceResearchCenter"
+      "Project_InformationScienceResearchCenter",
+      "QuantumComputing"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5226,10 +5331,11 @@
    "techCategory": "LifeScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_LifeScienceResearchCenter"
+      "Project_LifeScienceResearchCenter",
+      "AppliedArtificialIntelligence"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5247,7 +5353,7 @@
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": true,
    "AI_projectRole": "HabDefense",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "Project_RingCore",
       "Project_MarineCompanyBarracks"
@@ -5267,10 +5373,11 @@
    "techCategory": "Materials",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_MaterialsResearchCenter"
+      "Project_MaterialsResearchCenter",
+      "AppliedArtificialIntelligence"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5287,10 +5394,11 @@
    "techCategory": "SocialScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Influence",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "Project_RingCore",
-      "Project_CommunicationsHub"
+      "Project_CommunicationsHub",
+      "ArrivalCulture"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5307,10 +5415,12 @@
    "techCategory": "MilitaryScience",
    "AI_techRole": "SpaceWar",
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_MilitaryScienceResearchCenter"
+      "Project_MilitaryScienceResearchCenter",
+      "AppliedArtificialIntelligence",
+      "ArrivalSecurity"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5327,10 +5437,11 @@
    "techCategory": "Materials",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "HabInfrastructure",
-   "researchCost": 5000,
+   "researchCost": 15000,
    "prereqs": [
       "Project_RingCore",
-      "Project_Nanofactory"
+      "Project_Nanofactory",
+      "MolecularAssemblers"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5346,12 +5457,13 @@
    "dataName": "Project_ResearchUniversity",
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
+   "AI_criticalTech": true,
    "AI_projectRole": "Research",
-   "researchCost": 5000,
+   "researchCost": 20000,
    "prereqs": [
       "Project_RingCore",
       "Project_ResearchCampus",
-      "SelfRepairingSoftware"
+      "IntegratedEarthSpaceEconomy"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5397,10 +5509,11 @@
    "techCategory": "SocialScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_SocialScienceResearchCenter"
+      "Project_SocialScienceResearchCenter",
+      "AdministrationAlgorithms"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5457,10 +5570,11 @@
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Research",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
-      "Project_SpaceScienceResearchCenter"
+      "Project_SpaceScienceResearchCenter",
+      "AppliedArtificialIntelligence"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5478,10 +5592,11 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "AI_projectRole": "HabInfrastructure",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "Project_RingCore",
-      "Project_Shipyard"
+      "Project_Shipyard",
+      "SpaceNavies"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5498,12 +5613,12 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Antimatter",
-   "researchCost": 10000,
+   "researchCost": 100000,
    "prereqs": [
       "Project_RingCore",
-      "Project_Atomsmasher"
+      "Project_Atomsmasher",
+      "Accelerando"
    ],
-   "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
    "repeatable": false,
    "factionAvailableChance": 100,
@@ -5519,7 +5634,7 @@
    "AI_techRole": "SpaceDevelopment",
    "AI_criticalTech": true,
    "AI_projectRole": "HabInfrastructure",
-   "researchCost": 3000,
+   "researchCost": 5000,
    "prereqs": [
       "Project_OrbitalCore",
       "OrbitalTorusHabs"
@@ -5541,11 +5656,12 @@
    "techCategory": "Xenology",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Objective",
-   "researchCost": 3000,
+   "researchCost": 10000,
    "prereqs": [
       "Project_RingCore",
       "Project_XenoscienceResearchCenter",
-      "Project_Exotics"
+      "Project_Exotics",
+      "AppliedArtificialIntelligence"
    ],
    "altPrereq0": "Project_ColonyCore",
    "oneTimeGlobally": false,
@@ -5642,7 +5758,7 @@
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Propulsion",
-   "researchCost": 200000,
+   "researchCost": 1000000,
    "prereqs": [
       "MagneticNozzles",
       "Project_InertialConfinementFusionReactorVII",
@@ -5662,7 +5778,7 @@
    "techCategory": "SpaceScience",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "Propulsion",
-   "researchCost": 120000,
+   "researchCost": 200000,
    "prereqs": [
       "MagneticNozzles",
       "Project_InertialConfinementFusionReactorVI"
@@ -7042,9 +7158,11 @@
    "AI_projectRole": "Propulsion",
    "researchCost": 2000,
    "prereqs": [
-      "Project_IonDrive",
-      "CarbonNanotubes"
+      "Project_SolidCoreFissionReactorI",
+      "CarbonNanotubes",
+      "Project_IonDrive"
    ],
+   "altPrereq0": "Project_FuelCellIII",
    "oneTimeGlobally": false,
    "repeatable": false,
    "factionAvailableChance": 50,
@@ -7079,8 +7197,10 @@
    "AI_projectRole": "Propulsion",
    "researchCost": 1000,
    "prereqs": [
+      "Project_SolidCoreFissionReactorI",
       "HighEnergyElectromagneticPropulsion"
    ],
+   "altPrereq0": "Project_MoltenCoreFissionReactorI",
    "oneTimeGlobally": false,
    "repeatable": false,
    "factionAvailableChance": 50,
@@ -7097,8 +7217,10 @@
    "AI_projectRole": "Propulsion",
    "researchCost": 800,
    "prereqs": [
+      "Project_SolidCoreFissionReactorI",
       "HighEnergyElectromagneticPropulsion"
    ],
+   "altPrereq0": "Project_FuelCellIII",
    "oneTimeGlobally": false,
    "repeatable": false,
    "factionAvailableChance": 50,
@@ -8260,7 +8382,7 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "PowerPlant",
-   "researchCost": 80000,
+   "researchCost": 100000,
    "prereqs": [
       "ProtonProtonFusion",
       "Project_InertialConfinementFusionReactorV",
@@ -8280,8 +8402,9 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "PowerPlant",
-   "researchCost": 100000,
+   "researchCost": 500000,
    "prereqs": [
+      "Accelerando",
       "Project_InertialConfinementFusionReactorVI"
    ],
    "oneTimeGlobally": false,
@@ -8322,7 +8445,7 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "PowerPlant",
-   "researchCost": 50000,
+   "researchCost": 75000,
    "prereqs": [
       "Project_AntimatterPlasmaCoreReactorI",
       "MagneticPlasmaConfinementTechniques"
@@ -8346,7 +8469,7 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "PowerPlant",
-   "researchCost": 75000,
+   "researchCost": 150000,
    "prereqs": [
       "Project_AntimatterPlasmaCoreReactorII",
       "Diamondoids",
@@ -8371,7 +8494,7 @@
    "techCategory": "Energy",
    "AI_techRole": "SpaceDevelopment",
    "AI_projectRole": "PowerPlant",
-   "researchCost": 100000,
+   "researchCost": 500000,
    "prereqs": [
       "Project_AntimatterPlasmaCoreReactorIII",
       "Project_ExoticHybridSystems"
@@ -8514,7 +8637,7 @@
    "researchCost": 2000,
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
-      "SolidCoreFissionSystems"
+      "Project_SolidCoreFissionReactorVI"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8534,7 +8657,7 @@
    "researchCost": 5000,
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
-      "SolidCoreFissionSystems"
+      "Project_SolidCoreFissionReactorVI"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8593,8 +8716,7 @@
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
       "MilitarizationofSpace",
-      "SolidCoreFissionSystems",
-      "Project_CryogenicLiquid-FuelRockets"
+      "Project_SolidCoreFissionReactorVII"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8615,7 +8737,7 @@
       "AdvancedMissileWarfareDoctrine",
       "FissionPulseDrives",
       "MilitarizationofSpace",
-      "Project_CryogenicLiquid-FuelRockets"
+      "Project_SolidCoreFissionReactorVIII"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -8694,7 +8816,7 @@
    "prereqs": [
       "AdvancedMissileWarfareDoctrine",
       "AntimatterWeaponry",
-      "SolidCoreFissionSystems"
+      "Project_SolidCoreFissionReactorIX"
    ],
    "oneTimeGlobally": false,
    "repeatable": false,
@@ -9238,7 +9360,7 @@
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": true,
    "AI_projectRole": "Kinetics",
-   "researchCost": 7500,
+   "researchCost": 10000,
    "prereqs": [
       "Project_CoilgunBatteryMk1",
       "HighTemperatureSuperconductors",
@@ -9259,7 +9381,7 @@
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": true,
    "AI_projectRole": "Kinetics",
-   "researchCost": 7500,
+   "researchCost": 10000,
    "prereqs": [
       "Project_CoilCannonMk1",
       "HighTemperatureSuperconductors",
@@ -9280,7 +9402,7 @@
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": true,
    "AI_projectRole": "Kinetics",
-   "researchCost": 10000,
+   "researchCost": 15000,
    "prereqs": [
       "Project_CoilgunBatteryMk2",
       "Ultracapacitors",
@@ -9301,7 +9423,7 @@
    "AI_techRole": "SpaceWar",
    "AI_criticalTech": true,
    "AI_projectRole": "Kinetics",
-   "researchCost": 10000,
+   "researchCost": 15000,
    "prereqs": [
       "Project_CoilCannonMk2",
       "Ultracapacitors",
@@ -10013,7 +10135,7 @@
    "AI_projectRole": "Money",
    "researchCost": 2000,
    "prereqs": [
-      "AdministrationAlgorithms",
+      "WhiteCollarAutomation",
       "SpaceMiningandRefining"
    ],
    "effects": [
@@ -10188,7 +10310,7 @@
    "prereqs": [
       "AdvancedChemicalRocketry",
       "ArrivalEconomics",
-      "AdministrationAlgorithms"
+      "AppliedArtificialIntelligence"
    ],
    "effects": [
       "Effect_SpaceflightProgramPriorityBonus50"
@@ -10210,8 +10332,7 @@
    "AI_projectRole": "MissionControl",
    "researchCost": 1200,
    "prereqs": [
-      "AdministrationAlgorithms",
-      "QuantumEncryption",
+      "WhiteCollarAutomation",
       "SpaceCommerce"
    ],
    "effects": [
@@ -10715,7 +10836,7 @@
  {
    "friendlyName": "Singleton Viruses",
    "dataName": "Project_SingletonViruses",
-   "techCategory": "SocialScience",
+   "techCategory": "LifeScience",
    "AI_techRole": "EarthPolitics",
    "AI_projectRole": "Councilors",
    "researchCost": 10000,
@@ -10926,8 +11047,7 @@
    "AI_projectRole": "TerrestrialWarfare",
    "researchCost": 10000,
    "prereqs": [
-      "AdministrationAlgorithms",
-      "ArrivalSecurity",
+      "NetworkedGlobalDefense",
       "Project_CounterinsurgencyOperations",
       "Project_Psyops"
    ],
@@ -11067,7 +11187,7 @@
    "researchCost": 2500,
    "prereqs": [
       "IndustrializationofSpace",
-      "AdministrationAlgorithms"
+      "WhiteCollarAutomation"
    ],
    "effects": [
       "Effect_DummyTooltipDevolvedSpaceCommand1",
@@ -12067,7 +12187,7 @@
    "researchCost": 15000,
    "prereqs": [
       "SpaceMiningandRefining",
-      "AdministrationAlgorithms"
+      "AppliedArtificialIntelligence"
    ],
    "effects": [
       "Effect_MiningMetalsBonus"
@@ -12111,7 +12231,8 @@
    "researchCost": 20000,
    "prereqs": [
       "SpaceMiningandRefining",
-      "AdministrationAlgorithms"
+      "MolecularAssemblers",
+      "AppliedArtificialIntelligence"
    ],
    "effects": [
       "Effect_MiningFissilesBonus"
@@ -12449,8 +12570,7 @@
    "AI_projectRole": "DevelopNation",
    "researchCost": 10000,
    "prereqs": [
-      "WhiteCollarAutomation",
-      "ArrivalInternationalDevelopment"
+      "WhiteCollarAutomation"
    ],
    "effects": [
       "Effect_WelfarePriorityBonus05"
@@ -12608,8 +12728,8 @@
    "AI_projectRole": "TerrestrialWarfare",
    "researchCost": 20000,
    "prereqs": [
-      "WhiteCollarAutomation",
-      "TerrestrialMilitaryScience"
+      "TerrestrialMilitaryScience",
+      "WhiteCollarAutomation"
    ],
    "effects": [
       "Effect_ArmyHealingRate005",
@@ -12654,8 +12774,8 @@
    "AI_projectRole": "TerrestrialWarfare",
    "researchCost": 5000,
    "prereqs": [
-      "SelfRepairingSoftware",
       "TerrestrialMilitaryScience",
+      "SelfRepairingSoftware",
       "Project_TheirRobotics"
    ],
    "effects": [
@@ -13544,7 +13664,7 @@
    "researchCost": 20000,
    "prereqs": [
       "ArrivalGovernance",
-      "AppliedArtificialIntelligence",
+      "WhiteCollarAutomation",
       "Project_Pherocytes"
    ],
    "effects": [

@@ -8585,6 +8585,13 @@
    "initialOwner": true
  },
  {
+   "dataName": "ClaimIDNAdelaide",
+   "relationType": "Claim",
+   "nation1": "IDN",
+   "region1": "Adelaide",
+   "projectUnlockName": "Project_GreaterAustronesia"
+ },
+ {
    "dataName": "ClaimIDNAmericanPacific",
    "relationType": "Claim",
    "nation1": "IDN",
@@ -8670,6 +8677,13 @@
    "projectUnlockName": "Project_GreaterIndonesia"
  },
  {
+   "dataName": "ClaimIDNMelbourne",
+   "relationType": "Claim",
+   "nation1": "IDN",
+   "region1": "Melbourne",
+   "projectUnlockName": "Project_GreaterAustronesia"
+ },
+ {
    "dataName": "ClaimIDNMicronesia",
    "relationType": "Claim",
    "nation1": "IDN",
@@ -8732,6 +8746,13 @@
    "nation1": "IDN",
    "region1": "Sumatra",
    "initialOwner": true
+ },
+ {
+   "dataName": "ClaimIDNSydney",
+   "relationType": "Claim",
+   "nation1": "IDN",
+   "region1": "Sydney",
+   "projectUnlockName": "Project_GreaterAustronesia"
  },
  {
    "dataName": "ClaimIDNTaiwan",
@@ -10144,14 +10165,14 @@
    "relationType": "Claim",
    "nation1": "PLS",
    "region1": "AmericanPacific",
-   "projectUnlockName": "Project_EndofAmerica",
-   "capitalClaim": true
+   "projectUnlockName": "Project_EndofAmerica"
  },
  {
    "dataName": "ClaimPLSPolynesia",
    "relationType": "Claim",
    "nation1": "PLS",
    "region1": "Polynesia",
+   "capitalClaim": true,
    "initialOwner": true
  },
  {
@@ -13577,12 +13598,6 @@
    "region2": "IvoryCoast"
  },
  {
-   "dataName": "PhysicalAdjacencyBurkinaFasoKano",
-   "relationType": "PhysicalAdjacency",
-   "region1": "BurkinaFaso",
-   "region2": "Kano"
- },
- {
    "dataName": "PhysicalAdjacencyBurkinaFasoMali",
    "relationType": "PhysicalAdjacency",
    "region1": "BurkinaFaso",
@@ -13593,6 +13608,12 @@
    "relationType": "PhysicalAdjacency",
    "region1": "BurkinaFaso",
    "region2": "Niger"
+ },
+ {
+   "dataName": "PhysicalAdjacencyBurkinaFasoTogoBenin",
+   "relationType": "PhysicalAdjacency",
+   "region1": "BurkinaFaso",
+   "region2": "TogoBenin"
  },
  {
    "dataName": "PhysicalAdjacencyCairoHijaz",
@@ -13763,6 +13784,14 @@
    "relationType": "PhysicalAdjacency",
    "region1": "Chennai",
    "region2": "Hyderabad"
+ },
+ {
+   "dataName": "PhysicalAdjacencyChennaiSriLanka",
+   "relationType": "PhysicalAdjacency",
+   "region1": "Chennai",
+   "region2": "SriLanka",
+   "projectUnlockName": "Project_PalkStraitBridge",
+   "friendlyOnly": true
  },
  {
    "dataName": "PhysicalAdjacencyChiangMaiLaos",
@@ -15659,6 +15688,14 @@
    "region2": "WesternSiberia"
  },
  {
+   "dataName": "PhysicalAdjacencyNorthernIrelandScotland",
+   "relationType": "PhysicalAdjacency",
+   "region1": "NorthernIreland",
+   "region2": "Scotland",
+   "projectUnlockName": "Project_NorthChannelCrossing",
+   "friendlyOnly": true
+ },
+ {
    "dataName": "PhysicalAdjacencyNorthHonshuSouthHonshu",
    "relationType": "PhysicalAdjacency",
    "region1": "NorthHonshu",
@@ -16007,7 +16044,7 @@
    "relationType": "PhysicalAdjacency",
    "region1": "Tibet",
    "region2": "UpperMyanmar",
-   "projectUnlockName": "Project_KachinPass"
+   "projectUnlockName": "Project_DiphuPass"
  },
  {
    "dataName": "PhysicalAdjacencyTibetXinjiang",

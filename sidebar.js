@@ -110,6 +110,23 @@ class TechSidebar extends React.Component {
         }
     }
     
+    getObjectiveNames(objectiveName) {
+        let objString;
+        let objLocStrings = getReadable("objective", objectiveName, "displayName");
+        
+        if (typeof objLocStrings === "string") {
+            objString = objLocStrings;
+        } else {
+            let objStrings = [];
+            Object.entries(objLocStrings).forEach(x => {
+                objStrings.push(x[1] + " (" + getReadable("faction", x[0], "displayName") + ")");
+            });
+            objString = objStrings.join(", ");
+        }
+        
+        return objString;
+    }
+    
     findModules(projectName) {
         let results = [];
         const modTypes = ["battery", "drive", "gun", "habmodule", "heatsink", "laserweapon", "magneticgun", "missile", "particleweapon", "plasmaweapon", "powerplant", "radiator", "shiparmor", "shiphull", "utilitymodule"];
@@ -146,7 +163,7 @@ class TechSidebar extends React.Component {
     }
 
     findBlockingTechs(techToSearch) {
-        return this.state.techTree.filter(tech => {if (tech.prereqs) {return tech.prereqs.find(prereq => prereq === techToSearch.dataName);}});
+        return this.state.techTree.filter(tech => {if (tech.prereqs && tech.prereqs.find(prereq => prereq === techToSearch.dataName)) {return true;} else if (tech.altPrereq0 && tech.altPrereq0 === techToSearch.dataName) {return true;}});
     }
 
     findPrereqTechs(techToSearch) {
@@ -391,8 +408,44 @@ class TechSidebar extends React.Component {
                     )
                 );
             });
-
-
+            
+            if (node.altPrereq0 && node.altPrereq0 !== "") {
+                let prereq = node.altPrereq0;
+                let tech = this.findTechByName(prereq);
+                
+                let altButton = React.createElement(
+                    MaterialUI.Button,
+                    {
+                        key: prereq,
+                        onClick: () => {
+                            this.setState({ node: tech });
+                            network.selectNodes([prereq]);
+                            network.focus(prereq);
+                            updateLocationHash(prereq);
+                        },
+                        variant: "contained",
+                        className: "prereqButton" + (tech.researchDone ? " researchDone" : ""),
+                        size: "small",
+                        title: tech.isProject ? "Faction Project" : "Global Research",
+                        'aria-label': tech ? tech.displayName + " "  + (tech.isProject ? "Faction Project" : "Global Research") : "",
+                        color: tech.isProject ? "success" : "primary"
+                    },
+                    tech ? tech.displayName : ""
+                )
+                
+                let orText = React.createElement(
+                    "b",
+                    { className: "prereqButton" },
+                    "OR"
+                );
+                
+                let breakElement = React.createElement(
+                    "br"
+                );
+                
+                prereqElements.splice(1, 0, orText, altButton, breakElement);
+            }
+            
             prereqsText = React.createElement(
                 "h4",
                 null,
@@ -463,27 +516,20 @@ class TechSidebar extends React.Component {
             }
         }
 
-        let requiredObjectives;
+        let requiredObjectives, altRequiredObjectives;
         if (node.isProject) {
             if (node.requiredObjectiveName && node.requiredObjectiveName !== "") {
-                let objString;
-                let objLocStrings = getReadable("objective", node.requiredObjectiveName, "displayName");
+                let objectiveNames = this.getObjectiveNames(node.requiredObjectiveName);
                 
-                if (typeof objLocStrings === "string") {
-                    objString = objLocStrings;
-                } else {
-                    let objStrings = [];
-                    Object.entries(objLocStrings).forEach(x => {
-                        objStrings.push(x[1] + " (" + getReadable("faction", x[0], "displayName") + ")");
-                    });
-                    objString = objStrings.join(", ");
+                if (node.altRequiredObjectiveName && node.altRequiredObjectiveName !== "") {
+                    objectiveNames = objectiveNames.concat(", ", this.getObjectiveNames(node.altRequiredObjectiveName));
                 }
-
+                
                 requiredObjectives = React.createElement(
                     "h4",
                     null,
                     "Objective Required: ",
-                    objString
+                    objectiveNames
                 );
             }
         }
@@ -775,6 +821,7 @@ class TechSidebar extends React.Component {
             blockingList,
             milestones,
             requiredObjectives,
+            altRequiredObjectives,
             nationReq,
             regionReq,
 

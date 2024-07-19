@@ -264,7 +264,7 @@
    "crew": 1,
    "weightedBuildMaterials": {
       "volatiles": 0.9,
-      "metals": 0.04,
+      "metals": 0.09,
       "nobleMetals": 0,
       "exotics": 0.01
    },
