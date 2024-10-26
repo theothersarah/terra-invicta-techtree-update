@@ -186,6 +186,13 @@ class TechSidebar extends React.Component {
             .reduce((arr, curr) => arr.concat(this.getDescendentTechs(curr)), [])
             .concat(this.findBlockingTechs(techToSearch));
     }
+    
+    getLeaderName(string) {
+        let faction = string.slice(1, -1);
+        faction = faction.replace("Leader", "Council");
+        faction = faction[0].toUpperCase() + faction.slice(1);
+        return getLocalizationString("faction", faction, "fullLeader");
+    }
 
     buildModuleDisplay(dataModule) {
         const node = this.state.node;
@@ -769,11 +776,10 @@ class TechSidebar extends React.Component {
                 null,
                 "Completion Quote"
             );
-
+            
             quoteText = React.createElement(
                 'p',
-                null,
-                quoteString
+                {dangerouslySetInnerHTML: {__html: quoteString.replace(/\{(.*?)\}/g, this.getLeaderName)}}
             );
         }
 
@@ -794,8 +800,7 @@ class TechSidebar extends React.Component {
 
             completionText = React.createElement(
                 'p',
-                null,
-                completionString
+                {dangerouslySetInnerHTML: {__html: completionString}}
             );
         }
         
