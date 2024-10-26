@@ -436,14 +436,24 @@ class TechSidebar extends React.Component {
                 let orText = React.createElement(
                     "b",
                     { className: "prereqButton" },
-                    "OR"
+                    "or"
                 );
                 
                 let breakElement = React.createElement(
                     "br"
                 );
                 
-                prereqElements.splice(1, 0, orText, altButton, breakElement);
+                let andText = React.createElement(
+                    "b",
+                    { className: "prereqButton" },
+                    "and"
+                );
+                
+                if (prereqElements.length > 1) {
+                    prereqElements.splice(1, 0, orText, altButton, breakElement, andText);
+                } else {
+                    prereqElements.splice(1, 0, orText, altButton);
+                }
             }
             
             prereqsText = React.createElement(
@@ -747,6 +757,26 @@ class TechSidebar extends React.Component {
             }
         }
 
+        let quoteLabel, quoteText, quoteString;
+        
+        if (!node.isProject) {
+            quoteString = getLocalizationString("tech", node.dataName, "quote");
+        }
+        
+        if (quoteString) {
+            quoteLabel = React.createElement(
+                'h4',
+                null,
+                "Completion Quote"
+            );
+
+            quoteText = React.createElement(
+                'p',
+                null,
+                quoteString
+            );
+        }
+
         let completionLabel, completionText, completionString;
         
         if (node.isProject) {
@@ -855,6 +885,8 @@ class TechSidebar extends React.Component {
             moduleList,
 
             // Completion
+            quoteLabel,
+            quoteText,
             completionLabel,
             completionText
         );
