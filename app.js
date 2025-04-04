@@ -320,6 +320,8 @@ function init() {
         });
 
         parseDefaults(() => {
+            initSearchBox();
+            techSidebar.setState({ techTree: techTree, effects: effects });
             const hash = window.location.hash.substring(1);
             if (hash) {
                 nodeSelected({ nodes: [hash] });
@@ -345,17 +347,60 @@ function initSearchBox() {
 
     documentSearchIndex = new FlexSearch.Document({
         document: {
-            index: ["displayName"],
-            store: ["displayName", "dataName"]
+            index: ["displayName", "fullText"],
+            store: ["displayName"]
         },
         tokenize: "full"
     });
-    techTree.forEach((tech, index) => {
-        tech.id = index;
-        documentSearchIndex.add(tech);
+    
+    techTree.forEach((node, index) => {
+        node.id = index;
+    
+        let searchData = {
+            "id": index,
+            "displayName": node.displayName
+        };
+        
+        let summaryText;
+        if (node.isProject) {
+            summaryText = getLocalizationString("project", node.dataName, "summary");
+        } else {
+            summaryText = getLocalizationString("tech", node.dataName, "summary");
+        }
+        
+        let effectsText;
+        if (node.effects && node.effects.filter(effect => effect !== "").length > 0) {
+            effectsText = node.effects.filter(effect => effect !== "").map(effect => getLocalizationString("effect", effect, "description"));
+        }
+        
+        let modulesText = [];
+        if (node.isProject) {
+            const modTypes = ["battery", "drive", "gun", "habmodule", "heatsink", "laserweapon", "magneticgun", "missile", "particleweapon", "plasmaweapon", "powerplant", "radiator", "shiparmor", "shiphull", "utilitymodule"];
+            modTypes.forEach(modType => {
+                templateData[modType].forEach(module => {
+                    if (module.requiredProjectName === node.dataName)
+                        modulesText.push(getLocalizationString(modType, module.dataName, "displayName"));
+                });
+            });
+        }
+        
+        let claimsText = [];
+        if (node.isProject) {
+            let claimsList = templateData["bilateral"].filter(claim => claim.projectUnlockName == node.dataName && claim.relationType == "Claim");
+            if (claimsList.length > 0) {
+                claimsText.push("gains a claim on");
+                
+                claimsList.map(claim => {
+                    claimsText.push(getLocalizationString("nation", claim.nation1, "displayName"));
+                    claimsText.push(getLocalizationString("region", claim.region1, "displayName"));
+                });
+            }
+        }
+        
+        searchData.fullText = [node.displayName, summaryText, effectsText, modulesText, claimsText].join(" ");
+        //console.log(searchData.fullText);
+        documentSearchIndex.add(searchData);
     });
-
-    techSidebar.setState({ techTree: techTree, effects: effects });
 }
 
 function clearTree() {
@@ -381,8 +426,6 @@ function parseDefaults(callback) {
         data.edges = new vis.DataSet(edges);
 
         draw();
-
-        initSearchBox();
 
         if (callback)
             callback();

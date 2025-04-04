@@ -1,14 +1,13 @@
 class Searchbox extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { results: [], showProjects: true };
+        this.state = { results: [], showProjects: true , fullText: false};
     }
 
     componentDidMount() {
     }
 
     componentDidUpdate() {
-
     }
 
     render() {
@@ -19,6 +18,7 @@ class Searchbox extends React.Component {
                 MaterialUI.Autocomplete,
                 {
                     options: this.state.results,
+                    filterOptions: (x) => x,
                     renderInput: (params) => {
                         params.label = "Search";
                         params.ref = inputEl => { this.searchInput = inputEl };
@@ -31,7 +31,8 @@ class Searchbox extends React.Component {
                     },
                     freeSolo: true,
                     onInputChange: (event, value) => {
-                        const results = documentSearchIndex.search(value, { pluck: "displayName", enrich: true }).map(result => result.doc.displayName);
+                        const results = documentSearchIndex.search(value, { pluck: (this.state.fullText ? "fullText" : "displayName"), enrich: true }).map(result => result.doc.displayName);
+                        //console.log(results.join(" "));
                         this.setState({ results: results });
                     },
                     onChange: (event, value) => {
@@ -69,6 +70,27 @@ class Searchbox extends React.Component {
                         }
                     ),
                     id: "showProjects"
+                }
+            ),
+            React.createElement(
+                MaterialUI.FormControlLabel,
+                {
+                    label: "Full Text Search",
+                    control: React.createElement(
+                        MaterialUI.Switch,
+                        {
+                            defaultChecked: false,
+                            onChange: (event) => {
+                                const showToggle = event.target.checked;
+                                if (showToggle) {
+                                    this.setState({ fullText: true });
+                                } else {
+                                    this.setState({ fullText: false });
+                                }
+                            }
+                        }
+                    ),
+                    id: "fullText"
                 }
             )
         )
