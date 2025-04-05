@@ -59,7 +59,7 @@ function App() {
 
         for (const tech of techTreeTmp) {
             if (counts[tech.displayName] > 1) {
-                tech.displayName += ` (${tech.dataName})`;
+                tech.displayName += ` (${tech.friendlyName})`;
             }
         }
 
