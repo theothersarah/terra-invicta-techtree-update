@@ -45,14 +45,23 @@ function App() {
 
         projects.forEach(project => { project.isProject = true });
 
-        [].concat(techs, projects).forEach((tech, index) => {
+        const counts = {};
+        const techTreeTmp = [].concat(techs, projects);
+        techTreeTmp.forEach((tech, index) => {
             if (tech.isProject) {
                 tech.displayName = getReadable(localizationStrings, "project", tech.dataName, "displayName");
             } else {
                 tech.displayName = getReadable(localizationStrings, "tech", tech.dataName, "displayName");
             }
             tech.id = index;
+            counts[tech.displayName] = (counts[tech.displayName] ?? 0) + 1;
         });
+
+        for (const tech of techTreeTmp) {
+            if (counts[tech.displayName] > 1) {
+                tech.displayName += ` (${tech.dataName})`;
+            }
+        }
 
         setAppStaticData({
             templateData,
@@ -63,7 +72,7 @@ function App() {
             getLocalizationString: (a, b, c) => getLocalizationString(localizationStrings, a, b, c),
             getReadable: (a, b, c) => getReadable(localizationStrings, a, b, c),
         });
-        setTechTree(techs.concat(projects));
+        setTechTree(techTreeTmp);
     };
 
     const onNavigatedToNode = useCallback((x) => {
