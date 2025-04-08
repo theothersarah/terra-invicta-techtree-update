@@ -26,8 +26,6 @@ export function TechSidebar({
             return "Hidden effect: " + dataName;
         }
 
-        // console.log(description);
-
         const effectObj = findEffectByName(dataName);
         const effectVal = effectObj ? effectObj.value : 0;
         const effectStr = effectObj ? effectObj.strValue : "";
@@ -371,7 +369,6 @@ export function TechSidebar({
 
     const renderOrg = () => {
         if (!node.orgGranted) {
-            console.log("No org granted:", JSON.stringify(node));
             return null;
         }
         const org = node.orgGranted;

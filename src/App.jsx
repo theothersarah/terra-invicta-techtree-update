@@ -76,7 +76,6 @@ function App() {
     };
 
     const onNavigatedToNode = useCallback((x) => {
-        console.log("Navigated to node:", x);
         setNavigatedToNode(x);
         if (x) {
             navigate(`/${x.dataName}`);
@@ -162,63 +161,49 @@ async function init() {
     const locale = locales[lang];
 
     // Fetch and parse localization files
-    const localizationFiles = [
-        { "filename": "TIBatteryTemplate." + lang, "type": "battery" },
-        { "filename": "TIDriveTemplate." + lang, "type": "drive" },
-        { "filename": "TIEffectTemplate." + lang, "type": "effect" },
-        { "filename": "TIFactionTemplate." + lang, "type": "faction" },
-        { "filename": "TIGunTemplate." + lang, "type": "gun" },
-        { "filename": "TIHabModuleTemplate." + lang, "type": "habmodule" },
-        { "filename": "TIHeatSinkTemplate." + lang, "type": "heatsink" },
-        { "filename": "TILaserWeaponTemplate." + lang, "type": "laserweapon" },
-        { "filename": "TIMagneticGunTemplate." + lang, "type": "magneticgun" },
-        { "filename": "TIMissileTemplate." + lang, "type": "missile" },
-        { "filename": "TINationTemplate." + lang, "type": "nation" },
-        { "filename": "TIObjectiveTemplate." + lang, "type": "objective" },
-        { "filename": "TIOrgTemplate." + lang, "type": "org" },
-        { "filename": "TIParticleWeaponTemplate." + lang, "type": "particleweapon" },
-        { "filename": "TIPlasmaWeaponTemplate." + lang, "type": "plasmaweapon" },
-        { "filename": "TIPowerPlantTemplate." + lang, "type": "powerplant" },
-        { "filename": "TIProjectTemplate." + lang, "type": "project" },
-        { "filename": "TIRadiatorTemplate." + lang, "type": "radiator" },
-        { "filename": "TIRegionTemplate." + lang, "type": "region" },
-        { "filename": "TIShipArmorTemplate." + lang, "type": "shiparmor" },
-        { "filename": "TIShipHullTemplate." + lang, "type": "shiphull" },
-        { "filename": "TITechTemplate." + lang, "type": "tech" },
-        { "filename": "TITraitTemplate." + lang, "type": "trait" },
-        { "filename": "TIUtilityModuleTemplate." + lang, "type": "utilitymodule" }
-    ];
+    const templateTypes = {
+        "TIBatteryTemplate": "battery",
+        "TIDriveTemplate": "drive",
+        "TIEffectTemplate": "effect",
+        "TIFactionTemplate": "faction",
+        "TIGunTemplate": "gun",
+        "TIHabModuleTemplate": "habmodule",
+        "TIHeatSinkTemplate": "heatsink",
+        "TILaserWeaponTemplate": "laserweapon",
+        "TIMagneticGunTemplate": "magneticgun",
+        "TIMissileTemplate": "missile",
+        "TINationTemplate": "nation",
+        "TIObjectiveTemplate": "objective",
+        "TIOrgTemplate": "org",
+        "TIParticleWeaponTemplate": "particleweapon",
+        "TIPlasmaWeaponTemplate": "plasmaweapon",
+        "TIPowerPlantTemplate": "powerplant",
+        "TIProjectTemplate": "project",
+        "TIRadiatorTemplate": "radiator",
+        "TIRegionTemplate": "region",
+        "TIShipArmorTemplate": "shiparmor",
+        "TIShipHullTemplate": "shiphull",
+        "TITechTemplate": "tech",
+        "TITraitTemplate": "trait",
+        "TIUtilityModuleTemplate": "utilitymodule",
+    };
+
+    const localizationFiles = Object.entries(templateTypes).map(([filename, type]) => ({
+        url: `gamefiles/Localization/${lang}/${filename}.${lang}`,
+        type
+    }));
 
     const localizationStrings = {};
-    const fetchLocalizationPromises = localizationFiles.map(localization => fetch("data/" + localization.filename).then(res => res.text()).then(text => parselocalization(localizationStrings, text, localization.type)));
+    const fetchLocalizationPromises = localizationFiles.map(localization => fetch(localization.url).then(res => res.text()).then(text => parselocalization(localizationStrings, text, localization.type)));
 
-    // Fetch and parse template files
-    const templateFiles = [
-        { "filename": "TIBatteryTemplate.json", "type": "battery" },
-        { "filename": "TIBilateralTemplate.json", "type": "bilateral" },
-        { "filename": "TIDriveTemplate.json", "type": "drive" },
-        { "filename": "TIEffectTemplate.json", "type": "effect" },
-        { "filename": "TIGunTemplate.json", "type": "gun" },
-        { "filename": "TIHabModuleTemplate.json", "type": "habmodule" },
-        { "filename": "TIHeatSinkTemplate.json", "type": "heatsink" },
-        { "filename": "TILaserWeaponTemplate.json", "type": "laserweapon" },
-        { "filename": "TIMagneticGunTemplate.json", "type": "magneticgun" },
-        { "filename": "TIMissileTemplate.json", "type": "missile" },
-        { "filename": "TIOrgTemplate.json", "type": "org" },
-        { "filename": "TIParticleWeaponTemplate.json", "type": "particleweapon" },
-        { "filename": "TIPlasmaWeaponTemplate.json", "type": "plasmaweapon" },
-        { "filename": "TIPowerPlantTemplate.json", "type": "powerplant" },
-        { "filename": "TIProjectTemplate.json", "type": "project" },
-        { "filename": "TIRadiatorTemplate.json", "type": "radiator" },
-        { "filename": "TIShipArmorTemplate.json", "type": "shiparmor" },
-        { "filename": "TIShipHullTemplate.json", "type": "shiphull" },
-        { "filename": "TITechTemplate.json", "type": "tech" },
-        { "filename": "TITraitTemplate.json", "type": "trait" },
-        { "filename": "TIUtilityModuleTemplate.json", "type": "utilitymodule" }
-    ]
+    const templateFiles = Object.entries(templateTypes).concat([["TIBilateralTemplate", "bilateral"]])
+        .map(([filename, type]) => ({
+            url: `gamefiles/Templates/${filename}.json`,
+            type
+        }));
 
     const templateData = {};
-    const fetchTemplatePromises = templateFiles.map(template => fetch("data/" + template.filename).then(res => res.text()).then(text => parseTemplate(templateData, text, template.type)));
+    const fetchTemplatePromises = templateFiles.map(template => fetch(template.url).then(res => res.text()).then(text => parseTemplate(templateData, text, template.type)));
     await Promise.all([].concat(fetchLocalizationPromises, fetchTemplatePromises));
 
     return {
