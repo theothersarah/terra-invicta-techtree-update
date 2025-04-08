@@ -99,6 +99,19 @@ export const Searchbox = ({
         }
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key !== "Enter") {
+            return;
+        }
+
+        const value = e.target.value;
+        const navigateToNode = techTree.find(tech => tech.displayName === value);
+
+        if (navigateToNode) {
+            onNavigateToNode(navigateToNode);
+        }
+    };
+
     // TODO: handle autocomplete on toggle
     const handleProjectsToggle = (event) => {
         const showToggle = event.target.checked;
@@ -113,6 +126,7 @@ export const Searchbox = ({
                     freeSolo
                     onInputChange={handleInputChange}
                     onChange={handleChange}
+                    onKeyDown={handleKeyDown}
                     filterOptions={x => x}
                     renderInput={(params) => (
                         <TextField
