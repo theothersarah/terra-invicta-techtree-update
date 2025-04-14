@@ -109,6 +109,7 @@ function App() {
                     setShowProjects={onShowProjects}
                     onNavigateToNode={onNavigatedToNode}
                     getLocalizationString={appStaticData.getLocalizationString}
+                    getReadable={appStaticData.getReadable}
                     templateData={appStaticData.templateData}
                 />
             )}

@@ -7,6 +7,7 @@ export const Searchbox = ({
     setShowProjects,
     onNavigateToNode,
     getLocalizationString,
+    getReadable,
     templateData,
 }) => {
     const [results, setResults] = useState([]);
@@ -45,8 +46,10 @@ export const Searchbox = ({
                 const modTypes = ["battery", "drive", "gun", "habmodule", "heatsink", "laserweapon", "magneticgun", "missile", "particleweapon", "plasmaweapon", "powerplant", "radiator", "shiparmor", "shiphull", "utilitymodule"];
                 modTypes.forEach(modType => {
                     templateData[modType].forEach(module => {
-                        if (module.requiredProjectName === node.dataName)
-                            modulesText.push(getLocalizationString(modType, module.dataName, "displayName"));
+                        if (module.requiredProjectName === node.dataName) {
+                            const description = getReadable(modType, module.dataName, "description");
+                            modulesText.push(`${getLocalizationString(modType, module.dataName, "displayName")}/${description}`);
+                        }
                     });
                 });
             }
