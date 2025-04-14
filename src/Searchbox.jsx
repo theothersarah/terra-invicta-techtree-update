@@ -89,33 +89,35 @@ export const Searchbox = ({
         setResults(searchResults);
     };
 
-    const handleChange = (_, value) => {
-        if (!value) return;
-
+    const navigateToTech = (value) => {
         const navigateToNode = techTree.find(tech => tech.displayName === value);
 
         if (navigateToNode) {
             onNavigateToNode(navigateToNode);
         }
+    };
+
+    const handleChange = (_, value) => {
+        if (!value) return;
+
+        navigateToTech(value);
     };
 
     const handleKeyDown = (e) => {
         if (e.key !== "Enter") {
             return;
         }
-
-        const value = e.target.value;
-        const navigateToNode = techTree.find(tech => tech.displayName === value);
-
-        if (navigateToNode) {
-            onNavigateToNode(navigateToNode);
-        }
+        navigateToTech(e.target.value);
     };
 
     // TODO: handle autocomplete on toggle
     const handleProjectsToggle = (event) => {
         const showToggle = event.target.checked;
         setShowProjects(showToggle);
+    };
+
+    const handleClick = (e) => {
+        navigateToTech(e.target.value);
     };
 
     return (
@@ -134,6 +136,7 @@ export const Searchbox = ({
                             label="Search"
                             inputRef={searchInputRef}
                             autoFocus
+                            onClick={handleClick}
                         />
                     )}
                 />
