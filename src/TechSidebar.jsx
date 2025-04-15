@@ -216,14 +216,18 @@ export function TechSidebar({
         treeCost.toLocaleString() :
         `${treeCostProcessed.toLocaleString()}/${treeCost.toLocaleString()}`;
 
-    const handleNodeSelect = (techName) => {
-        const tech = findTechByName(techName);
-        if (!tech) {
-            throw new Error(`Tech with name ${techName} not found in ${JSON.stringify(techTree)}`);
+    const techSorter = (a, b) => {
+        // non-project techs first
+        if (a.isProject && !b.isProject) {
+            return 1;
         }
-        onNavigateToNode(tech);
+        if (!a.isProject && b.isProject) {
+            return -1;
+        }
+        // sort by display name
+        return a.displayName.localeCompare(b.displayName);
     };
-
+    
     const handleResearchToggle = () => {
         if (node.researchDone) {
             node.researchDone = false;
@@ -238,18 +242,19 @@ export function TechSidebar({
 
     // Render prerequisites section
     const renderPrerequisites = () => {
-        if (!node.prereqs || node.prereqs.filter(prereq => prereq !== "").length === 0) {
+        const prereqNames = node.prereqs?.filter(prereq => prereq !== "") || [];
+
+        if (prereqNames.length === 0) {
             return null;
         }
 
-        const prereqElements = node.prereqs
-            .filter(prereq => prereq !== "")
+        const prereqElements = prereqNames
             .map(prereq => {
                 const tech = findTechByName(prereq);
                 return (
                     <Button
                         key={`prereq-${tech.displayName}`}
-                        onClick={() => handleNodeSelect(prereq)}
+                        onClick={() => onNavigateToNode(tech)}
                         variant="contained"
                         className={`prereqButton${tech.researchDone ? " researchDone" : ""}`}
                         size="small"
@@ -269,7 +274,7 @@ export function TechSidebar({
             const altButton = (
                 <Button
                     key={`alt-${tech.displayName}`}
-                    onClick={() => handleNodeSelect(prereq)}
+                    onClick={() => onNavigateToNode(tech)}
                     variant="contained"
                     className={`prereqButton${tech.researchDone ? " researchDone" : ""}`}
                     size="small"
@@ -281,9 +286,9 @@ export function TechSidebar({
                 </Button>
             );
 
-            const orText = <b className="prereqButton">or</b>;
-            const breakElement = <br />;
-            const andText = <b className="prereqButton">and</b>;
+            const orText = <b key={"or"} className="prereqButton">or</b>;
+            const breakElement = <br key={"br"} />;
+            const andText = <b key={"and"} className="prereqButton">and</b>;
 
             if (prereqElements.length > 1) {
                 prereqElements.splice(1, 0, orText, altButton, breakElement, andText);
@@ -307,11 +312,13 @@ export function TechSidebar({
             return null;
         }
 
+        blockingTechs.sort(techSorter);
+
         const blockerElements = blockingTechs.map(blocked => (
             <Button
                 key={`blocker-${blocked.dataName}`}
                 onClick={() => {
-                    handleNodeSelect(blocked.dataName);
+                    onNavigateToNode(blocked);
                 }}
                 variant="contained"
                 className="prereqButton"
