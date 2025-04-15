@@ -80,7 +80,8 @@ function App() {
         if (x) {
             navigate(`/${x.dataName}`);
         } else {
-            navigate(`/`);
+            // navigate to / adds a lot of breaks in hostory - do not do it for now
+            // navigate(`/`);
         }
     }, [setNavigatedToNode, navigate])
 
