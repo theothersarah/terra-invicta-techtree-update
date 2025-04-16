@@ -120,6 +120,10 @@ export function TechSidebar({
         const nationName = getReadable("nation", claim.nation1, "displayName");
         const regionName = getReadable("region", claim.region1, "displayName");
 
+        if (!nationName || !regionName) {
+            return null;
+        }
+
         return `${nationName} gains a claim on ${regionName}`;
     }
 
@@ -491,9 +495,15 @@ export function TechSidebar({
 
         if (claims.length === 0) return null;
 
-        const claimsElements = claims.map(claim => (
-            <li key={`claim-${JSON.stringify(claim)}`}>{getReadableClaim(claim)}</li>
-        ));
+        const claimsElements = claims.flatMap(claim => {
+            const text = getReadableClaim(claim);
+            if (!text) {
+                return [];
+            }
+            return [
+                <li key={`claim-${JSON.stringify(claim)}`}>{text}</li>
+            ];
+        });
 
         return (
             <>

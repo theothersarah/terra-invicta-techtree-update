@@ -47,7 +47,7 @@ export const Searchbox = ({
                 modTypes.forEach(modType => {
                     templateData[modType].forEach(module => {
                         if (module.requiredProjectName === node.dataName) {
-                            const description = getReadable(modType, module.dataName, "description");
+                            const description = getLocalizationString(modType, module.dataName, "description");
                             modulesText.push(`${getLocalizationString(modType, module.dataName, "displayName")}/${description}`);
                         }
                     });

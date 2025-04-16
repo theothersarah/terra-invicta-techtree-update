@@ -74,8 +74,15 @@ export function getLocalizationString(localizationStrings, type, dataName, field
 export function getReadable(localizationStrings, type, dataName, field) {
     const text = getLocalizationString(localizationStrings, type, dataName, field);
 
-    if (text)
+    if (text) {
         return text;
+    }
+
+    if (dataName.startsWith("2070")) {
+        return null;
+    }
+
+    console.log(`Missing localization for ${type}.${dataName}.${field}`);
 
     return type + "." + dataName + "." + field;
 }
