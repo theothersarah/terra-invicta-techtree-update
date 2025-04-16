@@ -18,7 +18,7 @@ export const Searchbox = ({
         const documentSearchIndex = new FlexSearch.Document({
             document: {
                 index: ["displayName", "fullText"],
-                store: ["displayName"]
+                store: ["displayName", "fullText"],
             },
             tokenize: "full"
         });
@@ -85,10 +85,29 @@ export const Searchbox = ({
             setResults([]);
             return;
         }
+    
+        const isQuoted = value.startsWith('"') && value.endsWith('"');
+        const query = isQuoted ? value.slice(1, -1) : value;
+    
+        // Search on all relevant fields
+        const rawResults = documentSearchIndex.search(query, {
+            pluck: (fullText ? "fullText" : "displayName"),
+            enrich: true
+        });
 
-        const searchResults = documentSearchIndex.search(value, { pluck: (fullText ? "fullText" : "displayName"), enrich: true })
-            .map(result => result.doc.displayName);
-
+        let searchResults;
+    
+        if (isQuoted) {
+            const field = fullText ? "fullText" : "displayName";
+            const regex = new RegExp(query, "i");
+            // Simulate exact match
+            searchResults = rawResults
+                .filter(entry => entry.doc[field].match(regex))
+                .map(entry => entry.doc.displayName);
+        } else {
+            searchResults = rawResults.map(entry => entry.doc.displayName);
+        }
+    
         setResults(searchResults);
     };
 
