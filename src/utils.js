@@ -32,7 +32,7 @@ export function getDescendentTechs(techTree, techToSearch) {
 
 export function parselocalization(localizationStrings, text, localizationType) {
     const lines = text.split("\n");
-
+    
     lines.forEach(line => {
         line = line.split("//")[0].trim();
 
@@ -68,11 +68,7 @@ export function parselocalization(localizationStrings, text, localizationType) {
 }
 
 export function getLocalizationString(localizationStrings, type, dataName, field) {
-    if (localizationStrings[type] && localizationStrings[type][dataName] && localizationStrings[type][dataName][field]) {
-        return localizationStrings[type][dataName][field];
-    }
-
-    return undefined;
+    return localizationStrings[type]?.[dataName]?.[field];
 }
 
 export function getReadable(localizationStrings, type, dataName, field) {

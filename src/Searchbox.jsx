@@ -124,7 +124,7 @@ export const Searchbox = ({
     };
 
     return (
-        <div id="options">
+        <div>
             <Paper elevation={3} id="searchBox">
                 <Autocomplete
                     options={results}

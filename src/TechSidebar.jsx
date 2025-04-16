@@ -6,12 +6,25 @@ export function TechSidebar({
     templateData,
     getLocalizationString,
     getReadable,
-    locale,
+    language,
     techTree,
     onNavigateToNode,
     navigatedToNode,
     handleIsolatedChanged,
 }) {    
+    const locales = {
+        "chs": "zh",
+        "cht": "zh",
+        "deu": "de",
+        "en": "en",
+        "esp": "es",
+        "fr": "fr",
+        "jpn": "ja",
+        "pol": "pl",
+        "por": "pt"
+    };
+
+    const locale = locales[language];
     const effects = templateData.effect;
     const [isolated, setIsolated] = useState(false);
 

@@ -7,6 +7,7 @@ import { TechSidebar } from './TechSidebar.jsx'
 import React, { useEffect, useState, useCallback } from 'react';
 import {getAncestorTechs, getDescendentTechs, parselocalization, getLocalizationString, getReadable, parseTemplate } from './utils.js'
 import { useNavigate, useParams } from "react-router";
+import LanguageSelector from './LanguageSelector.jsx';
 
 function App() {
     const [appStaticData, setAppStaticData] = useState({
@@ -15,17 +16,18 @@ function App() {
     const [techTree, setTechTree] = useState(null);
     const [navigatedToNode, setNavigatedToNode] = useState(null);
     const [isReady, setIsReady] = useState(false);
+    const [language, setLanguage] = useState("en");
 
     const navigate = useNavigate();
     const { id } = useParams();
 
     useEffect(() => {
         async function initialize() {
-            await initSearchData();
+            await init(language, setTechTree, setAppStaticData);
             setIsReady(true);
         }
         initialize();
-    }, []);
+    }, [language, setTechTree, setAppStaticData]);
 
     useEffect(() => {
         if (id && techTree) {
@@ -35,45 +37,6 @@ function App() {
           }
         }
       }, [id, techTree]);
-
-    const initSearchData = async () => {
-        const { localizationStrings, templateData, locale } = await init();
-
-        const effects = templateData.effect;
-        const techs = templateData.tech;
-        const projects = templateData.project;
-
-        projects.forEach(project => { project.isProject = true });
-
-        const counts = {};
-        const techTreeTmp = [].concat(techs, projects);
-        techTreeTmp.forEach((tech, index) => {
-            if (tech.isProject) {
-                tech.displayName = getReadable(localizationStrings, "project", tech.dataName, "displayName");
-            } else {
-                tech.displayName = getReadable(localizationStrings, "tech", tech.dataName, "displayName");
-            }
-            tech.id = index;
-            counts[tech.displayName] = (counts[tech.displayName] ?? 0) + 1;
-        });
-
-        for (const tech of techTreeTmp) {
-            if (counts[tech.displayName] > 1) {
-                tech.displayName += ` (${tech.friendlyName})`;
-            }
-        }
-
-        setAppStaticData({
-            templateData,
-            effects,
-            techs,
-            projects,
-            locale,
-            getLocalizationString: (a, b, c) => getLocalizationString(localizationStrings, a, b, c),
-            getReadable: (a, b, c) => getReadable(localizationStrings, a, b, c),
-        });
-        setTechTree(techTreeTmp);
-    };
 
     const onNavigatedToNode = useCallback((x) => {
         setNavigatedToNode(x);
@@ -105,14 +68,19 @@ function App() {
             <title>Terra Invicta Tech Tree - Game Version 0.4.78</title>
             {!isReady && <div id="loading">Loading</div>}
             {isReady && (
-                <Searchbox
-                    techTree={techTree}
-                    setShowProjects={onShowProjects}
-                    onNavigateToNode={onNavigatedToNode}
-                    getLocalizationString={appStaticData.getLocalizationString}
-                    getReadable={appStaticData.getReadable}
-                    templateData={appStaticData.templateData}
-                />
+                <div id="options"> 
+                    <Searchbox
+                        techTree={techTree}
+                        setShowProjects={onShowProjects}
+                        onNavigateToNode={onNavigatedToNode}
+                        getLocalizationString={appStaticData.getLocalizationString}
+                        getReadable={appStaticData.getReadable}
+                        templateData={appStaticData.templateData}
+                    />
+                    <LanguageSelector 
+                        onLanguageChange={setLanguage}
+                    />
+                </div>
             )}
             {isReady && (
                     <TechGraph
@@ -127,7 +95,7 @@ function App() {
                         templateData={appStaticData.templateData}
                         getLocalizationString={appStaticData.getLocalizationString}
                         getReadable={appStaticData.getReadable}
-                        locale={appStaticData.locale}
+                        language={language}
                         onNavigateToNode={onNavigatedToNode}
                         navigatedToNode={navigatedToNode}
                         effects={appStaticData.effects}
@@ -141,27 +109,45 @@ function App() {
 
 export default App
 
+async function init(language, setTechTree, setAppStaticData) {
+    const { localizationStrings, templateData } = await getTemplateData(language);
 
-async function init() {
-    // Get language and locale from query string
-    const urlParams = new URLSearchParams(window.location.search);
+    const effects = templateData.effect;
+    const techs = templateData.tech;
+    const projects = templateData.project;
 
-    const lang = urlParams.get("lang") ?? "en";
+    projects.forEach(project => { project.isProject = true });
 
-    const locales = {
-        "chs": "zh",
-        "cht": "zh",
-        "deu": "de",
-        "en": "en",
-        "esp": "es",
-        "fr": "fr",
-        "jpn": "ja",
-        "pol": "pl",
-        "por": "pt"
-    };
+    const counts = {};
+    const techTreeTmp = [].concat(techs, projects);
+    techTreeTmp.forEach((tech, index) => {
+        if (tech.isProject) {
+            tech.displayName = getReadable(localizationStrings, "project", tech.dataName, "displayName");
+        } else {
+            tech.displayName = getReadable(localizationStrings, "tech", tech.dataName, "displayName");
+        }
+        tech.id = index;
+        counts[tech.displayName] = (counts[tech.displayName] ?? 0) + 1;
+    });
 
-    const locale = locales[lang];
+    for (const tech of techTreeTmp) {
+        if (counts[tech.displayName] > 1) {
+            tech.displayName += ` (${tech.friendlyName})`;
+        }
+    }
 
+    setAppStaticData({
+        templateData,
+        effects,
+        techs,
+        projects,
+        getLocalizationString: (a, b, c) => getLocalizationString(localizationStrings, a, b, c),
+        getReadable: (a, b, c) => getReadable(localizationStrings, a, b, c),
+    });
+    setTechTree(techTreeTmp);
+};
+
+async function getTemplateData(language) {
     // Fetch and parse localization files
     const templateTypes = {
         "TIBatteryTemplate": "battery",
@@ -191,7 +177,7 @@ async function init() {
     };
 
     const localizationFiles = Object.entries(templateTypes).map(([filename, type]) => ({
-        url: `gamefiles/Localization/${lang}/${filename}.${lang}`,
+        url: `gamefiles/Localization/${language}/${filename}.${language}`,
         type
     }));
 
@@ -211,6 +197,5 @@ async function init() {
     return {
         localizationStrings,
         templateData,
-        locale,
     }
 }
