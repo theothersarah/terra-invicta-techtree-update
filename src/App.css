@@ -150,6 +150,10 @@ ul.hideBullets {
     padding-left: 10px;
 }
 
+.project-img {
+    background: black;
+}
+
 pre {
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;

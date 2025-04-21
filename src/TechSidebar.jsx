@@ -227,7 +227,15 @@ export function TechSidebar({
 
     const calculateTechCost = (tree) => {
         return tree.concat(node).reduce((acc, curr) => { 
-            acc[curr.techCategory] = (acc[curr.techCategory] ?? 0) + curr.researchCost;
+            acc[curr.techCategory] ??= {
+                tech: 0,
+                project: 0,
+            };
+            if (curr.isProject) {
+                acc[curr.techCategory].project += curr.researchCost;
+            } else {
+                acc[curr.techCategory].tech += curr.researchCost;
+            }
             return acc;
         }, {});
     };
@@ -235,8 +243,8 @@ export function TechSidebar({
     const treeCostBreakdownTotal = calculateTechCost(uniqueAncestorTree);
     const treeCostBreakdownRemaining = calculateTechCost(ancestorTreeProcessed);
 
-    const treeCostTotal = Object.values(treeCostBreakdownTotal).reduce((acc, curr) => acc + curr, 0);
-    const treeCostRemaining = Object.values(treeCostBreakdownRemaining).reduce((acc, curr) => acc + curr, 0);
+    const treeCostTotal = Object.values(treeCostBreakdownTotal).reduce((acc, curr) => acc + curr.tech + curr.project, 0);
+    const treeCostRemaining = Object.values(treeCostBreakdownRemaining).reduce((acc, curr) => acc + curr.tech + curr.project, 0);
 
     const treeCostString = treeCostTotal === treeCostRemaining ?
         treeCostTotal.toLocaleString() :
@@ -245,8 +253,8 @@ export function TechSidebar({
 
     const treeCostBreakdownArr = Object.entries(treeCostBreakdownRemaining);
     treeCostBreakdownArr.sort((a, b) => {
-        const aValue = a[1];
-        const bValue = b[1];
+        const aValue = a[1].tech + a[1].project;
+        const bValue = b[1].tech + b[1].project;
 
         if (aValue > bValue) {
             return -1;
@@ -580,9 +588,19 @@ export function TechSidebar({
                     </Tooltip>
                     <AccordionDetails id="costBreakdown">
                         <ul>
-                            {treeCostBreakdownArr.map(([key, value]) => (
+                            {treeCostBreakdownArr.map(([key, {tech, project}]) => (
                                 <li key={key}>
-                                    <img src={getTechIconFile(key)} alt={key} style={{ width: "16px", height: "16px" }} /> {value.toLocaleString()}
+                                    <img src={getTechIconFile(key)} alt={key} style={{ width: "16px", height: "16px" }} /> 
+                                    {(tech + project).toLocaleString()}
+                                    {
+                                        project > 0 && 
+                                        (
+                                            <span>
+                                                {"\t\t\t"}(<span className="project-img"><img src="icons/ICO_projects.png" alt={key} style={{ width: "16px", height: "16px" }} /></span>
+                                                {"\t\t"}{project.toLocaleString()})
+                                            </span>
+                                        )
+                                    }
                                 </li>
                             ))}
                         </ul>
