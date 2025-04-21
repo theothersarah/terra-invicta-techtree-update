@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import { parseNode, draw } from './techGraphRender';
 import * as vis from "vis-network/standalone";
 
@@ -7,26 +7,53 @@ export const TechGraph = ({
     onNavigateToNode,
     navigatedToNode,
 }) => {
-    const [network, setNetwork] = useState(null);
-
-    function drawTree() {
-        const { nodes, edges, lateNodes, lateEdges } = parseNode(techTree, false);
+    const networkRef = useRef(null);
+    const renderCount = useRef(0);
+    const techTreeRef = useRef(techTree);
+    const onNavigateRef = useRef(onNavigateToNode);
+    
+    // Update refs when props change
+    useEffect(() => {
+        techTreeRef.current = techTree;
+        onNavigateRef.current = onNavigateToNode;
+    }, [techTree, onNavigateToNode]);
+    
+    // Memoize drawTree so it only changes if the refs change
+    const drawTree = useCallback(() => {
+        console.log("drawTree called");
+        
+        const { nodes, edges, lateNodes, lateEdges } = parseNode(techTreeRef.current, false);
         const data = {
             nodes: new vis.DataSet(nodes),
             edges: new vis.DataSet(edges)
         };
 
-        setNetwork(draw(techTree, data, lateNodes, lateEdges, onNavigateToNode));
-    }
+        networkRef.current = draw(
+            techTreeRef.current, 
+            data, 
+            lateNodes, 
+            lateEdges, 
+            onNavigateRef.current
+        );
+    }, []);  // Empty dependency array since we use refs
 
     useEffect(() => {
+        renderCount.current += 1;
+        console.log(`Render count: ${renderCount.current}`);
+    }, []);
+
+    // Only run once at mount
+    useEffect(() => {
+        console.log("Initial effect running");
+        const now = new Date();
         drawTree();
-    }, [techTree]);
+        console.log("TechGraph render time: " + (new Date() - now) + "ms");
+    }, []); // Empty dependency array - only run once at mount
 
     useEffect(() => {
-        if (navigatedToNode) {
-            network.selectNodes([navigatedToNode.dataName]);
-            network.focus(navigatedToNode.dataName);
+        if (navigatedToNode && networkRef.current) {
+            networkRef.current.selectNodes([navigatedToNode.dataName]);
+            networkRef.current.focus(navigatedToNode.dataName);
         }
     }, [navigatedToNode]);
 
