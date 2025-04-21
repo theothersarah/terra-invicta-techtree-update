@@ -3,33 +3,36 @@ import { parseNode, draw } from './techGraphRender';
 import * as vis from "vis-network/standalone";
 
 export const TechGraph = ({
-    techTree,
+    techDb,
     onNavigateToNode,
     navigatedToNode,
 }) => {
     const networkRef = useRef(null);
     const renderCount = useRef(0);
-    const techTreeRef = useRef(techTree);
+    const techDbRef = useRef(techDb);
     const onNavigateRef = useRef(onNavigateToNode);
     
     // Update refs when props change
     useEffect(() => {
-        techTreeRef.current = techTree;
+        techDbRef.current = techDb;
         onNavigateRef.current = onNavigateToNode;
-    }, [techTree, onNavigateToNode]);
+    }, [techDb, onNavigateToNode]);
     
     // Memoize drawTree so it only changes if the refs change
     const drawTree = useCallback(() => {
         console.log("drawTree called");
+        const now = new Date();
         
-        const { nodes, edges, lateNodes, lateEdges } = parseNode(techTreeRef.current, false);
+        const { nodes, edges, lateNodes, lateEdges } = parseNode(techDbRef.current, false);
         const data = {
             nodes: new vis.DataSet(nodes),
             edges: new vis.DataSet(edges)
         };
 
+        console.log("TechGraph parsing time: " + (new Date() - now) + "ms");
+
         networkRef.current = draw(
-            techTreeRef.current, 
+            techDbRef.current, 
             data, 
             lateNodes, 
             lateEdges, 

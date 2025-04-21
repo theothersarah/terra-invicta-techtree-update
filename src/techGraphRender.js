@@ -1,6 +1,6 @@
 import * as vis from "vis-network/standalone";
 
-export function draw(techTree, data, lateNodes, lateEdges, onNavigateToNode) {
+export function draw(techDb, data, lateNodes, lateEdges, onNavigateToNode) {
     const container = document.getElementById("mynetwork");
     const options = {
         layout: {
@@ -71,7 +71,8 @@ export function draw(techTree, data, lateNodes, lateEdges, onNavigateToNode) {
     network.on('selectNode', (e) => {
         if (e.nodes.length === 1) {
             const selectedNodeId = e.nodes[0];
-            const selectedNode = findTechByName(techTree, selectedNodeId);
+            // const selectedNode = findTechByName(techTree, selectedNodeId);
+            const selectedNode = techDb.getTechByDataName(selectedNodeId);
             onNavigateToNode(selectedNode);
         }
     });
@@ -168,13 +169,14 @@ export function getTechBorderColor(techCategory) {
     return "black";
 }
 
-export function parseNode(techTree, dumpAllEdges) {
+export function parseNode(techDb, dumpAllEdges) {
     const nodes = [];
     const edges = [];
     const lateNodes = [];
     const lateEdges = [];
 
-    techTree.forEach(tech => {
+    const levelsDeterminator = new LevelsDeterminator(techDb);
+    techDb.getAllTechs().forEach(tech => {
         let nodeBucket = false;
         if (tech.repeatable || tech.endGameTech) {
             nodeBucket = lateNodes;
@@ -187,20 +189,14 @@ export function parseNode(techTree, dumpAllEdges) {
             id: tech.dataName,
             shape: "circularImage",
             image: getTechIconFile(tech.techCategory),
-            level: determineLevel(tech, techTree),
+            level: levelsDeterminator.determineLevel(tech),
             color: { border: getTechBorderColor(tech.techCategory) }
         });
 
-        const prereqCopy = [];
-
-        if (tech.prereqs) {
-            tech.prereqs.forEach(prereq => {
-                if (prereq === "" || !isValidNode(techTree, prereq)) {
-                    return;
-                }
-                prereqCopy.push(findTechByName(techTree, prereq));
-            });
-        }
+        const prereqCopy = tech.prereqs?.flatMap(prereq => {
+            const prereqNode = techDb.getTechByDataName(prereq);
+            return prereqNode ? [prereqNode] : [];
+        }) ?? [];
 
         prereqCopy.sort((a, b) => {
             const catA = a.techCategory === tech.techCategory;
@@ -216,9 +212,9 @@ export function parseNode(techTree, dumpAllEdges) {
         });
 
         if (tech.altPrereq0) {
-            const prereq = tech.altPrereq0;
-            if (prereq !== "" && isValidNode(techTree, prereq)) {
-                prereqCopy.push(findTechByName(techTree, prereq));
+            const prereqNode = techDb.getTechByDataName(tech.altPrereq0);
+            if (prereqNode) {
+                prereqCopy.push(prereqNode);
             }
         }
 
@@ -257,38 +253,33 @@ export function parseNode(techTree, dumpAllEdges) {
     }
 }
 
-export function isValidNode(validNodes, checkNode) {
-    return validNodes.find(node => node.dataName === checkNode);
-}
-
-export function determineLevel(tech, techTree) {
-    const validPrereqs = [];
-
-    if (tech.prereqs) {
-        tech.prereqs.forEach(prereq => {
-            if (prereq === "" || !isValidNode(techTree, prereq))
-                return;
-
-            validPrereqs.push(prereq);
-        })
+class LevelsDeterminator {
+    constructor(techDb) {
+        this.techDb = techDb;
+        this.levels = {};
     }
 
-    if (validPrereqs.length === 0) {
-        return 0;
-    }
-
-    let level = 0;
-    validPrereqs.forEach(prereq => {
-        const tech = findTechByName(techTree, prereq);
-        if (!tech) {
-            return;
+    determineLevel(tech) {
+        if (this.levels[tech.dataName] != null) {
+            return this.levels[tech.dataName];
         }
-        level = Math.max(determineLevel(tech, techTree) + 1, level);
-    });
-    return level;
-}
 
-export function findTechByName(techTree, techName) {
-    const tech = techTree.find(tech => tech.dataName === techName);
-    return tech;
+        const validPrereqs = tech.prereqs?.filter(prereq => this.techDb.getTechByDataName(prereq) != null) ?? [];
+
+        if (validPrereqs.length === 0) {
+            this.levels[tech.dataName] = 0;
+            return 0;
+        }
+
+        let level = 0;
+        validPrereqs.forEach(prereq => {
+            const tech = this.techDb.getTechByDataName(prereq);
+            if (!tech) {
+                return;
+            }
+            level = Math.max(this.determineLevel(tech) + 1, level);
+        });
+        this.levels[tech.dataName] = level;
+        return level;
+    }
 }

@@ -1,14 +1,27 @@
 export function findBlockingTechs(techTree, techToSearch) {
-    return techTree.filter(tech => { if (tech.prereqs && tech.prereqs.find(prereq => prereq === techToSearch.dataName)) { return true; } else if (tech.altPrereq0 && tech.altPrereq0 === techToSearch.dataName) { return true; } });
+    return techTree.filter(tech => {
+        if (tech.prereqs && tech.prereqs.find(prereq => prereq === techToSearch.dataName)) { 
+            return true; 
+        } else if (tech.altPrereq0 && tech.altPrereq0 === techToSearch.dataName) { 
+            return true; 
+        }
+    });
 }
 
 export function findPrereqTechs(techTree, techToSearch) {
     if (!techToSearch.prereqs) {
         return [];
     }
-    else {
-        return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => { return techTree.find(tech => tech.dataName === prereq); });
-    }
+    return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => { 
+        return techTree.find(tech => tech.dataName === prereq); 
+    });
+    // return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {
+    //     const tech = techDb.getTechByDataName(prereq);
+    //     if (!tech) {
+    //         throw new Error(`Tech not found: ${prereq}`);
+    //     }
+    //     return tech;
+    // });
 }
 
 export function getAncestorTechs(techTree, techToSearch) {
@@ -32,7 +45,7 @@ export function getDescendentTechs(techTree, techToSearch) {
 
 export function parselocalization(localizationStrings, text, localizationType) {
     const lines = text.split("\n");
-    
+
     lines.forEach(line => {
         line = line.split("//")[0].trim();
 

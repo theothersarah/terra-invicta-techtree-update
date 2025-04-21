@@ -13,7 +13,7 @@ function App() {
     const [appStaticData, setAppStaticData] = useState({
     });
 
-    const [techTree, setTechTree] = useState(null);
+    const [techDb, setTechDb] = useState(null);
     const [navigatedToNode, setNavigatedToNode] = useState(null);
     const [isReady, setIsReady] = useState(false);
     const [language, setLanguage] = useState("en");
@@ -23,20 +23,20 @@ function App() {
 
     useEffect(() => {
         async function initialize() {
-            await init(language, setTechTree, setAppStaticData);
+            await init(language, setTechDb, setAppStaticData);
             setIsReady(true);
         }
         initialize();
-    }, [language, setTechTree, setAppStaticData]);
+    }, [language, setTechDb, setAppStaticData]);
 
     useEffect(() => {
-        if (id && techTree) {
-          const node = techTree.find(tech => tech.dataName === id);
+        if (id && techDb) {
+          const node = techDb.getTechByDataName(id);
           if (node) {
             setNavigatedToNode(node);
           }
         }
-      }, [id, techTree]);
+      }, [id, techDb]);
 
     const onNavigatedToNode = useCallback((x) => {
         setNavigatedToNode(x);
@@ -49,19 +49,20 @@ function App() {
     }, [setNavigatedToNode, navigate])
 
     const onShowProjects = useCallback((showToggle) => {
-        setTechTree(showToggle ? appStaticData.techs.concat(appStaticData.projects) : appStaticData.techs);
+        setTechDb(new TechDb(showToggle ? appStaticData.techs.concat(appStaticData.projects) : appStaticData.techs));
     }, [appStaticData.techs, appStaticData.projects]);
 
     const handleIsolatedChanged = useCallback((isolated) => {
         if (isolated) {
             const node = navigatedToNode;
+            const techTree = techDb.getAllTechs();
             const isolatedTree = getAncestorTechs(techTree, node).concat(getDescendentTechs(techTree, node)).concat(node);
             const isolatedTreeSet = [...new Map(isolatedTree.map(v => [v.dataName, v])).values()];
-            setTechTree(isolatedTreeSet);
+            setTechDb(new TechDb(isolatedTreeSet));
         } else {
-            setTechTree(appStaticData.techs.concat(appStaticData.projects));
+            setTechDb(new TechDb(appStaticData.techs.concat(appStaticData.projects)));
         }
-    }, [appStaticData.techs, appStaticData.projects, techTree, navigatedToNode]);
+    }, [appStaticData.techs, appStaticData.projects, techDb, navigatedToNode]);
 
     return (
         <>
@@ -70,7 +71,7 @@ function App() {
             {isReady && (
                 <div id="options"> 
                     <Searchbox
-                        techTree={techTree}
+                        techDb={techDb}
                         setShowProjects={onShowProjects}
                         onNavigateToNode={onNavigatedToNode}
                         getLocalizationString={appStaticData.getLocalizationString}
@@ -84,7 +85,7 @@ function App() {
             )}
             {isReady && (
                     <TechGraph
-                        techTree={techTree}
+                        techDb={techDb}
                         onNavigateToNode={onNavigatedToNode}
                         navigatedToNode={navigatedToNode}
                         setReady={setIsReady}
@@ -99,7 +100,7 @@ function App() {
                         onNavigateToNode={onNavigatedToNode}
                         navigatedToNode={navigatedToNode}
                         effects={appStaticData.effects}
-                        techTree={techTree}
+                        techDb={techDb}
                         handleIsolatedChanged={handleIsolatedChanged}
                     />
                 )}
@@ -109,7 +110,42 @@ function App() {
 
 export default App
 
-async function init(language, setTechTree, setAppStaticData) {
+class TechDb {
+    constructor(
+        tree
+    ) {
+        this.tree = tree;
+        this.techsByDataName = tree.reduce((acc, tech) => {
+            acc[tech.dataName] = tech;
+            return acc;
+        }, {});
+        this.techsByDisplayName = tree.reduce((acc, tech) => {
+            if (acc[tech.displayName]) {
+                throw new Error(`Duplicate displayName found: ${tech.displayName}`);
+            }
+            acc[tech.displayName] = tech;
+            return acc;
+        }, {});
+    }
+
+    getTechByDataName(dataName) {
+        if (!dataName) {
+            return null;
+        }
+        return this.techsByDataName[dataName];
+    }
+    getTechByDisplayName(displayName) {
+        if (!displayName) {
+            return null;
+        }
+        return this.techsByDisplayName[displayName];
+    }
+    getAllTechs() {
+        return this.tree;
+    }
+}
+
+async function init(language, setTechDb, setAppStaticData) {
     const { localizationStrings, templateData } = await getTemplateData(language);
 
     const effects = templateData.effect;
@@ -144,7 +180,7 @@ async function init(language, setTechTree, setAppStaticData) {
         getLocalizationString: (a, b, c) => getLocalizationString(localizationStrings, a, b, c),
         getReadable: (a, b, c) => getReadable(localizationStrings, a, b, c),
     });
-    setTechTree(techTreeTmp);
+    setTechDb(new TechDb(techTreeTmp));
 };
 
 async function getTemplateData(language) {

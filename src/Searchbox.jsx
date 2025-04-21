@@ -3,18 +3,17 @@ import { Paper, Autocomplete, TextField, FormControlLabel, Switch } from '@mui/m
 import FlexSearch from 'flexsearch';
 
 export const Searchbox = ({
-    techTree,
+    techDb,
     setShowProjects,
     onNavigateToNode,
     getLocalizationString,
-    getReadable,
     templateData,
 }) => {
     const [results, setResults] = useState([]);
     const [documentSearchIndex, setDocumentSearchIndex] = useState(null);
     const [fullText, setFullText] = useState(false);
 
-    const updateDocumentSearchIndex = (techTree) => {
+    const updateDocumentSearchIndex = (techDb) => {
         const documentSearchIndex = new FlexSearch.Document({
             document: {
                 index: ["displayName", "fullText"],
@@ -23,7 +22,7 @@ export const Searchbox = ({
             tokenize: "full"
         });
 
-        techTree.forEach((node) => {
+        techDb.getAllTechs().forEach((node) => {
             let searchData = {
                 "id": node.id,
                 "displayName": node.displayName
@@ -75,8 +74,8 @@ export const Searchbox = ({
     }
 
     useEffect(() => {
-        updateDocumentSearchIndex(techTree);
-    }, [techTree]);
+        updateDocumentSearchIndex(techDb);
+    }, [techDb]);
 
     const searchInputRef = useRef(null);
 
@@ -112,7 +111,7 @@ export const Searchbox = ({
     };
 
     const navigateToTech = (value) => {
-        const navigateToNode = techTree.find(tech => tech.displayName === value);
+        const navigateToNode = techDb.getTechByDisplayName(value);
 
         if (navigateToNode) {
             onNavigateToNode(navigateToNode);
