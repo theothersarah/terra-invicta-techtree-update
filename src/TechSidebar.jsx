@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Paper, Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
+import { Button, Paper, Accordion, AccordionDetails, AccordionSummary, Tooltip } from "@mui/material";
 import { findBlockingTechs, getAncestorTechs } from './utils.js';
 import { getTechIconFile } from './techGraphRender.js';
 
@@ -569,13 +569,15 @@ export function TechSidebar({
 
                 {/* Cost information */}
                 <Accordion disableGutters>
-                    <AccordionSummary>
-                        <div id="costInfo">
-                            Cost: {researchCost.toLocaleString()}
-                            <br />
-                            Total Tree Cost: {treeCostString}
-                        </div>
-                    </AccordionSummary>
+                    <Tooltip title="Click to see technology cost breakdown" arrow placement="top">
+                        <AccordionSummary>
+                            <div id="costInfo">
+                                Cost: {researchCost.toLocaleString()}
+                                <br />
+                                Total Tree Cost: {treeCostString}
+                            </div>
+                        </AccordionSummary>
+                    </Tooltip>
                     <AccordionDetails id="costBreakdown">
                         <ul>
                             {treeCostBreakdownArr.map(([key, value]) => (
