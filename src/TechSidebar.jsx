@@ -224,10 +224,13 @@ export function TechSidebar({
     const uniqueAncestorTree = ancestorTree.filter(({ id }, index) => !ancestorTreeIds.includes(id, index + 1));
     const ancestorTreeProcessed = uniqueAncestorTree.filter(tech => !tech.researchDone);
 
-    const treeCost = uniqueAncestorTree.reduce((acc, curr) => acc + (curr.researchCost ? curr.researchCost : 0), 0)
-        + (node.researchDone ? 0 : researchCost);
-    const treeCostProcessed = ancestorTreeProcessed.reduce((acc, curr) => acc + (curr.researchCost ? curr.researchCost : 0), 0)
-        + (node.researchDone ? 0 : researchCost);
+    const calculateTechCost = (tree) => {
+        return tree.reduce((acc, curr) => acc + (curr.researchCost ? curr.researchCost : 0), 0)
+            + (node.researchDone ? 0 : researchCost);
+    };
+
+    const treeCost = calculateTechCost(uniqueAncestorTree);
+    const treeCostProcessed = calculateTechCost(ancestorTreeProcessed);
 
     const treeCostString = treeCost === treeCostProcessed ?
         treeCost.toLocaleString() :

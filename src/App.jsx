@@ -194,6 +194,9 @@ async function getTemplateData(language) {
     const fetchTemplatePromises = templateFiles.map(template => fetch(template.url).then(res => res.text()).then(text => parseTemplate(templateData, text, template.type)));
     await Promise.all([].concat(fetchLocalizationPromises, fetchTemplatePromises));
 
+    templateData.project.splice(templateData.project.findIndex(project => project.dataName === "Project_AlienMasterProject"), 1);
+    templateData.project.splice(templateData.project.findIndex(project => project.dataName === "Project_AlienAdvancedMasterProject"), 1);
+
     return {
         localizationStrings,
         templateData,
