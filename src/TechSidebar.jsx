@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Button, Paper } from "@mui/material";
+import { Button, Paper, Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { findBlockingTechs, getAncestorTechs } from './utils.js';
+import { getTechIconFile } from './techGraphRender.js';
 
 export function TechSidebar({
     templateData,
@@ -225,16 +226,36 @@ export function TechSidebar({
     const ancestorTreeProcessed = uniqueAncestorTree.filter(tech => !tech.researchDone);
 
     const calculateTechCost = (tree) => {
-        return tree.reduce((acc, curr) => acc + (curr.researchCost ? curr.researchCost : 0), 0)
-            + (node.researchDone ? 0 : researchCost);
+        return tree.concat(node).reduce((acc, curr) => { 
+            acc[curr.techCategory] = (acc[curr.techCategory] ?? 0) + curr.researchCost;
+            return acc;
+        }, {});
     };
 
-    const treeCost = calculateTechCost(uniqueAncestorTree);
-    const treeCostProcessed = calculateTechCost(ancestorTreeProcessed);
+    const treeCostBreakdownTotal = calculateTechCost(uniqueAncestorTree);
+    const treeCostBreakdownRemaining = calculateTechCost(ancestorTreeProcessed);
 
-    const treeCostString = treeCost === treeCostProcessed ?
-        treeCost.toLocaleString() :
-        `${treeCostProcessed.toLocaleString()}/${treeCost.toLocaleString()}`;
+    const treeCostTotal = Object.values(treeCostBreakdownTotal).reduce((acc, curr) => acc + curr, 0);
+    const treeCostRemaining = Object.values(treeCostBreakdownRemaining).reduce((acc, curr) => acc + curr, 0);
+
+    const treeCostString = treeCostTotal === treeCostRemaining ?
+        treeCostTotal.toLocaleString() :
+        `${treeCostRemaining.toLocaleString()}/${treeCostTotal.toLocaleString()}`;
+
+
+    const treeCostBreakdownArr = Object.entries(treeCostBreakdownRemaining);
+    treeCostBreakdownArr.sort((a, b) => {
+        const aValue = a[1];
+        const bValue = b[1];
+
+        if (aValue > bValue) {
+            return -1;
+        }
+        if (aValue < bValue) {
+            return 1;
+        }
+        return 0;
+    });
 
     const techSorter = (a, b) => {
         // non-project techs first
@@ -547,8 +568,24 @@ export function TechSidebar({
                 <h2>{node.displayName}</h2>
 
                 {/* Cost information */}
-                <h4>Cost: {researchCost.toLocaleString()}</h4>
-                <h5>Total Tree Cost: {treeCostString}</h5>
+                <Accordion disableGutters>
+                    <AccordionSummary>
+                        <div id="costInfo">
+                            Cost: {researchCost.toLocaleString()}
+                            <br />
+                            Total Tree Cost: {treeCostString}
+                        </div>
+                    </AccordionSummary>
+                    <AccordionDetails id="costBreakdown">
+                        <ul>
+                            {treeCostBreakdownArr.map(([key, value]) => (
+                                <li key={key}>
+                                    <img src={getTechIconFile(key)} alt={key} style={{ width: "16px", height: "16px" }} /> {value.toLocaleString()}
+                                </li>
+                            ))}
+                        </ul>
+                    </AccordionDetails>
+                </Accordion>
 
                 {/* Project-specific probabilities */}
                 {node.isProject && (

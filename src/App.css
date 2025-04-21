@@ -135,6 +135,21 @@ ul.hideBullets {
     /* text-align: start; */
 }
 
+#costInfo {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#costBreakdown {
+    padding: auto;
+}
+
+#costBreakdown > ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10px;
+}
+
 pre {
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
