@@ -55,8 +55,7 @@ function App() {
     const handleIsolatedChanged = useCallback((isolated) => {
         if (isolated) {
             const node = navigatedToNode;
-            const techTree = techDb.getAllTechs();
-            const isolatedTree = getAncestorTechs(techTree, node).concat(getDescendentTechs(techTree, node)).concat(node);
+            const isolatedTree = getAncestorTechs(techDb, node).concat(getDescendentTechs(techDb, node)).concat(node);
             const isolatedTreeSet = [...new Map(isolatedTree.map(v => [v.dataName, v])).values()];
             setTechDb(new TechDb(isolatedTreeSet));
         } else {
@@ -126,6 +125,15 @@ class TechDb {
             acc[tech.displayName] = tech;
             return acc;
         }, {});
+        this.blockingTechs = tree.reduce((acc, tech) => {
+            (tech.prereqs ?? []).concat(tech.altPrereq0).forEach(prereq => {
+                if (!acc[prereq]) {
+                    acc[prereq] = [];
+                }
+                acc[prereq].push(tech);
+            });
+            return acc;
+        }, {});
     }
 
     getTechByDataName(dataName) {
@@ -142,6 +150,12 @@ class TechDb {
     }
     getAllTechs() {
         return this.tree;
+    }
+    getBlockingTechs(tech) {
+        if (!tech) {
+            return null;
+        }
+        return this.blockingTechs[tech.dataName] ?? [];
     }
 }
 

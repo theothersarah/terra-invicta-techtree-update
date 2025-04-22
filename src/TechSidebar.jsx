@@ -215,7 +215,7 @@ export function TechSidebar({
 
     // Calculate costs and research status
     const researchCost = node.researchCost || 0;
-    const ancestorTree = getAncestorTechs(techDb.getAllTechs(), node);
+    const ancestorTree = getAncestorTechs(techDb, node);
     if (!ancestorTree || ancestorTree.some(tech => !tech)) {
         // we are in tech only mode but sidebar is opened on a project
         return <div></div>
@@ -282,7 +282,7 @@ export function TechSidebar({
             node.researchDone = false;
         } else {
             node.researchDone = true;
-            getAncestorTechs(techDb.getAllTechs(), node).forEach(tech => tech.researchDone = true);
+            getAncestorTechs(techDb, node).forEach(tech => tech.researchDone = true);
         }
         onNavigateToNode({
             ...node
@@ -356,7 +356,7 @@ export function TechSidebar({
 
     // Render blocking techs section
     const renderBlockingTechs = () => {
-        const blockingTechs = findBlockingTechs(techDb.getAllTechs(), node);
+        const blockingTechs = findBlockingTechs(techDb, node);
         if (blockingTechs.length === 0) {
             return null;
         }

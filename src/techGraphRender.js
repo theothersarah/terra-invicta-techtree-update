@@ -71,7 +71,6 @@ export function draw(techDb, data, lateNodes, lateEdges, onNavigateToNode) {
     network.on('selectNode', (e) => {
         if (e.nodes.length === 1) {
             const selectedNodeId = e.nodes[0];
-            // const selectedNode = findTechByName(techTree, selectedNodeId);
             const selectedNode = techDb.getTechByDataName(selectedNodeId);
             onNavigateToNode(selectedNode);
         }

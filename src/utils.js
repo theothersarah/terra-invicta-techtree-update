@@ -1,46 +1,37 @@
-export function findBlockingTechs(techTree, techToSearch) {
-    return techTree.filter(tech => {
-        if (tech.prereqs && tech.prereqs.find(prereq => prereq === techToSearch.dataName)) { 
-            return true; 
-        } else if (tech.altPrereq0 && tech.altPrereq0 === techToSearch.dataName) { 
-            return true; 
-        }
-    });
+export function findBlockingTechs(techDb, techToSearch) {
+    return techDb.getBlockingTechs(techToSearch);
 }
 
-export function findPrereqTechs(techTree, techToSearch) {
+export function findPrereqTechs(techDb, techToSearch) {
     if (!techToSearch.prereqs) {
         return [];
     }
-    return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => { 
-        return techTree.find(tech => tech.dataName === prereq); 
+    return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {
+        const tech = techDb.getTechByDataName(prereq);
+        if (!tech) {
+            throw new Error(`Tech not found: ${prereq}`);
+        }
+        return tech;
     });
-    // return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {
-    //     const tech = techDb.getTechByDataName(prereq);
-    //     if (!tech) {
-    //         throw new Error(`Tech not found: ${prereq}`);
-    //     }
-    //     return tech;
-    // });
 }
 
-export function getAncestorTechs(techTree, techToSearch) {
+export function getAncestorTechs(techDb, techToSearch) {
     if (!techToSearch) {
         return null;
     }
 
-    return findPrereqTechs(techTree, techToSearch)
-        .reduce((arr, curr) => arr.concat(getAncestorTechs(techTree, curr)), [])
-        .concat(findPrereqTechs(techTree, techToSearch));
+    return findPrereqTechs(techDb, techToSearch)
+        .reduce((arr, curr) => arr.concat(getAncestorTechs(techDb, curr)), [])
+        .concat(findPrereqTechs(techDb, techToSearch));
 }
 
-export function getDescendentTechs(techTree, techToSearch) {
+export function getDescendentTechs(techDb, techToSearch) {
     if (!techToSearch) {
         return null;
     }
-    return findBlockingTechs(techTree, techToSearch)
-        .reduce((arr, curr) => arr.concat(getDescendentTechs(techTree, curr)), [])
-        .concat(findBlockingTechs(techTree, techToSearch));
+    return findBlockingTechs(techDb, techToSearch)
+        .reduce((arr, curr) => arr.concat(getDescendentTechs(techDb, curr)), [])
+        .concat(findBlockingTechs(techDb, techToSearch));
 }
 
 export function parselocalization(localizationStrings, text, localizationType) {
