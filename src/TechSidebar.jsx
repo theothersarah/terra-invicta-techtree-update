@@ -300,6 +300,9 @@ export function TechSidebar({
         const prereqElements = prereqNames
             .map(prereq => {
                 const tech = findTechByName(prereq);
+                if (!tech) {
+                    return null;
+                }
                 return (
                     <Button
                         key={`prereq-${tech.displayName}`}
@@ -320,6 +323,9 @@ export function TechSidebar({
         if (node.altPrereq0 && node.altPrereq0 !== "") {
             const prereq = node.altPrereq0;
             const tech = findTechByName(prereq);
+            if (!tech) {
+                return null;
+            }
             const altButton = (
                 <Button
                     key={`alt-${tech.displayName}`}

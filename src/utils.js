@@ -6,12 +6,9 @@ export function findPrereqTechs(techDb, techToSearch) {
     if (!techToSearch.prereqs) {
         return [];
     }
-    return techToSearch.prereqs.filter(prereq => prereq !== "").map(prereq => {
+    return techToSearch.prereqs.filter(prereq => prereq !== "").flatMap(prereq => {
         const tech = techDb.getTechByDataName(prereq);
-        if (!tech) {
-            throw new Error(`Tech not found: ${prereq}`);
-        }
-        return tech;
+        return tech ? [tech] : [];
     });
 }
 
