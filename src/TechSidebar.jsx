@@ -449,15 +449,25 @@ export function TechSidebar({
             return null;
         }
         const orgMarketElements = orgMarket.map(org => {
-            const displayName = getLocalizationString("org", org.dataName, "displayName");
+            const displayName = getLocalizationString("org", org.dataName, "displayName") ?? org.dataName;
+            const displayText = `${displayName} ${'⭐'.repeat(org.tier)}`;
             return (
-                <li key={`org-${org.dataName}`}>{displayName ? displayName : org.dataName}</li>
+                <li key={`org-${org.dataName}`}>
+                    <Accordion disableGutters>  
+                        <AccordionSummary>
+                            {displayText}
+                        </AccordionSummary>
+                        <AccordionDetails>
+                           <pre>{JSON.stringify(org, null, 2)}</pre>
+                        </AccordionDetails>
+                    </Accordion>
+                </li>
             );
         });
         return (
             <>
                 <h4>Orgs Added to Market</h4>
-                <ul>{orgMarketElements}</ul>
+                <ul className="hideBullets">{orgMarketElements}</ul>
             </>
         );
     };
