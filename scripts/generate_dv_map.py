@@ -215,7 +215,7 @@ def generate_optimized_svg_plot(output_data, output_file, fig_width=18, fig_heig
     from adjustText import adjust_text
     
     # Create figure and axes with specified size - larger size for better label separation
-    plt.figure(figsize=(fig_width, fig_height), dpi=120)
+    plt.figure(figsize=(fig_width, fig_height), dpi=600)
     ax = plt.subplot(111)
     
     # Set logarithmic scales
