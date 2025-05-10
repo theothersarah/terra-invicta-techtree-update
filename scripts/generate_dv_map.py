@@ -120,7 +120,27 @@ def process_drive_data(json_file, localization_file, use_combat_thrust=True):
             drive_types[drive_class]['ev'].append(float(item['EV_kps']))
             drive_types[drive_class]['names'].append(drive_name)
             drive_types[drive_class]['drive_classes'].append(item['driveClassification'])
-            drive_types[drive_class]['cooling_types'].append(item.get('cooling', 'Open'))  # Extract cooling type
+            
+            # Calculate cooling type based on formula
+            cooling = item.get('cooling', 'Open')
+            if cooling == 'Calc':
+                # Calculate massFlow_kgs = thrust_N / (EV_kps * 1000)
+                mass_flow = float(item['thrust_N']) / (float(item['EV_kps']) * 1000.0)
+                # Check if it's a pulsed drive based on classification
+                drive_classification = item.get('driveClassification', '')
+                is_pulsed = drive_classification == 'Fission_Pulse' or drive_classification == 'Fusion_Pulse'
+
+                # public bool openCycleCooling
+                # {
+                #     get
+                #     {
+                #         return this.cooling == CoolingCycle.Open || (this.cooling == CoolingCycle.Calc && (this.pulsedDrive || this.singleThrusterTemplate.massFlow_kgs >= 3f));
+                #     }
+                # }
+
+                cooling = 'Open' if (is_pulsed or mass_flow >= 3.0) else 'Closed'
+            
+            drive_types[drive_class]['cooling_types'].append(cooling)  # Extract cooling type
     
     # Get unique drive classes for the output
     unique_categories = sorted(drive_types.keys())
@@ -335,8 +355,7 @@ def generate_optimized_svg_plot(output_data, output_file, fig_width=18, fig_heig
                 
                 # Create a display name with a prefix symbol based on cooling type
                 cooling_symbols = {
-                    "Open": "○ ",   # Circle symbol for Open
-                    "Calc": "▲ ",   # Triangle symbol for Calc
+                    "Open": "● ",   # Circle symbol for Open
                     "Closed": "■ "  # Square symbol for Closed
                 }
                 display_name = cooling_symbols.get(cooling_type, "") + name
@@ -435,9 +454,8 @@ def generate_optimized_svg_plot(output_data, output_file, fig_width=18, fig_heig
     # Add a separate cooling type legend
     from matplotlib.patches import Patch
     cooling_legend_elements = [
-        Patch(facecolor='white', edgecolor='white', label='○ Open Cooling', alpha=0.7),
-        Patch(facecolor='white', edgecolor='white', label='▲ Calc Cooling', alpha=0.7),
-        Patch(facecolor='white', edgecolor='white', label='■ Closed Cooling', alpha=0.7)
+        Patch(facecolor='white', edgecolor='white', label='● Open', alpha=0.7),
+        Patch(facecolor='white', edgecolor='white', label='■ Closed', alpha=0.7)
     ]
     
     # Place cooling legend below the drive categories legend
