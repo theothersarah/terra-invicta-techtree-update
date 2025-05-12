@@ -382,7 +382,7 @@ export function TechSidebar({
                 aria-label={blocked ? `${blocked.displayName} ${blocked.isProject ? "Faction Project" : "Global Research"}` : ""}
                 color={blocked.isProject ? "success" : "primary"}
             >
-                {blocked.displayName}
+                {blocked.displayName} {blocked.factionAvailableChance < 100 ? `${blocked.factionAvailableChance}%` : ""}
             </Button>
         ));
 
